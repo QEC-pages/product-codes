@@ -177,6 +177,29 @@ int pointer_array_test(){
   }
 
 }
+
+void copy2(GF2mat &G){
+  G.set(1,1,G(1,1)+G(1,2));
+  return;
+}
+
+void copy1(){
+  // check the initialization of GF2mat.
+  // result: each time when assgin G to a new matrix. It will copy a new one instead to pointing to the target.
+  GF2mat G(2,2),H(2,2);
+  H.set(1,2,1);
+  copy2(H);
+  G=H;
+  cout<<G<<endl;
+  cout<<H<<endl;
+  copy2(H);
+  cout<<G<<endl;
+  cout<<H<<endl;
+  return;
+}
+
+
+
 int main(int args, char ** argvs){
   cout<<"begin test"<<endl;
   cout<<"args = "<<args<<endl;
@@ -193,7 +216,9 @@ int main(int args, char ** argvs){
   //  char_test();
   //  run_vector_test();
   //  if_test();
-  pointer_array_test();
+  //  pointer_array_test();
+
+  copy1();
   cout<<"finish test"<<endl;
   return 0;
 }

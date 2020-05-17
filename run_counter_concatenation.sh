@@ -15,12 +15,12 @@ folder=data/random2
 (( i = 0 ))
 while (( i < max_trial ))
 do
-    num_process=`pgrep -c random_concat`
+    num_process=`pgrep -c counter_con`
     for (( j = num_process ; j < max_process ; j++ ))
     do
 	    title=$folder/trial$index-$i
 #	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
-	    ./counter_concatenation.out 1 $title
+	    ./counter_concatenation.out 1 $title &
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &

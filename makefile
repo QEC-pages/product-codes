@@ -1,4 +1,5 @@
 INC_DIR=weilei_lib
+#INC_DIR=~/working/weilei_lib
 CXX=g++ -O2 -Wall 
 ### -O2 -O5 -Os
 #g++ `pkg-config --cflags itpp` -o hello.out hello.cpp `pkg-config --libs itpp`
