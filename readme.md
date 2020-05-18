@@ -8,6 +8,7 @@ progress
 - [ ] parameter in mind: use small codes with large distance, typically k need to be small
 - [ ] write a function to search for 'good' CSS codes first, then use it for product code/chain complex
   - cannot find good CSS codes with both distance greater than 1, after 10000 trials
+  - try to remove all zero columns, not working yet
 
 
 
