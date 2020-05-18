@@ -35,7 +35,11 @@ int main(int args, char ** argv){
       getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,1);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
       //      nb=randi(7,7); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
-      kb=ka;      
+      // the parameter might change after removing singleton
+      na=Gax.cols();
+      Gax_row=Gax.rows();
+      Gaz_row=Gaz.rows();
+      //kb=ka;      
       nb=na;
       Gbx_row=Gaz_row;
       Gbz_row=Gax_row;
