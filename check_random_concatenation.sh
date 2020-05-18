@@ -7,12 +7,13 @@ folder=data/random2
 #trial264-12296 trial264-14671 trial264-14740 trial264-15340 trial264-8369
 # new cases
 #trial403-278 
-for trial in trial404-1315
+for trial in trial404-47
 do
     title=$folder/$trial
     echo check $title
 #    ./random_concatenation.out 2 $title >>data/result/random2check/check-$trial.log &
-    ./random_concatenation.out 2 $title 
+#    ./random_concatenation.out 2 $title
+    ./counter_concatenation.out 2 $title     
 done
 wait
 echo done

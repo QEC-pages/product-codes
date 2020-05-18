@@ -31,15 +31,16 @@ int main(int args, char ** argv){
   //  cout<<mode<<endl<<title<<endl;
   switch( mode ){
     case 1://generate random codes and save
-      na=randi(5,5); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
-      getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
+      na=randi(10,12); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
+      getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,1);
+      //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
       //      nb=randi(7,7); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
       kb=ka;      
       nb=na;
       Gbx_row=Gaz_row;
       Gbz_row=Gax_row;
       Gbx=Gaz;
-      Gbz=Gaz;
+      Gbz=Gax;
       Cbx=Caz;
       Cbz=Cax;   
 	//getRandomQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz);
@@ -54,26 +55,28 @@ int main(int args, char ** argv){
       nb=Gbx.cols();
       break;
   }
-  
-  //  int nb=21; int Gbx_row=8;  int Gbz_row=8;
 
-  //  is_quantum_code(Gax,Gaz,Cax,Caz);
+  //  cout<<"check code A"<<endl;
+  if (! is_quantum_code(Gax,Gaz,Cax,Caz)) throw "invalid code";
   //  cout<<"Gax "<<Gax<<endl;  cout<<"Gaz "<<Gaz<<endl;  cout<<"Cax "<<Cax<<endl;  cout<<"Caz "<<Caz<<endl;
   int dax = quantum_dist_v2(Gax,Gaz);
   int daz = quantum_dist_v2(Gax,Gaz,1);
-  cout<<"[Code A] na = "<<na<<", ";
-  cout<<"dax = "<<dax<<", daz = "<<daz<<endl;
-
-  //  is_quantum_code(Gax,Gaz,Cax,Caz);
+  //  cout<<"[Code A] na = "<<na<<", ";
+  //  cout<<"dax = "<<dax<<", daz = "<<daz<<endl;
+  //  cout<<"check code B"<<endl;
+  if ( ! is_quantum_code(Gbx,Gbz,Cbx,Cbz)) throw "invalid code";
   //  cout<<"Gbx "<<Gbx<<endl;  cout<<"Gbz "<<Gbz<<endl;  cout<<"Cbx "<<Cbx<<endl;  cout<<"Cbz "<<Cbz<<endl;
   int dbx = quantum_dist_v2(Gbx,Gbz);
   int dbz = quantum_dist_v2(Gbx,Gbz,1);
-  cout<<"[Code B] nb = "<<nb<<", ";
-  cout<<"dbx = "<<dbx<<", dbz = "<<dbz<<endl;
-  reduce(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
-  concatenate(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
+  //  cout<<"[Code B] nb = "<<nb<<", ";
+  //  cout<<"dbx = "<<dbx<<", dbz = "<<dbz<<endl;
+  //  reduce(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
+  //concatenate(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
+  product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
+  product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,2);
+					     
 
-  cout<<"finish "<<title<<endl;
-  timer.toc_print();
+  //  cout<<"finish "<<title<<endl;
+  //  timer.toc_print();
   return 0;
 }
