@@ -6,7 +6,7 @@ This code produce two random quantum codes and construct concatenated codes and 
 #include <itpp/itbase.h>
 using namespace itpp;
 using namespace std;
-
+/*
 bool is_quantum_code(GF2mat &Gx,GF2mat &Gz, GF2mat &Cx,GF2mat &Cz){
   if (!(Gx*Gz.transpose()).is_zero()){
     cout<<"(Gx*Gz.transpose()) is not zero"<<endl;return false;
@@ -33,13 +33,13 @@ bool is_quantum_code(GF2mat &Gx,GF2mat &Gz, GF2mat &Cx,GF2mat &Cz){
   return true;
 }
 
-/*int getRandomQuantumCode(GF2mat &Gx,GF2mat &Gz, GF2mat &Cx,GF2mat &Cz){
+/ *int getRandomQuantumCode(GF2mat &Gx,GF2mat &Gz, GF2mat &Cx,GF2mat &Cz){
   int n=21;//sample input
   int Gx_row=8;
   int Gz_row=8;
   getRandomQuantumCode(n,Gx_row,Gz_row,Gx,Gz,Cx,Cz);
   return 0;
-  }*/
+  }* /
 
 int getRandomQuantumCode(int n,int Gx_row,int Gz_row, GF2mat &Gx,GF2mat &Gz, GF2mat &Cx,GF2mat &Cz){
 
@@ -67,6 +67,7 @@ int getRandomQuantumCode(int n,int Gx_row,int Gz_row, GF2mat &Gx,GF2mat &Gz, GF2
   Cz=getC(Gx,Gz,1);
   return 0;
 }
+*/
 
 int test(GF2mat &G){//test how to change a matrix in a function
   G.set(1,2,1);
@@ -104,6 +105,10 @@ int main(int args, char ** argv){
       Gbx=MM_to_GF2mat(filename_Gbx); Gbz=MM_to_GF2mat(filename_Gbz);
       na=Gax.cols();
       nb=Gbx.cols();
+
+      cout<<"Gax "<<Gax<<endl;  cout<<"Gaz "<<Gaz<<endl;
+      cout<<"Gbx "<<Gbx<<endl;  cout<<"Gbz "<<Gbz<<endl;
+      //cout<<"Cax "<<Cax<<endl;  cout<<"Caz "<<Caz<<endl;
       break;
   }
   

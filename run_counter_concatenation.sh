@@ -1,5 +1,5 @@
 #!/bin/bash
-index=403
+index=404
 # 250-266  for random code on cherenkov
 max_trial=10000
 #index=221 #218-221 - for reduced code.
@@ -20,7 +20,7 @@ do
     do
 	    title=$folder/trial$index-$i
 #	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
-	    ./counter_concatenation.out 1 $title &
+	    ./counter_concatenation.out 1 $title 
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &
