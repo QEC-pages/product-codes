@@ -4,16 +4,15 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=0-01:00:00     
-#SBATCH --output=log/my.stdout
+#SBATCH --time=0-05:00:00     
+#SBATCH --output=log/size8.stdout
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="concatenation"
 #SBATCH -p intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
 
 
-# Print current date
-date
+# module itpp already load on zsh and bash
 
 # Load samtools
 # module load samtools
@@ -26,8 +25,7 @@ cd $SLURM_SUBMIT_DIR
 # samtools cat -h header.sam -o out.bam in1.bam in2.bam
 
 # Print name of node
-hostname
+echo start job on `hostname` `date`
 
-echo hello biocluster
 
 ./run_counter_concatenation.sh

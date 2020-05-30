@@ -25,6 +25,9 @@ int main(int args, char ** argv){
   const char * title = title_str.c_str();
   int debug = 1; //default debug on
   parser.get(debug,"debug");
+  int na_input;
+  parser.get(na_input,"na_input");
+
   
   RNG_randomize();  Real_Timer timer;  timer.tic();
 
@@ -41,7 +44,7 @@ int main(int args, char ** argv){
   //  cout<<mode<<endl<<title<<endl;
   switch( mode ){
     case 1://generate random codes and save
-      na=randi(7,7); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
+      na=randi(na_input,na_input); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
       getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,debug);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
       //      nb=randi(7,7); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
