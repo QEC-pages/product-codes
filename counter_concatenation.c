@@ -41,7 +41,7 @@ int main(int args, char ** argv){
   //  cout<<mode<<endl<<title<<endl;
   switch( mode ){
     case 1://generate random codes and save
-      na=randi(5,5); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
+      na=randi(7,7); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
       getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,debug);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
       //      nb=randi(7,7); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
@@ -91,12 +91,12 @@ int main(int args, char ** argv){
   //  cout<<"dbx = "<<dbx<<", dbz = "<<dbz<<endl;
   //  reduce(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
   //concatenate(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
-  //1 for reduce
-  if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,1) == 2)
-    std::cout<<title<<std::endl;
+  //0 for reduce/subsystem, distance x
+  if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,0) == 2)    std::cout<<title<<std::endl;
+  //1 for reduce/subsystem, distance z
+  if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,1) == 2)    std::cout<<title<<std::endl;
   //2 for concatenate
-  if ( product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,2) == 2)
-    std::cout<<title<<std::endl;
+  //  if ( product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,2) == 2)    std::cout<<title<<std::endl;
   if ( debug )  timer.toc_print();
   return 0;
 }

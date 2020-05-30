@@ -2,7 +2,7 @@
 index=405
 # 250-266  for random code on cherenkov
 
-max_trial=10
+max_trial=100000
 
 #index=221 #218-221 - for reduced code.
 #index=200-217 for concatenation
@@ -13,7 +13,7 @@ make counter_concatenation.out
 #add index by 1 while rerun this script
 #the number of simultaneous process is limited by max_process.
 
-max_process=15
+max_process=150
 
 case `hostname` in 
     "Chenrenkov")
@@ -23,6 +23,8 @@ case `hostname` in
 	folder=data_hpcc/random3
 	;;
 esac
+
+
 
 
 (( i = 0 ))
