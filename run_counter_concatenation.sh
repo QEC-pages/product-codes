@@ -1,7 +1,9 @@
 #!/bin/bash
 index=405
 # 250-266  for random code on cherenkov
-max_trial=100000
+
+max_trial=10
+
 #index=221 #218-221 - for reduced code.
 #index=200-217 for concatenation
 #index=1-112 #for hypergraph
@@ -10,8 +12,19 @@ make counter_concatenation.out
 
 #add index by 1 while rerun this script
 #the number of simultaneous process is limited by max_process.
-max_process=200
-folder=data/random2
+
+max_process=15
+
+case `hostname` in 
+    "Chenrenkov")
+	folder=data/random2
+	;;
+    *)
+	folder=data_hpcc/random3
+	;;
+esac
+
+
 (( i = 0 ))
 while (( i < max_trial ))
 do
