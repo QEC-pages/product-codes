@@ -2,7 +2,7 @@
 index=405
 # 250-266  for random code on cherenkov
 
-max_trial=100000
+max_trial=1000000
 
 #index=221 #218-221 - for reduced code.
 #index=200-217 for concatenation
@@ -25,7 +25,7 @@ case `hostname` in
 esac
 
 
-
+echo start job on `hostname` $index $max_process/$max_trial `date`
 
 (( i = 0 ))
 while (( i < max_trial ))
@@ -49,6 +49,6 @@ done
 
 
 wait
-date
-echo finished $max_trial trials
+
+echo finish job on `hostname` $index $max_process/$max_trial `date`
 
