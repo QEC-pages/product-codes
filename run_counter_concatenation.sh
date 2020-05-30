@@ -20,12 +20,11 @@ do
     do
 	    title=$folder/trial$index-$i
 #	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
-	    ./counter_concatenation.out 1 $title &
+	    ./counter_concatenation.out mode=1 title=$title debug=0 &
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &
-	    echo [max_process:${max_process},max_trial:${max_trial}] $title
-	    date
+	    echo -ne ${max_trial} $title `date` \\r
 	    (( i++ ))
     done
 

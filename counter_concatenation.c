@@ -16,6 +16,16 @@ int test(GF2mat &G){//test how to change a matrix in a function
 }
 
 int main(int args, char ** argv){
+  itpp::Parser parser;
+  parser.init(args,argv);
+  parser.set_silentmode(true);
+  int mode = 1; parser.get(mode,"mode");
+  std::string title_str;
+  parser.get(title_str,"title");
+  const char * title = title_str.c_str();
+  int debug = 1; //default debug on
+  parser.get(debug,"debug");
+  
   RNG_randomize();  Real_Timer timer;  timer.tic();
 
   GF2mat Gax,Gaz,Cax,Caz;
@@ -23,16 +33,16 @@ int main(int args, char ** argv){
   int na,ka, Gax_row,Gaz_row;//k is not necessary number of qubits
   int nb,kb, Gbx_row,Gbz_row;
 
-  int mode=atof(argv[1]);
-  char * title = argv[2];
+  //int mode=atof(argv[1]);  
+  //char * title = argv[2];
   char filename_Gax[256];char filename_Gaz[256];char filename_Gbx[256];char filename_Gbz[256];
   sprintf(filename_Gax,"%sGax.mm",title);  sprintf(filename_Gaz,"%sGaz.mm",title);      sprintf(filename_Gbx,"%sGbx.mm",title);  sprintf(filename_Gbz,"%sGbz.mm",title);
 
   //  cout<<mode<<endl<<title<<endl;
   switch( mode ){
     case 1://generate random codes and save
-      na=randi(10,12); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
-      getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,1);
+      na=randi(7,17); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
+      getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,debug);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
       //      nb=randi(7,7); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
       // the parameter might change after removing singleton
@@ -57,6 +67,11 @@ int main(int args, char ** argv){
       Gbx=MM_to_GF2mat(filename_Gbx); Gbz=MM_to_GF2mat(filename_Gbz);
       na=Gax.cols();
       nb=Gbx.cols();
+
+      Cax=getC(Gax,Gaz);
+      Caz=getC(Gax,Gaz,1);
+      Cbx=getC(Gbx,Gbz);
+      Cbz=getC(Gbx,Gbz,1);
       break;
   }
 
@@ -71,16 +86,17 @@ int main(int args, char ** argv){
   if ( ! is_quantum_code(Gbx,Gbz,Cbx,Cbz)) throw "invalid code";
   //  cout<<"Gbx "<<Gbx<<endl;  cout<<"Gbz "<<Gbz<<endl;  cout<<"Cbx "<<Cbx<<endl;  cout<<"Cbz "<<Cbz<<endl;
   int dbx = quantum_dist_v2(Gbx,Gbz);
-  int dbz = quantum_dist_v2(Gbx,Gbz,1);
+  int dbz = quantum_dist_v2(Gbx,Gbz,1);//1 to flip X and Z
   //  cout<<"[Code B] nb = "<<nb<<", ";
   //  cout<<"dbx = "<<dbx<<", dbz = "<<dbz<<endl;
   //  reduce(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
   //concatenate(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
-  product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
-  product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,2);
-					     
-
-  //  cout<<"finish "<<title<<endl;
-  //  timer.toc_print();
+  //1 for reduce
+  if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,1) == 2)
+    std::cout<<title<<std::endl;
+  //2 for concatenate
+  if ( product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,2) == 2)
+    std::cout<<title<<std::endl;
+  if ( debug )  timer.toc_print();
   return 0;
 }
