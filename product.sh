@@ -3,25 +3,23 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
-#SBATCH --mem-per-cpu=100M
+#SBATCH --mem-per-cpu=200M
 #SBATCH --time=0-05:00:00     
-#SBATCH --output=log/size8.stdout
+#SBATCH --output=log/product.stdout
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
-#SBATCH --job-name="concatenation"
+#SBATCH --job-name="product"
 #SBATCH -p intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
 
 
 # module itpp already load on zsh and bash
-
 # Load samtools
 # module load samtools
-
 
 # Change directory to where you submitted the job from, so that relative paths resolve properly
 case $SLURM_SUBMIT_DIR in
     "/rhome/wzeng002/Documents/GitHub/workspace")
-	echo "test run"
+	echo "test run in srun"
 	;;
     *)
 	echo "run in sbatch"
@@ -38,21 +36,21 @@ echo start job on `hostname` `date`
 
 #./run_counter_concatenation.sh
 
-
 #!/bin/zsh
 # record
 # 408 size 8
 # 407 size 7
 
-index=409
+# job name should be short, for earch reason
+job_name=product
+index=413
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=9
+na_input=5
 
 
-logfile=log/index${index}-size${na_input}.log
-
+logfile=log/${job_name}${index}-size${na_input}.log
 echo check logfile: $logfile
 
 #index=221 #218-221 - for reduced code.
@@ -60,7 +58,7 @@ echo check logfile: $logfile
 #index=1-112 #for hypergraph
 
 make counter_concatenation.out
-cp counter_concatenation.out .product$index.out
+cp counter_concatenation.out .${job_name}$index.out
 
 #add index by 1 while rerun this script
 #the number of simultaneous process is limited by max_process.
@@ -77,12 +75,19 @@ case `hostname` in
 esac
 
 
+echo start job on `hostname` size$na_input run$index $max_process/$max_trial `date`
+echo $SLURM_JOB_ID $SLURM_JOB_NAME $SLURM_SUBMIT_DIR 
+echo data folder $folder, log file: $logfile 
+
+
 echo start job on `hostname` size$na_input run$index $max_process/$max_trial `date` > $logfile
-echo one dot means 1000 test >> $logfile
+echo $SLURM_JOB_ID $SLURM_JOB_NAME $SLURM_SUBMIT_DIR >> $logfile
+echo data folder $folder, log file: $logfile >> $logfile
+echo "one * means 1000 test" >> $logfile
 (( i = 0 ))
 while (( i < max_trial ))
 do
-    num_process=`pgrep -c product`
+    num_process=`pgrep -c ${job_name}`
     for (( j = num_process ; j < max_process ; j++ ))
     do
 	    title=$folder/trial$index-$i
@@ -92,21 +97,27 @@ do
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &
-	    if (( i % 1000 == 0 )) then 
+	    if (( i % 200 == 0 )) then 
 		echo -n "." >> $logfile
 		#the following is a bit strange, and show different output using less and cat
 		#echo -ne ${max_trial} $title `date` \\r
 		#echo ${max_trial} $title `date` >> $logfile
+		if (( i % 1000 == 0 )) then 
+		    echo -n "*" >> $logfile
+		    if (( i % 10000 == 0 )) then 
+			echo "w" >> $logfile
+		    fi
+		fi
 	    fi
 	    (( i++ ))
     done
 
-    sleep 0.3
-
+    sleep 0.5
 done
 
 
 wait
 echo >> $logfile
 echo finish job on `hostname` $index $max_process/$max_trial `date` >> $logfile
+echo finish job on `hostname` $index $max_process/$max_trial `date` 
 
