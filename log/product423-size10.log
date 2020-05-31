@@ -13,3 +13,4 @@ data folder data_hpcc/random3, log file: log/product423-size10.log
 1000000 data_hpcc/random3/trial423-1024 Sun May 31 13:10:56 PDT 2020
 1000000 data_hpcc/random3/trial423-2048 Sun May 31 13:12:15 PDT 2020
 1000000 data_hpcc/random3/trial423-4096 Sun May 31 13:13:38 PDT 2020
+1000000 data_hpcc/random3/trial423-8192 Sun May 31 13:16:21 PDT 2020
