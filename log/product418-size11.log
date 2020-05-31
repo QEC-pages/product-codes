@@ -1,0 +1,31 @@
+start job on i01 size11 run418 150/1000000 Sat May 30 23:12:12 PDT 2020
+1263866 product /rhome/wzeng002/Documents/GitHub/concatenation
+data folder data_hpcc/random3, log file: log/product418-size11.log
+one * means 1000 test
+.*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*...[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11342
+..*.[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11344
+....*w
+[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11343
+[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11346
+.....*.....*.[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11345
+....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*..[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-44744
+...*[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-44743
+.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*..[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104412
+[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104414
+[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104411
+[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104413
+[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104415
+...*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+.....*.....*.....*.....*.....*.....*.....*.....*.....*.....*w
+....
