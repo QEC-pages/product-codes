@@ -1,20 +1,42 @@
 run in sbatch
-start job on i18 Sun May 31 13:15:55 PDT 2020
-check logfile: log/product424-size12.log
+start job on i01 Sun May 31 14:41:41 PDT 2020
+check logfile: log/product427-size15.log
 make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
-make[1]: `counter_concatenation.out' is up to date.
+g++ -O2 -Wall  `pkg-config --cflags itpp` -o counter_concatenation.out counter_concatenation.c weilei_lib/mm_read.c weilei_lib/mmio.c weilei_lib/mm_write.c weilei_lib/lib.cpp weilei_lib/dist.c weilei_lib/concatenation_lib.c `pkg-config --libs itpp`
+counter_concatenation.c: In function 'int main(int, char**)':
+counter_concatenation.c:37:10: warning: unused variable 'kb' [-Wunused-variable]
+   int nb,kb, Gbx_row,Gbz_row;
+          ^
+counter_concatenation.c:37:14: warning: variable 'Gbx_row' set but not used [-Wunused-but-set-variable]
+   int nb,kb, Gbx_row,Gbz_row;
+              ^
+counter_concatenation.c:37:22: warning: variable 'Gbz_row' set but not used [-Wunused-but-set-variable]
+   int nb,kb, Gbx_row,Gbz_row;
+                      ^
+counter_concatenation.c:103:29: warning: 'nb' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     cout<<"[Code B] nb = "<<nb<<", ";
+                             ^
+counter_concatenation.c:101:29: warning: 'na' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     cout<<"[Code A] na = "<<na<<", ";
+                             ^
 make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
-start job on i18 size12 run424 max_process:50/max_trial:1000000 Sun May 31 13:15:55 PDT 2020
-1265310 product /rhome/wzeng002/Documents/GitHub/concatenation
-data folder data_hpcc/random3, log file: log/product424-size12.log
-1000000 data_hpcc/random3/trial424-2 Sun May 31 13:15:55 PDT 2020
-1000000 data_hpcc/random3/trial424-4 Sun May 31 13:15:55 PDT 2020
-1000000 data_hpcc/random3/trial424-8 Sun May 31 13:15:55 PDT 2020
-1000000 data_hpcc/random3/trial424-16 Sun May 31 13:15:55 PDT 2020
-1000000 data_hpcc/random3/trial424-32 Sun May 31 13:15:56 PDT 2020
-1000000 data_hpcc/random3/trial424-64 Sun May 31 13:15:56 PDT 2020
-1000000 data_hpcc/random3/trial423-8192 Sun May 31 13:16:21 PDT 2020
-1000000 data_hpcc/random3/trial424-128 Sun May 31 13:16:25 PDT 2020
-1000000 data_hpcc/random3/trial424-256 Sun May 31 13:16:41 PDT 2020
-1000000 data_hpcc/random3/trial424-512 Sun May 31 13:17:23 PDT 2020
-1000000 data_hpcc/random3/trial424-1024 Sun May 31 13:20:11 PDT 2020
+start job on i01 size15 run427 max_process:50/max_trial:1000000 Sun May 31 14:41:50 PDT 2020
+1265329 product /rhome/wzeng002/Documents/GitHub/concatenation
+data folder data_hpcc/random3, log file: log/product427-size15.log
+1000000 data_hpcc/random3/trial427-2 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-4 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-8 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-16 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-32 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-64 Sun May 31 14:42:38 PDT 2020
+1000000 data_hpcc/random3/trial427-128 Sun May 31 14:43:24 PDT 2020
+1000000 data_hpcc/random3/trial427-256 Sun May 31 14:48:28 PDT 2020
+1000000 data_hpcc/random3/trial425-4096 Sun May 31 14:50:30 PDT 2020
+1000000 data_hpcc/random3/trial426-512 Sun May 31 14:53:45 PDT 2020
+1000000 data_hpcc/random3/trial423-131072 Sun May 31 15:00:25 PDT 2020
+1000000 data_hpcc/random3/trial427-512 Sun May 31 15:06:01 PDT 2020
+1000000 data_hpcc/random3/trial424-16384 Sun May 31 15:11:06 PDT 2020
+1000000 data_hpcc/random3/trial426-1024 Sun May 31 15:15:18 PDT 2020
+1000000 data_hpcc/random3/trial426-2048 Sun May 31 15:58:43 PDT 2020
+1000000 data_hpcc/random3/trial427-1024 Sun May 31 15:59:37 PDT 2020
+1000000 data_hpcc/random3/trial425-8192 Sun May 31 16:01:26 PDT 2020

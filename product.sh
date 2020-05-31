@@ -3,13 +3,13 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
-#SBATCH --mem-per-cpu=200M
+#SBATCH --mem=32G
 #SBATCH --time=0-05:00:00     
 #SBATCH --output=log/product.stdout
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
+#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
 
 
 # module itpp already load on zsh and bash
@@ -43,11 +43,11 @@ echo start job on `hostname` `date`
 
 # job name should be short, for earch reason
 job_name=product
-index=422
+index=428
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=12
+na_input=16
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
@@ -81,8 +81,8 @@ esac
 
 
 echo start job on `hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
-echo $SLURM_JOB_ID $SLURM_JOB_NAME $SLURM_SUBMIT_DIR >> $logfile
-echo data folder $folder, log file: $logfile >> $logfile
+echo SLURM_JOB_ID:$SLURM_JOB_ID SLURM_JOB_NAME:$SLURM_JOB_NAME SLURM_JOB_DIR:$SLURM_SUBMIT_DIR >> $logfile
+echo data_folder:$folder, log_file:$logfile >> $logfile
 
 # duplicate info to stdout
 cat $logfile
@@ -114,7 +114,7 @@ do
 	    fi
 	    (( i++ ))
 	    # sleep a little bit to avoid same random seeds
-	    sleep 0.005
+	    sleep 0.01
     done
 
     sleep 0.1

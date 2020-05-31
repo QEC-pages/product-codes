@@ -10,7 +10,8 @@ folder=data_hpcc/random3
 # new cases
 #trial403-278 
 #trial410-234473
-for trial in trial411-572582
+#trial411-572582
+for trial in trial423-52069
 do
     title=$folder/$trial
     echo check $title

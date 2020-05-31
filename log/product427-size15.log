@@ -1,0 +1,15 @@
+start job on i01 size15 run427 max_process:50/max_trial:1000000 Sun May 31 14:41:50 PDT 2020
+1265329 product /rhome/wzeng002/Documents/GitHub/concatenation
+data folder data_hpcc/random3, log file: log/product427-size15.log
+1000000 data_hpcc/random3/trial427-2 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-4 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-8 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-16 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-32 Sun May 31 14:41:50 PDT 2020
+1000000 data_hpcc/random3/trial427-64 Sun May 31 14:42:38 PDT 2020
+1000000 data_hpcc/random3/trial427-128 Sun May 31 14:43:24 PDT 2020
+1000000 data_hpcc/random3/trial427-256 Sun May 31 14:48:28 PDT 2020
+1000000 data_hpcc/random3/trial427-512 Sun May 31 15:06:01 PDT 2020
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-171
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-187
+1000000 data_hpcc/random3/trial427-1024 Sun May 31 15:59:37 PDT 2020

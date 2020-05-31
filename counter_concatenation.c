@@ -41,7 +41,7 @@ int main(int args, char ** argv){
   char filename_Gax[256];char filename_Gaz[256];char filename_Gbx[256];char filename_Gbz[256];
   sprintf(filename_Gax,"%sGax.mm",title);  sprintf(filename_Gaz,"%sGaz.mm",title);      sprintf(filename_Gbx,"%sGbx.mm",title);  sprintf(filename_Gbz,"%sGbz.mm",title);
 
-  //  cout<<mode<<endl<<title<<endl;
+  if (debug)   cout<<mode<<endl<<title<<endl;
   switch( mode ){
     case 1://generate random codes and save
       na=randi(na_input,na_input); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
@@ -81,20 +81,29 @@ int main(int args, char ** argv){
       break;
   }
 
+
+
+  
   //  cout<<"check code A"<<endl;
   if (! is_quantum_code(Gax,Gaz,Cax,Caz)) throw "invalid code";
 
   int dax = quantum_dist_v2(Gax,Gaz);
   int daz = quantum_dist_v2(Gax,Gaz,1);
-  //  cout<<"[Code A] na = "<<na<<", ";
-  //  cout<<"dax = "<<dax<<", daz = "<<daz<<endl;
+
   //  cout<<"check code B"<<endl;
   if ( ! is_quantum_code(Gbx,Gbz,Cbx,Cbz)) throw "invalid code";
   //  cout<<"Gbx "<<Gbx<<endl;  cout<<"Gbz "<<Gbz<<endl;  cout<<"Cbx "<<Cbx<<endl;  cout<<"Cbz "<<Cbz<<endl;
   int dbx = quantum_dist_v2(Gbx,Gbz);
   int dbz = quantum_dist_v2(Gbx,Gbz,1);//1 to flip X and Z
-  //  cout<<"[Code B] nb = "<<nb<<", ";
-  //  cout<<"dbx = "<<dbx<<", dbz = "<<dbz<<endl;
+
+
+  if ( debug) {
+    cout<<"[Code A] na = "<<na<<", ";
+    cout<<"dax = "<<dax<<", daz = "<<daz<<endl;
+    cout<<"[Code B] nb = "<<nb<<", ";
+    cout<<"dbx = "<<dbx<<", dbz = "<<dbz<<endl;
+  }
+
   //  reduce(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
   //concatenate(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
   //0 for reduce/subsystem, distance x

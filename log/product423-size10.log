@@ -14,3 +14,49 @@ data folder data_hpcc/random3, log file: log/product423-size10.log
 1000000 data_hpcc/random3/trial423-2048 Sun May 31 13:12:15 PDT 2020
 1000000 data_hpcc/random3/trial423-4096 Sun May 31 13:13:38 PDT 2020
 1000000 data_hpcc/random3/trial423-8192 Sun May 31 13:16:21 PDT 2020
+1000000 data_hpcc/random3/trial423-16384 Sun May 31 13:23:34 PDT 2020
+1000000 data_hpcc/random3/trial423-32768 Sun May 31 13:37:00 PDT 2020
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52068
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52069
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52061
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52062
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52064
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52065
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52063
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52066
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52067
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52071
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52070
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52072
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52074
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52073
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52075
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52077
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52076
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52078
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52082
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52080
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52079
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52081
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52083
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52086
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52100
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52090
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52085
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52084
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52097
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52087
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52091
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52089
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52088
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52095
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52093
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52094
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52092
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52098
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52096
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52102
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52101
+[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52104
+1000000 data_hpcc/random3/trial423-65536 Sun May 31 14:03:57 PDT 2020
+1000000 data_hpcc/random3/trial423-131072 Sun May 31 15:00:25 PDT 2020
