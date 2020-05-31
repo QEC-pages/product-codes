@@ -5,3 +5,4 @@ make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
 make[1]: `counter_concatenation.out' is up to date.
 make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
 slurmstepd-i38: error: _is_a_lwp: open() /proc/175654/status failed: No such file or directory
+slurmstepd-i02: error: _is_a_lwp: open() /proc/23675/status failed: No such file or directory

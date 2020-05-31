@@ -100,10 +100,11 @@ do
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &
 	    if (( i  == bi )) then
 
-		echo -n "[$bi]" >> $logfile
+		#echo -n "[$bi]" >> $logfile
 		#the following is a bit strange, and show different output using less and cat
 		#echo -ne ${max_trial} $title `date` \\r
-		echo -ne ${max_trial} $title `date` \\r
+		echo ${max_trial} $title `date` 
+		echo ${max_trial} $title `date` >> $logfile
 		#echo ${max_trial} $title `date` >> $logfile
 		(( bi = bi * 2 ))
 	    fi
