@@ -1,0 +1,12 @@
+start job on c27 size12 run422 50/1000000 Sun May 31 10:49:47 PDT 2020
+1265245 zsh /rhome/wzeng002/Documents/GitHub/workspace
+data folder data_hpcc/random3, log file: log/product422-size12.log
+1000000 data_hpcc/random3/trial422-2 Sun May 31 10:49:47 PDT 2020
+1000000 data_hpcc/random3/trial422-4 Sun May 31 10:49:47 PDT 2020
+1000000 data_hpcc/random3/trial422-8 Sun May 31 10:49:47 PDT 2020
+1000000 data_hpcc/random3/trial422-16 Sun May 31 10:49:48 PDT 2020
+1000000 data_hpcc/random3/trial422-32 Sun May 31 10:49:50 PDT 2020
+1000000 data_hpcc/random3/trial422-64 Sun May 31 10:50:03 PDT 2020
+1000000 data_hpcc/random3/trial422-128 Sun May 31 10:50:31 PDT 2020
+1000000 data_hpcc/random3/trial422-256 Sun May 31 10:51:45 PDT 2020
+1000000 data_hpcc/random3/trial422-512 Sun May 31 10:54:32 PDT 2020

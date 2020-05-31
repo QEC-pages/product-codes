@@ -43,7 +43,7 @@ echo start job on `hostname` `date`
 
 # job name should be short, for earch reason
 job_name=product
-index=421
+index=422
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
@@ -75,14 +75,18 @@ case `hostname` in
 esac
 
 
-echo start job on `hostname` size$na_input run$index $max_process/$max_trial `date`
-echo $SLURM_JOB_ID $SLURM_JOB_NAME $SLURM_SUBMIT_DIR 
-echo data folder $folder, log file: $logfile 
+#echo start job on `hostname` size$na_input run$index $max_process/$max_trial `date`
+#echo $SLURM_JOB_ID $SLURM_JOB_NAME $SLURM_SUBMIT_DIR 
+#echo data folder $folder, log file: $logfile 
 
 
-echo start job on `hostname` size$na_input run$index $max_process/$max_trial `date` > $logfile
+echo start job on `hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
 echo $SLURM_JOB_ID $SLURM_JOB_NAME $SLURM_SUBMIT_DIR >> $logfile
 echo data folder $folder, log file: $logfile >> $logfile
+
+# duplicate info to stdout
+cat $logfile
+
 #echo "one * means 1000 test" >> $logfile
 (( i = 0 ))
 (( bi = 2 ))
@@ -110,7 +114,7 @@ do
 	    fi
 	    (( i++ ))
 	    # sleep a little bit to avoid same random seeds
-	    sleep 0.001
+	    sleep 0.005
     done
 
     sleep 0.1
