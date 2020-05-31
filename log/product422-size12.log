@@ -12,3 +12,7 @@ data folder data_hpcc/random3, log file: log/product422-size12.log
 1000000 data_hpcc/random3/trial422-512 Sun May 31 10:54:32 PDT 2020
 1000000 data_hpcc/random3/trial422-1024 Sun May 31 11:02:27 PDT 2020
 1000000 data_hpcc/random3/trial422-2048 Sun May 31 11:15:38 PDT 2020
+1000000 data_hpcc/random3/trial422-4096 Sun May 31 11:47:49 PDT 2020
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-5126
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-5126
+1000000 data_hpcc/random3/trial422-8192 Sun May 31 12:53:35 PDT 2020
