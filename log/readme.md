@@ -6,7 +6,9 @@
 
 ## Identical classical code with X and Z switched
 stdout file: product.stdout
-- product414-size5.log 0.1m - 
+| size | subsystem code | file name | `#` of tests | chain complex | file name |
+
+- [product414-size5.log] 0.1m - 
 - product415-size6.log 0.5m -
 - product411-size7.log 1m *
 - product412-size8.log 1m * 
