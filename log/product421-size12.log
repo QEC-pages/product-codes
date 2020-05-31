@@ -1,0 +1,5 @@
+start job on c01 size12 run421 50/1000000 Sat May 30 22:10:20 PDT 2020
+1263667 zsh /rhome/wzeng002/Documents/GitHub/workspace
+data folder data_hpcc/random3, log file: log/product421-size12.log
+one * means 1000 test
+[4][8][16][32][64][128][256][512][1024]
