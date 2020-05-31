@@ -43,11 +43,11 @@ echo start job on `hostname` `date`
 
 # job name should be short, for earch reason
 job_name=product
-index=413
+index=420
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=5
+na_input=11
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
@@ -100,7 +100,7 @@ do
 	    if (( i % 200 == 0 )) then 
 		echo -n "." >> $logfile
 		#the following is a bit strange, and show different output using less and cat
-		#echo -ne ${max_trial} $title `date` \\r
+		echo -ne ${max_trial} $title `date` \\r
 		#echo ${max_trial} $title `date` >> $logfile
 		if (( i % 1000 == 0 )) then 
 		    echo -n "*" >> $logfile

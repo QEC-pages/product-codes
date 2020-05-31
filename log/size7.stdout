@@ -1,7 +1,0 @@
-start job on i02 Sat May 30 16:23:14 PDT 2020
-make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
-make[1]: `counter_concatenation.out' is up to date.
-make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
-start job on i02 size8 run408 150/1000000 Sat May 30 16:23:14 PDT 2020
-one dot means 1000 test
-.../run_counter_concatenation.sh:41: job table full

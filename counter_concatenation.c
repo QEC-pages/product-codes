@@ -75,12 +75,15 @@ int main(int args, char ** argv){
       Caz=getC(Gax,Gaz,1);
       Cbx=getC(Gbx,Gbz);
       Cbz=getC(Gbx,Gbz,1);
+
+      if (debug)  cout<<"Gax "<<Gax<<endl;  cout<<"Gaz "<<Gaz<<endl;  cout<<"Cax "<<Cax<<endl;  cout<<"Caz "<<Caz<<endl;
+      if (debug)  cout<<"Gbx "<<Gbx<<endl;  cout<<"Gbz "<<Gbz<<endl;  cout<<"Cbx "<<Cbx<<endl;  cout<<"Cbz "<<Cbz<<endl;
       break;
   }
 
   //  cout<<"check code A"<<endl;
   if (! is_quantum_code(Gax,Gaz,Cax,Caz)) throw "invalid code";
-  //  cout<<"Gax "<<Gax<<endl;  cout<<"Gaz "<<Gaz<<endl;  cout<<"Cax "<<Cax<<endl;  cout<<"Caz "<<Caz<<endl;
+
   int dax = quantum_dist_v2(Gax,Gaz);
   int daz = quantum_dist_v2(Gax,Gaz,1);
   //  cout<<"[Code A] na = "<<na<<", ";

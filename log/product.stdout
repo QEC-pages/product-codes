@@ -1,6 +1,6 @@
 run in sbatch
-start job on i02 Sat May 30 17:37:10 PDT 2020
-check logfile: log/index410-size9.log
+start job on i38 Sat May 30 20:00:57 PDT 2020
+check logfile: log/product411-size7.log
 make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
 make[1]: `counter_concatenation.out' is up to date.
 make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
