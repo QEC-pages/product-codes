@@ -60,3 +60,4 @@ data folder data_hpcc/random3, log file: log/product423-size10.log
 [1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52104
 1000000 data_hpcc/random3/trial423-65536 Sun May 31 14:03:57 PDT 2020
 1000000 data_hpcc/random3/trial423-131072 Sun May 31 15:00:25 PDT 2020
+1000000 data_hpcc/random3/trial423-262144 Sun May 31 16:47:39 PDT 2020

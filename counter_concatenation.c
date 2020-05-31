@@ -27,9 +27,11 @@ int main(int args, char ** argv){
   parser.get(debug,"debug");
   int na_input;
   parser.get(na_input,"na_input");
+  int seed=1; parser.get(seed,"seed");
+  itpp::RNG_reset(seed);
+  //  RNG_randomize();  
 
-  
-  RNG_randomize();  Real_Timer timer;  timer.tic();
+  Real_Timer timer;  timer.tic();
 
   GF2mat Gax,Gaz,Cax,Caz;
   GF2mat Gbx,Gbz,Cbx,Cbz;

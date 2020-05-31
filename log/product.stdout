@@ -41,3 +41,4 @@ data folder data_hpcc/random3, log file: log/product427-size15.log
 1000000 data_hpcc/random3/trial427-1024 Sun May 31 15:59:37 PDT 2020
 1000000 data_hpcc/random3/trial425-8192 Sun May 31 16:01:26 PDT 2020
 slurmstepd-i19: error: _is_a_lwp: open() /proc/193091/status failed: No such file or directory
+1000000 data_hpcc/random3/trial423-262144 Sun May 31 16:47:39 PDT 2020

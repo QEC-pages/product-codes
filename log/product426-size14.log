@@ -63,3 +63,12 @@ data folder data_hpcc/random3, log file: log/product426-size14.log
 [1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2350
 [1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2247
 [1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-1720
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2350
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2349
+[1;31mCASE:[0m dax*dbx=10, dcx=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc14,14,196,data_hpcc/random3/trial426-2712
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2772
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2812
+[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 2,3,3,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2829
+[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 2,3,3,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2830
+[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc14,14,196,data_hpcc/random3/trial426-2712
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2945
