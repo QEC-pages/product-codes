@@ -1,80 +1,114 @@
-start job on c46 Sun May 31 23:37:15 PDT 2020
-check logfile: log/product452-size12.log statusfile:log/status-product452-size12.log
+start job on c09 Mon Jun 1 04:30:09 PDT 2020
+check logfile: log/product455-size15.log statusfile:log/status-product455-size15.log
+make: `counter_concatenation.out' is up to date.
+start job on c38 Mon Jun 1 04:30:09 PDT 2020
+check logfile: log/product454-size14.log statusfile:log/status-product454-size14.log
 make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
 make[1]: `counter_concatenation.out' is up to date.
 make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
-start job on SBATCH:c46 size12 run452 max_process:/max_trial:1000000 Sun May 31 23:37:16 PDT 2020
-SLURM_JOB_ID:1267099 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
-data_folder:data_hpcc/random3, log_file:log/product452-size12.log status_file:log/status-product452-size12.log
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-2
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-4
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-6
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-9
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-12
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-16
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-21
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-27
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-34
-Sun May 31 23:37:16 PDT 2020 12 data_hpcc/random3/trial452-42
-Sun May 31 23:37:39 PDT 2020 12 data_hpcc/random3/trial452-52
-Sun May 31 23:37:41 PDT 2020 12 data_hpcc/random3/trial452-64
-Sun May 31 23:37:43 PDT 2020 7 data_hpcc/random3/trial447-3965
-Sun May 31 23:37:43 PDT 2020 12 data_hpcc/random3/trial452-78
-Sun May 31 23:37:44 PDT 2020 12 data_hpcc/random3/trial452-95
-Sun May 31 23:37:54 PDT 2020 8 data_hpcc/random3/trial448-29513
-Sun May 31 23:37:59 PDT 2020 11 data_hpcc/random3/trial451-6858
-Sun May 31 23:38:02 PDT 2020 12 data_hpcc/random3/trial452-116
-Sun May 31 23:38:04 PDT 2020 12 data_hpcc/random3/trial452-141
-Sun May 31 23:38:23 PDT 2020 12 data_hpcc/random3/trial452-171
-Sun May 31 23:38:38 PDT 2020 7 data_hpcc/random3/trial447-4760
-Sun May 31 23:38:41 PDT 2020 12 data_hpcc/random3/trial452-207
-Sun May 31 23:38:54 PDT 2020 11 data_hpcc/random3/trial451-8231
-Sun May 31 23:38:56 PDT 2020 6 data_hpcc/random3/trial442-51004
-Sun May 31 23:38:58 PDT 2020 12 data_hpcc/random3/trial452-250
-Sun May 31 23:39:19 PDT 2020 12 data_hpcc/random3/trial452-302
-Sun May 31 23:39:44 PDT 2020 12 data_hpcc/random3/trial452-364
-Sun May 31 23:39:49 PDT 2020 7 data_hpcc/random3/trial447-5714
-Sun May 31 23:40:01 PDT 2020 11 data_hpcc/random3/trial451-9879
-Sun May 31 23:40:09 PDT 2020 12 data_hpcc/random3/trial452-438
-Sun May 31 23:40:17 PDT 2020 5 data_hpcc/random3/trial441-61206
-Sun May 31 23:40:41 PDT 2020 8 data_hpcc/random3/trial448-35417
-Sun May 31 23:40:49 PDT 2020 12 data_hpcc/random3/trial452-527
-Sun May 31 23:41:12 PDT 2020 7 data_hpcc/random3/trial447-6858
-Sun May 31 23:41:21 PDT 2020 11 data_hpcc/random3/trial451-11856
-Sun May 31 23:41:31 PDT 2020 12 data_hpcc/random3/trial452-634
-Sun May 31 23:42:27 PDT 2020 12 data_hpcc/random3/trial452-762
-Sun May 31 23:42:49 PDT 2020 7 data_hpcc/random3/trial447-8231
-Sun May 31 23:42:57 PDT 2020 11 data_hpcc/random3/trial451-14229
-Sun May 31 23:43:29 PDT 2020 12 data_hpcc/random3/trial452-916
-Sun May 31 23:44:02 PDT 2020 8 data_hpcc/random3/trial448-42502
-Sun May 31 23:44:09 PDT 2020 5 data_hpcc/random3/trial441-73449
-Sun May 31 23:44:41 PDT 2020 12 data_hpcc/random3/trial452-1101
-Sun May 31 23:44:48 PDT 2020 7 data_hpcc/random3/trial447-9879
-Sun May 31 23:44:52 PDT 2020 11 data_hpcc/random3/trial451-17076
-Sun May 31 23:46:15 PDT 2020 12 data_hpcc/random3/trial452-1323
-Sun May 31 23:47:10 PDT 2020 11 data_hpcc/random3/trial451-20493
-Sun May 31 23:47:13 PDT 2020 7 data_hpcc/random3/trial447-11856
-Sun May 31 23:47:52 PDT 2020 8 data_hpcc/random3/trial448-51004
-Sun May 31 23:48:06 PDT 2020 12 data_hpcc/random3/trial452-1589
-Sun May 31 23:48:21 PDT 2020 5 data_hpcc/random3/trial441-88140
-Sun May 31 23:48:57 PDT 2020 6 data_hpcc/random3/trial442-61206
-Sun May 31 23:49:44 PDT 2020 7 data_hpcc/random3/trial447-14229
-Sun May 31 23:49:51 PDT 2020 11 data_hpcc/random3/trial451-24593
-Sun May 31 23:50:12 PDT 2020 12 data_hpcc/random3/trial452-1908
-Sun May 31 23:51:59 PDT 2020 8 data_hpcc/random3/trial448-61206
-Sun May 31 23:52:45 PDT 2020 5 data_hpcc/random3/trial441-105770
-Sun May 31 23:52:49 PDT 2020 7 data_hpcc/random3/trial447-17076
-Sun May 31 23:52:50 PDT 2020 12 data_hpcc/random3/trial452-2291
-Sun May 31 23:53:03 PDT 2020 11 data_hpcc/random3/trial451-29513
-Sun May 31 23:55:58 PDT 2020 12 data_hpcc/random3/trial452-2751
-Sun May 31 23:56:24 PDT 2020 8 data_hpcc/random3/trial448-73449
-Sun May 31 23:56:34 PDT 2020 7 data_hpcc/random3/trial447-20493
-Sun May 31 23:56:52 PDT 2020 11 data_hpcc/random3/trial451-35417
-Sun May 31 23:57:33 PDT 2020 5 data_hpcc/random3/trial441-126926
-Sun May 31 23:59:44 PDT 2020 12 data_hpcc/random3/trial452-3303
-Mon Jun 1 00:00:20 PDT 2020 6 data_hpcc/random3/trial442-73449
-Mon Jun 1 00:00:45 PDT 2020 7 data_hpcc/random3/trial447-24593
-Mon Jun 1 00:00:58 PDT 2020 8 data_hpcc/random3/trial448-88140
-Mon Jun 1 00:01:27 PDT 2020 11 data_hpcc/random3/trial451-42502
-Mon Jun 1 00:02:56 PDT 2020 5 data_hpcc/random3/trial441-152313
-Mon Jun 1 00:04:13 PDT 2020 12 data_hpcc/random3/trial452-3965
+start job on HEAD:c09 size15 run455 max_process:/max_trial:1000000 Mon Jun 1 04:30:09 PDT 2020
+SLURM_JOB_ID:1267158 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+data_folder:data_hpcc/random3, log_file:log/product455-size15.log status_file:log/status-product455-size15.log
+start job on SBATCH:c38 size14 run454 max_process:/max_trial:1000000 Mon Jun 1 04:30:09 PDT 2020
+SLURM_JOB_ID:1267101 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+data_folder:data_hpcc/random3, log_file:log/product454-size14.log status_file:log/status-product454-size14.log
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-2
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-4
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-6
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-9
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-2
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-12
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-4
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-16
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-6
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-21
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-9
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-27
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-12
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-34
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-16
+Mon Jun 1 04:30:09 PDT 2020 15 data_hpcc/random3/trial455-42
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-21
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-27
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-34
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-42
+slurmstepd-c45: error: *** JOB 1267096 ON c45 CANCELLED AT 2020-06-01T04:30:29 DUE TO TIME LIMIT ***
+slurmstepd-c16: error: *** JOB 1267097 ON c16 CANCELLED AT 2020-06-01T04:30:29 DUE TO TIME LIMIT ***
+slurmstepd-c45: error: *** JOB 1267095 ON c45 CANCELLED AT 2020-06-01T04:30:30 DUE TO TIME LIMIT ***
+Mon Jun 1 04:30:30 PDT 2020 13 data_hpcc/random3/trial453-52
+Mon Jun 1 04:30:43 PDT 2020 13 data_hpcc/random3/trial453-64
+Mon Jun 1 04:30:57 PDT 2020 13 data_hpcc/random3/trial453-78
+slurmstepd-c16: error: *** JOB 1267098 ON c16 CANCELLED AT 2020-06-01T04:31:00 DUE TO TIME LIMIT ***
+Mon Jun 1 04:31:22 PDT 2020 13 data_hpcc/random3/trial453-95
+Mon Jun 1 04:31:34 PDT 2020 15 data_hpcc/random3/trial455-52
+Mon Jun 1 04:31:52 PDT 2020 15 data_hpcc/random3/trial455-64
+Mon Jun 1 04:31:53 PDT 2020 13 data_hpcc/random3/trial453-116
+Mon Jun 1 04:32:04 PDT 2020 15 data_hpcc/random3/trial455-78
+Mon Jun 1 04:32:24 PDT 2020 13 data_hpcc/random3/trial453-141
+Mon Jun 1 04:32:57 PDT 2020 15 data_hpcc/random3/trial455-95
+Mon Jun 1 04:33:08 PDT 2020 13 data_hpcc/random3/trial453-171
+Mon Jun 1 04:33:30 PDT 2020 15 data_hpcc/random3/trial455-116
+Mon Jun 1 04:33:55 PDT 2020 13 data_hpcc/random3/trial453-207
+Mon Jun 1 04:34:14 PDT 2020 15 data_hpcc/random3/trial455-141
+Mon Jun 1 04:34:52 PDT 2020 13 data_hpcc/random3/trial453-250
+Mon Jun 1 04:35:20 PDT 2020 15 data_hpcc/random3/trial455-171
+Mon Jun 1 04:36:08 PDT 2020 13 data_hpcc/random3/trial453-302
+Mon Jun 1 04:36:47 PDT 2020 15 data_hpcc/random3/trial455-207
+Mon Jun 1 04:37:32 PDT 2020 13 data_hpcc/random3/trial453-364
+Mon Jun 1 04:38:15 PDT 2020 15 data_hpcc/random3/trial455-250
+Mon Jun 1 04:39:17 PDT 2020 13 data_hpcc/random3/trial453-438
+Mon Jun 1 04:40:00 PDT 2020 15 data_hpcc/random3/trial455-302
+Mon Jun 1 04:41:19 PDT 2020 13 data_hpcc/random3/trial453-527
+Mon Jun 1 04:42:08 PDT 2020 15 data_hpcc/random3/trial455-364
+Mon Jun 1 04:43:52 PDT 2020 13 data_hpcc/random3/trial453-634
+Mon Jun 1 04:44:35 PDT 2020 14 data_hpcc/random3/trial454-52
+Mon Jun 1 04:44:42 PDT 2020 15 data_hpcc/random3/trial455-438
+Mon Jun 1 04:44:55 PDT 2020 14 data_hpcc/random3/trial454-64
+Mon Jun 1 04:45:05 PDT 2020 14 data_hpcc/random3/trial454-78
+Mon Jun 1 04:46:42 PDT 2020 13 data_hpcc/random3/trial453-762
+slurmstepd-c46: error: *** JOB 1267099 ON c46 CANCELLED AT 2020-06-01T04:47:33 DUE TO TIME LIMIT ***
+Mon Jun 1 04:47:51 PDT 2020 15 data_hpcc/random3/trial455-527
+Mon Jun 1 04:50:15 PDT 2020 13 data_hpcc/random3/trial453-916
+Mon Jun 1 04:51:43 PDT 2020 15 data_hpcc/random3/trial455-634
+Mon Jun 1 04:54:28 PDT 2020 13 data_hpcc/random3/trial453-1101
+Mon Jun 1 04:56:05 PDT 2020 15 data_hpcc/random3/trial455-762
+Mon Jun 1 04:58:57 PDT 2020 14 data_hpcc/random3/trial454-95
+Mon Jun 1 04:59:37 PDT 2020 13 data_hpcc/random3/trial453-1323
+Mon Jun 1 04:59:37 PDT 2020 14 data_hpcc/random3/trial454-116
+Mon Jun 1 05:01:36 PDT 2020 15 data_hpcc/random3/trial455-916
+Mon Jun 1 05:05:46 PDT 2020 13 data_hpcc/random3/trial453-1589
+Mon Jun 1 05:08:03 PDT 2020 15 data_hpcc/random3/trial455-1101
+Mon Jun 1 05:13:07 PDT 2020 13 data_hpcc/random3/trial453-1908
+Mon Jun 1 05:13:38 PDT 2020 14 data_hpcc/random3/trial454-141
+Mon Jun 1 05:14:28 PDT 2020 14 data_hpcc/random3/trial454-171
+Mon Jun 1 05:15:46 PDT 2020 15 data_hpcc/random3/trial455-1323
+Mon Jun 1 05:21:55 PDT 2020 13 data_hpcc/random3/trial453-2291
+Mon Jun 1 05:25:09 PDT 2020 15 data_hpcc/random3/trial455-1589
+Mon Jun 1 05:28:56 PDT 2020 14 data_hpcc/random3/trial454-207
+Mon Jun 1 05:32:27 PDT 2020 13 data_hpcc/random3/trial453-2751
+Mon Jun 1 05:36:20 PDT 2020 15 data_hpcc/random3/trial455-1908
+Mon Jun 1 05:43:32 PDT 2020 14 data_hpcc/random3/trial454-250
+Mon Jun 1 05:45:14 PDT 2020 13 data_hpcc/random3/trial453-3303
+Mon Jun 1 05:49:44 PDT 2020 15 data_hpcc/random3/trial455-2291
+Mon Jun 1 05:58:25 PDT 2020 14 data_hpcc/random3/trial454-302
+Mon Jun 1 06:00:30 PDT 2020 13 data_hpcc/random3/trial453-3965
+Mon Jun 1 06:05:51 PDT 2020 15 data_hpcc/random3/trial455-2751
+Mon Jun 1 06:13:49 PDT 2020 14 data_hpcc/random3/trial454-364
+Mon Jun 1 06:18:55 PDT 2020 13 data_hpcc/random3/trial453-4760
+Mon Jun 1 06:24:58 PDT 2020 15 data_hpcc/random3/trial455-3303
+Mon Jun 1 06:40:47 PDT 2020 13 data_hpcc/random3/trial453-5714
+Mon Jun 1 06:42:20 PDT 2020 14 data_hpcc/random3/trial454-438
+slurmstepd-c09: error: _is_a_lwp: open() /proc/46025/status failed: No such file or directory
+Mon Jun 1 06:48:13 PDT 2020 15 data_hpcc/random3/trial455-3965
+Mon Jun 1 07:07:14 PDT 2020 13 data_hpcc/random3/trial453-6858
+Mon Jun 1 07:11:38 PDT 2020 14 data_hpcc/random3/trial454-527
+Mon Jun 1 07:16:00 PDT 2020 15 data_hpcc/random3/trial455-4760
+Mon Jun 1 07:38:52 PDT 2020 13 data_hpcc/random3/trial453-8231
+Mon Jun 1 07:41:40 PDT 2020 14 data_hpcc/random3/trial454-634
+Mon Jun 1 07:49:29 PDT 2020 15 data_hpcc/random3/trial455-5714
+Mon Jun 1 08:16:51 PDT 2020 13 data_hpcc/random3/trial453-9879
+Mon Jun 1 08:25:00 PDT 2020 14 data_hpcc/random3/trial454-762
+Mon Jun 1 08:29:31 PDT 2020 15 data_hpcc/random3/trial455-6858
+Mon Jun 1 09:02:06 PDT 2020 13 data_hpcc/random3/trial453-11856
+Mon Jun 1 09:11:04 PDT 2020 14 data_hpcc/random3/trial454-916
+Mon Jun 1 09:17:42 PDT 2020 15 data_hpcc/random3/trial455-8231

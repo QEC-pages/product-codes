@@ -1,10 +1,10 @@
 #!/bin/zsh -l
 
-#SBATCH --nodes=1
-#SBATCH --ntasks=1
+#SBATCH --nodes=4
+#SBATCH --ntasks=4
 #SBATCH --cpus-per-task=32
-#SBATCH --mem=32G
-#SBATCH --time=0-5:10:00     
+#SBATCH --mem_per_cpu=1G
+#SBATCH --time=0-2:00:00     
 #SBATCH --output=log/product.stdout
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
@@ -55,11 +55,11 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=455
+index=456
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=15
+na_input=16
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
@@ -106,7 +106,8 @@ cat $logfile >> $statusfile
 (( i = 1 ))
 (( bi = 2 ))
 
-(( num_cores = 32 ))
+# it is actually 32.
+(( num_cores = 64 ))
 (( max_process = num_cores + 10 ))
 while (( i < max_trial ))
 do

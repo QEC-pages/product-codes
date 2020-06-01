@@ -4,6 +4,7 @@ This code produce two random quantum codes and construct concatenated codes and 
  */
 #include "weilei_lib/my_lib.h"
 #include <itpp/itbase.h>
+#include <ctime> //to get current time
 using namespace itpp;
 using namespace std;
 
@@ -28,7 +29,10 @@ int main(int args, char ** argv){
   int na_input;
   parser.get(na_input,"na_input");
   int seed=1; parser.get(seed,"seed");
+  if (debug) std::cout<<"seed = "<<seed<<" + "<<std::time(nullptr)<<endl;
+  //  seed = seed + std::time(nullptr);
   itpp::RNG_reset(seed);
+  
   //  RNG_randomize();  
 
   Real_Timer timer;  timer.tic();
