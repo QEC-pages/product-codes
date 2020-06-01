@@ -1,15 +1,15 @@
 #!/bin/zsh -l
 
-#SBATCH --nodes=4
-#SBATCH --ntasks=4
-#SBATCH --cpus-per-task=32
-#SBATCH --mem_per_cpu=1G
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=64
+#SBATCH --mem-per-cpu=1G
 #SBATCH --time=0-2:00:00     
 #SBATCH --output=log/product.stdout
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
+#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
 #SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
@@ -55,11 +55,11 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=456
+index=459
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=16
+na_input=7
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
