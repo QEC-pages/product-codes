@@ -10,31 +10,32 @@
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
 #SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
-#SBATCH --export=ON_SRUN=FALSE,ON_SBATCH=TRUE
+#SBATCH --export=ALL,ON_SBATCH=TRUE
 
 # module itpp already load on zsh and bash
 # Load samtools
 # module load samtools
 
 # Change directory to where you submitted the job from, so that relative paths resolve properly
-case $SLURM_SUBMIT_DIR in
-    "/rhome/wzeng002/Documents/GitHub/workspace")
-	echo "test run in srun"
-	;;
-    *)
-	echo "run in sbatch"
-	;;
-esac
 
+
+WORK_STATION=HEAD
 case $ON_SRUN in
     "TRUE")
-	echo "on srun"
-	;;
-    "FALSE")
-	echo "on sbatch"
+	case $ON_SBATCH in
+	    "TRUE")
+		echo "on sbatch"
+		WORK_STATION=SBATCH
+		;;
+	    *)		
+		echo "on srun"
+		WORK_STATION=SRUN
+		;;
+	esac
 	;;
     *)
-	echo "not know"
+	WORK_STATION=HEAD
+	echo "not on srun or sbatch"
 	;;
 esac
 
@@ -54,11 +55,11 @@ echo start job on `hostname` `date`
 
 # job name should be short, for earch reason
 job_name=product
-index=434
+index=435
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=15
+na_input=7
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
@@ -91,7 +92,7 @@ esac
 #echo data folder $folder, log file: $logfile 
 
 
-echo start job on `hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
+echo start job on $WORK_STATION:`hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
 echo SLURM_JOB_ID:$SLURM_JOB_ID SLURM_JOB_NAME:$SLURM_JOB_NAME SLURM_JOB_DIR:$SLURM_SUBMIT_DIR >> $logfile
 echo data_folder:$folder, log_file:$logfile >> $logfile
 
