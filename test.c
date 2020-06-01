@@ -205,6 +205,20 @@ void copy1(){
   return;
 }
 
+int combine_random(int seed){
+  //  int seed = 1;
+  itpp::RNG_reset(seed);
+  int a = randi(1,100000000);
+  std::cout<<a<<"\t";
+  std::cout<<std::time(nullptr)<<"\t";
+  itpp::RNG_reset(std::time(nullptr));
+  int b = randi(1,std::time(nullptr));
+  std::cout<<b<<"\t";
+  itpp::RNG_reset(b+seed);
+  std::cout<<randi(1,100000000)<<"\t";
+  std::cout<<std::endl;
+  return 0;
+}
  
 int cpp_random() 
 {
@@ -259,7 +273,8 @@ int main(int args, char ** argvs){
 
   //  copy1();
    //   cpp_random();
-  random_test(k);
+  //  random_test(k);
+  combine_random(k);
   //cout<<"finish test"<<endl;
   return 0;
 }

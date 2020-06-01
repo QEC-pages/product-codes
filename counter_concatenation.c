@@ -29,10 +29,13 @@ int main(int args, char ** argv){
   int na_input;
   parser.get(na_input,"na_input");
   int seed=1; parser.get(seed,"seed");
-  if (debug) std::cout<<"seed = "<<seed<<" + "<<std::time(nullptr)<<endl;
+  if (debug) std::cout<<"seed: "<<seed<<" --> ";
   //  seed = seed + std::time(nullptr);
-  itpp::RNG_reset(seed);
-  
+  itpp::RNG_reset(std::time(nullptr)); 
+  seed = seed + itpp::randi(1,std::time(nullptr));
+  itpp::RNG_reset(seed); 
+  if (debug) std::cout<<seed<<std::endl;
+
   //  RNG_randomize();  
 
   Real_Timer timer;  timer.tic();
