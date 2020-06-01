@@ -1,0 +1,3 @@
+start job on SBATCH:c16 size11 run451 max_process:/max_trial:1000000 Sun May 31 23:20:46 PDT 2020
+SLURM_JOB_ID:1267098 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+data_folder:data_hpcc/random3, log_file:log/product451-size11.log status_file:log/status-product451-size11.log
