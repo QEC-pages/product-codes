@@ -1,5 +1,11 @@
+echo make sure these tests have been passed
+
+
 #make random_concatenation.out
 make counter_concatenation.out
+
+echo expected results: find case for all of them.
+echo dcx and dcz for size 9, and size 7
 
 date
 folder=data/random2
@@ -10,7 +16,7 @@ folder=data_hpcc/random3
 # new cases
 #trial403-278 
 # size 9 , trial410-234473
-# size 7,  trial411-572582
+# size 7, trial411-572582
 #trial423-52069
 for trial in trial410-234473 trial411-572582
 do
@@ -19,9 +25,10 @@ do
 #    ./random_concatenation.out 2 $title >>data/result/random2check/check-$trial.log &
 #    ./random_concatenation.out 2 $title
 #    ./counter_concatenation.out 2 $title     
-    ./counter_concatenation.out mode=2 title=$title debug=1 seed=999   
-    break
+    ./counter_concatenation.out mode=2 title=$title debug=0 seed=999   
 done
 wait
+
 echo done
+
 date

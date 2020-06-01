@@ -74,7 +74,7 @@ int main(int args, char ** argv){
       GF2mat_to_MM(Gbx,filename_Gbx);      GF2mat_to_MM(Gbz,filename_Gbz);
       break;
     case 2:      //from given input. This is to manually double check some result
-      cout<<"check "<<title<<endl;
+      if (debug)  cout<<"check "<<title<<endl;
       Gax=MM_to_GF2mat(filename_Gax); Gaz=MM_to_GF2mat(filename_Gaz);
       Gbx=MM_to_GF2mat(filename_Gbx); Gbz=MM_to_GF2mat(filename_Gbz);
       na=Gax.cols();
@@ -85,8 +85,10 @@ int main(int args, char ** argv){
       Cbx=getC(Gbx,Gbz);
       Cbz=getC(Gbx,Gbz,1);
 
-      if (debug)  cout<<"Gax "<<Gax<<endl;  cout<<"Gaz "<<Gaz<<endl;  cout<<"Cax "<<Cax<<endl;  cout<<"Caz "<<Caz<<endl;
-      if (debug)  cout<<"Gbx "<<Gbx<<endl;  cout<<"Gbz "<<Gbz<<endl;  cout<<"Cbx "<<Cbx<<endl;  cout<<"Cbz "<<Cbz<<endl;
+
+      if (debug)  {cout<<"Gax "<<Gax<<endl;  cout<<"Gaz "<<Gaz<<endl;  cout<<"Cax "<<Cax<<endl;  cout<<"Caz "<<Caz<<endl;}
+      if (debug) { cout<<"Gbx "<<Gbx<<endl;  cout<<"Gbz "<<Gbz<<endl;  cout<<"Cbx "<<Cbx<<endl;  cout<<"Cbz "<<Cbz<<endl;}
+      //      cout<<"debug"<<endl;
       break;
   }
 
