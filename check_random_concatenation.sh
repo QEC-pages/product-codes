@@ -11,14 +11,15 @@ folder=data_hpcc/random3
 #trial403-278 
 #trial410-234473
 #trial411-572582
-for trial in trial423-52069
+#trial423-52069
+for trial in trial411-572582
 do
     title=$folder/$trial
     echo check $title
 #    ./random_concatenation.out 2 $title >>data/result/random2check/check-$trial.log &
 #    ./random_concatenation.out 2 $title
 #    ./counter_concatenation.out 2 $title     
-    ./counter_concatenation.out mode=2 title=$title debug=1    
+    ./counter_concatenation.out mode=2 title=$title debug=1 seed=999   
 done
 wait
 echo done

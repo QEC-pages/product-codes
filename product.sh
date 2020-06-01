@@ -4,38 +4,38 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
 #SBATCH --mem=32G
-#SBATCH --time=0-02:00:00     
+#SBATCH --time=0-5:10:00     
 #SBATCH --output=log/product.stdout
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
-#SBATCH --export=ALL,ON_SBATCH=TRUE
+#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
+#SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
 # Load samtools
 # module load samtools
 
 # Change directory to where you submitted the job from, so that relative paths resolve properly
-
+# no need. the default folder is $SLURM_SUBMIT_DIR
 
 WORK_STATION=HEAD
 case $ON_SRUN in
     "TRUE")
 	case $ON_SBATCH in
 	    "TRUE")
-		echo "on sbatch"
+#		echo "on sbatch"
 		WORK_STATION=SBATCH
 		;;
 	    *)		
-		echo "on srun"
+#		echo "on srun"
 		WORK_STATION=SRUN
 		;;
 	esac
 	;;
     *)
 	WORK_STATION=HEAD
-	echo "not on srun or sbatch"
+#	echo "not on srun or sbatch"
 	;;
 esac
 
@@ -53,17 +53,18 @@ echo start job on `hostname` `date`
 # 408 size 8
 # 407 size 7
 
-# job name should be short, for earch reason
+# job name should be short, for search reason
 job_name=product
-index=435
+index=441
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=7
+na_input=5
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
-echo check logfile: $logfile
+statusfile=log/status-${job_name}${index}-size${na_input}.log
+echo check logfile: $logfile statusfile:$statusfile
 
 #index=221 #218-221 - for reduced code.
 #index=200-217 for concatenation
@@ -94,10 +95,11 @@ esac
 
 echo start job on $WORK_STATION:`hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
 echo SLURM_JOB_ID:$SLURM_JOB_ID SLURM_JOB_NAME:$SLURM_JOB_NAME SLURM_JOB_DIR:$SLURM_SUBMIT_DIR >> $logfile
-echo data_folder:$folder, log_file:$logfile >> $logfile
+echo data_folder:$folder, log_file:$logfile status_file:$statusfile >> $logfile
 
 # duplicate info to stdout
 cat $logfile
+cat $logfile >> $statusfile
 
 # size 9 32768
 
@@ -125,7 +127,7 @@ do
 	    title=$folder/trial$index-$i
 #	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
 	    #./counter_concatenation.out mode=1 title=$title debug=0 &
-	    ./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed="i" >> $logfile &
+	    ./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed="i"  >> $logfile &
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &
@@ -135,7 +137,7 @@ do
 		#the following is a bit strange, and show different output using less and cat
 		#echo -ne ${max_trial} $title `date` \\r
 		echo `date` $na_input $title  
-		echo `date` $na_input $title >> $logfile
+		echo `date` $na_input $title >> $statusfile
 		#echo ${max_trial} $title `date` >> $logfile
 		# add 20 % for next check point
 		(( bi = bi + bi / 5 + 2 ))

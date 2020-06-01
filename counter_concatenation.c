@@ -108,12 +108,27 @@ int main(int args, char ** argv){
 
   //  reduce(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
   //concatenate(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
+  int flag_chain_complex=0; //run if 1
   //0 for reduce/subsystem, distance x
-  if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,0) == 2)    std::cout<<title<<std::endl;
+  if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,0) == 2)   {
+    std::cout<<title<<std::endl;
+    flag_chain_complex=1;
+  }
   //1 for reduce/subsystem, distance z
-  if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,1) == 2)    std::cout<<title<<std::endl;
+  if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,1) == 2){
+    std::cout<<title<<std::endl;
+    flag_chain_complex=1;
+  }
   //2 for concatenate
   //  if ( product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,2) == 2)    std::cout<<title<<std::endl;
+
+  if (     flag_chain_complex ){
+    // 3 for chain complex with two length-3, z distance
+    // 4 for chain complex with two length-3, x distance
+    if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,3) == 2)  std::cout<<title<<std::endl;
+    if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  std::cout<<title<<std::endl;
+  }
+
   if ( debug )  timer.toc_print();
   return 0;
 }
