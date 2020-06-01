@@ -14,3 +14,8 @@ data folder data_hpcc/random3, log file: log/product427-size15.log
 [1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-187
 1000000 data_hpcc/random3/trial427-1024 Sun May 31 15:59:37 PDT 2020
 [1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-171
+[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc15,15,225,data_hpcc/random3/trial427-465
+[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc15,15,225,data_hpcc/random3/trial427-466
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1169
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1170
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1168

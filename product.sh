@@ -4,13 +4,13 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=32
 #SBATCH --mem=32G
-#SBATCH --time=0-05:00:00     
+#SBATCH --time=0-02:00:00     
 #SBATCH --output=log/product.stdout
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
-
+#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
+#SBATCH --export=ON_SRUN=FALSE,ON_SBATCH=TRUE
 
 # module itpp already load on zsh and bash
 # Load samtools
@@ -26,6 +26,17 @@ case $SLURM_SUBMIT_DIR in
 	;;
 esac
 
+case $ON_SRUN in
+    "TRUE")
+	echo "on srun"
+	;;
+    "FALSE")
+	echo "on sbatch"
+	;;
+    *)
+	echo "not know"
+	;;
+esac
 
 # Concatenate BAMs
 # samtools cat -h header.sam -o out.bam in1.bam in2.bam
@@ -43,11 +54,11 @@ echo start job on `hostname` `date`
 
 # job name should be short, for earch reason
 job_name=product
-index=430
+index=434
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=9
+na_input=15
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
@@ -63,7 +74,7 @@ cp counter_concatenation.out .${job_name}$index.out
 #add index by 1 while rerun this script
 #the number of simultaneous process is limited by max_process.
 
-max_process=50
+
 
 case `hostname` in 
     "Chenrenkov")
@@ -91,9 +102,23 @@ cat $logfile
 
 (( i = 1 ))
 (( bi = 2 ))
+
+(( num_cores = 32 ))
+(( max_process = num_cores + 10 ))
 while (( i < max_trial ))
 do
+    # control number of processes according to the speed and number of cores
     num_process=`pgrep -c ${job_name}`
+#    echo -n num_process: $num_process , 
+#    echo max_process: $max_process
+    if (( num_process < num_cores + 10 )) then
+	(( max_process = max_process + max_process / 10 ))
+    fi
+    if (( num_process > num_cores * 2 )) then
+	(( max_process = max_process - max_process / 10 ))
+    fi
+
+
     for (( j = num_process ; j < max_process ; j++ ))
     do	
 	    title=$folder/trial$index-$i
@@ -108,8 +133,8 @@ do
 		#echo -n "[$bi]" >> $logfile
 		#the following is a bit strange, and show different output using less and cat
 		#echo -ne ${max_trial} $title `date` \\r
-		echo `date` $title  
-		echo `date` $title >> $logfile
+		echo `date` $na_input $title  
+		echo `date` $na_input $title >> $logfile
 		#echo ${max_trial} $title `date` >> $logfile
 		# add 20 % for next check point
 		(( bi = bi + bi / 5 + 2 ))
@@ -118,7 +143,7 @@ do
 	    # sleep a little bit to avoid same random seeds
     done
 
-    sleep 0.5
+    sleep 0.2
 done
 
 

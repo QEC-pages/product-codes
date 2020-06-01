@@ -62,3 +62,5 @@ data folder data_hpcc/random3, log file: log/product425-size13.log
 [1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-8104
 [1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-10720
 [1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-11018
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-12707
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-12707

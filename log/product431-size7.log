@@ -1,9 +1,3 @@
-run in sbatch
-start job on i06 Sun May 31 16:57:37 PDT 2020
-check logfile: log/product431-size7.log
-make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
-make[1]: `counter_concatenation.out' is up to date.
-make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
 start job on i06 size7 run431 max_process:50/max_trial:1000000 Sun May 31 16:57:37 PDT 2020
 SLURM_JOB_ID:1266251 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
 data_folder:data_hpcc/random3, log_file:log/product431-size7.log
@@ -44,10 +38,9 @@ Sun May 31 16:58:55 PDT 2020 data_hpcc/random3/trial431-3965
 Sun May 31 16:59:10 PDT 2020 data_hpcc/random3/trial431-4760
 Sun May 31 16:59:26 PDT 2020 data_hpcc/random3/trial431-5714
 Sun May 31 16:59:49 PDT 2020 data_hpcc/random3/trial431-6858
-1000000 data_hpcc/random3/trial424-32768 Sun May 31 16:59:57 PDT 2020
 Sun May 31 17:00:14 PDT 2020 data_hpcc/random3/trial431-8231
 Sun May 31 17:00:45 PDT 2020 data_hpcc/random3/trial431-9879
-Sun May 31 17:01:18 PDT 2020 data_hpcc/random3/trial431-11856
+Sun May 31 17:01:19 PDT 2020 data_hpcc/random3/trial431-11856
 Sun May 31 17:02:00 PDT 2020 data_hpcc/random3/trial431-14229
 Sun May 31 17:02:48 PDT 2020 data_hpcc/random3/trial431-17076
 Sun May 31 17:03:44 PDT 2020 data_hpcc/random3/trial431-20493
@@ -57,10 +50,7 @@ Sun May 31 17:08:01 PDT 2020 data_hpcc/random3/trial431-35417
 Sun May 31 17:09:56 PDT 2020 data_hpcc/random3/trial431-42502
 Sun May 31 17:12:20 PDT 2020 data_hpcc/random3/trial431-51004
 Sun May 31 17:15:22 PDT 2020 data_hpcc/random3/trial431-61206
-slurmstepd-i06: error: _is_a_lwp: open() /proc/55940/status failed: No such file or directory
 Sun May 31 17:18:47 PDT 2020 data_hpcc/random3/trial431-73449
 Sun May 31 17:22:54 PDT 2020 data_hpcc/random3/trial431-88140
 Sun May 31 17:27:47 PDT 2020 data_hpcc/random3/trial431-105770
-1000000 data_hpcc/random3/trial426-4096 Sun May 31 17:29:52 PDT 2020
 Sun May 31 17:33:32 PDT 2020 data_hpcc/random3/trial431-126926
-slurmstepd-i18: error: _is_a_lwp: open() /proc/93569/status failed: No such file or directory
