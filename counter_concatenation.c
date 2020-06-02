@@ -21,6 +21,7 @@ int main(int args, char ** argv){
   parser.init(args,argv);
   parser.set_silentmode(true);
   int mode = 1; parser.get(mode,"mode");
+  int sub_mode = 1; parser.get(sub_mode,"sub_mode");
   std::string title_str;
   parser.get(title_str,"title");
   const char * title = title_str.c_str();
@@ -62,20 +63,34 @@ int main(int args, char ** argv){
       getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,debug);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
 
-      if (false){
-	//random code B
-	nb=randi(n_low,n_high); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
-	getGoodQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz,debug);
-      }else{
-	//reverse X and Z of code A for code B
-	kb=ka;      
-	nb=na;
-	Gbx_row=Gaz_row;
-	Gbz_row=Gax_row;
-	Gbx=Gaz;
-	Gbz=Gax;
-	Cbx=Caz;
-	Cbz=Cax;
+      switch ( sub_mode){
+        case 1: //two random codes
+      
+          //random code B
+          nb=randi(n_low,n_high); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
+          getGoodQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz,debug);
+          break;
+        case 2: // identical reverse code A for code B  
+          //reverse X and Z of code A for code B
+          kb=ka;        
+          nb=na;
+          Gbx_row=Gaz_row;
+          Gbz_row=Gax_row;
+          Gbx=Gaz;
+          Gbz=Gax;
+          Cbx=Caz;
+          Cbz=Cax;
+          break;
+        case 3: //identical code A for code B
+          kb=ka;        
+          nb=na;
+          Gbx_row=Gax_row;
+          Gbz_row=Gaz_row;
+          Gbx=Gax;
+          Gbz=Gaz;
+          Cbx=Cax;
+          Cbz=Caz;
+          break;
       }
       //      cout<<"got two good quantum code"<<endl;
       GF2mat_to_MM(Gax,filename_Gax);      GF2mat_to_MM(Gaz,filename_Gaz);
@@ -116,12 +131,12 @@ int main(int args, char ** argv){
   int dbz = quantum_dist_v2(Gbx,Gbz,1);//1 to flip X and Z
 
 
-  if ( debug) {
+  /*if ( debug) {
     cout<<"[Code A] na = "<<na<<", ";
     cout<<"dax = "<<dax<<", daz = "<<daz<<endl;
     cout<<"[Code B] nb = "<<nb<<", ";
     cout<<"dbx = "<<dbx<<", dbz = "<<dbz<<endl;
-  }
+  }*/
 
   //  reduce(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);
   //concatenate(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz);

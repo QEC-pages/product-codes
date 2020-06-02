@@ -1,8 +1,3 @@
-start job on i05 Tue Jun 2 16:46:28 PDT 2020
-check logfile: log/product481-size.log statusfile:log/status-product481-size.log
-make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
-make[2]: `counter_concatenation.out' is up to date.
-make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
 start job on SBATCH:i05 size run481 max_process:/max_trial:1000000 Tue Jun 2 16:46:28 PDT 2020
 SLURM_JOB_ID:1379555 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
 sub_mode:3, n_low:6, n_high=11, data_folder:data_hpcc/random3, log_file:log/product481-size.log status_file:log/status-product481-size.log
@@ -23,5 +18,5 @@ sub_mode:3, n_low:6, n_high=11, data_folder:data_hpcc/random3, log_file:log/prod
 76 Tue Jun 2 16:46:42 PDT 2020 data_hpcc/random3/trial481-116
 75 Tue Jun 2 16:46:48 PDT 2020 data_hpcc/random3/trial481-141
 75 Tue Jun 2 16:46:54 PDT 2020 data_hpcc/random3/trial481-171
-75 Tue Jun 2 16:47:01 PDT 2020 data_hpcc/random3/trial481-207
+75 Tue Jun 2 16:47:02 PDT 2020 data_hpcc/random3/trial481-207
 76 Tue Jun 2 16:47:09 PDT 2020 data_hpcc/random3/trial481-250
