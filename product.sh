@@ -4,12 +4,12 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=60
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=0-12:00:00     
+#SBATCH --time=0-2:00:00     
 #SBATCH --output=log/product.stdout
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
+#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
 #SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
@@ -30,6 +30,7 @@ case $ON_SRUN in
 	    *)		
 #		echo "on srun"
 		WORK_STATION=SRUN
+		pkill .product
 		;;
 	esac
 	;;
@@ -55,7 +56,7 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=473
+index=478
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
@@ -129,8 +130,8 @@ do
 	    title=$folder/trial$index-$i
 #	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
 	    #./counter_concatenation.out mode=1 title=$title debug=0 &
-	    #./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed="i"  >> $logfile &
-	    ./.product$index.out  mode=1 title=$title debug=0 n_low=$n_low n_high=$n_high seed="i"  >> $logfile &
+	    #./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed=$i  >> $logfile &
+	    ./.product$index.out  mode=1 title=$title debug=0 n_low=$n_low n_high=$n_high seed=$i  >> $logfile &
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &

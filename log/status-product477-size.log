@@ -1,0 +1,20 @@
+start job on SBATCH:i06 size run477 max_process:/max_trial:1000000 Tue Jun 2 12:00:35 PDT 2020
+SLURM_JOB_ID:1367888 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+data_folder:data_hpcc/random3, log_file:log/product477-size.log status_file:log/status-product477-size.log
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-2
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-4
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-6
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-9
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-12
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-16
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-21
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-27
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-34
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-42
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-52
+0 Tue Jun 2 12:00:35 PDT 2020 data_hpcc/random3/trial477-64
+75 Tue Jun 2 12:00:37 PDT 2020 data_hpcc/random3/trial477-78
+75 Tue Jun 2 12:00:42 PDT 2020 data_hpcc/random3/trial477-95
+72 Tue Jun 2 12:00:45 PDT 2020 data_hpcc/random3/trial477-116
+75 Tue Jun 2 12:00:49 PDT 2020 data_hpcc/random3/trial477-141
+75 Tue Jun 2 12:00:55 PDT 2020 data_hpcc/random3/trial477-171

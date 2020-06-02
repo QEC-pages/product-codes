@@ -1,0 +1,28 @@
+start job on SBATCH:i04 size run476 max_process:/max_trial:1000000 Tue Jun 2 11:58:49 PDT 2020
+SLURM_JOB_ID:1367809 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+data_folder:data_hpcc/random3, log_file:log/product476-size.log status_file:log/status-product476-size.log
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-2
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-4
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-6
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-9
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-12
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-16
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-21
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-27
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-34
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-42
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-52
+0 Tue Jun 2 11:58:49 PDT 2020 data_hpcc/random3/trial476-64
+76 Tue Jun 2 11:58:54 PDT 2020 data_hpcc/random3/trial476-78
+75 Tue Jun 2 11:59:00 PDT 2020 data_hpcc/random3/trial476-95
+76 Tue Jun 2 11:59:03 PDT 2020 data_hpcc/random3/trial476-116
+71 Tue Jun 2 11:59:08 PDT 2020 data_hpcc/random3/trial476-141
+74 Tue Jun 2 11:59:13 PDT 2020 data_hpcc/random3/trial476-171
+70 Tue Jun 2 11:59:19 PDT 2020 data_hpcc/random3/trial476-207
+75 Tue Jun 2 11:59:27 PDT 2020 data_hpcc/random3/trial476-250
+75 Tue Jun 2 11:59:35 PDT 2020 data_hpcc/random3/trial476-302
+74 Tue Jun 2 11:59:45 PDT 2020 data_hpcc/random3/trial476-364
+76 Tue Jun 2 12:00:00 PDT 2020 data_hpcc/random3/trial476-438
+75 Tue Jun 2 12:00:16 PDT 2020 data_hpcc/random3/trial476-527
+75 Tue Jun 2 12:00:34 PDT 2020 data_hpcc/random3/trial476-634
+75 Tue Jun 2 12:00:56 PDT 2020 data_hpcc/random3/trial476-762

@@ -27,12 +27,14 @@ int main(int args, char ** argv){
   int debug = 1; //default debug on
   parser.get(debug,"debug");
   int seed=1; parser.get(seed,"seed");
-  if (debug) std::cout<<"seed: "<<seed<<" --> ";
+  //  std::cout<<"\t seed:"<<seed;
+  if (debug) std::cout<<"input seed: "<<seed<<" --> ";
   //  seed = seed + std::time(nullptr);
   itpp::RNG_reset(std::time(nullptr)); 
-  seed = seed + itpp::randi(1,std::time(nullptr));
+  seed = seed + itpp::randi(1,1000000000);
   itpp::RNG_reset(seed); 
-  if (debug) std::cout<<seed<<std::endl;
+  if (debug)   std::cout<<"converted seed:"<<seed;
+  //std::cout<<std::endl;
 
   //  int na_input;  parser.get(na_input,"na_input");
   int n_low;  parser.get(n_low,"n_low");
@@ -73,6 +75,7 @@ int main(int args, char ** argv){
       Cbx=Caz;
       Cbz=Cax;*/   
       getGoodQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz,debug);
+      //      cout<<"got two good quantum code"<<endl;
       GF2mat_to_MM(Gax,filename_Gax);      GF2mat_to_MM(Gaz,filename_Gaz);
       GF2mat_to_MM(Gbx,filename_Gbx);      GF2mat_to_MM(Gbz,filename_Gbz);
       break;
