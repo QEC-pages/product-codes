@@ -55,7 +55,7 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=465
+index=469
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
@@ -107,8 +107,8 @@ cat $logfile >> $statusfile
 (( i = 1 ))
 (( bi = 2 ))
 
-# it is actually 32.
-(( num_cores = 14 ))
+# it is actually 60.
+(( num_cores = 16 ))
 (( max_process = num_cores + 10 ))
 while (( i < max_trial ))
 do
@@ -116,7 +116,7 @@ do
     num_process=`pgrep -c ${job_name}`
 #    echo -n num_process: $num_process , 
 #    echo max_process: $max_process
-    if (( num_process < num_cores + 10 )) then
+    if (( num_process < num_cores  )) then
 	(( max_process = max_process + max_process / 10 ))
     fi
     if (( num_process > num_cores * 2 )) then
