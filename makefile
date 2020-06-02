@@ -28,3 +28,7 @@ clean:
 	rm  *~
 	rm \#*
 
+sbatch-dry-run:
+	sbatch --test product.sh
+sbatch:
+	sbatch product.sh
