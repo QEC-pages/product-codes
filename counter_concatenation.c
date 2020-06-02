@@ -26,8 +26,6 @@ int main(int args, char ** argv){
   const char * title = title_str.c_str();
   int debug = 1; //default debug on
   parser.get(debug,"debug");
-  int na_input;
-  parser.get(na_input,"na_input");
   int seed=1; parser.get(seed,"seed");
   if (debug) std::cout<<"seed: "<<seed<<" --> ";
   //  seed = seed + std::time(nullptr);
@@ -35,6 +33,11 @@ int main(int args, char ** argv){
   seed = seed + itpp::randi(1,std::time(nullptr));
   itpp::RNG_reset(seed); 
   if (debug) std::cout<<seed<<std::endl;
+
+  //  int na_input;  parser.get(na_input,"na_input");
+  int n_low;  parser.get(n_low,"n_low");
+  int n_high;  parser.get(n_high,"n_high");
+
 
   //  RNG_randomize();  
 
@@ -53,23 +56,23 @@ int main(int args, char ** argv){
   if (debug)   cout<<mode<<endl<<title<<endl;
   switch( mode ){
     case 1://generate random codes and save
-      na=randi(na_input,na_input); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
+      na=randi(n_low,n_high); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
       getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,debug);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
-      //      nb=randi(7,7); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
+      nb=randi(n_low,n_high); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
       // the parameter might change after removing singleton
-      na=Gax.cols();
-      Gax_row=Gax.rows();
-      Gaz_row=Gaz.rows();
+      //      na=Gax.cols();
+      //      Gax_row=Gax.rows();
+      //      Gaz_row=Gaz.rows();
       //kb=ka;      
-      nb=na;
+      /*      nb=na;
       Gbx_row=Gaz_row;
       Gbz_row=Gax_row;
       Gbx=Gaz;
       Gbz=Gax;
       Cbx=Caz;
-      Cbz=Cax;   
-	//getRandomQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz);
+      Cbz=Cax;*/   
+      getGoodQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz,debug);
       GF2mat_to_MM(Gax,filename_Gax);      GF2mat_to_MM(Gaz,filename_Gaz);
       GF2mat_to_MM(Gbx,filename_Gbx);      GF2mat_to_MM(Gbz,filename_Gbz);
       break;
@@ -130,10 +133,11 @@ int main(int args, char ** argv){
   }
   //2 for concatenate
   //  if ( product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,2) == 2)    std::cout<<title<<std::endl;
-
+  //  flag_chain_complex=1;
   if (     flag_chain_complex ){
     // 3 for chain complex with two length-3, z distance
     // 4 for chain complex with two length-3, x distance
+    //    cout<<"mode 3 4"<<endl;
     if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,3) == 2)  std::cout<<title<<std::endl;
     if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  std::cout<<title<<std::endl;
   }

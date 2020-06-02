@@ -252,6 +252,37 @@ void random_test(int seed){
   return;
 }
 
+void switch_test(int k){
+  switch (k) {
+  case 1:
+  case 2:
+    cout<<"case 1 2\t";
+    break;
+  case 3:
+    cout<<"case 3\t";
+    break;
+  case 4:
+    cout<<"case 4\t";
+  case 5:
+    cout<<"case 5\t";
+    break;
+  default:
+    cout<<"case otherwise\t";
+  }
+  cout<<endl;
+  return;
+}
+
+
+void syntax_test(){
+
+  GF2mat G = gf2dense_eye(5);
+  G
+    .transpose();
+  cout<<G<<endl;
+  return;
+}
+
 
 int main(int args, char ** argvs){
   //  cout<<"begin test"<<endl;
@@ -274,7 +305,10 @@ int main(int args, char ** argvs){
   //  copy1();
    //   cpp_random();
   //  random_test(k);
-  combine_random(k);
+  //combine_random(k);
+  //  switch_test(k);
+
+  syntax_test();
   //cout<<"finish test"<<endl;
   return 0;
 }

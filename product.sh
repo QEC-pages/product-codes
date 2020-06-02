@@ -55,12 +55,13 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=459
+index=465
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
-na_input=7
-
+#na_input=7
+n_low=6
+n_high=9
 
 logfile=log/${job_name}${index}-size${na_input}.log
 statusfile=log/status-${job_name}${index}-size${na_input}.log
@@ -107,7 +108,7 @@ cat $logfile >> $statusfile
 (( bi = 2 ))
 
 # it is actually 32.
-(( num_cores = 64 ))
+(( num_cores = 14 ))
 (( max_process = num_cores + 10 ))
 while (( i < max_trial ))
 do
@@ -128,7 +129,8 @@ do
 	    title=$folder/trial$index-$i
 #	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
 	    #./counter_concatenation.out mode=1 title=$title debug=0 &
-	    ./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed="i"  >> $logfile &
+	    #./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed="i"  >> $logfile &
+	    ./.product$index.out  mode=1 title=$title debug=0 n_low=$n_low n_high=$n_high seed="i"  >> $logfile &
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &
@@ -137,8 +139,8 @@ do
 		#echo -n "[$bi]" >> $logfile
 		#the following is a bit strange, and show different output using less and cat
 		#echo -ne ${max_trial} $title `date` \\r
-		echo `date` $na_input $title  
-		echo `date` $na_input $title >> $statusfile
+		echo $num_process `date` $na_input $title  
+		echo $num_process `date` $na_input $title >> $statusfile
 		#echo ${max_trial} $title `date` >> $logfile
 		# add 20 % for next check point
 		(( bi = bi + bi / 5 + 2 ))
