@@ -56,7 +56,7 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=478
+index=479
 # 250-266  for random code on cherenkov
 
 max_trial=1000000

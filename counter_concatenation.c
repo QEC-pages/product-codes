@@ -61,20 +61,22 @@ int main(int args, char ** argv){
       na=randi(n_low,n_high); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
       getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,debug);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
-      nb=randi(n_low,n_high); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
-      // the parameter might change after removing singleton
-      //      na=Gax.cols();
-      //      Gax_row=Gax.rows();
-      //      Gaz_row=Gaz.rows();
-      //kb=ka;      
-      /*      nb=na;
-      Gbx_row=Gaz_row;
-      Gbz_row=Gax_row;
-      Gbx=Gaz;
-      Gbz=Gax;
-      Cbx=Caz;
-      Cbz=Cax;*/   
-      getGoodQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz,debug);
+
+      if (false){
+	//random code B
+	nb=randi(n_low,n_high); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
+	getGoodQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz,debug);
+      }else{
+	//reverse X and Z of code A for code B
+	kb=ka;      
+	nb=na;
+	Gbx_row=Gaz_row;
+	Gbz_row=Gax_row;
+	Gbx=Gaz;
+	Gbz=Gax;
+	Cbx=Caz;
+	Cbz=Cax;
+      }
       //      cout<<"got two good quantum code"<<endl;
       GF2mat_to_MM(Gax,filename_Gax);      GF2mat_to_MM(Gaz,filename_Gaz);
       GF2mat_to_MM(Gbx,filename_Gbx);      GF2mat_to_MM(Gbz,filename_Gbz);
