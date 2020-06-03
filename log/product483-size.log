@@ -1,0 +1,16 @@
+start job on SBATCH:i07 size run483 max_process:/max_trial:1000000 Tue Jun 2 16:53:05 PDT 2020
+SLURM_JOB_ID:1379667 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+sub_mode:3, n_low:6, n_high=11, data_folder:data_hpcc/random3, log_file:log/product483-size.log status_file:log/status-product483-size.log
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-510
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial483-4064
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial483-4263
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-2890
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial483-6885
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc7,7,49,data_hpcc/random3/trial483-7118
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc7,7,49,data_hpcc/random3/trial483-7118
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-7704
+[1;31mCASE:[0m mode (1) daz*dbz=16, dcz=14. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc9,9,81,data_hpcc/random3/trial483-8071
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial483-8603
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-11258
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial483-10836
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial483-15085

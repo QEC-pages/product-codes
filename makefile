@@ -32,3 +32,5 @@ sbatch-dry-run:
 	sbatch --test product.sh
 sbatch:
 	sbatch product.sh
+pkill-product:
+	pkill .product

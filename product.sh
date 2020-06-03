@@ -56,7 +56,7 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=481
+index=484
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
@@ -65,6 +65,9 @@ sub_mode=3
 #na_input=7
 n_low=6
 n_high=11
+note="random seed check"
+
+
 
 logfile=log/${job_name}${index}-size${na_input}.log
 statusfile=log/status-${job_name}${index}-size${na_input}.log
@@ -99,11 +102,11 @@ esac
 
 echo start job on $WORK_STATION:`hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
 echo SLURM_JOB_ID:$SLURM_JOB_ID SLURM_JOB_NAME:$SLURM_JOB_NAME SLURM_JOB_DIR:$SLURM_SUBMIT_DIR >> $logfile
-echo sub_mode:$sub_mode, n_low:$n_low, n_high=$n_high, data_folder:$folder, log_file:$logfile status_file:$statusfile >> $logfile
+echo note:$note, sub_mode:$sub_mode, n_low:$n_low, n_high=$n_high, data_folder:$folder, log_file:$logfile status_file:$statusfile >> $logfile
 
 # duplicate info to stdout
 cat $logfile
-cat $logfile >> $statusfile
+cat $logfile > $statusfile
 
 # size 9 32768
 
@@ -133,7 +136,7 @@ do
 #	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
 	    #./counter_concatenation.out mode=1 title=$title debug=0 &
 	    #./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed=$i  >> $logfile &
-	    ./.product$index.out  mode=1 sub_mode=$sub_mode title=$title debug=0 n_low=$n_low n_high=$n_high seed=$i  >> $logfile &
+	    ./.product$index.out  mode=1 sub_mode=$sub_mode title=$title debug=0 n_low=$n_low n_high=$n_high seed=$i  note=$note >> $logfile &
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &

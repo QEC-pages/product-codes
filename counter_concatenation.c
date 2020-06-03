@@ -9,12 +9,12 @@ using namespace itpp;
 using namespace std;
 
 
-int test(GF2mat &G){//test how to change a matrix in a function
+/*int test(GF2mat &G){//test how to change a matrix in a function
   G.set(1,2,1);
   cout<<dec2bin(7,10)<<endl;
   cout<<dec2bin(7,8)<<endl;
   return 0;
-}
+  }*/
 
 int main(int args, char ** argv){
   itpp::Parser parser;
@@ -22,18 +22,18 @@ int main(int args, char ** argv){
   parser.set_silentmode(true);
   int mode = 1; parser.get(mode,"mode");
   int sub_mode = 1; parser.get(sub_mode,"sub_mode");
-  std::string title_str;
-  parser.get(title_str,"title");
+  std::string title_str;  parser.get(title_str,"title");
   const char * title = title_str.c_str();
+  std::string note=""; parser.get(note,"note");
   int debug = 1; //default debug on
   parser.get(debug,"debug");
   int seed=1; parser.get(seed,"seed");
   //  std::cout<<"\t seed:"<<seed;
   if (debug) std::cout<<"input seed: "<<seed<<" --> ";
   //  seed = seed + std::time(nullptr);
-  itpp::RNG_reset(std::time(nullptr)); 
-  seed = seed + itpp::randi(1,1000000000);
-  itpp::RNG_reset(seed); 
+  //  itpp::RNG_reset(std::time(nullptr)); 
+  //  seed = seed + itpp::randi(1,1000000000);
+  itpp::RNG_reset(seed+get_time(3)); 
   if (debug)   std::cout<<"converted seed:"<<seed;
   //std::cout<<std::endl;
 
@@ -143,12 +143,13 @@ int main(int args, char ** argv){
   int flag_chain_complex=0; //run if 1
   //0 for reduce/subsystem, distance x
   if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,0) == 2)   {
-    std::cout<<title<<std::endl;
+    std::cout<<title<<","<<note<<",sub_mode"<<sub_mode<<std::endl;
     flag_chain_complex=1;
   }
   //1 for reduce/subsystem, distance z
   if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,1) == 2){
-    std::cout<<title<<std::endl;
+    std::cout<<title<<","<<note<<",sub_mode"<<sub_mode<<std::endl;
+    //    std::cout<<title<<std::endl;
     flag_chain_complex=1;
   }
   //2 for concatenate
@@ -158,8 +159,12 @@ int main(int args, char ** argv){
     // 3 for chain complex with two length-3, z distance
     // 4 for chain complex with two length-3, x distance
     //    cout<<"mode 3 4"<<endl;
-    if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,3) == 2)  std::cout<<title<<std::endl;
-    if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  std::cout<<title<<std::endl;
+    if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,3) == 2)  
+      std::cout<<title<<","<<note<<",sub_mode"<<sub_mode<<std::endl;
+    //std::cout<<title<<std::endl;
+    if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  
+      std::cout<<title<<","<<note<<",sub_mode"<<sub_mode<<std::endl;
+    //std::cout<<title<<std::endl;
   }
 
   if ( debug )  timer.toc_print();

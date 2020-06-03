@@ -5,8 +5,8 @@
 
 //#include <cstdlib>
 //#include <iostream>
-#include <ctime>
-
+#include <ctime> //get time in seconds
+#include <chrono> // get time in milli seconds
 
 int copy_test(){//fail
   cout<<"copy the text in a file to the end of another file"<<endl;
@@ -240,13 +240,47 @@ int cpp_random()
 
 void random_test(int seed){
   //  RNG_randomize();
+
+
+  
+
+  auto now = std::chrono::system_clock::now();
+  auto now_ms = std::chrono::time_point_cast<std::chrono::milliseconds>(now);
+
+  auto value = now.time_since_epoch();
+  long duration = value.count();
+
+  int remain = duration % 1000000000;
+  //  cout<<duration<<"\t";
+  //cout<<remain<<"\t";
+  std::chrono::milliseconds dur(duration);
+
+  std::chrono::time_point<std::chrono::system_clock> dt(dur);
+  /*
+  if (dt != now_ms)
+    std::cout << "Failure.\t";
+  else
+    std::cout << "Success.\t";
+  */
+  //  auto start = std::chrono::steady_clock::now();
+  //  std::cout<<"now:"<<(double)start<<"\t";
+
+
+  std::cout<<get_time(1)<<"\t";
+  std::cout<<get_time(2)<<"\t";
+  std::cout<<get_time(3)<<"\t";
+  remain = get_time(2);
+  //  cout<<std::time(nullptr)<<"\t";
+  //  cout<<remain<<"\t";
+
+  seed=remain;
   itpp::RNG_reset(seed);
   //  ivec state;
   //  itpp::RNG_get_state(state);
   //  std::cout<<state<<endl;
-  for ( int i = 0; i < 10; i++){
-    //    cout<<randi(0,10000)<<"\t";
-    cout<<randb(5)<<"\t";
+  for ( int i = 0; i < 7; i++){
+    cout<<randi(0,10000)<<"\t";
+    //cout<<randb(5)<<"\t";
   }
   cout<<endl;
   return;
@@ -304,11 +338,11 @@ int main(int args, char ** argvs){
 
   //  copy1();
    //   cpp_random();
-  //  random_test(k);
+    random_test(k);
   //combine_random(k);
   //  switch_test(k);
 
-  syntax_test();
+  //  syntax_test();
   //cout<<"finish test"<<endl;
   return 0;
 }
