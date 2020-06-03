@@ -43,3 +43,5 @@ sub_mode:3, n_low:6, n_high=11, data_folder:data_hpcc/random3, log_file:log/prod
 76 Tue Jun 2 17:42:39 PDT 2020 data_hpcc/random3/trial482-11856
 76 Tue Jun 2 17:52:20 PDT 2020 data_hpcc/random3/trial482-14229
 75 Tue Jun 2 18:05:36 PDT 2020 data_hpcc/random3/trial482-17076
+76 Tue Jun 2 18:21:30 PDT 2020 data_hpcc/random3/trial482-20493
+74 Tue Jun 2 18:40:33 PDT 2020 data_hpcc/random3/trial482-24593

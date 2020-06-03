@@ -1,0 +1,21 @@
+start job on SBATCH:c21 size run491 max_process:/max_trial:1000000 Wed Jun 3 00:11:16 PDT 2020
+SLURM_JOB_ID:1394290 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:identical code A B, sub_mode:3, n_low:10, n_high=15, data_folder:data_hpcc/random3, log_file:log/product491-size.log status_file:log/status-product491-size.log
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-2
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-4
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-6
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-9
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-12
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-16
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-21
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-27
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-34
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-42
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-52
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-64
+76 Wed Jun 3 00:11:46 PDT 2020 data_hpcc/random3/trial491-78
+76 Wed Jun 3 00:12:13 PDT 2020 data_hpcc/random3/trial491-95
+75 Wed Jun 3 00:12:48 PDT 2020 data_hpcc/random3/trial491-116
+76 Wed Jun 3 00:13:30 PDT 2020 data_hpcc/random3/trial491-141
+76 Wed Jun 3 00:14:12 PDT 2020 data_hpcc/random3/trial491-171
+76 Wed Jun 3 00:15:12 PDT 2020 data_hpcc/random3/trial491-207

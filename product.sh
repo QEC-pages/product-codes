@@ -4,12 +4,12 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=60
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=0-2:00:00     
-#SBATCH --output=log/product.stdout
+#SBATCH --time=0-12:00:00     
+#SBATCH --output=log/product.stdout --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
+#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
 #SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
@@ -44,6 +44,9 @@ esac
 # samtools cat -h header.sam -o out.bam in1.bam in2.bam
 
 # Print name of node
+echo
+echo "============= The World is Unitary ============"
+echo
 echo start job on `hostname` `date`
 
 
@@ -56,18 +59,19 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=484
+index=491
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
 # 1: two random code; 2: identical reverse A B; 3: identical A B
 sub_mode=3
 #na_input=7
-n_low=6
-n_high=11
-note="random seed check"
+n_low=10
+n_high=15
+note="identical code A B"
 
-
+#echo "==========   new history file " `date` >> log/history.stdout
+#cat log/product.stdout >> log/history.stdout
 
 logfile=log/${job_name}${index}-size${na_input}.log
 statusfile=log/status-${job_name}${index}-size${na_input}.log

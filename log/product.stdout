@@ -1,85 +1,136 @@
-start job on i07 Tue Jun 2 16:53:05 PDT 2020
-check logfile: log/product483-size.log statusfile:log/status-product483-size.log
+start job on i07 Tue Jun 2 22:09:08 PDT 2020
+check logfile: log/product487-size.log statusfile:log/status-product487-size.log
 make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
 make[2]: `counter_concatenation.out' is up to date.
 make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
-start job on SBATCH:i07 size run483 max_process:/max_trial:1000000 Tue Jun 2 16:53:05 PDT 2020
-SLURM_JOB_ID:1379667 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
-sub_mode:3, n_low:6, n_high=11, data_folder:data_hpcc/random3, log_file:log/product483-size.log status_file:log/status-product483-size.log
-0 Tue Jun 2 16:53:05 PDT 2020 data_hpcc/random3/trial483-2
-0 Tue Jun 2 16:53:05 PDT 2020 data_hpcc/random3/trial483-4
-0 Tue Jun 2 16:53:05 PDT 2020 data_hpcc/random3/trial483-6
-0 Tue Jun 2 16:53:05 PDT 2020 data_hpcc/random3/trial483-9
-0 Tue Jun 2 16:53:06 PDT 2020 data_hpcc/random3/trial483-12
-0 Tue Jun 2 16:53:06 PDT 2020 data_hpcc/random3/trial483-16
-0 Tue Jun 2 16:53:06 PDT 2020 data_hpcc/random3/trial483-21
-0 Tue Jun 2 16:53:06 PDT 2020 data_hpcc/random3/trial483-27
-0 Tue Jun 2 16:53:06 PDT 2020 data_hpcc/random3/trial483-34
-0 Tue Jun 2 16:53:06 PDT 2020 data_hpcc/random3/trial483-42
-0 Tue Jun 2 16:53:06 PDT 2020 data_hpcc/random3/trial483-52
-0 Tue Jun 2 16:53:06 PDT 2020 data_hpcc/random3/trial483-64
-76 Tue Jun 2 16:53:07 PDT 2020 data_hpcc/random3/trial483-78
-76 Tue Jun 2 16:53:12 PDT 2020 data_hpcc/random3/trial483-95
-76 Tue Jun 2 16:53:18 PDT 2020 data_hpcc/random3/trial483-116
-76 Tue Jun 2 16:53:21 PDT 2020 data_hpcc/random3/trial482-438
-74 Tue Jun 2 16:53:24 PDT 2020 data_hpcc/random3/trial483-141
-73 Tue Jun 2 16:53:29 PDT 2020 data_hpcc/random3/trial483-171
-76 Tue Jun 2 16:53:30 PDT 2020 data_hpcc/random3/trial481-1908
-74 Tue Jun 2 16:53:36 PDT 2020 data_hpcc/random3/trial483-207
-74 Tue Jun 2 16:53:43 PDT 2020 data_hpcc/random3/trial482-527
-76 Tue Jun 2 16:53:50 PDT 2020 data_hpcc/random3/trial483-250
-76 Tue Jun 2 16:54:02 PDT 2020 data_hpcc/random3/trial483-302
-75 Tue Jun 2 16:54:08 PDT 2020 data_hpcc/random3/trial482-634
-75 Tue Jun 2 16:54:16 PDT 2020 data_hpcc/random3/trial483-364
-74 Tue Jun 2 16:54:35 PDT 2020 data_hpcc/random3/trial483-438
-76 Tue Jun 2 16:54:43 PDT 2020 data_hpcc/random3/trial482-762
-73 Tue Jun 2 16:54:55 PDT 2020 data_hpcc/random3/trial483-527
-75 Tue Jun 2 16:55:06 PDT 2020 data_hpcc/random3/trial481-2291
-75 Tue Jun 2 16:55:16 PDT 2020 data_hpcc/random3/trial483-634
-73 Tue Jun 2 16:55:26 PDT 2020 data_hpcc/random3/trial482-916
-76 Tue Jun 2 16:55:44 PDT 2020 data_hpcc/random3/trial483-762
-75 Tue Jun 2 16:56:08 PDT 2020 data_hpcc/random3/trial482-1101
-76 Tue Jun 2 16:56:20 PDT 2020 data_hpcc/random3/trial483-916
-75 Tue Jun 2 16:57:02 PDT 2020 data_hpcc/random3/trial483-1101
-73 Tue Jun 2 16:57:05 PDT 2020 data_hpcc/random3/trial482-1323
-76 Tue Jun 2 16:57:09 PDT 2020 data_hpcc/random3/trial481-2751
-73 Tue Jun 2 16:58:00 PDT 2020 data_hpcc/random3/trial483-1323
-76 Tue Jun 2 16:58:06 PDT 2020 data_hpcc/random3/trial482-1589
-76 Tue Jun 2 16:59:03 PDT 2020 data_hpcc/random3/trial483-1589
-75 Tue Jun 2 16:59:22 PDT 2020 data_hpcc/random3/trial481-3303
-75 Tue Jun 2 16:59:28 PDT 2020 data_hpcc/random3/trial482-1908
-73 Tue Jun 2 17:00:23 PDT 2020 data_hpcc/random3/trial483-1908
-74 Tue Jun 2 17:01:11 PDT 2020 data_hpcc/random3/trial482-2291
-66 Tue Jun 2 17:01:51 PDT 2020 data_hpcc/random3/trial483-2291
-75 Tue Jun 2 17:02:20 PDT 2020 data_hpcc/random3/trial481-3965
-75 Tue Jun 2 17:03:12 PDT 2020 data_hpcc/random3/trial482-2751
-76 Tue Jun 2 17:03:55 PDT 2020 data_hpcc/random3/trial483-2751
-75 Tue Jun 2 17:05:33 PDT 2020 data_hpcc/random3/trial482-3303
-75 Tue Jun 2 17:05:52 PDT 2020 data_hpcc/random3/trial481-4760
-75 Tue Jun 2 17:06:13 PDT 2020 data_hpcc/random3/trial483-3303
-75 Tue Jun 2 17:08:26 PDT 2020 data_hpcc/random3/trial482-3965
-74 Tue Jun 2 17:09:08 PDT 2020 data_hpcc/random3/trial483-3965
-76 Tue Jun 2 17:10:34 PDT 2020 data_hpcc/random3/trial481-5714
-76 Tue Jun 2 17:11:55 PDT 2020 data_hpcc/random3/trial482-4760
-76 Tue Jun 2 17:13:15 PDT 2020 data_hpcc/random3/trial483-4760
-76 Tue Jun 2 17:15:57 PDT 2020 data_hpcc/random3/trial481-6858
-75 Tue Jun 2 17:15:57 PDT 2020 data_hpcc/random3/trial482-5714
-75 Tue Jun 2 17:17:58 PDT 2020 data_hpcc/random3/trial483-5714
-76 Tue Jun 2 17:21:06 PDT 2020 data_hpcc/random3/trial482-6858
-75 Tue Jun 2 17:22:03 PDT 2020 data_hpcc/random3/trial481-8231
-76 Tue Jun 2 17:23:14 PDT 2020 data_hpcc/random3/trial483-6858
-73 Tue Jun 2 17:26:46 PDT 2020 data_hpcc/random3/trial482-8231
-75 Tue Jun 2 17:29:08 PDT 2020 data_hpcc/random3/trial483-8231
-75 Tue Jun 2 17:29:20 PDT 2020 data_hpcc/random3/trial481-9879
-75 Tue Jun 2 17:34:13 PDT 2020 data_hpcc/random3/trial482-9879
-75 Tue Jun 2 17:36:35 PDT 2020 data_hpcc/random3/trial483-9879
-76 Tue Jun 2 17:38:37 PDT 2020 data_hpcc/random3/trial481-11856
-76 Tue Jun 2 17:42:39 PDT 2020 data_hpcc/random3/trial482-11856
-74 Tue Jun 2 17:45:08 PDT 2020 data_hpcc/random3/trial483-11856
-73 Tue Jun 2 17:49:58 PDT 2020 data_hpcc/random3/trial481-14229
-76 Tue Jun 2 17:52:20 PDT 2020 data_hpcc/random3/trial482-14229
-73 Tue Jun 2 17:55:48 PDT 2020 data_hpcc/random3/trial483-14229
-75 Tue Jun 2 18:04:01 PDT 2020 data_hpcc/random3/trial481-17076
-75 Tue Jun 2 18:05:36 PDT 2020 data_hpcc/random3/trial482-17076
-slurmstepd-i06: error: _is_a_lwp: open() /proc/98058/status failed: No such file or directory
-75 Tue Jun 2 18:08:58 PDT 2020 data_hpcc/random3/trial483-17076
+start job on SBATCH:i07 size run487 max_process:/max_trial:1000000 Tue Jun 2 22:09:08 PDT 2020
+SLURM_JOB_ID:1389835 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:identical code A B, sub_mode:3, n_low:10, n_high=20, data_folder:data_hpcc/random3, log_file:log/product487-size.log status_file:log/status-product487-size.log
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-2
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-4
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-6
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-9
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-12
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-16
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-21
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-27
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-34
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-42
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-52
+0 Tue Jun 2 22:09:08 PDT 2020 data_hpcc/random3/trial487-64
+76 Tue Jun 2 22:09:28 PDT 2020 data_hpcc/random3/trial487-78
+76 Tue Jun 2 22:09:55 PDT 2020 data_hpcc/random3/trial487-95
+76 Tue Jun 2 22:10:15 PDT 2020 data_hpcc/random3/trial486-171
+76 Tue Jun 2 22:11:41 PDT 2020 data_hpcc/random3/trial487-116
+76 Tue Jun 2 22:13:55 PDT 2020 data_hpcc/random3/trial487-141
+76 Tue Jun 2 22:18:38 PDT 2020 data_hpcc/random3/trial486-207
+76 Tue Jun 2 22:18:48 PDT 2020 data_hpcc/random3/trial487-171
+76 Tue Jun 2 22:31:00 PDT 2020 data_hpcc/random3/trial487-207
+76 Tue Jun 2 22:40:48 PDT 2020 data_hpcc/random3/trial486-250
+76 Tue Jun 2 22:54:25 PDT 2020 data_hpcc/random3/trial487-250
+76 Tue Jun 2 23:33:39 PDT 2020 data_hpcc/random3/trial486-302
+76 Tue Jun 2 23:43:21 PDT 2020 data_hpcc/random3/trial487-302
+slurmstepd-i06: error: *** JOB 1389590 ON i06 CANCELLED AT 2020-06-03T00:02:19 DUE TO TIME LIMIT ***
+start job on c17 Wed Jun 3 00:09:14 PDT 2020
+check logfile: log/product488-size.log statusfile:log/status-product488-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:c17 size run488 max_process:/max_trial:1000000 Wed Jun 3 00:09:14 PDT 2020
+SLURM_JOB_ID:1394183 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:identical code A B, sub_mode:3, n_low:10, n_high=15, data_folder:data_hpcc/random3, log_file:log/product488-size.log status_file:log/status-product488-size.log
+0 Wed Jun 3 00:09:14 PDT 2020 data_hpcc/random3/trial488-2
+0 Wed Jun 3 00:09:14 PDT 2020 data_hpcc/random3/trial488-4
+0 Wed Jun 3 00:09:14 PDT 2020 data_hpcc/random3/trial488-6
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-9
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-12
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-16
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-21
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-27
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-34
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-42
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-52
+0 Wed Jun 3 00:09:15 PDT 2020 data_hpcc/random3/trial488-64
+slurmstepd-i07: error: *** JOB 1389835 ON i07 CANCELLED AT 2020-06-03T00:09:21 DUE TO TIME LIMIT ***
+start job on c20 Wed Jun 3 00:10:50 PDT 2020
+check logfile: log/product489-size.log statusfile:log/status-product489-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:c20 size run489 max_process:/max_trial:1000000 Wed Jun 3 00:10:50 PDT 2020
+SLURM_JOB_ID:1394259 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:identical code A B, sub_mode:3, n_low:10, n_high=15, data_folder:data_hpcc/random3, log_file:log/product489-size.log status_file:log/status-product489-size.log
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-2
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-4
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-6
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-9
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-12
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-16
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-21
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-27
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-34
+start job on c45 Wed Jun 3 00:10:50 PDT 2020
+check logfile: log/product490-size.log statusfile:log/status-product490-size.log
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-42
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-52
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-64
+start job on SBATCH:c45 size run490 max_process:/max_trial:1000000 Wed Jun 3 00:10:50 PDT 2020
+SLURM_JOB_ID:1394260 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:identical code A B, sub_mode:3, n_low:10, n_high=15, data_folder:data_hpcc/random3, log_file:log/product490-size.log status_file:log/status-product490-size.log
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-2
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-4
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-6
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-9
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-12
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-16
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-21
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-27
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-34
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-42
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-52
+0 Wed Jun 3 00:10:51 PDT 2020 data_hpcc/random3/trial490-64
+start job on c21 Wed Jun 3 00:11:16 PDT 2020
+check logfile: log/product491-size.log statusfile:log/status-product491-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:c21 size run491 max_process:/max_trial:1000000 Wed Jun 3 00:11:16 PDT 2020
+SLURM_JOB_ID:1394290 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:identical code A B, sub_mode:3, n_low:10, n_high=15, data_folder:data_hpcc/random3, log_file:log/product491-size.log status_file:log/status-product491-size.log
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-2
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-4
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-6
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-9
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-12
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-16
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-21
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-27
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-34
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-42
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-52
+0 Wed Jun 3 00:11:17 PDT 2020 data_hpcc/random3/trial491-64
+76 Wed Jun 3 00:11:45 PDT 2020 data_hpcc/random3/trial489-78
+76 Wed Jun 3 00:11:45 PDT 2020 data_hpcc/random3/trial490-78
+76 Wed Jun 3 00:11:46 PDT 2020 data_hpcc/random3/trial491-78
+76 Wed Jun 3 00:11:48 PDT 2020 data_hpcc/random3/trial488-78
+76 Wed Jun 3 00:12:00 PDT 2020 data_hpcc/random3/trial488-95
+75 Wed Jun 3 00:12:05 PDT 2020 data_hpcc/random3/trial490-95
+75 Wed Jun 3 00:12:08 PDT 2020 data_hpcc/random3/trial489-95
+76 Wed Jun 3 00:12:13 PDT 2020 data_hpcc/random3/trial491-95
+76 Wed Jun 3 00:12:38 PDT 2020 data_hpcc/random3/trial488-116
+76 Wed Jun 3 00:12:44 PDT 2020 data_hpcc/random3/trial489-116
+75 Wed Jun 3 00:12:48 PDT 2020 data_hpcc/random3/trial491-116
+76 Wed Jun 3 00:12:55 PDT 2020 data_hpcc/random3/trial490-116
+76 Wed Jun 3 00:13:13 PDT 2020 data_hpcc/random3/trial488-141
+75 Wed Jun 3 00:13:27 PDT 2020 data_hpcc/random3/trial489-141
+76 Wed Jun 3 00:13:30 PDT 2020 data_hpcc/random3/trial491-141
+76 Wed Jun 3 00:13:37 PDT 2020 data_hpcc/random3/trial490-141
+76 Wed Jun 3 00:13:51 PDT 2020 data_hpcc/random3/trial488-171
+76 Wed Jun 3 00:14:12 PDT 2020 data_hpcc/random3/trial491-171
+76 Wed Jun 3 00:14:20 PDT 2020 data_hpcc/random3/trial489-171
+76 Wed Jun 3 00:14:47 PDT 2020 data_hpcc/random3/trial490-171
+76 Wed Jun 3 00:14:57 PDT 2020 data_hpcc/random3/trial488-207
+76 Wed Jun 3 00:15:12 PDT 2020 data_hpcc/random3/trial491-207
