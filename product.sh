@@ -6,6 +6,7 @@
 #SBATCH --mem-per-cpu=1G
 #SBATCH --time=0-12:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
+#SBATCH --error=log/product.stderror --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
@@ -156,7 +157,7 @@ do
 		(( bi = bi + bi / 5 + 2 ))
 	    fi
 	    (( i++ ))
-	    # sleep a little bit to avoid same random seeds
+
     done
 
     sleep 0.2
