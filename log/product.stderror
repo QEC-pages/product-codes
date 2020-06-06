@@ -125,3 +125,6 @@ GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2
 GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
 *** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
 GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+
+Fri Jun  5 21:10:45 PDT 2020
+======================    new error output  =================
