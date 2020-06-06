@@ -1,0 +1,28 @@
+start job on c27 size12 run422 50/1000000 Sun May 31 10:49:47 PDT 2020
+1265245 zsh /rhome/wzeng002/Documents/GitHub/workspace
+data folder data_hpcc/random3, log file: log/product422-size12.log
+1000000 data_hpcc/random3/trial422-2 Sun May 31 10:49:47 PDT 2020
+1000000 data_hpcc/random3/trial422-4 Sun May 31 10:49:47 PDT 2020
+1000000 data_hpcc/random3/trial422-8 Sun May 31 10:49:47 PDT 2020
+1000000 data_hpcc/random3/trial422-16 Sun May 31 10:49:48 PDT 2020
+1000000 data_hpcc/random3/trial422-32 Sun May 31 10:49:50 PDT 2020
+1000000 data_hpcc/random3/trial422-64 Sun May 31 10:50:03 PDT 2020
+1000000 data_hpcc/random3/trial422-128 Sun May 31 10:50:31 PDT 2020
+1000000 data_hpcc/random3/trial422-256 Sun May 31 10:51:45 PDT 2020
+1000000 data_hpcc/random3/trial422-512 Sun May 31 10:54:32 PDT 2020
+1000000 data_hpcc/random3/trial422-1024 Sun May 31 11:02:27 PDT 2020
+1000000 data_hpcc/random3/trial422-2048 Sun May 31 11:15:38 PDT 2020
+1000000 data_hpcc/random3/trial422-4096 Sun May 31 11:47:49 PDT 2020
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-5126
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-5126
+1000000 data_hpcc/random3/trial422-8192 Sun May 31 12:53:35 PDT 2020
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-11887
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-11888
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-15220
+1000000 data_hpcc/random3/trial422-16384 Sun May 31 15:06:40 PDT 2020
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-15220
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-17653
+[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-17654
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-17654
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-17653
+[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,data_hpcc/random3/trial422-17290

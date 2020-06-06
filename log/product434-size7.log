@@ -1,0 +1,31 @@
+start job on c27 size7 run434 max_process:/max_trial:1000000 Sun May 31 17:21:26 PDT 2020
+SLURM_JOB_ID:1265245 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product434-size7.log
+Sun May 31 17:21:26 PDT 2020 7 data_hpcc/random3/trial434-2
+Sun May 31 17:21:26 PDT 2020 7 data_hpcc/random3/trial434-4
+Sun May 31 17:21:26 PDT 2020 7 data_hpcc/random3/trial434-6
+Sun May 31 17:21:26 PDT 2020 7 data_hpcc/random3/trial434-9
+Sun May 31 17:21:26 PDT 2020 7 data_hpcc/random3/trial434-12
+Sun May 31 17:21:26 PDT 2020 7 data_hpcc/random3/trial434-16
+Sun May 31 17:21:27 PDT 2020 7 data_hpcc/random3/trial434-21
+Sun May 31 17:21:27 PDT 2020 7 data_hpcc/random3/trial434-27
+Sun May 31 17:21:27 PDT 2020 7 data_hpcc/random3/trial434-34
+Sun May 31 17:21:27 PDT 2020 7 data_hpcc/random3/trial434-42
+Sun May 31 17:21:27 PDT 2020 7 data_hpcc/random3/trial434-52
+Sun May 31 17:21:28 PDT 2020 7 data_hpcc/random3/trial434-64
+Sun May 31 17:21:28 PDT 2020 7 data_hpcc/random3/trial434-78
+Sun May 31 17:21:28 PDT 2020 7 data_hpcc/random3/trial434-95
+Sun May 31 17:21:28 PDT 2020 7 data_hpcc/random3/trial434-116
+Sun May 31 17:21:29 PDT 2020 7 data_hpcc/random3/trial434-141
+Sun May 31 17:21:30 PDT 2020 7 data_hpcc/random3/trial434-171
+Sun May 31 17:21:30 PDT 2020 7 data_hpcc/random3/trial434-207
+Sun May 31 17:21:32 PDT 2020 7 data_hpcc/random3/trial434-250
+Sun May 31 17:21:33 PDT 2020 7 data_hpcc/random3/trial434-302
+Sun May 31 17:21:34 PDT 2020 7 data_hpcc/random3/trial434-364
+Sun May 31 17:21:35 PDT 2020 7 data_hpcc/random3/trial434-438
+Sun May 31 17:21:37 PDT 2020 7 data_hpcc/random3/trial434-527
+Sun May 31 17:21:39 PDT 2020 7 data_hpcc/random3/trial434-634
+Sun May 31 17:21:42 PDT 2020 7 data_hpcc/random3/trial434-762
+Sun May 31 17:21:46 PDT 2020 7 data_hpcc/random3/trial434-916
+Sun May 31 17:21:49 PDT 2020 7 data_hpcc/random3/trial434-1101
+Sun May 31 17:21:52 PDT 2020 7 data_hpcc/random3/trial434-1323

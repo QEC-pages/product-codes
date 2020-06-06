@@ -1,0 +1,37 @@
+start job on i38 size7 run411 150/1000000 Sat May 30 20:00:57 PDT 2020
+data folder data_hpcc/random3, log file: log/product411-size7.log
+one dot means 1000 test
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572590
+[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572590
+[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572586
+[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572586
+[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572582
+[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572582
+[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572677
+[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572665
+[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572677
+[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572665
+[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572742
+[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-572742
+......................................................................................................................................................................................................................................................................................................[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-866882
+[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-866881
+.[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-866884
+[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+data_hpcc/random3/trial411-866883
+.....................................................................................................................................
+finish job on i38 411 150/1000000 Sat May 30 22:07:28 PDT 2020

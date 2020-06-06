@@ -1,0 +1,37 @@
+start job on SBATCH:c20 size run489 max_process:/max_trial:1000000 Wed Jun 3 00:10:50 PDT 2020
+SLURM_JOB_ID:1394259 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:identical code A B, sub_mode:3, n_low:10, n_high=15, data_folder:data_hpcc/random3, log_file:log/product489-size.log status_file:log/status-product489-size.log
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-2
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-4
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-6
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-9
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-12
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-16
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-21
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-27
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-34
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-42
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-52
+0 Wed Jun 3 00:10:50 PDT 2020 data_hpcc/random3/trial489-64
+76 Wed Jun 3 00:11:45 PDT 2020 data_hpcc/random3/trial489-78
+75 Wed Jun 3 00:12:08 PDT 2020 data_hpcc/random3/trial489-95
+76 Wed Jun 3 00:12:44 PDT 2020 data_hpcc/random3/trial489-116
+75 Wed Jun 3 00:13:27 PDT 2020 data_hpcc/random3/trial489-141
+76 Wed Jun 3 00:14:20 PDT 2020 data_hpcc/random3/trial489-171
+76 Wed Jun 3 00:15:38 PDT 2020 data_hpcc/random3/trial489-207
+76 Wed Jun 3 00:17:40 PDT 2020 data_hpcc/random3/trial489-250
+76 Wed Jun 3 00:20:19 PDT 2020 data_hpcc/random3/trial489-302
+76 Wed Jun 3 00:25:17 PDT 2020 data_hpcc/random3/trial489-364
+76 Wed Jun 3 00:32:19 PDT 2020 data_hpcc/random3/trial489-438
+76 Wed Jun 3 00:39:20 PDT 2020 data_hpcc/random3/trial489-527
+76 Wed Jun 3 00:49:11 PDT 2020 data_hpcc/random3/trial489-634
+76 Wed Jun 3 01:05:14 PDT 2020 data_hpcc/random3/trial489-762
+76 Wed Jun 3 01:30:50 PDT 2020 data_hpcc/random3/trial489-916
+76 Wed Jun 3 01:54:55 PDT 2020 data_hpcc/random3/trial489-1101
+76 Wed Jun 3 02:36:25 PDT 2020 data_hpcc/random3/trial489-1323
+76 Wed Jun 3 03:05:17 PDT 2020 data_hpcc/random3/trial489-1589
+76 Wed Jun 3 03:56:44 PDT 2020 data_hpcc/random3/trial489-1908
+76 Wed Jun 3 05:10:54 PDT 2020 data_hpcc/random3/trial489-2291
+76 Wed Jun 3 06:28:05 PDT 2020 data_hpcc/random3/trial489-2751
+76 Wed Jun 3 08:10:47 PDT 2020 data_hpcc/random3/trial489-3303
+76 Wed Jun 3 09:48:00 PDT 2020 data_hpcc/random3/trial489-3965

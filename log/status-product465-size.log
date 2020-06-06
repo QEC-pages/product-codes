@@ -1,0 +1,165 @@
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 16:03:48 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+1 Mon Jun 1 16:03:48 PDT 2020 data_hpcc/random3/trial465-2
+1 Mon Jun 1 16:03:48 PDT 2020 data_hpcc/random3/trial465-4
+1 Mon Jun 1 16:03:48 PDT 2020 data_hpcc/random3/trial465-6
+1 Mon Jun 1 16:03:49 PDT 2020 data_hpcc/random3/trial465-9
+1 Mon Jun 1 16:03:49 PDT 2020 data_hpcc/random3/trial465-12
+1 Mon Jun 1 16:03:49 PDT 2020 data_hpcc/random3/trial465-16
+1 Mon Jun 1 16:03:49 PDT 2020 data_hpcc/random3/trial465-21
+1 Mon Jun 1 16:03:49 PDT 2020 data_hpcc/random3/trial465-27
+1 Mon Jun 1 16:03:49 PDT 2020 data_hpcc/random3/trial465-34
+1 Mon Jun 1 16:03:49 PDT 2020 data_hpcc/random3/trial465-42
+1 Mon Jun 1 16:03:49 PDT 2020 data_hpcc/random3/trial465-52
+1 Mon Jun 1 16:03:51 PDT 2020 data_hpcc/random3/trial465-64
+1 Mon Jun 1 16:03:51 PDT 2020 data_hpcc/random3/trial465-78
+79 Mon Jun 1 16:04:24 PDT 2020 data_hpcc/random3/trial465-95
+79 Mon Jun 1 16:04:35 PDT 2020 data_hpcc/random3/trial465-116
+77 Mon Jun 1 16:04:44 PDT 2020 data_hpcc/random3/trial465-141
+79 Mon Jun 1 16:04:52 PDT 2020 data_hpcc/random3/trial465-171
+80 Mon Jun 1 16:05:10 PDT 2020 data_hpcc/random3/trial465-207
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 16:06:10 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+1 Mon Jun 1 16:06:10 PDT 2020 data_hpcc/random3/trial465-2
+1 Mon Jun 1 16:06:10 PDT 2020 data_hpcc/random3/trial465-4
+1 Mon Jun 1 16:06:10 PDT 2020 data_hpcc/random3/trial465-6
+1 Mon Jun 1 16:06:10 PDT 2020 data_hpcc/random3/trial465-9
+1 Mon Jun 1 16:06:10 PDT 2020 data_hpcc/random3/trial465-12
+1 Mon Jun 1 16:06:10 PDT 2020 data_hpcc/random3/trial465-16
+1 Mon Jun 1 16:06:10 PDT 2020 data_hpcc/random3/trial465-21
+24 Mon Jun 1 16:06:16 PDT 2020 data_hpcc/random3/trial465-27
+23 Mon Jun 1 16:06:19 PDT 2020 data_hpcc/random3/trial465-34
+24 Mon Jun 1 16:06:20 PDT 2020 data_hpcc/random3/trial465-42
+27 Mon Jun 1 16:06:23 PDT 2020 data_hpcc/random3/trial465-52
+25 Mon Jun 1 16:06:28 PDT 2020 data_hpcc/random3/trial465-64
+26 Mon Jun 1 16:06:32 PDT 2020 data_hpcc/random3/trial465-78
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 16:07:24 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+1 Mon Jun 1 16:07:24 PDT 2020 data_hpcc/random3/trial465-2
+1 Mon Jun 1 16:07:24 PDT 2020 data_hpcc/random3/trial465-4
+1 Mon Jun 1 16:07:24 PDT 2020 data_hpcc/random3/trial465-6
+1 Mon Jun 1 16:07:24 PDT 2020 data_hpcc/random3/trial465-9
+1 Mon Jun 1 16:07:24 PDT 2020 data_hpcc/random3/trial465-12
+1 Mon Jun 1 16:07:24 PDT 2020 data_hpcc/random3/trial465-16
+1 Mon Jun 1 16:07:24 PDT 2020 data_hpcc/random3/trial465-21
+22 Mon Jun 1 16:07:41 PDT 2020 data_hpcc/random3/trial465-27
+27 Mon Jun 1 16:07:43 PDT 2020 data_hpcc/random3/trial465-34
+27 Mon Jun 1 16:07:54 PDT 2020 data_hpcc/random3/trial465-42
+26 Mon Jun 1 16:07:58 PDT 2020 data_hpcc/random3/trial465-52
+26 Mon Jun 1 16:08:09 PDT 2020 data_hpcc/random3/trial465-64
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 16:08:25 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+4 Mon Jun 1 16:08:25 PDT 2020 data_hpcc/random3/trial465-2
+4 Mon Jun 1 16:08:25 PDT 2020 data_hpcc/random3/trial465-4
+4 Mon Jun 1 16:08:25 PDT 2020 data_hpcc/random3/trial465-6
+4 Mon Jun 1 16:08:25 PDT 2020 data_hpcc/random3/trial465-9
+4 Mon Jun 1 16:08:25 PDT 2020 data_hpcc/random3/trial465-12
+4 Mon Jun 1 16:08:25 PDT 2020 data_hpcc/random3/trial465-16
+4 Mon Jun 1 16:08:25 PDT 2020 data_hpcc/random3/trial465-21
+25 Mon Jun 1 16:08:46 PDT 2020 data_hpcc/random3/trial465-27
+24 Mon Jun 1 16:08:51 PDT 2020 data_hpcc/random3/trial465-34
+25 Mon Jun 1 16:08:57 PDT 2020 data_hpcc/random3/trial465-42
+25 Mon Jun 1 16:09:03 PDT 2020 data_hpcc/random3/trial465-52
+24 Mon Jun 1 16:09:17 PDT 2020 data_hpcc/random3/trial465-64
+25 Mon Jun 1 16:09:27 PDT 2020 data_hpcc/random3/trial465-78
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 16:09:53 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+3 Mon Jun 1 16:09:53 PDT 2020 data_hpcc/random3/trial465-2
+3 Mon Jun 1 16:09:53 PDT 2020 data_hpcc/random3/trial465-4
+3 Mon Jun 1 16:09:53 PDT 2020 data_hpcc/random3/trial465-6
+3 Mon Jun 1 16:09:53 PDT 2020 data_hpcc/random3/trial465-9
+3 Mon Jun 1 16:09:53 PDT 2020 data_hpcc/random3/trial465-12
+3 Mon Jun 1 16:09:53 PDT 2020 data_hpcc/random3/trial465-16
+3 Mon Jun 1 16:09:53 PDT 2020 data_hpcc/random3/trial465-21
+24 Mon Jun 1 16:10:00 PDT 2020 data_hpcc/random3/trial465-27
+27 Mon Jun 1 16:10:00 PDT 2020 data_hpcc/random3/trial465-34
+26 Mon Jun 1 16:10:03 PDT 2020 data_hpcc/random3/trial465-42
+27 Mon Jun 1 16:10:11 PDT 2020 data_hpcc/random3/trial465-52
+27 Mon Jun 1 16:10:23 PDT 2020 data_hpcc/random3/trial465-64
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 16:53:56 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+1 Mon Jun 1 16:53:56 PDT 2020 data_hpcc/random3/trial465-2
+1 Mon Jun 1 16:53:56 PDT 2020 data_hpcc/random3/trial465-4
+1 Mon Jun 1 16:53:56 PDT 2020 data_hpcc/random3/trial465-6
+1 Mon Jun 1 16:53:56 PDT 2020 data_hpcc/random3/trial465-9
+1 Mon Jun 1 16:53:56 PDT 2020 data_hpcc/random3/trial465-12
+1 Mon Jun 1 16:53:56 PDT 2020 data_hpcc/random3/trial465-16
+1 Mon Jun 1 16:53:56 PDT 2020 data_hpcc/random3/trial465-21
+16 Mon Jun 1 16:54:04 PDT 2020 data_hpcc/random3/trial465-27
+16 Mon Jun 1 16:54:04 PDT 2020 data_hpcc/random3/trial465-34
+22 Mon Jun 1 16:54:04 PDT 2020 data_hpcc/random3/trial465-42
+26 Mon Jun 1 16:54:14 PDT 2020 data_hpcc/random3/trial465-52
+23 Mon Jun 1 16:54:18 PDT 2020 data_hpcc/random3/trial465-64
+26 Mon Jun 1 16:54:23 PDT 2020 data_hpcc/random3/trial465-78
+26 Mon Jun 1 16:54:33 PDT 2020 data_hpcc/random3/trial465-95
+25 Mon Jun 1 16:54:43 PDT 2020 data_hpcc/random3/trial465-116
+25 Mon Jun 1 16:54:54 PDT 2020 data_hpcc/random3/trial465-141
+25 Mon Jun 1 16:55:05 PDT 2020 data_hpcc/random3/trial465-171
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 16:55:35 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+1 Mon Jun 1 16:55:35 PDT 2020 data_hpcc/random3/trial465-2
+1 Mon Jun 1 16:55:35 PDT 2020 data_hpcc/random3/trial465-4
+1 Mon Jun 1 16:55:35 PDT 2020 data_hpcc/random3/trial465-6
+1 Mon Jun 1 16:55:35 PDT 2020 data_hpcc/random3/trial465-9
+1 Mon Jun 1 16:55:35 PDT 2020 data_hpcc/random3/trial465-12
+1 Mon Jun 1 16:55:35 PDT 2020 data_hpcc/random3/trial465-16
+1 Mon Jun 1 16:55:35 PDT 2020 data_hpcc/random3/trial465-21
+23 Mon Jun 1 16:55:47 PDT 2020 data_hpcc/random3/trial465-27
+26 Mon Jun 1 16:55:48 PDT 2020 data_hpcc/random3/trial465-34
+24 Mon Jun 1 16:55:50 PDT 2020 data_hpcc/random3/trial465-42
+26 Mon Jun 1 16:55:52 PDT 2020 data_hpcc/random3/trial465-52
+26 Mon Jun 1 16:56:00 PDT 2020 data_hpcc/random3/trial465-64
+24 Mon Jun 1 16:56:10 PDT 2020 data_hpcc/random3/trial465-78
+27 Mon Jun 1 16:56:14 PDT 2020 data_hpcc/random3/trial465-95
+27 Mon Jun 1 16:56:25 PDT 2020 data_hpcc/random3/trial465-116
+25 Mon Jun 1 16:56:37 PDT 2020 data_hpcc/random3/trial465-141
+14 Mon Jun 1 16:56:45 PDT 2020 data_hpcc/random3/trial465-171
+26 Mon Jun 1 16:57:11 PDT 2020 data_hpcc/random3/trial465-207
+26 Mon Jun 1 16:57:30 PDT 2020 data_hpcc/random3/trial465-250
+24 Mon Jun 1 16:57:57 PDT 2020 data_hpcc/random3/trial465-302
+26 Mon Jun 1 16:58:23 PDT 2020 data_hpcc/random3/trial465-364
+26 Mon Jun 1 16:58:59 PDT 2020 data_hpcc/random3/trial465-438
+26 Mon Jun 1 16:59:42 PDT 2020 data_hpcc/random3/trial465-527
+26 Mon Jun 1 17:00:29 PDT 2020 data_hpcc/random3/trial465-634
+25 Mon Jun 1 17:01:27 PDT 2020 data_hpcc/random3/trial465-762
+26 Mon Jun 1 17:02:30 PDT 2020 data_hpcc/random3/trial465-916
+28 Mon Jun 1 17:03:53 PDT 2020 data_hpcc/random3/trial465-1101
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 17:05:25 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+1 Mon Jun 1 17:05:26 PDT 2020 data_hpcc/random3/trial465-2
+1 Mon Jun 1 17:05:26 PDT 2020 data_hpcc/random3/trial465-4
+1 Mon Jun 1 17:05:26 PDT 2020 data_hpcc/random3/trial465-6
+1 Mon Jun 1 17:05:26 PDT 2020 data_hpcc/random3/trial465-9
+1 Mon Jun 1 17:05:26 PDT 2020 data_hpcc/random3/trial465-12
+1 Mon Jun 1 17:05:26 PDT 2020 data_hpcc/random3/trial465-16
+1 Mon Jun 1 17:05:26 PDT 2020 data_hpcc/random3/trial465-21
+23 Mon Jun 1 17:05:47 PDT 2020 data_hpcc/random3/trial465-27
+27 Mon Jun 1 17:05:49 PDT 2020 data_hpcc/random3/trial465-34
+24 Mon Jun 1 17:05:52 PDT 2020 data_hpcc/random3/trial465-42
+25 Mon Jun 1 17:05:54 PDT 2020 data_hpcc/random3/trial465-52
+27 Mon Jun 1 17:06:02 PDT 2020 data_hpcc/random3/trial465-64
+19 Mon Jun 1 17:06:14 PDT 2020 data_hpcc/random3/trial465-78
+23 Mon Jun 1 17:06:17 PDT 2020 data_hpcc/random3/trial465-95
+24 Mon Jun 1 17:06:27 PDT 2020 data_hpcc/random3/trial465-116
+24 Mon Jun 1 17:06:37 PDT 2020 data_hpcc/random3/trial465-141
+25 Mon Jun 1 17:06:55 PDT 2020 data_hpcc/random3/trial465-171
+26 Mon Jun 1 17:07:18 PDT 2020 data_hpcc/random3/trial465-207
+24 Mon Jun 1 17:07:36 PDT 2020 data_hpcc/random3/trial465-250
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 17:08:32 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log
+1 Mon Jun 1 17:08:32 PDT 2020 data_hpcc/random3/trial465-2
+1 Mon Jun 1 17:08:32 PDT 2020 data_hpcc/random3/trial465-4
+1 Mon Jun 1 17:08:32 PDT 2020 data_hpcc/random3/trial465-6
+1 Mon Jun 1 17:08:32 PDT 2020 data_hpcc/random3/trial465-9
+1 Mon Jun 1 17:08:32 PDT 2020 data_hpcc/random3/trial465-12
+1 Mon Jun 1 17:08:32 PDT 2020 data_hpcc/random3/trial465-16
+1 Mon Jun 1 17:08:32 PDT 2020 data_hpcc/random3/trial465-21

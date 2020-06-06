@@ -1,6 +1,6 @@
 INC_DIR=weilei_lib
 #INC_DIR=~/working/weilei_lib
-CXX=g++ -O2 -Wall 
+CXX=g++ -O2 -Wall -std=c++11
 ### -O2 -O5 -Os
 #g++ `pkg-config --cflags itpp` -o hello.out hello.cpp `pkg-config --libs itpp`
 
@@ -28,3 +28,9 @@ clean:
 	rm  *~
 	rm \#*
 
+sbatch-dry-run:
+	sbatch --test product.sh
+sbatch:
+	sbatch product.sh
+pkill-product:
+	pkill .product

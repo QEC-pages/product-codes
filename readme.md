@@ -2,12 +2,20 @@ May 17, 2019
 
 
 
-modify/rewriting the program to check for more cases.
+## modify/rewriting the program to check for more cases.
 
+progress
+- [ ] parameter in mind: use small codes with large distance, typically k need to be small
+- [x] write a function to search for 'good' CSS codes first, then use it for product code/chain complex
+  - cannot find good CSS codes with both distance greater than 1, after 10000 trials
+    - this was a small bug.
+  - try to remove all zero columns, not working yet
+    - not necessary
+  - I tried an alternate approach: add a filter to remove distance 1 entrances. This works well
 
-* parameter in mind: use small codes with large distance, typically k need to be small
-* write a function to search for 'good' CSS codes first, then use it for product code/chain complex
-
+TODO:
+- [ ] run more test for subsystem product code
+- [ ] add chain complex product for two CSS codes.
 
 
 

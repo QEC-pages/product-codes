@@ -1,0 +1,23 @@
+start job on SBATCH:i06 size run486 max_process:/max_trial:1000000 Tue Jun 2 22:01:55 PDT 2020
+SLURM_JOB_ID:1389590 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:identical code A B, sub_mode:3, n_low:10, n_high=20, data_folder:data_hpcc/random3, log_file:log/product486-size.log status_file:log/status-product486-size.log
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-2
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-4
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-6
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-9
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-12
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-16
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-21
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-27
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-34
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-42
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-52
+0 Tue Jun 2 22:01:55 PDT 2020 data_hpcc/random3/trial486-64
+76 Tue Jun 2 22:02:14 PDT 2020 data_hpcc/random3/trial486-78
+76 Tue Jun 2 22:02:48 PDT 2020 data_hpcc/random3/trial486-95
+76 Tue Jun 2 22:03:48 PDT 2020 data_hpcc/random3/trial486-116
+76 Tue Jun 2 22:06:10 PDT 2020 data_hpcc/random3/trial486-141
+76 Tue Jun 2 22:10:15 PDT 2020 data_hpcc/random3/trial486-171
+76 Tue Jun 2 22:18:38 PDT 2020 data_hpcc/random3/trial486-207
+76 Tue Jun 2 22:40:48 PDT 2020 data_hpcc/random3/trial486-250
+76 Tue Jun 2 23:33:39 PDT 2020 data_hpcc/random3/trial486-302

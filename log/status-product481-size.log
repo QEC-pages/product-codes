@@ -1,0 +1,47 @@
+start job on SBATCH:i05 size run481 max_process:/max_trial:1000000 Tue Jun 2 16:46:28 PDT 2020
+SLURM_JOB_ID:1379555 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+sub_mode:3, n_low:6, n_high=11, data_folder:data_hpcc/random3, log_file:log/product481-size.log status_file:log/status-product481-size.log
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-2
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-4
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-6
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-9
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-12
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-16
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-21
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-27
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-34
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-42
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-52
+0 Tue Jun 2 16:46:28 PDT 2020 data_hpcc/random3/trial481-64
+76 Tue Jun 2 16:46:33 PDT 2020 data_hpcc/random3/trial481-78
+74 Tue Jun 2 16:46:39 PDT 2020 data_hpcc/random3/trial481-95
+76 Tue Jun 2 16:46:42 PDT 2020 data_hpcc/random3/trial481-116
+75 Tue Jun 2 16:46:48 PDT 2020 data_hpcc/random3/trial481-141
+75 Tue Jun 2 16:46:54 PDT 2020 data_hpcc/random3/trial481-171
+75 Tue Jun 2 16:47:02 PDT 2020 data_hpcc/random3/trial481-207
+76 Tue Jun 2 16:47:09 PDT 2020 data_hpcc/random3/trial481-250
+76 Tue Jun 2 16:47:20 PDT 2020 data_hpcc/random3/trial481-302
+74 Tue Jun 2 16:47:32 PDT 2020 data_hpcc/random3/trial481-364
+74 Tue Jun 2 16:47:49 PDT 2020 data_hpcc/random3/trial481-438
+75 Tue Jun 2 16:48:10 PDT 2020 data_hpcc/random3/trial481-527
+74 Tue Jun 2 16:48:32 PDT 2020 data_hpcc/random3/trial481-634
+74 Tue Jun 2 16:49:00 PDT 2020 data_hpcc/random3/trial481-762
+75 Tue Jun 2 16:49:32 PDT 2020 data_hpcc/random3/trial481-916
+76 Tue Jun 2 16:50:14 PDT 2020 data_hpcc/random3/trial481-1101
+75 Tue Jun 2 16:51:10 PDT 2020 data_hpcc/random3/trial481-1323
+76 Tue Jun 2 16:52:20 PDT 2020 data_hpcc/random3/trial481-1589
+76 Tue Jun 2 16:53:30 PDT 2020 data_hpcc/random3/trial481-1908
+75 Tue Jun 2 16:55:06 PDT 2020 data_hpcc/random3/trial481-2291
+76 Tue Jun 2 16:57:09 PDT 2020 data_hpcc/random3/trial481-2751
+75 Tue Jun 2 16:59:22 PDT 2020 data_hpcc/random3/trial481-3303
+75 Tue Jun 2 17:02:20 PDT 2020 data_hpcc/random3/trial481-3965
+75 Tue Jun 2 17:05:52 PDT 2020 data_hpcc/random3/trial481-4760
+76 Tue Jun 2 17:10:34 PDT 2020 data_hpcc/random3/trial481-5714
+76 Tue Jun 2 17:15:57 PDT 2020 data_hpcc/random3/trial481-6858
+75 Tue Jun 2 17:22:03 PDT 2020 data_hpcc/random3/trial481-8231
+75 Tue Jun 2 17:29:20 PDT 2020 data_hpcc/random3/trial481-9879
+76 Tue Jun 2 17:38:37 PDT 2020 data_hpcc/random3/trial481-11856
+73 Tue Jun 2 17:49:58 PDT 2020 data_hpcc/random3/trial481-14229
+75 Tue Jun 2 18:04:02 PDT 2020 data_hpcc/random3/trial481-17076
+75 Tue Jun 2 18:20:38 PDT 2020 data_hpcc/random3/trial481-20493
+76 Tue Jun 2 18:42:59 PDT 2020 data_hpcc/random3/trial481-24593

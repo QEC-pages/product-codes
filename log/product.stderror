@@ -1,0 +1,130 @@
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+slurmstepd-i06: error: *** JOB 1403723 ON i06 CANCELLED AT 2020-06-03T15:17:31 DUE TO TIME LIMIT ***
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+slurmstepd-c21: error: _is_a_lwp: open() /proc/25369/status failed: No such file or directory
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+slurmstepd-c45: error: _is_a_lwp: open() /proc/25596/status failed: No such file or directory
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+slurmstepd-c45: error: _is_a_lwp: open() /proc/53905/status failed: No such file or directory
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+slurmstepd-c45: error: _is_a_lwp: open() /proc/54197/status failed: No such file or directory
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+slurmstepd-c20: error: _is_a_lwp: open() /proc/24641/status failed: No such file or directory
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+slurmstepd-c20: error: _is_a_lwp: open() /proc/9956/status failed: No such file or directory
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+slurmstepd-c45: error: _is_a_lwp: open() /proc/52362/status failed: No such file or directory
+slurmstepd-c21: error: _is_a_lwp: open() /proc/44858/status failed: No such file or directory
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+*** Assertion failed in /opt/linux/centos/7.x/x86_64/src/itpp-4.3.1/itpp/base/gf2mat.cpp on line 483:
+GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2 >= n1 && m2 < nrows && n2 < ncols)
+
+Fri Jun  5 21:10:45 PDT 2020
+======================    new error output  =================

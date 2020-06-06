@@ -1,0 +1,30 @@
+start job on SRUN:c03 size run492 max_process:/max_trial:1000000 Wed Jun 3 12:44:12 PDT 2020
+SLURM_JOB_ID:1402291 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+note:[n_low=6, n_high=12, k_low=1, k_high=3 sub_mode=3], sub_mode:3, n_low:6, n_high=12, data_folder:data_hpcc/random3, log_file:log/product492-size.log status_file:log/status-product492-size.log
+1 Wed Jun 3 12:44:12 PDT 2020 data_hpcc/random3/trial492-2
+1 Wed Jun 3 12:44:12 PDT 2020 data_hpcc/random3/trial492-4
+1 Wed Jun 3 12:44:12 PDT 2020 data_hpcc/random3/trial492-6
+1 Wed Jun 3 12:44:12 PDT 2020 data_hpcc/random3/trial492-9
+1 Wed Jun 3 12:44:12 PDT 2020 data_hpcc/random3/trial492-12
+1 Wed Jun 3 12:44:12 PDT 2020 data_hpcc/random3/trial492-16
+1 Wed Jun 3 12:44:12 PDT 2020 data_hpcc/random3/trial492-21
+1 Wed Jun 3 12:44:12 PDT 2020 data_hpcc/random3/trial492-27
+1 Wed Jun 3 12:44:13 PDT 2020 data_hpcc/random3/trial492-34
+1 Wed Jun 3 12:44:13 PDT 2020 data_hpcc/random3/trial492-42
+1 Wed Jun 3 12:44:13 PDT 2020 data_hpcc/random3/trial492-52
+1 Wed Jun 3 12:44:13 PDT 2020 data_hpcc/random3/trial492-64
+76 Wed Jun 3 12:44:38 PDT 2020 data_hpcc/random3/trial492-78
+76 Wed Jun 3 12:45:02 PDT 2020 data_hpcc/random3/trial492-95
+76 Wed Jun 3 12:45:45 PDT 2020 data_hpcc/random3/trial492-116
+75 Wed Jun 3 12:46:23 PDT 2020 data_hpcc/random3/trial492-141
+76 Wed Jun 3 12:47:18 PDT 2020 data_hpcc/random3/trial492-171
+76 Wed Jun 3 12:48:06 PDT 2020 data_hpcc/random3/trial492-207
+76 Wed Jun 3 12:49:06 PDT 2020 data_hpcc/random3/trial492-250
+76 Wed Jun 3 12:50:20 PDT 2020 data_hpcc/random3/trial492-302
+75 Wed Jun 3 12:52:11 PDT 2020 data_hpcc/random3/trial492-364
+76 Wed Jun 3 12:54:19 PDT 2020 data_hpcc/random3/trial492-438
+76 Wed Jun 3 12:57:07 PDT 2020 data_hpcc/random3/trial492-527
+76 Wed Jun 3 13:00:05 PDT 2020 data_hpcc/random3/trial492-634
+75 Wed Jun 3 13:03:37 PDT 2020 data_hpcc/random3/trial492-762
+75 Wed Jun 3 13:09:08 PDT 2020 data_hpcc/random3/trial492-916
+76 Wed Jun 3 13:15:06 PDT 2020 data_hpcc/random3/trial492-1101

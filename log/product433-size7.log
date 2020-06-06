@@ -1,0 +1,44 @@
+start job on c27 size7 run433 max_process:50/max_trial:1000000 Sun May 31 17:12:53 PDT 2020
+SLURM_JOB_ID:1265245 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product433-size7.log
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-2
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-4
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-6
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-9
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-12
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-16
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-21
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-27
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-34
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-42
+Sun May 31 17:12:54 PDT 2020 7 data_hpcc/random3/trial433-52
+Sun May 31 17:12:55 PDT 2020 7 data_hpcc/random3/trial433-64
+Sun May 31 17:12:55 PDT 2020 7 data_hpcc/random3/trial433-78
+Sun May 31 17:12:55 PDT 2020 7 data_hpcc/random3/trial433-95
+Sun May 31 17:12:55 PDT 2020 7 data_hpcc/random3/trial433-116
+Sun May 31 17:12:55 PDT 2020 7 data_hpcc/random3/trial433-141
+Sun May 31 17:12:56 PDT 2020 7 data_hpcc/random3/trial433-171
+Sun May 31 17:12:56 PDT 2020 7 data_hpcc/random3/trial433-207
+Sun May 31 17:12:57 PDT 2020 7 data_hpcc/random3/trial433-250
+Sun May 31 17:12:58 PDT 2020 7 data_hpcc/random3/trial433-302
+Sun May 31 17:12:59 PDT 2020 7 data_hpcc/random3/trial433-364
+Sun May 31 17:13:00 PDT 2020 7 data_hpcc/random3/trial433-438
+Sun May 31 17:13:01 PDT 2020 7 data_hpcc/random3/trial433-527
+Sun May 31 17:13:02 PDT 2020 7 data_hpcc/random3/trial433-634
+Sun May 31 17:13:04 PDT 2020 7 data_hpcc/random3/trial433-762
+Sun May 31 17:13:06 PDT 2020 7 data_hpcc/random3/trial433-916
+Sun May 31 17:13:07 PDT 2020 7 data_hpcc/random3/trial433-1101
+Sun May 31 17:13:15 PDT 2020 7 data_hpcc/random3/trial433-1323
+Sun May 31 17:13:23 PDT 2020 7 data_hpcc/random3/trial433-1589
+Sun May 31 17:13:26 PDT 2020 7 data_hpcc/random3/trial433-1908
+Sun May 31 17:13:31 PDT 2020 7 data_hpcc/random3/trial433-2291
+Sun May 31 17:13:36 PDT 2020 7 data_hpcc/random3/trial433-2751
+Sun May 31 17:13:51 PDT 2020 7 data_hpcc/random3/trial433-3303
+Sun May 31 17:14:07 PDT 2020 7 data_hpcc/random3/trial433-3965
+Sun May 31 17:14:26 PDT 2020 7 data_hpcc/random3/trial433-4760
+Sun May 31 17:14:49 PDT 2020 7 data_hpcc/random3/trial433-5714
+Sun May 31 17:15:19 PDT 2020 7 data_hpcc/random3/trial433-6858
+Sun May 31 17:15:57 PDT 2020 7 data_hpcc/random3/trial433-8231
+Sun May 31 17:16:40 PDT 2020 7 data_hpcc/random3/trial433-9879
+Sun May 31 17:17:34 PDT 2020 7 data_hpcc/random3/trial433-11856
+Sun May 31 17:18:38 PDT 2020 7 data_hpcc/random3/trial433-14229

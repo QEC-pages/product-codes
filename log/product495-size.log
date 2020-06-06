@@ -1,0 +1,5 @@
+start job on SBATCH:c45 size run495 max_process:/max_trial:1000000 Wed Jun 3 16:01:06 PDT 2020
+SLURM_JOB_ID:1406741 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=6, n_high=12, k_low=1, k_high=3 sub_mode=1], sub_mode:1, n_low:6, n_high=12, data_folder:data_hpcc/random3, log_file:log/product495-size.log status_file:log/status-product495-size.log
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=15, dcx=16. dax,daz,dbx,dbz = 3,2,5,2;na,nb,nc,11,12,132;ka,kb=1,1;data_hpcc/random3/trial495-33496,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=1, time:1142.58
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=15, dcz=16. dax,daz,dbx,dbz = 2,3,2,5;na,nb,nc=12,12,144;ka,kb=1,1;data_hpcc/random3/trial495-334343,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=1, time:2062.43
