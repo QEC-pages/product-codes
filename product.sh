@@ -102,6 +102,9 @@ case `hostname` in
 	;;
 esac
 
+# TODO: remove above case when job finished
+folder=data/random3
+
 
 #echo start job on `hostname` size$na_input run$index $max_process/$max_trial `date`
 #echo $SLURM_JOB_ID $SLURM_JOB_NAME $SLURM_SUBMIT_DIR 
