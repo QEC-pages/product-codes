@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=60
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=0-12:00:00     
+#SBATCH --time=7-00:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
 #SBATCH --error=log/product.stderror --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
@@ -60,16 +60,19 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=491
+index=496
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
 # 1: two random code; 2: identical reverse A B; 3: identical A B
-sub_mode=3
+sub_mode=1
 #na_input=7
-n_low=10
-n_high=15
-note="identical code A B"
+n_low=6
+n_high=12
+k_low=1
+k_high=3
+# note for run info
+note="[n_low=$n_low, n_high=$n_high, k_low=$k_low, k_high=$k_high sub_mode=$sub_mode]"
 
 #echo "==========   new history file " `date` >> log/history.stdout
 #cat log/product.stdout >> log/history.stdout
@@ -141,7 +144,7 @@ do
 #	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
 	    #./counter_concatenation.out mode=1 title=$title debug=0 &
 	    #./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed=$i  >> $logfile &
-	    ./.product$index.out  mode=1 sub_mode=$sub_mode title=$title debug=0 n_low=$n_low n_high=$n_high seed=$i  note=$note >> $logfile &
+	    ./.product$index.out  mode=1 sub_mode=$sub_mode title=$title debug=0 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note >> $logfile &
 	    #>>data/result/result$index-$i.log &	    
 	    #1 for generate random code
 	    #./random_concatenation.out  >>data/result/result$index-$i.log &
@@ -154,7 +157,7 @@ do
 		echo $num_process `date` $na_input $title >> $statusfile
 		#echo ${max_trial} $title `date` >> $logfile
 		# add 20 % for next check point
-		(( bi = bi + bi / 5 + 2 ))
+		(( bi = bi + bi / 3 + 2 ))
 	    fi
 	    (( i++ ))
 

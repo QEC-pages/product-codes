@@ -1,0 +1,4 @@
+start job on SRUN:c03 size run492 max_process:/max_trial:1000000 Wed Jun 3 12:44:12 PDT 2020
+SLURM_JOB_ID:1402291 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+note:[n_low=6, n_high=12, k_low=1, k_high=3 sub_mode=3], sub_mode:3, n_low:6, n_high=12, data_folder:data_hpcc/random3, log_file:log/product492-size.log status_file:log/status-product492-size.log
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial492-173,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:45.3856

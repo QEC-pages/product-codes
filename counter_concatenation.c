@@ -40,7 +40,9 @@ int main(int args, char ** argv){
   //  int na_input;  parser.get(na_input,"na_input");
   int n_low;  parser.get(n_low,"n_low");
   int n_high;  parser.get(n_high,"n_high");
-
+  int k_low;  parser.get(k_low,"k_low");
+  int k_high;  parser.get(k_high,"k_high");
+  
 
   //  RNG_randomize();  
 
@@ -59,7 +61,7 @@ int main(int args, char ** argv){
   if (debug)   cout<<mode<<endl<<title<<endl;
   switch( mode ){
     case 1://generate random codes and save
-      na=randi(n_low,n_high); ka = randi(1,1);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
+      na=randi(n_low,n_high); ka = randi(k_low,k_high);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
       getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,debug);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
 
@@ -67,7 +69,7 @@ int main(int args, char ** argv){
         case 1: //two random codes
       
           //random code B
-          nb=randi(n_low,n_high); kb = randi(1,1);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
+          nb=randi(n_low,n_high); kb = randi(k_low,k_high);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
           getGoodQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz,debug);
           break;
         case 2: // identical reverse code A for code B  
@@ -143,12 +145,14 @@ int main(int args, char ** argv){
   int flag_chain_complex=0; //run if 1
   //0 for reduce/subsystem, distance x
   if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,0) == 2)   {
-    std::cout<<title<<","<<note<<",sub_mode"<<sub_mode<<std::endl;
+    std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
     flag_chain_complex=1;
   }
   //1 for reduce/subsystem, distance z
   if (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,1) == 2){
-    std::cout<<title<<","<<note<<",sub_mode"<<sub_mode<<std::endl;
+    std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
+    //    std::cout<<title<<","<<note<<std::endl;
+    //    std::cout<<title<<","<<note<<", sub_mode:"<<sub_mode<<std::endl;
     //    std::cout<<title<<std::endl;
     flag_chain_complex=1;
   }
@@ -160,10 +164,14 @@ int main(int args, char ** argv){
     // 4 for chain complex with two length-3, x distance
     //    cout<<"mode 3 4"<<endl;
     if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,3) == 2)  
-      std::cout<<title<<","<<note<<",sub_mode"<<sub_mode<<std::endl;
+          std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
+    //    std::cout<<title<<","<<note<<std::endl;
+    //std::cout<<title<<","<<note<<",sub_mode: "<<sub_mode<<std::endl;
     //std::cout<<title<<std::endl;
     if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  
-      std::cout<<title<<","<<note<<",sub_mode"<<sub_mode<<std::endl;
+          std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
+    //    std::cout<<title<<","<<note<<std::endl;
+    //std::cout<<title<<","<<note<<",sub_mode: "<<sub_mode<<std::endl;
     //std::cout<<title<<std::endl;
   }
 

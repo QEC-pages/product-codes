@@ -144,3 +144,256 @@ note:identical code A B, sub_mode:3, n_low:10, n_high=15, data_folder:data_hpcc/
 76 Wed Jun 3 00:19:44 PDT 2020 data_hpcc/random3/trial491-302
 76 Wed Jun 3 00:20:19 PDT 2020 data_hpcc/random3/trial489-302
 76 Wed Jun 3 00:20:25 PDT 2020 data_hpcc/random3/trial490-302
+76 Wed Jun 3 00:23:16 PDT 2020 data_hpcc/random3/trial490-364
+76 Wed Jun 3 00:23:58 PDT 2020 data_hpcc/random3/trial488-364
+76 Wed Jun 3 00:23:58 PDT 2020 data_hpcc/random3/trial491-364
+76 Wed Jun 3 00:25:17 PDT 2020 data_hpcc/random3/trial489-364
+76 Wed Jun 3 00:28:13 PDT 2020 data_hpcc/random3/trial490-438
+76 Wed Jun 3 00:29:19 PDT 2020 data_hpcc/random3/trial488-438
+76 Wed Jun 3 00:30:12 PDT 2020 data_hpcc/random3/trial491-438
+76 Wed Jun 3 00:32:19 PDT 2020 data_hpcc/random3/trial489-438
+76 Wed Jun 3 00:35:30 PDT 2020 data_hpcc/random3/trial488-527
+76 Wed Jun 3 00:36:27 PDT 2020 data_hpcc/random3/trial490-527
+76 Wed Jun 3 00:37:25 PDT 2020 data_hpcc/random3/trial491-527
+76 Wed Jun 3 00:39:20 PDT 2020 data_hpcc/random3/trial489-527
+76 Wed Jun 3 00:43:51 PDT 2020 data_hpcc/random3/trial488-634
+76 Wed Jun 3 00:47:51 PDT 2020 data_hpcc/random3/trial490-634
+76 Wed Jun 3 00:48:06 PDT 2020 data_hpcc/random3/trial491-634
+76 Wed Jun 3 00:49:11 PDT 2020 data_hpcc/random3/trial489-634
+76 Wed Jun 3 00:57:51 PDT 2020 data_hpcc/random3/trial488-762
+76 Wed Jun 3 01:04:58 PDT 2020 data_hpcc/random3/trial491-762
+76 Wed Jun 3 01:05:14 PDT 2020 data_hpcc/random3/trial489-762
+76 Wed Jun 3 01:06:48 PDT 2020 data_hpcc/random3/trial490-762
+76 Wed Jun 3 01:21:42 PDT 2020 data_hpcc/random3/trial488-916
+76 Wed Jun 3 01:27:34 PDT 2020 data_hpcc/random3/trial491-916
+76 Wed Jun 3 01:30:50 PDT 2020 data_hpcc/random3/trial489-916
+76 Wed Jun 3 01:34:49 PDT 2020 data_hpcc/random3/trial490-916
+76 Wed Jun 3 01:45:14 PDT 2020 data_hpcc/random3/trial488-1101
+76 Wed Jun 3 01:54:55 PDT 2020 data_hpcc/random3/trial489-1101
+76 Wed Jun 3 01:55:36 PDT 2020 data_hpcc/random3/trial491-1101
+76 Wed Jun 3 02:02:01 PDT 2020 data_hpcc/random3/trial490-1101
+76 Wed Jun 3 02:08:22 PDT 2020 data_hpcc/random3/trial488-1323
+76 Wed Jun 3 02:30:53 PDT 2020 data_hpcc/random3/trial491-1323
+76 Wed Jun 3 02:32:51 PDT 2020 data_hpcc/random3/trial490-1323
+slurmstepd-c45: error: _is_a_lwp: open() /proc/48881/status failed: No such file or directory
+76 Wed Jun 3 02:36:25 PDT 2020 data_hpcc/random3/trial489-1323
+76 Wed Jun 3 02:44:43 PDT 2020 data_hpcc/random3/trial488-1589
+76 Wed Jun 3 03:05:17 PDT 2020 data_hpcc/random3/trial489-1589
+76 Wed Jun 3 03:17:14 PDT 2020 data_hpcc/random3/trial490-1589
+76 Wed Jun 3 03:32:06 PDT 2020 data_hpcc/random3/trial491-1589
+76 Wed Jun 3 03:33:59 PDT 2020 data_hpcc/random3/trial488-1908
+76 Wed Jun 3 03:56:44 PDT 2020 data_hpcc/random3/trial489-1908
+76 Wed Jun 3 04:03:13 PDT 2020 data_hpcc/random3/trial490-1908
+76 Wed Jun 3 04:22:58 PDT 2020 data_hpcc/random3/trial491-1908
+76 Wed Jun 3 04:41:38 PDT 2020 data_hpcc/random3/trial488-2291
+76 Wed Jun 3 04:53:39 PDT 2020 data_hpcc/random3/trial490-2291
+76 Wed Jun 3 05:10:54 PDT 2020 data_hpcc/random3/trial489-2291
+76 Wed Jun 3 05:35:23 PDT 2020 data_hpcc/random3/trial491-2291
+76 Wed Jun 3 05:48:14 PDT 2020 data_hpcc/random3/trial488-2751
+76 Wed Jun 3 06:02:02 PDT 2020 data_hpcc/random3/trial490-2751
+slurmstepd-c20: error: _is_a_lwp: open() /proc/50773/status failed: No such file or directory
+76 Wed Jun 3 06:28:05 PDT 2020 data_hpcc/random3/trial489-2751
+76 Wed Jun 3 06:50:43 PDT 2020 data_hpcc/random3/trial491-2751
+76 Wed Jun 3 07:23:02 PDT 2020 data_hpcc/random3/trial488-3303
+76 Wed Jun 3 07:27:45 PDT 2020 data_hpcc/random3/trial490-3303
+76 Wed Jun 3 08:10:47 PDT 2020 data_hpcc/random3/trial489-3303
+76 Wed Jun 3 08:36:06 PDT 2020 data_hpcc/random3/trial491-3303
+76 Wed Jun 3 09:10:43 PDT 2020 data_hpcc/random3/trial488-3965
+76 Wed Jun 3 09:12:56 PDT 2020 data_hpcc/random3/trial490-3965
+76 Wed Jun 3 09:48:00 PDT 2020 data_hpcc/random3/trial489-3965
+76 Wed Jun 3 10:18:31 PDT 2020 data_hpcc/random3/trial491-3965
+76 Wed Jun 3 11:43:20 PDT 2020 data_hpcc/random3/trial488-4760
+76 Wed Jun 3 11:46:56 PDT 2020 data_hpcc/random3/trial490-4760
+slurmstepd-c17: error: *** JOB 1394183 ON c17 CANCELLED AT 2020-06-03T12:09:32 DUE TO TIME LIMIT ***
+slurmstepd-c20: error: *** JOB 1394259 ON c20 CANCELLED AT 2020-06-03T12:11:02 DUE TO TIME LIMIT ***
+slurmstepd-c45: error: *** JOB 1394260 ON c45 CANCELLED AT 2020-06-03T12:11:02 DUE TO TIME LIMIT ***
+slurmstepd-c21: error: *** JOB 1394290 ON c21 CANCELLED AT 2020-06-03T12:11:32 DUE TO TIME LIMIT ***
+
+============= The World is Unitary ============
+
+start job on i06 Wed Jun 3 13:17:29 PDT 2020
+check logfile: log/product493-size.log statusfile:log/status-product493-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:i06 size run493 max_process:/max_trial:1000000 Wed Jun 3 13:17:29 PDT 2020
+SLURM_JOB_ID:1403723 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=6, n_high=12, k_low=1, k_high=3 sub_mode=3], sub_mode:3, n_low:6, n_high=12, data_folder:data_hpcc/random3, log_file:log/product493-size.log status_file:log/status-product493-size.log
+0 Wed Jun 3 13:17:29 PDT 2020 data_hpcc/random3/trial493-2
+0 Wed Jun 3 13:17:29 PDT 2020 data_hpcc/random3/trial493-4
+0 Wed Jun 3 13:17:30 PDT 2020 data_hpcc/random3/trial493-7
+0 Wed Jun 3 13:17:30 PDT 2020 data_hpcc/random3/trial493-11
+0 Wed Jun 3 13:17:30 PDT 2020 data_hpcc/random3/trial493-16
+0 Wed Jun 3 13:17:30 PDT 2020 data_hpcc/random3/trial493-23
+0 Wed Jun 3 13:17:30 PDT 2020 data_hpcc/random3/trial493-32
+0 Wed Jun 3 13:17:30 PDT 2020 data_hpcc/random3/trial493-44
+0 Wed Jun 3 13:17:30 PDT 2020 data_hpcc/random3/trial493-60
+75 Wed Jun 3 13:17:34 PDT 2020 data_hpcc/random3/trial493-82
+76 Wed Jun 3 13:17:43 PDT 2020 data_hpcc/random3/trial493-111
+69 Wed Jun 3 13:17:57 PDT 2020 data_hpcc/random3/trial493-150
+74 Wed Jun 3 13:18:13 PDT 2020 data_hpcc/random3/trial493-202
+75 Wed Jun 3 13:18:34 PDT 2020 data_hpcc/random3/trial493-271
+75 Wed Jun 3 13:19:02 PDT 2020 data_hpcc/random3/trial493-363
+65 Wed Jun 3 13:19:48 PDT 2020 data_hpcc/random3/trial493-486
+75 Wed Jun 3 13:20:46 PDT 2020 data_hpcc/random3/trial493-650
+75 Wed Jun 3 13:22:04 PDT 2020 data_hpcc/random3/trial493-868
+75 Wed Jun 3 13:23:48 PDT 2020 data_hpcc/random3/trial493-1159
+76 Wed Jun 3 13:26:07 PDT 2020 data_hpcc/random3/trial493-1547
+75 Wed Jun 3 13:29:43 PDT 2020 data_hpcc/random3/trial493-2064
+76 Wed Jun 3 13:34:15 PDT 2020 data_hpcc/random3/trial493-2754
+76 Wed Jun 3 13:41:14 PDT 2020 data_hpcc/random3/trial493-3674
+76 Wed Jun 3 13:49:17 PDT 2020 data_hpcc/random3/trial493-4900
+76 Wed Jun 3 14:00:02 PDT 2020 data_hpcc/random3/trial493-6535
+75 Wed Jun 3 14:14:37 PDT 2020 data_hpcc/random3/trial493-8715
+75 Wed Jun 3 14:35:42 PDT 2020 data_hpcc/random3/trial493-11622
+
+============= The World is Unitary ============
+
+start job on c20 Wed Jun 3 14:54:33 PDT 2020
+check logfile: log/product494-size.log statusfile:log/status-product494-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:c20 size run494 max_process:/max_trial:1000000 Wed Jun 3 14:54:33 PDT 2020
+SLURM_JOB_ID:1405500 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=6, n_high=12, k_low=1, k_high=3 sub_mode=1], sub_mode:1, n_low:6, n_high=12, data_folder:data_hpcc/random3, log_file:log/product494-size.log status_file:log/status-product494-size.log
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-2
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-4
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-7
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-11
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-16
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-23
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-32
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-44
+0 Wed Jun 3 14:54:33 PDT 2020 data_hpcc/random3/trial494-60
+76 Wed Jun 3 14:54:40 PDT 2020 data_hpcc/random3/trial494-82
+76 Wed Jun 3 14:54:55 PDT 2020 data_hpcc/random3/trial494-111
+76 Wed Jun 3 14:55:11 PDT 2020 data_hpcc/random3/trial494-150
+76 Wed Jun 3 14:55:36 PDT 2020 data_hpcc/random3/trial494-202
+76 Wed Jun 3 14:56:07 PDT 2020 data_hpcc/random3/trial494-271
+75 Wed Jun 3 14:56:48 PDT 2020 data_hpcc/random3/trial494-363
+76 Wed Jun 3 14:57:46 PDT 2020 data_hpcc/random3/trial494-486
+76 Wed Jun 3 14:59:03 PDT 2020 data_hpcc/random3/trial494-650
+76 Wed Jun 3 15:00:47 PDT 2020 data_hpcc/random3/trial494-868
+76 Wed Jun 3 15:02:58 PDT 2020 data_hpcc/random3/trial494-1159
+76 Wed Jun 3 15:04:23 PDT 2020 data_hpcc/random3/trial493-15498
+76 Wed Jun 3 15:05:59 PDT 2020 data_hpcc/random3/trial494-1547
+76 Wed Jun 3 15:09:57 PDT 2020 data_hpcc/random3/trial494-2064
+76 Wed Jun 3 15:15:03 PDT 2020 data_hpcc/random3/trial494-2754
+76 Wed Jun 3 15:22:15 PDT 2020 data_hpcc/random3/trial494-3674
+76 Wed Jun 3 15:32:14 PDT 2020 data_hpcc/random3/trial494-4900
+76 Wed Jun 3 15:45:03 PDT 2020 data_hpcc/random3/trial494-6535
+
+============= The World is Unitary ============
+
+start job on c45 Wed Jun 3 16:01:06 PDT 2020
+check logfile: log/product495-size.log statusfile:log/status-product495-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:c45 size run495 max_process:/max_trial:1000000 Wed Jun 3 16:01:06 PDT 2020
+SLURM_JOB_ID:1406741 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=6, n_high=12, k_low=1, k_high=3 sub_mode=1], sub_mode:1, n_low:6, n_high=12, data_folder:data_hpcc/random3, log_file:log/product495-size.log status_file:log/status-product495-size.log
+0 Wed Jun 3 16:01:06 PDT 2020 data_hpcc/random3/trial495-2
+0 Wed Jun 3 16:01:06 PDT 2020 data_hpcc/random3/trial495-4
+0 Wed Jun 3 16:01:06 PDT 2020 data_hpcc/random3/trial495-7
+0 Wed Jun 3 16:01:06 PDT 2020 data_hpcc/random3/trial495-11
+0 Wed Jun 3 16:01:07 PDT 2020 data_hpcc/random3/trial495-16
+0 Wed Jun 3 16:01:07 PDT 2020 data_hpcc/random3/trial495-23
+0 Wed Jun 3 16:01:07 PDT 2020 data_hpcc/random3/trial495-32
+0 Wed Jun 3 16:01:07 PDT 2020 data_hpcc/random3/trial495-44
+0 Wed Jun 3 16:01:07 PDT 2020 data_hpcc/random3/trial495-60
+75 Wed Jun 3 16:01:17 PDT 2020 data_hpcc/random3/trial495-82
+76 Wed Jun 3 16:01:27 PDT 2020 data_hpcc/random3/trial495-111
+
+============= The World is Unitary ============
+
+start job on c21 Wed Jun 3 16:01:38 PDT 2020
+check logfile: log/product496-size.log statusfile:log/status-product496-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:c21 size run496 max_process:/max_trial:1000000 Wed Jun 3 16:01:38 PDT 2020
+SLURM_JOB_ID:1406742 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=6, n_high=12, k_low=1, k_high=3 sub_mode=1], sub_mode:1, n_low:6, n_high=12, data_folder:data_hpcc/random3, log_file:log/product496-size.log status_file:log/status-product496-size.log
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-2
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-4
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-7
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-11
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-16
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-23
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-32
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-44
+0 Wed Jun 3 16:01:39 PDT 2020 data_hpcc/random3/trial496-60
+76 Wed Jun 3 16:01:43 PDT 2020 data_hpcc/random3/trial495-150
+76 Wed Jun 3 16:01:50 PDT 2020 data_hpcc/random3/trial496-82
+76 Wed Jun 3 16:01:59 PDT 2020 data_hpcc/random3/trial496-111
+76 Wed Jun 3 16:02:06 PDT 2020 data_hpcc/random3/trial495-202
+76 Wed Jun 3 16:02:17 PDT 2020 data_hpcc/random3/trial496-150
+74 Wed Jun 3 16:02:34 PDT 2020 data_hpcc/random3/trial495-271
+76 Wed Jun 3 16:02:36 PDT 2020 data_hpcc/random3/trial496-202
+75 Wed Jun 3 16:02:41 PDT 2020 data_hpcc/random3/trial494-8715
+74 Wed Jun 3 16:03:04 PDT 2020 data_hpcc/random3/trial496-271
+75 Wed Jun 3 16:03:20 PDT 2020 data_hpcc/random3/trial495-363
+76 Wed Jun 3 16:03:47 PDT 2020 data_hpcc/random3/trial496-363
+75 Wed Jun 3 16:04:17 PDT 2020 data_hpcc/random3/trial495-486
+76 Wed Jun 3 16:04:44 PDT 2020 data_hpcc/random3/trial496-486
+75 Wed Jun 3 16:05:39 PDT 2020 data_hpcc/random3/trial495-650
+74 Wed Jun 3 16:05:54 PDT 2020 data_hpcc/random3/trial496-650
+76 Wed Jun 3 16:07:13 PDT 2020 data_hpcc/random3/trial495-868
+75 Wed Jun 3 16:07:42 PDT 2020 data_hpcc/random3/trial496-868
+76 Wed Jun 3 16:09:29 PDT 2020 data_hpcc/random3/trial495-1159
+75 Wed Jun 3 16:09:59 PDT 2020 data_hpcc/random3/trial496-1159
+75 Wed Jun 3 16:12:34 PDT 2020 data_hpcc/random3/trial495-1547
+75 Wed Jun 3 16:13:00 PDT 2020 data_hpcc/random3/trial496-1547
+75 Wed Jun 3 16:16:11 PDT 2020 data_hpcc/random3/trial495-2064
+76 Wed Jun 3 16:16:54 PDT 2020 data_hpcc/random3/trial496-2064
+75 Wed Jun 3 16:21:30 PDT 2020 data_hpcc/random3/trial495-2754
+75 Wed Jun 3 16:22:21 PDT 2020 data_hpcc/random3/trial496-2754
+76 Wed Jun 3 16:25:14 PDT 2020 data_hpcc/random3/trial494-11622
+74 Wed Jun 3 16:28:30 PDT 2020 data_hpcc/random3/trial495-3674
+76 Wed Jun 3 16:29:41 PDT 2020 data_hpcc/random3/trial496-3674
+75 Wed Jun 3 16:38:32 PDT 2020 data_hpcc/random3/trial495-4900
+75 Wed Jun 3 16:39:23 PDT 2020 data_hpcc/random3/trial496-4900
+76 Wed Jun 3 16:51:04 PDT 2020 data_hpcc/random3/trial495-6535
+75 Wed Jun 3 16:51:52 PDT 2020 data_hpcc/random3/trial496-6535
+76 Wed Jun 3 16:54:35 PDT 2020 data_hpcc/random3/trial494-15498
+76 Wed Jun 3 17:08:01 PDT 2020 data_hpcc/random3/trial496-8715
+75 Wed Jun 3 17:08:23 PDT 2020 data_hpcc/random3/trial495-8715
+76 Wed Jun 3 17:31:12 PDT 2020 data_hpcc/random3/trial495-11622
+74 Wed Jun 3 17:31:16 PDT 2020 data_hpcc/random3/trial496-11622
+76 Wed Jun 3 17:35:09 PDT 2020 data_hpcc/random3/trial494-20666
+76 Wed Jun 3 18:01:23 PDT 2020 data_hpcc/random3/trial496-15498
+76 Wed Jun 3 18:01:28 PDT 2020 data_hpcc/random3/trial495-15498
+74 Wed Jun 3 18:30:01 PDT 2020 data_hpcc/random3/trial494-27556
+75 Wed Jun 3 18:41:44 PDT 2020 data_hpcc/random3/trial495-20666
+76 Wed Jun 3 18:41:53 PDT 2020 data_hpcc/random3/trial496-20666
+76 Wed Jun 3 19:35:46 PDT 2020 data_hpcc/random3/trial495-27556
+76 Wed Jun 3 19:35:52 PDT 2020 data_hpcc/random3/trial496-27556
+75 Wed Jun 3 19:43:12 PDT 2020 data_hpcc/random3/trial494-36743
+75 Wed Jun 3 20:49:01 PDT 2020 data_hpcc/random3/trial495-36743
+75 Wed Jun 3 20:49:02 PDT 2020 data_hpcc/random3/trial496-36743
+75 Wed Jun 3 21:19:00 PDT 2020 data_hpcc/random3/trial494-48992
+75 Wed Jun 3 22:25:40 PDT 2020 data_hpcc/random3/trial495-48992
+73 Wed Jun 3 22:27:23 PDT 2020 data_hpcc/random3/trial496-48992
+76 Wed Jun 3 23:28:29 PDT 2020 data_hpcc/random3/trial494-65324
+81 Thu Jun 4 00:37:16 PDT 2020 data_hpcc/random3/trial496-65324
+75 Thu Jun 4 00:39:09 PDT 2020 data_hpcc/random3/trial495-65324
+82 Thu Jun 4 02:20:37 PDT 2020 data_hpcc/random3/trial494-87100
+76 Thu Jun 4 03:29:57 PDT 2020 data_hpcc/random3/trial495-87100
+83 Thu Jun 4 03:30:04 PDT 2020 data_hpcc/random3/trial496-87100
+82 Thu Jun 4 06:10:09 PDT 2020 data_hpcc/random3/trial494-116135
+75 Thu Jun 4 07:18:06 PDT 2020 data_hpcc/random3/trial495-116135
+83 Thu Jun 4 07:20:20 PDT 2020 data_hpcc/random3/trial496-116135
+83 Thu Jun 4 11:15:34 PDT 2020 data_hpcc/random3/trial494-154848
+73 Thu Jun 4 12:24:07 PDT 2020 data_hpcc/random3/trial495-154848
+83 Thu Jun 4 12:26:19 PDT 2020 data_hpcc/random3/trial496-154848
+91 Thu Jun 4 18:03:19 PDT 2020 data_hpcc/random3/trial494-206466
+83 Thu Jun 4 19:11:20 PDT 2020 data_hpcc/random3/trial495-206466
+90 Thu Jun 4 19:11:38 PDT 2020 data_hpcc/random3/trial496-206466
+91 Fri Jun 5 03:10:05 PDT 2020 data_hpcc/random3/trial494-275290
+90 Fri Jun 5 04:15:50 PDT 2020 data_hpcc/random3/trial496-275290
+83 Fri Jun 5 04:16:27 PDT 2020 data_hpcc/random3/trial495-275290
+90 Fri Jun 5 15:16:00 PDT 2020 data_hpcc/random3/trial494-367055
+83 Fri Jun 5 16:13:27 PDT 2020 data_hpcc/random3/trial495-367055
+91 Fri Jun 5 16:18:20 PDT 2020 data_hpcc/random3/trial496-367055
