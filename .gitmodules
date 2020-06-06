@@ -1,0 +1,3 @@
+[submodule "weilei_lib"]
+	path = weilei_lib
+	url = git@github.com:WeileiZeng/weilei_lib.git

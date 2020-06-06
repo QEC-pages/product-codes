@@ -60,17 +60,17 @@ echo start job on `hostname` `date`
 
 # job name should be short, for search reason
 job_name=product
-index=496
+index=497
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
 # 1: two random code; 2: identical reverse A B; 3: identical A B
 sub_mode=1
 #na_input=7
-n_low=6
-n_high=12
+n_low=7
+n_high=9
 k_low=1
-k_high=3
+k_high=2
 # note for run info
 note="[n_low=$n_low, n_high=$n_high, k_low=$k_low, k_high=$k_high sub_mode=$sub_mode]"
 
