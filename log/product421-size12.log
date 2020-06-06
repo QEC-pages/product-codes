@@ -1,0 +1,10 @@
+start job on c01 size12 run421 50/1000000 Sat May 30 22:28:57 PDT 2020
+1263667 zsh /rhome/wzeng002/Documents/GitHub/workspace
+data folder data_hpcc/random3, log file: log/product421-size12.log
+1000000 data_hpcc/random3/trial421-2 Sat May 30 22:28:57 PDT 2020
+1000000 data_hpcc/random3/trial421-4 Sat May 30 22:28:57 PDT 2020
+1000000 data_hpcc/random3/trial421-8 Sat May 30 22:28:57 PDT 2020
+1000000 data_hpcc/random3/trial421-16 Sat May 30 22:28:57 PDT 2020
+1000000 data_hpcc/random3/trial421-32 Sat May 30 22:29:02 PDT 2020
+1000000 data_hpcc/random3/trial421-64 Sat May 30 22:29:14 PDT 2020
+1000000 data_hpcc/random3/trial421-128 Sat May 30 22:30:30 PDT 2020

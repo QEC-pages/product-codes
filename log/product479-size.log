@@ -1,0 +1,11 @@
+start job on SBATCH:i08 size run479 max_process:/max_trial:1000000 Tue Jun 2 12:40:53 PDT 2020
+SLURM_JOB_ID:1369616 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+data_folder:data_hpcc/random3, log_file:log/product479-size.log status_file:log/status-product479-size.log
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial479-12204
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial479-12204
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial479-16233
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial479-16233
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial479-24053
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial479-24053
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc7,7,49,data_hpcc/random3/trial479-28507
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc7,7,49,data_hpcc/random3/trial479-28507

@@ -1,0 +1,10 @@
+start job on SBATCH:c11 size run471 max_process:/max_trial:1000000 Mon Jun 1 19:45:05 PDT 2020
+SLURM_JOB_ID:1299020 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+data_folder:data_hpcc/random3, log_file:log/product471-size.log status_file:log/status-product471-size.log
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92141
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92143
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92139
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92142
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92145
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92144
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92140

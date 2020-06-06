@@ -1,0 +1,97 @@
+start job on SRUN:c02 size run469 max_process:/max_trial:1000000 Mon Jun 1 19:01:24 PDT 2020
+SLURM_JOB_ID:1290343 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product469-size.log status_file:log/status-product469-size.log
+1 Mon Jun 1 19:01:24 PDT 2020 data_hpcc/random3/trial469-2
+1 Mon Jun 1 19:01:24 PDT 2020 data_hpcc/random3/trial469-4
+1 Mon Jun 1 19:01:24 PDT 2020 data_hpcc/random3/trial469-6
+1 Mon Jun 1 19:01:24 PDT 2020 data_hpcc/random3/trial469-9
+1 Mon Jun 1 19:01:24 PDT 2020 data_hpcc/random3/trial469-12
+1 Mon Jun 1 19:01:24 PDT 2020 data_hpcc/random3/trial469-16
+1 Mon Jun 1 19:01:25 PDT 2020 data_hpcc/random3/trial469-21
+1 Mon Jun 1 19:01:25 PDT 2020 data_hpcc/random3/trial469-27
+27 Mon Jun 1 19:01:33 PDT 2020 data_hpcc/random3/trial469-34
+27 Mon Jun 1 19:01:34 PDT 2020 data_hpcc/random3/trial469-42
+25 Mon Jun 1 19:01:37 PDT 2020 data_hpcc/random3/trial469-52
+27 Mon Jun 1 19:01:44 PDT 2020 data_hpcc/random3/trial469-64
+19 Mon Jun 1 19:01:51 PDT 2020 data_hpcc/random3/trial469-78
+start job on SRUN:c02 size run469 max_process:/max_trial:1000000 Mon Jun 1 19:03:18 PDT 2020
+SLURM_JOB_ID:1290343 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product469-size.log status_file:log/status-product469-size.log
+1 Mon Jun 1 19:03:18 PDT 2020 data_hpcc/random3/trial469-2
+1 Mon Jun 1 19:03:18 PDT 2020 data_hpcc/random3/trial469-4
+1 Mon Jun 1 19:03:18 PDT 2020 data_hpcc/random3/trial469-6
+1 Mon Jun 1 19:03:18 PDT 2020 data_hpcc/random3/trial469-9
+1 Mon Jun 1 19:03:18 PDT 2020 data_hpcc/random3/trial469-12
+1 Mon Jun 1 19:03:18 PDT 2020 data_hpcc/random3/trial469-16
+1 Mon Jun 1 19:03:19 PDT 2020 data_hpcc/random3/trial469-21
+1 Mon Jun 1 19:03:19 PDT 2020 data_hpcc/random3/trial469-27
+27 Mon Jun 1 19:03:27 PDT 2020 data_hpcc/random3/trial469-34
+24 Mon Jun 1 19:03:31 PDT 2020 data_hpcc/random3/trial469-42
+25 Mon Jun 1 19:03:32 PDT 2020 data_hpcc/random3/trial469-52
+26 Mon Jun 1 19:03:36 PDT 2020 data_hpcc/random3/trial469-64
+26 Mon Jun 1 19:03:41 PDT 2020 data_hpcc/random3/trial469-78
+26 Mon Jun 1 19:03:47 PDT 2020 data_hpcc/random3/trial469-95
+24 Mon Jun 1 19:03:56 PDT 2020 data_hpcc/random3/trial469-116
+17 Mon Jun 1 19:04:12 PDT 2020 data_hpcc/random3/trial469-141
+22 Mon Jun 1 19:04:25 PDT 2020 data_hpcc/random3/trial469-171
+start job on SRUN:c02 size run469 max_process:/max_trial:1000000 Mon Jun 1 19:06:00 PDT 2020
+SLURM_JOB_ID:1290343 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product469-size.log status_file:log/status-product469-size.log
+1 Mon Jun 1 19:06:00 PDT 2020 data_hpcc/random3/trial469-2
+1 Mon Jun 1 19:06:00 PDT 2020 data_hpcc/random3/trial469-4
+1 Mon Jun 1 19:06:00 PDT 2020 data_hpcc/random3/trial469-6
+1 Mon Jun 1 19:06:00 PDT 2020 data_hpcc/random3/trial469-9
+1 Mon Jun 1 19:06:00 PDT 2020 data_hpcc/random3/trial469-12
+1 Mon Jun 1 19:06:00 PDT 2020 data_hpcc/random3/trial469-16
+1 Mon Jun 1 19:06:00 PDT 2020 data_hpcc/random3/trial469-21
+1 Mon Jun 1 19:06:00 PDT 2020 data_hpcc/random3/trial469-27
+25 Mon Jun 1 19:06:16 PDT 2020 data_hpcc/random3/trial469-34
+25 Mon Jun 1 19:06:18 PDT 2020 data_hpcc/random3/trial469-42
+26 Mon Jun 1 19:06:19 PDT 2020 data_hpcc/random3/trial469-52
+21 Mon Jun 1 19:06:25 PDT 2020 data_hpcc/random3/trial469-64
+26 Mon Jun 1 19:06:31 PDT 2020 data_hpcc/random3/trial469-78
+26 Mon Jun 1 19:06:35 PDT 2020 data_hpcc/random3/trial469-95
+26 Mon Jun 1 19:06:45 PDT 2020 data_hpcc/random3/trial469-116
+27 Mon Jun 1 19:06:56 PDT 2020 data_hpcc/random3/trial469-141
+12 Mon Jun 1 19:07:06 PDT 2020 data_hpcc/random3/trial469-171
+29 Mon Jun 1 19:07:24 PDT 2020 data_hpcc/random3/trial469-207
+29 Mon Jun 1 19:07:45 PDT 2020 data_hpcc/random3/trial469-250
+28 Mon Jun 1 19:08:09 PDT 2020 data_hpcc/random3/trial469-302
+28 Mon Jun 1 19:08:41 PDT 2020 data_hpcc/random3/trial469-364
+21 Mon Jun 1 19:09:09 PDT 2020 data_hpcc/random3/trial469-438
+21 Mon Jun 1 19:09:46 PDT 2020 data_hpcc/random3/trial469-527
+28 Mon Jun 1 19:10:42 PDT 2020 data_hpcc/random3/trial469-634
+28 Mon Jun 1 19:11:36 PDT 2020 data_hpcc/random3/trial469-762
+28 Mon Jun 1 19:12:43 PDT 2020 data_hpcc/random3/trial469-916
+22 Mon Jun 1 19:14:09 PDT 2020 data_hpcc/random3/trial469-1101
+start job on SRUN:c02 size run469 max_process:/max_trial:1000000 Mon Jun 1 19:17:03 PDT 2020
+SLURM_JOB_ID:1290343 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product469-size.log status_file:log/status-product469-size.log
+1 Mon Jun 1 19:17:03 PDT 2020 data_hpcc/random3/trial469-2
+1 Mon Jun 1 19:17:03 PDT 2020 data_hpcc/random3/trial469-4
+1 Mon Jun 1 19:17:03 PDT 2020 data_hpcc/random3/trial469-6
+1 Mon Jun 1 19:17:03 PDT 2020 data_hpcc/random3/trial469-9
+1 Mon Jun 1 19:17:03 PDT 2020 data_hpcc/random3/trial469-12
+1 Mon Jun 1 19:17:03 PDT 2020 data_hpcc/random3/trial469-16
+1 Mon Jun 1 19:17:03 PDT 2020 data_hpcc/random3/trial469-21
+1 Mon Jun 1 19:17:03 PDT 2020 data_hpcc/random3/trial469-27
+20 Mon Jun 1 19:17:12 PDT 2020 data_hpcc/random3/trial469-34
+24 Mon Jun 1 19:17:13 PDT 2020 data_hpcc/random3/trial469-42
+26 Mon Jun 1 19:17:14 PDT 2020 data_hpcc/random3/trial469-52
+25 Mon Jun 1 19:17:24 PDT 2020 data_hpcc/random3/trial469-64
+26 Mon Jun 1 19:17:27 PDT 2020 data_hpcc/random3/trial469-78
+26 Mon Jun 1 19:17:30 PDT 2020 data_hpcc/random3/trial469-95
+26 Mon Jun 1 19:17:42 PDT 2020 data_hpcc/random3/trial469-116
+27 Mon Jun 1 19:17:54 PDT 2020 data_hpcc/random3/trial469-141
+27 Mon Jun 1 19:18:04 PDT 2020 data_hpcc/random3/trial469-171
+27 Mon Jun 1 19:18:23 PDT 2020 data_hpcc/random3/trial469-207
+27 Mon Jun 1 19:18:41 PDT 2020 data_hpcc/random3/trial469-250
+18 Mon Jun 1 19:19:11 PDT 2020 data_hpcc/random3/trial469-302
+26 Mon Jun 1 19:19:34 PDT 2020 data_hpcc/random3/trial469-364
+26 Mon Jun 1 19:20:02 PDT 2020 data_hpcc/random3/trial469-438
+14 Mon Jun 1 19:20:39 PDT 2020 data_hpcc/random3/trial469-527
+24 Mon Jun 1 19:21:22 PDT 2020 data_hpcc/random3/trial469-634
+23 Mon Jun 1 19:22:25 PDT 2020 data_hpcc/random3/trial469-762
+24 Mon Jun 1 19:23:27 PDT 2020 data_hpcc/random3/trial469-916
+22 Mon Jun 1 19:25:00 PDT 2020 data_hpcc/random3/trial469-1101
+26 Mon Jun 1 19:26:32 PDT 2020 data_hpcc/random3/trial469-1323

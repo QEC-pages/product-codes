@@ -1,0 +1,19 @@
+start job on SBATCH:i06 size run482 max_process:/max_trial:1000000 Tue Jun 2 16:52:05 PDT 2020
+SLURM_JOB_ID:1379646 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+sub_mode:3, n_low:6, n_high=11, data_folder:data_hpcc/random3, log_file:log/product482-size.log status_file:log/status-product482-size.log
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-6
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial482-7655
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-8012
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial482-12021
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-12224
+[1;31mCASE:[0m mode (0) dax*dbx=16, dcx=14. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-12717
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-12717
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-13599
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-13210
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-13796
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial482-16008
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-19450
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial482-23361
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc11,11,121,data_hpcc/random3/trial482-23575
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial482-24106
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-25591

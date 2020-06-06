@@ -1,0 +1,6 @@
+start job on SRUN:c02 size run480 max_process:/max_trial:1000000 Tue Jun 2 16:22:37 PDT 2020
+SLURM_JOB_ID:1375914 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product480-size.log status_file:log/status-product480-size.log
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial480-7
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial480-2286
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc11,11,121,data_hpcc/random3/trial480-2625

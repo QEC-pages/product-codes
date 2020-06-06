@@ -1,0 +1,12 @@
+start job on SBATCH:i06 size run493 max_process:/max_trial:1000000 Wed Jun 3 13:17:29 PDT 2020
+SLURM_JOB_ID:1403723 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=6, n_high=12, k_low=1, k_high=3 sub_mode=3], sub_mode:3, n_low:6, n_high=12, data_folder:data_hpcc/random3, log_file:log/product493-size.log status_file:log/status-product493-size.log
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2;na,nb,nc,12,12,144;ka,kb=1,1;data_hpcc/random3/trial493-855,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:1369.51
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial493-4811,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:8.81933
+[1;31mCASE:[0m mode (1) daz*dbz=16, dcz=14. dax,daz,dbx,dbz = 2,4,2,4;na,nb,nc=10,10,100;ka,kb=1,1;data_hpcc/random3/trial493-9691,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:74.9722
+PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4;na,nb,nc=12,12,144;ka,kb=1,1;data_hpcc/random3/trial493-10104,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:1327.12
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2;na,nb,nc,12,12,144;ka,kb=1,1;data_hpcc/random3/trial493-12470,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:1357.84
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2;na,nb,nc,12,12,144;ka,kb=1,1;data_hpcc/random3/trial493-13787,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:1267.21
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial493-16816,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:6.30812
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,8,8,64;ka,kb=1,1;data_hpcc/random3/trial493-17128,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:4.86859
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=8,8,64;ka,kb=1,1;data_hpcc/random3/trial493-17128,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:7.26468

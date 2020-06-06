@@ -1,0 +1,39 @@
+start job on SRUN:c25 size9 run439 max_process:/max_trial:1000000 Sun May 31 23:12:45 PDT 2020
+SLURM_JOB_ID:1266598 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product439-size9.log status_file:log/status-product439-size9.log
+Sun May 31 23:12:45 PDT 2020 9 data_hpcc/random3/trial439-2
+Sun May 31 23:12:45 PDT 2020 9 data_hpcc/random3/trial439-4
+Sun May 31 23:12:45 PDT 2020 9 data_hpcc/random3/trial439-6
+Sun May 31 23:12:45 PDT 2020 9 data_hpcc/random3/trial439-9
+Sun May 31 23:12:45 PDT 2020 9 data_hpcc/random3/trial439-12
+Sun May 31 23:12:45 PDT 2020 9 data_hpcc/random3/trial439-16
+Sun May 31 23:12:46 PDT 2020 9 data_hpcc/random3/trial439-21
+Sun May 31 23:12:46 PDT 2020 9 data_hpcc/random3/trial439-27
+Sun May 31 23:12:46 PDT 2020 9 data_hpcc/random3/trial439-34
+Sun May 31 23:12:46 PDT 2020 9 data_hpcc/random3/trial439-42
+Sun May 31 23:12:47 PDT 2020 9 data_hpcc/random3/trial439-52
+Sun May 31 23:12:48 PDT 2020 9 data_hpcc/random3/trial439-64
+Sun May 31 23:12:48 PDT 2020 9 data_hpcc/random3/trial439-78
+Sun May 31 23:12:48 PDT 2020 9 data_hpcc/random3/trial439-95
+Sun May 31 23:12:49 PDT 2020 9 data_hpcc/random3/trial439-116
+Sun May 31 23:12:50 PDT 2020 9 data_hpcc/random3/trial439-141
+Sun May 31 23:12:51 PDT 2020 9 data_hpcc/random3/trial439-171
+Sun May 31 23:12:52 PDT 2020 9 data_hpcc/random3/trial439-207
+Sun May 31 23:12:54 PDT 2020 9 data_hpcc/random3/trial439-250
+Sun May 31 23:12:56 PDT 2020 9 data_hpcc/random3/trial439-302
+Sun May 31 23:12:57 PDT 2020 9 data_hpcc/random3/trial439-364
+Sun May 31 23:12:59 PDT 2020 9 data_hpcc/random3/trial439-438
+Sun May 31 23:13:02 PDT 2020 9 data_hpcc/random3/trial439-527
+Sun May 31 23:13:05 PDT 2020 9 data_hpcc/random3/trial439-634
+Sun May 31 23:13:09 PDT 2020 9 data_hpcc/random3/trial439-762
+Sun May 31 23:13:12 PDT 2020 9 data_hpcc/random3/trial439-916
+Sun May 31 23:13:16 PDT 2020 9 data_hpcc/random3/trial439-1101
+Sun May 31 23:13:21 PDT 2020 9 data_hpcc/random3/trial439-1323
+Sun May 31 23:13:26 PDT 2020 9 data_hpcc/random3/trial439-1589
+Sun May 31 23:13:31 PDT 2020 9 data_hpcc/random3/trial439-1908
+Sun May 31 23:13:38 PDT 2020 9 data_hpcc/random3/trial439-2291
+Sun May 31 23:13:45 PDT 2020 9 data_hpcc/random3/trial439-2751
+Sun May 31 23:13:53 PDT 2020 9 data_hpcc/random3/trial439-3303
+Sun May 31 23:14:03 PDT 2020 9 data_hpcc/random3/trial439-3965
+Sun May 31 23:14:15 PDT 2020 9 data_hpcc/random3/trial439-4760
+Sun May 31 23:14:29 PDT 2020 9 data_hpcc/random3/trial439-5714

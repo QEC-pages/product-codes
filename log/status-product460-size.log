@@ -1,0 +1,19 @@
+start job on SRUN:c02 size run460 max_process:/max_trial:1000000 Mon Jun 1 12:42:58 PDT 2020
+SLURM_JOB_ID:1267771 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product460-size.log status_file:log/status-product460-size.log
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-2
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-4
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-6
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-9
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-12
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-16
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-21
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-27
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-34
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-42
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-52
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-64
+Mon Jun 1 12:42:59 PDT 2020 data_hpcc/random3/trial460-78
+Mon Jun 1 12:43:40 PDT 2020 data_hpcc/random3/trial460-95
+Mon Jun 1 12:43:45 PDT 2020 data_hpcc/random3/trial460-116
+Mon Jun 1 12:43:53 PDT 2020 data_hpcc/random3/trial460-141

@@ -1,0 +1,307 @@
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:08:37 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:08:37 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:08:38 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:08:38 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:09:06 PDT 2020 data_hpcc/random3/trial475-78
+76 Tue Jun 2 11:09:24 PDT 2020 data_hpcc/random3/trial475-95
+75 Tue Jun 2 11:09:36 PDT 2020 data_hpcc/random3/trial475-116
+76 Tue Jun 2 11:09:53 PDT 2020 data_hpcc/random3/trial475-141
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:10:26 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-2
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-4
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-6
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-9
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-12
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-16
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-21
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-27
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-34
+35 Tue Jun 2 11:10:26 PDT 2020 data_hpcc/random3/trial475-42
+73 Tue Jun 2 11:10:34 PDT 2020 data_hpcc/random3/trial475-52
+73 Tue Jun 2 11:10:36 PDT 2020 data_hpcc/random3/trial475-64
+75 Tue Jun 2 11:10:40 PDT 2020 data_hpcc/random3/trial475-78
+75 Tue Jun 2 11:10:44 PDT 2020 data_hpcc/random3/trial475-95
+75 Tue Jun 2 11:11:01 PDT 2020 data_hpcc/random3/trial475-116
+75 Tue Jun 2 11:11:18 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:11:37 PDT 2020 data_hpcc/random3/trial475-171
+76 Tue Jun 2 11:12:01 PDT 2020 data_hpcc/random3/trial475-207
+76 Tue Jun 2 11:12:36 PDT 2020 data_hpcc/random3/trial475-250
+75 Tue Jun 2 11:13:02 PDT 2020 data_hpcc/random3/trial475-302
+75 Tue Jun 2 11:13:44 PDT 2020 data_hpcc/random3/trial475-364
+76 Tue Jun 2 11:14:36 PDT 2020 data_hpcc/random3/trial475-438
+74 Tue Jun 2 11:15:35 PDT 2020 data_hpcc/random3/trial475-527
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:16:08 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-2
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-4
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-6
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-9
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-12
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-16
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-21
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-27
+36 Tue Jun 2 11:16:09 PDT 2020 data_hpcc/random3/trial475-34
+75 Tue Jun 2 11:16:11 PDT 2020 data_hpcc/random3/trial475-42
+68 Tue Jun 2 11:16:17 PDT 2020 data_hpcc/random3/trial475-52
+76 Tue Jun 2 11:16:31 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:16:43 PDT 2020 data_hpcc/random3/trial475-78
+75 Tue Jun 2 11:16:51 PDT 2020 data_hpcc/random3/trial475-95
+76 Tue Jun 2 11:17:05 PDT 2020 data_hpcc/random3/trial475-116
+75 Tue Jun 2 11:17:23 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:17:41 PDT 2020 data_hpcc/random3/trial475-171
+76 Tue Jun 2 11:18:00 PDT 2020 data_hpcc/random3/trial475-207
+76 Tue Jun 2 11:18:33 PDT 2020 data_hpcc/random3/trial475-250
+76 Tue Jun 2 11:19:10 PDT 2020 data_hpcc/random3/trial475-302
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:19:54 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+50 Tue Jun 2 11:19:54 PDT 2020 data_hpcc/random3/trial475-2
+50 Tue Jun 2 11:19:54 PDT 2020 data_hpcc/random3/trial475-4
+50 Tue Jun 2 11:19:54 PDT 2020 data_hpcc/random3/trial475-6
+50 Tue Jun 2 11:19:54 PDT 2020 data_hpcc/random3/trial475-9
+50 Tue Jun 2 11:19:54 PDT 2020 data_hpcc/random3/trial475-12
+50 Tue Jun 2 11:19:55 PDT 2020 data_hpcc/random3/trial475-16
+50 Tue Jun 2 11:19:55 PDT 2020 data_hpcc/random3/trial475-21
+50 Tue Jun 2 11:19:55 PDT 2020 data_hpcc/random3/trial475-27
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:20:20 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:20:20 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:20:21 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:20:30 PDT 2020 data_hpcc/random3/trial475-78
+75 Tue Jun 2 11:20:55 PDT 2020 data_hpcc/random3/trial475-95
+76 Tue Jun 2 11:21:07 PDT 2020 data_hpcc/random3/trial475-116
+75 Tue Jun 2 11:21:15 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:21:30 PDT 2020 data_hpcc/random3/trial475-171
+76 Tue Jun 2 11:21:55 PDT 2020 data_hpcc/random3/trial475-207
+76 Tue Jun 2 11:22:29 PDT 2020 data_hpcc/random3/trial475-250
+76 Tue Jun 2 11:23:00 PDT 2020 data_hpcc/random3/trial475-302
+76 Tue Jun 2 11:23:43 PDT 2020 data_hpcc/random3/trial475-364
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:24:29 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:24:29 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:24:30 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:24:30 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:24:30 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:25:07 PDT 2020 data_hpcc/random3/trial475-78
+76 Tue Jun 2 11:25:41 PDT 2020 data_hpcc/random3/trial475-95
+76 Tue Jun 2 11:26:00 PDT 2020 data_hpcc/random3/trial475-116
+75 Tue Jun 2 11:26:10 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:26:27 PDT 2020 data_hpcc/random3/trial475-171
+75 Tue Jun 2 11:26:55 PDT 2020 data_hpcc/random3/trial475-207
+76 Tue Jun 2 11:27:29 PDT 2020 data_hpcc/random3/trial475-250
+75 Tue Jun 2 11:28:04 PDT 2020 data_hpcc/random3/trial475-302
+76 Tue Jun 2 11:28:44 PDT 2020 data_hpcc/random3/trial475-364
+76 Tue Jun 2 11:29:30 PDT 2020 data_hpcc/random3/trial475-438
+76 Tue Jun 2 11:30:39 PDT 2020 data_hpcc/random3/trial475-527
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:37:55 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:38:10 PDT 2020 data_hpcc/random3/trial475-2
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:38:23 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:38:24 PDT 2020 data_hpcc/random3/trial475-64
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:40:25 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:40:25 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:40:25 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:40:25 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:40:25 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:40:25 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:40:25 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:40:26 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:40:26 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:40:26 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:40:26 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:40:26 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:40:26 PDT 2020 data_hpcc/random3/trial475-64
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:42:13 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:42:13 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:42:14 PDT 2020 data_hpcc/random3/trial475-64
+74 Tue Jun 2 11:42:31 PDT 2020 data_hpcc/random3/trial475-78
+76 Tue Jun 2 11:42:48 PDT 2020 data_hpcc/random3/trial475-95
+76 Tue Jun 2 11:43:04 PDT 2020 data_hpcc/random3/trial475-116
+74 Tue Jun 2 11:43:14 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:43:31 PDT 2020 data_hpcc/random3/trial475-171
+76 Tue Jun 2 11:43:59 PDT 2020 data_hpcc/random3/trial475-207
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:44:29 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:44:29 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:44:29 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:44:29 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:44:29 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:44:29 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:44:29 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:44:29 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:44:30 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:44:30 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:44:30 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:44:30 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:44:30 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:44:37 PDT 2020 data_hpcc/random3/trial475-78
+75 Tue Jun 2 11:44:54 PDT 2020 data_hpcc/random3/trial475-95
+76 Tue Jun 2 11:45:14 PDT 2020 data_hpcc/random3/trial475-116
+76 Tue Jun 2 11:45:33 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:45:52 PDT 2020 data_hpcc/random3/trial475-171
+75 Tue Jun 2 11:46:14 PDT 2020 data_hpcc/random3/trial475-207
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:47:14 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:47:14 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:47:14 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:47:14 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:47:14 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:47:14 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:47:14 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:47:15 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:47:15 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:47:15 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:47:15 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:47:15 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:47:15 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:47:28 PDT 2020 data_hpcc/random3/trial475-78
+76 Tue Jun 2 11:47:39 PDT 2020 data_hpcc/random3/trial475-95
+74 Tue Jun 2 11:47:54 PDT 2020 data_hpcc/random3/trial475-116
+76 Tue Jun 2 11:48:12 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:48:34 PDT 2020 data_hpcc/random3/trial475-171
+76 Tue Jun 2 11:48:58 PDT 2020 data_hpcc/random3/trial475-207
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:49:47 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:49:47 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:49:48 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:49:48 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:49:53 PDT 2020 data_hpcc/random3/trial475-78
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:50:34 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:50:35 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:50:46 PDT 2020 data_hpcc/random3/trial475-78
+76 Tue Jun 2 11:51:03 PDT 2020 data_hpcc/random3/trial475-95
+76 Tue Jun 2 11:51:19 PDT 2020 data_hpcc/random3/trial475-116
+74 Tue Jun 2 11:51:38 PDT 2020 data_hpcc/random3/trial475-141
+73 Tue Jun 2 11:52:02 PDT 2020 data_hpcc/random3/trial475-171
+76 Tue Jun 2 11:52:24 PDT 2020 data_hpcc/random3/trial475-207
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:52:52 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:52:52 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:52:53 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:52:53 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:52:53 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:53:08 PDT 2020 data_hpcc/random3/trial475-78
+76 Tue Jun 2 11:53:27 PDT 2020 data_hpcc/random3/trial475-95
+76 Tue Jun 2 11:53:41 PDT 2020 data_hpcc/random3/trial475-116
+76 Tue Jun 2 11:53:54 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:54:21 PDT 2020 data_hpcc/random3/trial475-171
+76 Tue Jun 2 11:54:44 PDT 2020 data_hpcc/random3/trial475-207
+75 Tue Jun 2 11:55:13 PDT 2020 data_hpcc/random3/trial475-250
+start job on SRUN:c26 size run475 max_process:/max_trial:1000000 Tue Jun 2 11:55:58 PDT 2020
+SLURM_JOB_ID:1365589 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product475-size.log status_file:log/status-product475-size.log
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-2
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-4
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-6
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-9
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-12
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-16
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-21
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-27
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-34
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-42
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-52
+1 Tue Jun 2 11:55:58 PDT 2020 data_hpcc/random3/trial475-64
+76 Tue Jun 2 11:56:07 PDT 2020 data_hpcc/random3/trial475-78
+76 Tue Jun 2 11:56:28 PDT 2020 data_hpcc/random3/trial475-95
+75 Tue Jun 2 11:56:42 PDT 2020 data_hpcc/random3/trial475-116
+75 Tue Jun 2 11:57:01 PDT 2020 data_hpcc/random3/trial475-141
+76 Tue Jun 2 11:57:18 PDT 2020 data_hpcc/random3/trial475-171
+76 Tue Jun 2 11:57:46 PDT 2020 data_hpcc/random3/trial475-207
+76 Tue Jun 2 11:58:18 PDT 2020 data_hpcc/random3/trial475-250

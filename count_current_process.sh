@@ -1,3 +1,4 @@
+#!/bin/bash
 #get number of running process
 max=10
 
@@ -6,11 +7,11 @@ num=`pgrep -c concatenation`
 
 #echo current number of running process is $num
 
-for ((i=0;i<200;i++));
+for (( i=0;i<200;i++ ));
 #for i in {1.."$num"..1}
 do
 
-    num=`pgrep -c random_concat`
+    num=`pgrep -c counter`
     echo current number of running process is $num
 #    echo $i
     sleep 0.5

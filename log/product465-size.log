@@ -1,0 +1,3 @@
+start job on SRUN:c02 size run465 max_process:/max_trial:1000000 Mon Jun 1 17:08:32 PDT 2020
+SLURM_JOB_ID:1272287 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product465-size.log status_file:log/status-product465-size.log

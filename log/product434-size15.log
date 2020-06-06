@@ -1,0 +1,15 @@
+start job on c27 size15 run434 max_process:/max_trial:1000000 Sun May 31 17:36:53 PDT 2020
+SLURM_JOB_ID:1265245 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+data_folder:data_hpcc/random3, log_file:log/product434-size15.log
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-2
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-4
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-6
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-9
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-12
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-16
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-21
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-27
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-34
+Sun May 31 17:36:53 PDT 2020 15 data_hpcc/random3/trial434-42
+Sun May 31 17:39:47 PDT 2020 15 data_hpcc/random3/trial434-52
+Sun May 31 17:40:03 PDT 2020 15 data_hpcc/random3/trial434-64

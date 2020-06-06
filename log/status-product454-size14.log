@@ -1,0 +1,29 @@
+start job on SBATCH:c38 size14 run454 max_process:/max_trial:1000000 Mon Jun 1 04:30:09 PDT 2020
+SLURM_JOB_ID:1267101 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+data_folder:data_hpcc/random3, log_file:log/product454-size14.log status_file:log/status-product454-size14.log
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-2
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-4
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-6
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-9
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-12
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-16
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-21
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-27
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-34
+Mon Jun 1 04:30:09 PDT 2020 14 data_hpcc/random3/trial454-42
+Mon Jun 1 04:44:35 PDT 2020 14 data_hpcc/random3/trial454-52
+Mon Jun 1 04:44:55 PDT 2020 14 data_hpcc/random3/trial454-64
+Mon Jun 1 04:45:05 PDT 2020 14 data_hpcc/random3/trial454-78
+Mon Jun 1 04:58:57 PDT 2020 14 data_hpcc/random3/trial454-95
+Mon Jun 1 04:59:37 PDT 2020 14 data_hpcc/random3/trial454-116
+Mon Jun 1 05:13:38 PDT 2020 14 data_hpcc/random3/trial454-141
+Mon Jun 1 05:14:28 PDT 2020 14 data_hpcc/random3/trial454-171
+Mon Jun 1 05:28:56 PDT 2020 14 data_hpcc/random3/trial454-207
+Mon Jun 1 05:43:32 PDT 2020 14 data_hpcc/random3/trial454-250
+Mon Jun 1 05:58:25 PDT 2020 14 data_hpcc/random3/trial454-302
+Mon Jun 1 06:13:49 PDT 2020 14 data_hpcc/random3/trial454-364
+Mon Jun 1 06:42:20 PDT 2020 14 data_hpcc/random3/trial454-438
+Mon Jun 1 07:11:38 PDT 2020 14 data_hpcc/random3/trial454-527
+Mon Jun 1 07:41:40 PDT 2020 14 data_hpcc/random3/trial454-634
+Mon Jun 1 08:25:00 PDT 2020 14 data_hpcc/random3/trial454-762
+Mon Jun 1 09:11:04 PDT 2020 14 data_hpcc/random3/trial454-916
