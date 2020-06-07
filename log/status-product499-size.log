@@ -1,0 +1,22 @@
+start job on SBATCH:c41 size run499 max_process:/max_trial:1000000 Sat Jun 6 23:27:02 PDT 2020
+SLURM_JOB_ID:1528930 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode:1, n_low:9, n_high=9, data_folder:data/random3, log_file:log/product499-size.log status_file:log/status-product499-size.log
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-2
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-4
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-7
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-11
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-16
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-23
+0 Sat Jun 6 23:27:03 PDT 2020 data/random3/trial499-32
+0 Sat Jun 6 23:27:03 PDT 2020 data/random3/trial499-44
+0 Sat Jun 6 23:27:03 PDT 2020 data/random3/trial499-60
+74 Sat Jun 6 23:27:24 PDT 2020 data/random3/trial499-82
+71 Sat Jun 6 23:27:27 PDT 2020 data/random3/trial499-111
+76 Sat Jun 6 23:27:39 PDT 2020 data/random3/trial499-150
+74 Sat Jun 6 23:27:48 PDT 2020 data/random3/trial499-202
+73 Sat Jun 6 23:28:04 PDT 2020 data/random3/trial499-271
+76 Sat Jun 6 23:28:27 PDT 2020 data/random3/trial499-363
+76 Sat Jun 6 23:28:56 PDT 2020 data/random3/trial499-486
+75 Sat Jun 6 23:29:36 PDT 2020 data/random3/trial499-650
+73 Sat Jun 6 23:30:29 PDT 2020 data/random3/trial499-868
+73 Sat Jun 6 23:31:36 PDT 2020 data/random3/trial499-1159

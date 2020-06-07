@@ -12,7 +12,7 @@
   - subsystem product code
   - higher-dimensional hypergraph product code from the product of these two CSS codes.
   - both left (X) and right (Z) are calculated for all those codes.
-- a millions of tests have been running for each set-up
+- a million tests have been running for each set-up
 - estimeted total running time: `256 cores x 7 x 24 hours = 43008 cpu hours`
 
 ## result

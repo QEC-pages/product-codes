@@ -447,3 +447,74 @@ note:[n_low=7, n_high=9, k_low=1, k_high=2 sub_mode=1], sub_mode:1, n_low:7, n_h
 105 Sat Jun 6 10:23:18 PDT 2020 data_hpcc/random3/trial497-206466
 109 Sat Jun 6 13:52:48 PDT 2020 data_hpcc/random3/trial497-275290
 108 Sat Jun 6 18:33:01 PDT 2020 data_hpcc/random3/trial497-367055
+
+============= The World is Unitary ============
+
+start job on c45 Sat Jun 6 22:46:35 PDT 2020
+check logfile: log/product498-size.log statusfile:log/status-product498-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:c45 size run498 max_process:/max_trial:1000000 Sat Jun 6 22:46:35 PDT 2020
+SLURM_JOB_ID:1528929 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=7, n_high=7, k_low=1, k_high=1 sub_mode=1], sub_mode:1, n_low:7, n_high=7, data_folder:data/random3, log_file:log/product498-size.log status_file:log/status-product498-size.log
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-2
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-4
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-7
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-11
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-16
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-23
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-32
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-44
+0 Sat Jun 6 22:46:35 PDT 2020 data/random3/trial498-60
+72 Sat Jun 6 22:46:40 PDT 2020 data/random3/trial498-82
+63 Sat Jun 6 22:46:41 PDT 2020 data/random3/trial498-111
+75 Sat Jun 6 22:46:44 PDT 2020 data/random3/trial498-150
+72 Sat Jun 6 22:46:49 PDT 2020 data/random3/trial498-202
+55 Sat Jun 6 22:46:55 PDT 2020 data/random3/trial498-271
+80 Sat Jun 6 22:47:02 PDT 2020 data/random3/trial498-363
+81 Sat Jun 6 22:47:14 PDT 2020 data/random3/trial498-486
+80 Sat Jun 6 22:47:29 PDT 2020 data/random3/trial498-650
+77 Sat Jun 6 22:47:48 PDT 2020 data/random3/trial498-868
+78 Sat Jun 6 22:48:15 PDT 2020 data/random3/trial498-1159
+75 Sat Jun 6 22:48:50 PDT 2020 data/random3/trial498-1547
+79 Sat Jun 6 22:49:36 PDT 2020 data/random3/trial498-2064
+81 Sat Jun 6 22:50:37 PDT 2020 data/random3/trial498-2754
+81 Sat Jun 6 22:52:01 PDT 2020 data/random3/trial498-3674
+77 Sat Jun 6 22:53:50 PDT 2020 data/random3/trial498-4900
+80 Sat Jun 6 22:56:17 PDT 2020 data/random3/trial498-6535
+79 Sat Jun 6 22:59:32 PDT 2020 data/random3/trial498-8715
+78 Sat Jun 6 23:03:52 PDT 2020 data/random3/trial498-11622
+81 Sat Jun 6 23:09:38 PDT 2020 data/random3/trial498-15498
+87 Sat Jun 6 23:17:17 PDT 2020 data/random3/trial498-20666
+
+============= The World is Unitary ============
+
+start job on c41 Sat Jun 6 23:27:02 PDT 2020
+check logfile: log/product499-size.log statusfile:log/status-product499-size.log
+make[2]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[2]: `counter_concatenation.out' is up to date.
+make[2]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+start job on SBATCH:c41 size run499 max_process:/max_trial:1000000 Sat Jun 6 23:27:02 PDT 2020
+SLURM_JOB_ID:1528930 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode:1, n_low:9, n_high=9, data_folder:data/random3, log_file:log/product499-size.log status_file:log/status-product499-size.log
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-2
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-4
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-7
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-11
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-16
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-23
+0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-32
+0 Sat Jun 6 23:27:03 PDT 2020 data/random3/trial499-44
+0 Sat Jun 6 23:27:03 PDT 2020 data/random3/trial499-60
+74 Sat Jun 6 23:27:24 PDT 2020 data/random3/trial499-82
+71 Sat Jun 6 23:27:27 PDT 2020 data/random3/trial499-111
+98 Sat Jun 6 23:27:33 PDT 2020 data/random3/trial498-27556
+76 Sat Jun 6 23:27:39 PDT 2020 data/random3/trial499-150
+74 Sat Jun 6 23:27:47 PDT 2020 data/random3/trial499-202
+73 Sat Jun 6 23:28:04 PDT 2020 data/random3/trial499-271
+76 Sat Jun 6 23:28:27 PDT 2020 data/random3/trial499-363
+76 Sat Jun 6 23:28:56 PDT 2020 data/random3/trial499-486
+75 Sat Jun 6 23:29:36 PDT 2020 data/random3/trial499-650
+73 Sat Jun 6 23:30:29 PDT 2020 data/random3/trial499-868
+73 Sat Jun 6 23:31:36 PDT 2020 data/random3/trial499-1159

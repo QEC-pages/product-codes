@@ -7,12 +7,13 @@ num=`pgrep -c concatenation`
 
 #echo current number of running process is $num
 
+job_name=.product
 for (( i=0;i<200;i++ ));
 #for i in {1.."$num"..1}
 do
 
-    num=`pgrep -c counter`
-    echo current number of running process is $num
+    num=`pgrep -c $job_name`
+    echo current number of running process of $job_name is $num
 #    echo $i
     sleep 0.5
 done
