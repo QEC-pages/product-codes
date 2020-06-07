@@ -1,0 +1,888 @@
+make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation/log'
+grep CASE product*.log 
+product411-size7.log:.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:......................................................................................................................................................................................................................................................................................................[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:.[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product411-size7.log:[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product412-size8.log:..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
+product418-size11.log:.....*.....*.....*.....*.....*.....*.....*.....*...[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11342
+product418-size11.log:..*.[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11344
+product418-size11.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11343
+product418-size11.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11346
+product418-size11.log:.....*.....*.[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-11345
+product418-size11.log:.....*.....*.....*..[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-44744
+product418-size11.log:...*[1;31mCASE:[0m daz*dbz=6, dcz=7. estimate value of dax,daz,dbx,dbz = 2,3,3,2,data_hpcc/random3/trial418-44743
+product418-size11.log:.....*.....*.....*.....*..[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104412
+product418-size11.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104414
+product418-size11.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104411
+product418-size11.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104413
+product418-size11.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. estimate value of dax,daz,dbx,dbz = 3,3,3,3,data_hpcc/random3/trial418-104415
+product422-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-5126
+product422-size12.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-5126
+product422-size12.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-11887
+product422-size12.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-11888
+product422-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-15220
+product422-size12.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-15220
+product422-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-17653
+product422-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-17654
+product422-size12.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-17654
+product422-size12.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,data_hpcc/random3/trial422-17653
+product422-size12.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,data_hpcc/random3/trial422-17290
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52068
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52069
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52061
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52062
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52064
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52065
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52063
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52066
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52067
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52071
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52070
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52072
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52074
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52073
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52075
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52077
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52076
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52078
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52082
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52080
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52079
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52081
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52083
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52086
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52100
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52090
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52085
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52084
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52097
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52087
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52091
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52089
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52088
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52095
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52093
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52094
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52092
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52098
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52096
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52102
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52101
+product423-size10.log:[1;31mCASE:[0m dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial423-52104
+product424-size12.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc12,12,144,data_hpcc/random3/trial424-5947
+product424-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc12,12,144,data_hpcc/random3/trial424-13203
+product424-size12.log:[1;31mCASE:[0m dax*dbx=6, dcx=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc12,12,144,data_hpcc/random3/trial424-15479
+product424-size12.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc12,12,144,data_hpcc/random3/trial424-22748
+product424-size12.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc12,12,144,data_hpcc/random3/trial424-22747
+product424-size12.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc12,12,144,data_hpcc/random3/trial424-22749
+product424-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc12,12,144,data_hpcc/random3/trial424-28622
+product424-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc12,12,144,data_hpcc/random3/trial424-28623
+product424-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc12,12,144,data_hpcc/random3/trial424-28621
+product424-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc12,12,144,data_hpcc/random3/trial424-28620
+product424-size12.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc12,12,144,data_hpcc/random3/trial424-28624
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-282
+product425-size13.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-314
+product425-size13.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-313
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-427
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-428
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-426
+product425-size13.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-1314
+product425-size13.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-1316
+product425-size13.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-1315
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-2039
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-1596
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-2039
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-3195
+product425-size13.log:[1;31mCASE:[0m dax*dbx=6, dcx=7. dax,daz,dbx,dbz = 2,3,3,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-3688
+product425-size13.log:[1;31mCASE:[0m dax*dbx=6, dcx=7. dax,daz,dbx,dbz = 2,3,3,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-3689
+product425-size13.log:[1;31mCASE:[0m dax*dbx=6, dcx=7. dax,daz,dbx,dbz = 2,3,3,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-3687
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4048
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4051
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4052
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4049
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4050
+product425-size13.log:[1;31mCASE:[0m dax*dbx=6, dcx=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-4155
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-4317
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-4316
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-4315
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4050
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4051
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4048
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4052
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-4049
+product425-size13.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-4155
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-4813
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-4813
+product425-size13.log:[1;31mCASE:[0m dax*dbx=6, dcx=7. dax,daz,dbx,dbz = 2,3,3,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-5922
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-5719
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-6443
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-6444
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-6445
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-7058
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-7059
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-7735
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-7733
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-7734
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-7736
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-8103
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-8104
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-10720
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-11018
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-12707
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-12707
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-13458
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-13630
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-13630
+product425-size13.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc13,13,169,data_hpcc/random3/trial425-14560
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-15395
+product425-size13.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc13,13,169,data_hpcc/random3/trial425-15394
+product425-size13.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-15470
+product425-size13.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-16221
+product425-size13.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc13,13,169,data_hpcc/random3/trial425-16220
+product426-size14.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-172
+product426-size14.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-174
+product426-size14.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-173
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-133
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-127
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-132
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-134
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-126
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-131
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-122
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-125
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-128
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-129
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-124
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-123
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-130
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-277
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-172
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-174
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-173
+product426-size14.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-427
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-725
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-103
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-101
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-105
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-106
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-102
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-104
+product426-size14.log:[1;31mCASE:[0m dax*dbx=10, dcx=12. dax,daz,dbx,dbz = 2,5,5,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-868
+product426-size14.log:[1;31mCASE:[0m dax*dbx=10, dcx=11. dax,daz,dbx,dbz = 2,5,5,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-1106
+product426-size14.log:[1;31mCASE:[0m daz*dbz=10, dcz=12. dax,daz,dbx,dbz = 2,5,5,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-868
+product426-size14.log:[1;31mCASE:[0m dax*dbx=10, dcx=12. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc14,14,196,data_hpcc/random3/trial426-1217
+product426-size14.log:[1;31mCASE:[0m dax*dbx=10, dcx=11. dax,daz,dbx,dbz = 2,5,5,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-1281
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-1409
+product426-size14.log:[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc14,14,196,data_hpcc/random3/trial426-1217
+product426-size14.log:[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 2,5,5,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-1281
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-1614
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-1717
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-1614
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-1661
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-1660
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2028
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2027
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2173
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2028
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2293
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=10. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2173
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2349
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2350
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2247
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-1720
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2350
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2349
+product426-size14.log:[1;31mCASE:[0m dax*dbx=10, dcx=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc14,14,196,data_hpcc/random3/trial426-2712
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2772
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2812
+product426-size14.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 2,3,3,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2829
+product426-size14.log:[1;31mCASE:[0m daz*dbz=6, dcz=7. dax,daz,dbx,dbz = 2,3,3,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-2830
+product426-size14.log:[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc14,14,196,data_hpcc/random3/trial426-2712
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2945
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-2577
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-3113
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-2945
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-3076
+product426-size14.log:[1;31mCASE:[0m dax*dbx=6, dcx=7. dax,daz,dbx,dbz = 3,2,2,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-3159
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-3178
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-3034
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-3146
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-3478
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-3479
+product426-size14.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-3496
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-3515
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=10. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-3502
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-3682
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-3515
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-3502
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-4181
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-4361
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-4360
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-4181
+product426-size14.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-4420
+product426-size14.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-4419
+product426-size14.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-4546
+product426-size14.log:[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 2,5,5,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-4676
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-4707
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-4925
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-4926
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-5388
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-5749
+product426-size14.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc14,14,196,data_hpcc/random3/trial426-5750
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-5838
+product426-size14.log:[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 2,5,5,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-6177
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-6484
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-6677
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-6251
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-6705
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-6027
+product426-size14.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-6677
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=10. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-6992
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc14,14,196,data_hpcc/random3/trial426-6995
+product426-size14.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 4,2,2,4,na,nb,nc14,14,196,data_hpcc/random3/trial426-7025
+product427-size15.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-171
+product427-size15.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-187
+product427-size15.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-171
+product427-size15.log:[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc15,15,225,data_hpcc/random3/trial427-465
+product427-size15.log:[1;31mCASE:[0m daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 5,2,2,5,na,nb,nc15,15,225,data_hpcc/random3/trial427-466
+product427-size15.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1169
+product427-size15.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1170
+product427-size15.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1168
+product427-size15.log:[1;31mCASE:[0m dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc15,15,225,data_hpcc/random3/trial427-1421
+product427-size15.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-499
+product427-size15.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1169
+product427-size15.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1168
+product427-size15.log:[1;31mCASE:[0m dax*dbx=8, dcx=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1593
+product427-size15.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1531
+product427-size15.log:[1;31mCASE:[0m daz*dbz=8, dcz=9. dax,daz,dbx,dbz = 2,4,4,2,na,nb,nc15,15,225,data_hpcc/random3/trial427-1170
+product427-size15.log:[1;31mCASE:[0m daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc15,15,225,data_hpcc/random3/trial427-1421
+product470-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial470-90074
+product470-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial470-90072
+product470-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial470-90071
+product470-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial470-90073
+product470-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial470-90070
+product471-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92141
+product471-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92143
+product471-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92139
+product471-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92142
+product471-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92145
+product471-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92144
+product471-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial471-92140
+product472-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial472-90728
+product472-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial472-90729
+product472-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial472-90731
+product472-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial472-90730
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90026
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90030
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90031
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90023
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90028
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90021
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90022
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90024
+product473-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=12, dcz=13. dax,daz,dbx,dbz = 2,3,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial473-90025
+product479-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial479-12204
+product479-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial479-12204
+product479-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial479-16233
+product479-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial479-16233
+product479-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial479-24053
+product479-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial479-24053
+product479-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc7,7,49,data_hpcc/random3/trial479-28507
+product479-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc7,7,49,data_hpcc/random3/trial479-28507
+product480-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial480-7
+product480-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial480-2286
+product480-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc11,11,121,data_hpcc/random3/trial480-2625
+product481-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc11,11,121,data_hpcc/random3/trial481-2453
+product481-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial481-3879
+product481-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial481-4568
+product481-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial481-4761
+product481-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc11,11,121,data_hpcc/random3/trial481-7635
+product481-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial481-9961
+product481-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial481-8976
+product481-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial481-11056
+product481-size.log:[1;31mCASE:[0m mode (0) dax*dbx=16, dcx=14. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial481-13026
+product481-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial481-11803
+product481-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial481-14179
+product481-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial481-18283
+product481-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc11,11,121,data_hpcc/random3/trial481-23671
+product481-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial481-25132
+product482-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-6
+product482-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial482-7655
+product482-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-8012
+product482-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial482-12021
+product482-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-12224
+product482-size.log:[1;31mCASE:[0m mode (0) dax*dbx=16, dcx=14. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-12717
+product482-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-12717
+product482-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial482-13599
+product482-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-13210
+product482-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-13796
+product482-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial482-16008
+product482-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-19450
+product482-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial482-23361
+product482-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc11,11,121,data_hpcc/random3/trial482-23575
+product482-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial482-24106
+product482-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial482-25591
+product483-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-510
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial483-4064
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial483-4263
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-2890
+product483-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc9,9,81,data_hpcc/random3/trial483-6885
+product483-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc7,7,49,data_hpcc/random3/trial483-7118
+product483-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc7,7,49,data_hpcc/random3/trial483-7118
+product483-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-7704
+product483-size.log:[1;31mCASE:[0m mode (1) daz*dbz=16, dcz=14. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc9,9,81,data_hpcc/random3/trial483-8071
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial483-8603
+product483-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-11258
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial483-10836
+product483-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial483-15085
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial483-16497
+product483-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial483-18851
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc11,11,121,data_hpcc/random3/trial483-17494
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc11,11,121,data_hpcc/random3/trial483-19753
+product483-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc10,10,100,data_hpcc/random3/trial483-21303
+product483-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc8,8,64,data_hpcc/random3/trial483-24303
+product483-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc11,11,121,data_hpcc/random3/trial483-24272
+product485-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,7,7,49,data_hpcc/random3/trial485-36,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,7,7,49,data_hpcc/random3/trial485-36,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (0) dax*dbx=25, dcx=23. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,11,11,121,data_hpcc/random3/trial485-500,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,8,8,64,data_hpcc/random3/trial485-2251,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,8,8,64,data_hpcc/random3/trial485-2251,identicalcodeAB,sub_mode3
+product485-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,11,11,121,data_hpcc/random3/trial485-835,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (1) daz*dbz=16, dcz=14. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,11,11,121,data_hpcc/random3/trial485-3565,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,11,11,121,data_hpcc/random3/trial485-3170,identicalcodeAB,sub_mode3
+product485-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,11,11,121,data_hpcc/random3/trial485-2427,identicalcodeAB,sub_mode3
+product485-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,11,11,121,data_hpcc/random3/trial485-2857,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,10,10,100,data_hpcc/random3/trial485-10576,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,10,10,100,data_hpcc/random3/trial485-10576,identicalcodeAB,sub_mode3
+product485-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,11,11,121,data_hpcc/random3/trial485-14743,identicalcodeAB,sub_mode3
+product485-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,11,11,121,data_hpcc/random3/trial485-16929,identicalcodeAB,sub_mode3
+product485-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,9,9,81,data_hpcc/random3/trial485-20058,identicalcodeAB,sub_mode3
+product486-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,13,13,169,data_hpcc/random3/trial486-7,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=49, dcx=51. dax,daz,dbx,dbz = 7,2,7,2,na,nb,nc,18,18,324,data_hpcc/random3/trial486-36,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,13,13,169,data_hpcc/random3/trial486-7,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=49, dcx=51. dax,daz,dbx,dbz = 7,2,7,2,na,nb,nc,20,20,400,data_hpcc/random3/trial486-119,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,17,17,289,data_hpcc/random3/trial486-86,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,19,19,361,data_hpcc/random3/trial486-42,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial486-151,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=40. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,18,18,324,data_hpcc/random3/trial486-188,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=49, dcx=52. dax,daz,dbx,dbz = 7,2,7,2,na,nb,nc,20,20,400,data_hpcc/random3/trial486-57,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=40. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,19,19,361,data_hpcc/random3/trial486-210,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=49, dcx=53. dax,daz,dbx,dbz = 7,2,7,2,na,nb,nc,19,19,361,data_hpcc/random3/trial486-222,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,19,19,361,data_hpcc/random3/trial486-31,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,19,19,361,data_hpcc/random3/trial486-155,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,18,18,324,data_hpcc/random3/trial486-173,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,17,17,289,data_hpcc/random3/trial486-190,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=49, dcx=50. dax,daz,dbx,dbz = 7,2,7,2,na,nb,nc,20,20,400,data_hpcc/random3/trial486-230,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,16,16,256,data_hpcc/random3/trial486-206,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial486-251,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,16,16,256,data_hpcc/random3/trial486-3,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,19,19,361,data_hpcc/random3/trial486-177,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,17,17,289,data_hpcc/random3/trial486-167,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=49, dcz=53. dax,daz,dbx,dbz = 2,7,2,7,na,nb,nc,20,20,400,data_hpcc/random3/trial486-171,identicalcodeAB,sub_mode3
+product486-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=19. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,16,16,256,data_hpcc/random3/trial486-115,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,18,18,324,data_hpcc/random3/trial487-54,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,16,16,256,data_hpcc/random3/trial487-168,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial487-27,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=49, dcz=51. dax,daz,dbx,dbz = 2,7,2,7,na,nb,nc,19,19,361,data_hpcc/random3/trial487-34,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,16,16,256,data_hpcc/random3/trial487-167,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial487-53,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=38. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,19,19,361,data_hpcc/random3/trial487-59,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,18,18,324,data_hpcc/random3/trial487-71,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,19,19,361,data_hpcc/random3/trial487-149,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=29. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,16,16,256,data_hpcc/random3/trial487-20,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=38. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,20,20,400,data_hpcc/random3/trial487-47,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=28. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,16,16,256,data_hpcc/random3/trial487-197,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=44. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,18,18,324,data_hpcc/random3/trial487-135,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial487-235,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=49, dcz=50. dax,daz,dbx,dbz = 2,7,2,7,na,nb,nc,17,17,289,data_hpcc/random3/trial487-249,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=49, dcx=51. dax,daz,dbx,dbz = 7,2,7,2,na,nb,nc,19,19,361,data_hpcc/random3/trial487-258,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,16,16,256,data_hpcc/random3/trial487-170,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,17,17,289,data_hpcc/random3/trial487-171,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,16,16,256,data_hpcc/random3/trial487-272,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,17,17,289,data_hpcc/random3/trial487-216,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,16,16,256,data_hpcc/random3/trial487-25,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,16,16,256,data_hpcc/random3/trial487-185,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,20,20,400,data_hpcc/random3/trial487-184,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,18,18,324,data_hpcc/random3/trial487-35,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=25, dcx=29. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,305,data_hpcc/random3/trial487-53,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=30. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,17,17,289,data_hpcc/random3/trial487-206,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,18,18,324,data_hpcc/random3/trial487-100,identicalcodeAB,sub_mode3
+product487-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=49, dcz=50. dax,daz,dbx,dbz = 2,7,2,7,na,nb,nc,20,20,400,data_hpcc/random3/trial487-290,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial488-246,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial488-359,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-262,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial488-212,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial488-510,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-238,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial488-312,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,14,14,196,data_hpcc/random3/trial488-308,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial488-99,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-257,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-227,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial488-680,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-255,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial488-121,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-738,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,12,12,144,data_hpcc/random3/trial488-926,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=39. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-893,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial488-82,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-650,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,14,14,196,data_hpcc/random3/trial488-1141,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-821,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-904,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=19. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-489,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-975,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-731,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=36, dcx=44. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,291,data_hpcc/random3/trial488-893,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-1409,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1074,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial488-1149,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1494,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial488-1530,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1070,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1587,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1747,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1828,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-1811,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1873,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1676,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1762,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1906,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial488-1845,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1970,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1854,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=11. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1926,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1894,identicalcodeAB,sub_mode3
+product488-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial488-2302,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2240,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,14,14,196,data_hpcc/random3/trial488-2093,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=38. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2186,identicalcodeAB,sub_mode3
+product488-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,14,14,196,data_hpcc/random3/trial488-2559,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2051,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=19. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-1972,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2531,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2629,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-2597,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial488-2554,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=36, dcx=41. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,305,data_hpcc/random3/trial488-1894,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-2585,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2555,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,13,13,169,data_hpcc/random3/trial488-2784,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2482,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2689,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2771,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial488-2855,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2881,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=36, dcx=41. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,305,data_hpcc/random3/trial488-2186,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3169,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3158,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial488-3071,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3210,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2971,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3199,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3048,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-2955,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3382,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3185,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial488-3397,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3373,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3079,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3229,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3298,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3538,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3407,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3437,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3160,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3614,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3533,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=36, dcx=39. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,291,data_hpcc/random3/trial488-3373,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=16, dcx=20. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,323,data_hpcc/random3/trial488-1972,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3701,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3842,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3766,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3890,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3515,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3985,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial488-3709,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3839,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3770,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial488-4075,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4058,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-4166,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=19. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3857,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial488-3965,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-4228,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial488-4273,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4214,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-4260,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial488-2870,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4200,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4535,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-4596,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4415,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4461,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial488-4494,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4284,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4434,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial488-4453,identicalcodeAB,sub_mode3
+product488-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,13,13,169,data_hpcc/random3/trial488-4719,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,13,13,169,data_hpcc/random3/trial489-332,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=38. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial489-143,identicalcodeAB,sub_mode3
+product489-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,12,12,144,data_hpcc/random3/trial489-638,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-6,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial489-386,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial489-132,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-325,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-694,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-499,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-381,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-457,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-61,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial489-251,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (3) daz*dbz=36, dcz=40. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,291,data_hpcc/random3/trial489-143,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-496,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial489-223,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-796,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial489-979,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-373,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-843,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial489-661,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-930,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial489-625,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=25, dcx=29. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,305,data_hpcc/random3/trial489-325,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1000,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-1072,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial489-1225,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-1194,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-1190,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,3,5,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1325,identicalcodeAB,sub_mode3
+product489-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 5,3,5,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1325,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial489-1361,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial489-1581,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial489-1506,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1414,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1133,identicalcodeAB,sub_mode3
+product489-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,11,11,121,data_hpcc/random3/trial489-1926,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=28. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1615,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1756,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial489-1817,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial489-1975,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1909,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2038,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-1614,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2053,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2025,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=28. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2156,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2135,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,12,12,144,data_hpcc/random3/trial489-2342,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,12,12,144,data_hpcc/random3/trial489-2315,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2439,identicalcodeAB,sub_mode3
+product489-size.log:[1;31mCASE:[0m mode (0) dax*dbx=25, dcx=23. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2664,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2516,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2443,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2555,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2619,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2623,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2121,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,11,11,121,data_hpcc/random3/trial489-2694,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2328,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2755,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2620,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2758,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2776,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2675,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2504,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2738,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2425,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2429,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2965,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-2852,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial489-2987,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial489-2954,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2845,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,12,12,144,data_hpcc/random3/trial489-3076,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,14,14,196,data_hpcc/random3/trial489-3048,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-3141,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-3253,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,14,14,196,data_hpcc/random3/trial489-3401,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial489-3411,identicalcodeAB,sub_mode3
+product489-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,12,12,144,data_hpcc/random3/trial489-3519,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-3293,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (3) daz*dbz=36, dcz=42. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,14,14,268,data_hpcc/random3/trial489-3048,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-3171,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,12,12,144,data_hpcc/random3/trial489-3570,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial489-3749,identicalcodeAB,sub_mode3
+product489-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,11,11,121,data_hpcc/random3/trial489-3465,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-3642,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-3864,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-3757,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial489-3748,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial489-3950,identicalcodeAB,sub_mode3
+product489-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,14,14,196,data_hpcc/random3/trial489-4178,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial489-4213,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-4061,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-3892,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-4234,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial489-2505,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=28. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial489-4255,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial489-4360,identicalcodeAB,sub_mode3
+product489-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,14,14,196,data_hpcc/random3/trial489-4220,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-4456,identicalcodeAB,sub_mode3
+product489-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=39. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial489-4558,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,13,13,169,data_hpcc/random3/trial490-66,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial490-27,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-453,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial490-67,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-184,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial490-398,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-610,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-452,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial490-451,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-252,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial490-658,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial490-597,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-593,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial490-638,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-327,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-735,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial490-780,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-778,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-839,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-440,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-806,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-675,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-834,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1056,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-1085,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,10,10,100,data_hpcc/random3/trial490-1252,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1226,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-906,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-785,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=29. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial490-1142,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1303,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-28,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-788,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1268,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (3) daz*dbz=25, dcz=30. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,315,data_hpcc/random3/trial490-440,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1424,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1590,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1373,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,14,14,196,data_hpcc/random3/trial490-1593,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1733,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1949,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2146,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-1951,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2028,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=20. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1591,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial490-1853,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1908,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-1636,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-2173,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-2117,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial490-2324,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial490-2293,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-2302,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,13,13,169,data_hpcc/random3/trial490-2359,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2231,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-2171,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2560,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,13,13,169,data_hpcc/random3/trial490-2465,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=39. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2529,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2578,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2554,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,14,14,196,data_hpcc/random3/trial490-2702,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2343,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2544,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2441,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2314,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-2709,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2752,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-2772,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2877,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2641,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2662,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3013,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3046,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=25, dcx=30. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,305,data_hpcc/random3/trial490-2544,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3033,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3184,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3259,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-2705,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3136,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3032,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3071,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3442,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial490-3407,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3293,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3437,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3270,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3505,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial490-3636,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3508,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3691,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3843,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3822,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=29. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3689,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,13,13,169,data_hpcc/random3/trial490-3956,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3936,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4013,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial490-3963,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,12,12,144,data_hpcc/random3/trial490-3986,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4156,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=19. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3656,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=19. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-3793,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4053,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-4107,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial490-4080,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4367,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (3) daz*dbz=25, dcz=38. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,315,data_hpcc/random3/trial490-3689,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial490-4457,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4085,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4239,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4464,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,14,14,196,data_hpcc/random3/trial490-4307,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4045,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=39. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4482,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial490-4446,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial490-4499,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial490-4472,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4316,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (3) daz*dbz=36, dcz=41. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,291,data_hpcc/random3/trial490-4482,identicalcodeAB,sub_mode3
+product490-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=28. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial490-4593,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-153,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,13,13,169,data_hpcc/random3/trial491-165,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial491-59,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-227,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-188,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=28. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-76,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-334,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-40,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-355,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial491-632,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-390,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-543,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,13,13,169,data_hpcc/random3/trial491-482,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-392,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-410,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-500,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial491-436,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-83,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-830,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial491-881,identicalcodeAB,sub_mode3
+product491-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1020,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial491-738,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-782,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-444,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,14,14,196,data_hpcc/random3/trial491-452,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial491-391,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1052,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-655,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1019,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-744,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1122,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial491-950,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1012,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial491-1295,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1341,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1249,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1374,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1396,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=40. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1386,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1256,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1250,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=28. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1328,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=11. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1255,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1573,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,12,12,144,data_hpcc/random3/trial491-1577,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1565,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1458,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1506,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1730,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1805,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1804,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1851,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1993,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=28. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1781,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1582,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1793,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1769,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-2010,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,13,13,169,data_hpcc/random3/trial491-2080,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1513,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-1963,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-2301,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (3) daz*dbz=25, dcz=30. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,305,data_hpcc/random3/trial491-1781,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,3,4,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-1838,identicalcodeAB,sub_mode3
+product491-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,10,10,100,data_hpcc/random3/trial491-2599,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2126,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-2583,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial491-2463,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2174,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-2710,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,13,13,169,data_hpcc/random3/trial491-2672,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-2540,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial491-2694,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2457,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2814,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2649,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2810,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=11. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2764,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=11. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2788,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2978,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2987,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (3) daz*dbz=36, dcz=46. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,15,15,305,data_hpcc/random3/trial491-2810,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3295,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3034,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3091,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial491-2903,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=27. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3394,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,12,12,144,data_hpcc/random3/trial491-3398,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3172,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3306,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 3,4,3,4,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3290,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,13,13,169,data_hpcc/random3/trial491-3650,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3691,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,12,12,144,data_hpcc/random3/trial491-3812,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=26. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3639,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,14,14,196,data_hpcc/random3/trial491-3669,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3928,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-4086,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=25, dcx=26. dax,daz,dbx,dbz = 5,2,5,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-4088,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=18. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,14,14,196,data_hpcc/random3/trial491-3909,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-4173,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,3,3,3,na,nb,nc,14,14,196,data_hpcc/random3/trial491-4135,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=36, dcx=37. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,14,14,196,data_hpcc/random3/trial491-4170,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,15,15,225,data_hpcc/random3/trial491-3983,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=25, dcz=27. dax,daz,dbx,dbz = 2,5,2,5,na,nb,nc,15,15,225,data_hpcc/random3/trial491-4149,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4,na,nb,nc,15,15,225,data_hpcc/random3/trial491-4159,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=36, dcz=37. dax,daz,dbx,dbz = 2,6,2,6,na,nb,nc,14,14,196,data_hpcc/random3/trial491-4343,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=36, dcx=39. dax,daz,dbx,dbz = 6,2,6,2,na,nb,nc,14,14,256,data_hpcc/random3/trial491-4173,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=18. dax,daz,dbx,dbz = 4,2,4,2,na,nb,nc,13,13,169,data_hpcc/random3/trial491-4266,identicalcodeAB,sub_mode3
+product491-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=9, dcz=10. dax,daz,dbx,dbz = 2,3,2,3,na,nb,nc,15,15,225,data_hpcc/random3/trial491-4246,identicalcodeAB,sub_mode3
+product492-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial492-173,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:45.3856
+product493-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2;na,nb,nc,12,12,144;ka,kb=1,1;data_hpcc/random3/trial493-855,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:1369.51
+product493-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial493-4811,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:8.81933
+product493-size.log:[1;31mCASE:[0m mode (1) daz*dbz=16, dcz=14. dax,daz,dbx,dbz = 2,4,2,4;na,nb,nc=10,10,100;ka,kb=1,1;data_hpcc/random3/trial493-9691,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:74.9722
+product493-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=16, dcz=17. dax,daz,dbx,dbz = 2,4,2,4;na,nb,nc=12,12,144;ka,kb=1,1;data_hpcc/random3/trial493-10104,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:1327.12
+product493-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=16, dcx=17. dax,daz,dbx,dbz = 4,2,4,2;na,nb,nc,12,12,144;ka,kb=1,1;data_hpcc/random3/trial493-12470,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:1357.84
+product493-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=9, dcx=10. dax,daz,dbx,dbz = 3,2,3,2;na,nb,nc,12,12,144;ka,kb=1,1;data_hpcc/random3/trial493-13787,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:1267.21
+product493-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial493-16816,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:6.30812
+product493-size.log:[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,8,8,64;ka,kb=1,1;data_hpcc/random3/trial493-17128,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:4.86859
+product493-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=8,8,64;ka,kb=1,1;data_hpcc/random3/trial493-17128,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=3, time:7.26468
+product494-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 3,2,2,5;na,nb,nc=11,12,132;ka,kb=1,1;data_hpcc/random3/trial494-576519,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=1, time:1485.88
+product495-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=15, dcx=16. dax,daz,dbx,dbz = 3,2,5,2;na,nb,nc,11,12,132;ka,kb=1,1;data_hpcc/random3/trial495-33496,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=1, time:1142.58
+product495-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=15, dcz=16. dax,daz,dbx,dbz = 2,3,2,5;na,nb,nc=12,12,144;ka,kb=1,1;data_hpcc/random3/trial495-334343,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=1, time:2062.43
+make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation/log'
