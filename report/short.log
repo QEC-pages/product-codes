@@ -1,0 +1,36 @@
+make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+make[1]: `counter_concatenation.out' is up to date.
+make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation'
+Sat Jun  6 17:57:24 PDT 2020
+check data_hpcc/random3/trial493-16816
+check data_hpcc/random3/trial493-17128
+check data_hpcc/random3/trial486-36
+check data_hpcc/random3/trial485-3565
+check data_hpcc/random3/trial485-500
+check data_hpcc/random3/trial412-784951
+check data_hpcc/random3/trial423-52068
+check data_hpcc/random3/trial418-104413
+check data_hpcc/random3/trial410-323232
+check data_hpcc/random3/trial427-1421
+check data_hpcc/random3/trial427-1531
+check data_hpcc/random3/trial410-234473
+check data_hpcc/random3/trial411-572582
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data_hpcc/random3/trial411-572582,, time:2.11812
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,8,8,64;ka,kb=1,1;data_hpcc/random3/trial493-17128,, time:4.4238
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,8,8,64;ka,kb=1,1;data_hpcc/random3/trial412-784951,, time:4.38449
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data_hpcc/random3/trial411-572582,, time:4.17582
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial410-323232,, time:6.07736
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial493-16816,, time:6.62952
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,9,9,81;ka,kb=1,1;data_hpcc/random3/trial410-234473,, time:6.81199
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=8,8,64;ka,kb=1,1;data_hpcc/random3/trial493-17128,, time:7.38347
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=8,8,64;ka,kb=1,1;data_hpcc/random3/trial412-784951,, time:7.94798
+[1;31mCASE:[0m mode (0) dax*dbx=25, dcx=23. dax,daz,dbx,dbz = 5,2,5,2;na,nb,nc,11,11,121;ka,kb=1,1;data_hpcc/random3/trial485-500,, time:9.74982
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=9,9,81;ka,kb=1,1;data_hpcc/random3/trial410-323232,, time:12.4446
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=9,9,81;ka,kb=1,1;data_hpcc/random3/trial410-234473,, time:13.1621
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,10,10,100;ka,kb=1,1;data_hpcc/random3/trial423-52068,, time:13.7321
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,11,11,121;ka,kb=1,1;data_hpcc/random3/trial418-104413,, time:19.6445
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=10,10,100;ka,kb=1,1;data_hpcc/random3/trial423-52068,, time:28.1958
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=11,11,121;ka,kb=1,1;data_hpcc/random3/trial418-104413,, time:35.8172
+[1;31mCASE:[0m mode (1) daz*dbz=16, dcz=14. dax,daz,dbx,dbz = 2,4,2,4;na,nb,nc=11,11,121;ka,kb=1,1;data_hpcc/random3/trial485-3565,, time:113
+PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=49, dcx=50. dax,daz,dbx,dbz = 7,2,7,2;na,nb,nc,18,18,324;ka,kb=1,1;data_hpcc/random3/trial486-36,, time:916.297
+PSEUDO [1;31mCASE:[0m mode (4) dax*dbx=49, dcx=53. dax,daz,dbx,dbz = 7,2,7,2;na,nb,nc,18,18,384;ka,kb=1,1;data_hpcc/random3/trial486-36,, time:2629.39
