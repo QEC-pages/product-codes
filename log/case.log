@@ -1,5 +1,3 @@
-make[1]: Entering directory `/rhome/wzeng002/Documents/GitHub/concatenation/log'
-grep CASE product*.log 
 product411-size7.log:.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
 product411-size7.log:[1;31mCASE:[0m daz*dbz=9, dcz=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
 product411-size7.log:[1;31mCASE:[0m dax*dbx=9, dcx=7. estimate value of dax,daz,dbx,dbz = 3,3,3,3,
@@ -885,4 +883,3 @@ product493-size.log:[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz 
 product494-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=10, dcz=11. dax,daz,dbx,dbz = 3,2,2,5;na,nb,nc=11,12,132;ka,kb=1,1;data_hpcc/random3/trial494-576519,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=1, time:1485.88
 product495-size.log:PSEUDO [1;31mCASE:[0m mode (0) dax*dbx=15, dcx=16. dax,daz,dbx,dbz = 3,2,5,2;na,nb,nc,11,12,132;ka,kb=1,1;data_hpcc/random3/trial495-33496,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=1, time:1142.58
 product495-size.log:PSEUDO [1;31mCASE:[0m mode (1) daz*dbz=15, dcz=16. dax,daz,dbx,dbz = 2,3,2,5;na,nb,nc=12,12,144;ka,kb=1,1;data_hpcc/random3/trial495-334343,n_low=6 n_high=12 k_low=1 k_high=3 sub_mode=1, time:2062.43
-make[1]: Leaving directory `/rhome/wzeng002/Documents/GitHub/concatenation/log'
