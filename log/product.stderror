@@ -129,3 +129,17 @@ GF2mat::get_submatrix() index out of range (m1 >= 0 && n1 >= 0 && m2 >= m1 && n2
 Fri Jun  5 21:10:45 PDT 2020
 ======================    new error output  =================
 slurmstepd-c36: error: _is_a_lwp: open() /proc/63353/status failed: No such file or directory
+slurmstepd-c45: error: _is_a_lwp: open() /proc/37467/status failed: No such file or directory
+slurmstepd-c45: error: _is_a_lwp: open() /proc/43431/status failed: No such file or directory
+slurmstepd-c41: error: _is_a_lwp: open() /proc/10975/status failed: No such file or directory
+slurmstepd-c41: error: _is_a_lwp: 1 read() attempts on /proc/5113/status failed: No such process
+slurmstepd-c41: error: _is_a_lwp: open() /proc/31211/status failed: No such file or directory
+slurmstepd-c36: error: _is_a_lwp: open() /proc/13367/status failed: No such file or directory
+slurmstepd-c36: error: _is_a_lwp: open() /proc/8795/status failed: No such file or directory
+slurmstepd-c36: error: _is_a_lwp: open() /proc/46074/status failed: No such file or directory
+slurmstepd-c36: error: _is_a_lwp: open() /proc/46181/status failed: No such file or directory
+slurmstepd-c36: error: _is_a_lwp: open() /proc/62538/status failed: No such file or directory
+slurmstepd-c45: error: _is_a_lwp: 1 read() attempts on /proc/42839/status failed: No such process
+slurmstepd-c36: error: _is_a_lwp: open() /proc/29363/status failed: No such file or directory
+slurmstepd-c45: error: _is_a_lwp: open() /proc/53606/status failed: No such file or directory
+slurmstepd-c45: error: _is_a_lwp: open() /proc/26097/status failed: No such file or directory
