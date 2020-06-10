@@ -1,9 +1,9 @@
 
 make test.out
 
-for i in {1..30..1}
+for i in {1..10..1}
 do
-    ./test.out $i &
+    ./test.out $i 
 #    sleep 0.01
 done
 

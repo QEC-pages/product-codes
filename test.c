@@ -318,10 +318,25 @@ void syntax_test(){
 }
 
 
+void generate_code_test(int na, int Gax_row, int id_Gax, int id_Gaz){
+  GF2mat  Gax,  Gaz;
+  //  int na=7, Gax_row=4, id_Gax=a, id_Gaz=b;
+  //is_quantum_code(Gax,Gaz,Gax,Gaz);
+  generate_code(Gax, Gaz, na, Gax_row, id_Gax, id_Gaz);
+  //int generate_code(GF2mat & Gax, GF2mat & Gaz, int na, int Gax_row, int id_Gax, int id_Gaz);
+  return;
+}
+
 int main(int args, char ** argvs){
   //  cout<<"begin test"<<endl;
-   cout<<"args = "<<argvs[1] <<"\t";
-  int k=atof(argvs[1]);
+  Parser parser;
+  parser.init(args, argvs);
+  int a = 7; parser.get(a,"a");
+  int b = 3; parser.get(b,"b");
+  int c = 1; parser.get(c,"c");
+  int d = 1; parser.get(d,"d");
+  //   cout<<"args = "<<argvs[1] <<"\t";
+  //   int k=atof(argvs[1]);
   
   //  mm_test(k);//big G
   //mm_test2();//small G
@@ -338,11 +353,12 @@ int main(int args, char ** argvs){
 
   //  copy1();
    //   cpp_random();
-    random_test(k);
+  //    random_test(k);
   //combine_random(k);
   //  switch_test(k);
 
   //  syntax_test();
   //cout<<"finish test"<<endl;
+  generate_code_test(a,b,c,d);
   return 0;
 }
