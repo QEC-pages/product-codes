@@ -144,3 +144,5 @@ slurmstepd-c36: error: _is_a_lwp: open() /proc/29363/status failed: No such file
 slurmstepd-c45: error: _is_a_lwp: open() /proc/53606/status failed: No such file or directory
 slurmstepd-c45: error: _is_a_lwp: open() /proc/26097/status failed: No such file or directory
 slurmstepd-c45: error: _is_a_lwp: 1 read() attempts on /proc/38827/status failed: No such process
+slurmstepd-c36: error: _is_a_lwp: 1 read() attempts on /proc/21218/status failed: No such process
+slurmstepd-c45: error: _is_a_lwp: open() /proc/56434/status failed: No such file or directory

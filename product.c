@@ -64,14 +64,15 @@ int main(int args, char ** argv){
   
       int na=na_input;
       for ( int Gax_row = 1; Gax_row< na-1; Gax_row++){
-	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -2 ;
-
+	//	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -2 ;
+	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -1 ; //maximun all one
 #pragma omp parallel for schedule(dynamic, 1) num_threads(num_cores)
-	for ( int id_Gax = 1; id_Gax < id_Gax_MAX ; id_Gax++){
-	  cout<<"id_Gax="<<id_Gax<<",\t"<<endl;
+	for ( int id_Gax = 1; id_Gax < id_Gax_MAX+1 ; id_Gax++){
+	  //	  cout<<"                                                                 start: id_Gax="<<id_Gax<<",\t"<<endl;
 	  for ( int Gaz_row = 1; Gaz_row< min(Gax_row +1,na-Gax_row); Gaz_row ++){ //check
-	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 2;
-	    for ( int id_Gaz = 1; id_Gaz < id_Gaz_MAX ; id_Gaz++){
+	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 1; //maximun all one
+	    //	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 2;
+	    for ( int id_Gaz = 1; id_Gaz < id_Gaz_MAX+1 ; id_Gaz++){
 	    //run the program. symmetric, symmetric inverse.
 	    // simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug);
 	      if (debug) cout<<"Gax_row="<<Gax_row<<",Gaz_row="<<Gaz_row<<endl;
@@ -80,6 +81,8 @@ int main(int args, char ** argv){
 	      if (simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz)==2){
 		//duplicated case, skip following calculation		
 	      }else{
+		//continue calculation
+		cout<<"                                                           id_Gax_MAX="<<id_Gax_MAX<<",id_Gaz_MAX="<<id_Gaz_MAX<<endl;
 		sub_mode_B=3;
 		simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz);
 	      }
@@ -153,8 +156,8 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	    return 2 ;
 	  }
 	  cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",daz="<<dax_temp<<",daz="<<daz_temp<<endl;
-	  cout<<"Gax"<<Gax<<endl;
-	  cout<<"Gaz"<<Gaz<<endl;
+	  //	  cout<<"Gax"<<Gax<<endl;
+	  //	  cout<<"Gaz"<<Gaz<<endl;
 
 	}
 	break;
