@@ -6,13 +6,13 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=60
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=7-00:00:00     
+#SBATCH --time=0-01:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
 #SBATCH --error=log/product.stderror --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
+#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
 #SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
@@ -55,8 +55,8 @@ esac
 # Print name of node
 echo
 echo "============= The World is Unitary ============"
-echo
 echo start job on `hostname` `date`
+echo
 
 
 #./run_counter_concatenation.sh
@@ -136,15 +136,16 @@ cat $logfile > $statusfile
 (( bi = 2 ))
 
 # it is actually 60.
-(( num_cores = 1 ))
+(( num_cores = 15 ))
 (( max_process = num_cores + 10 ))
 
 
 title=$folder/trial$index-$i
-echo ./.product$index.out  mode=1 sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
+#echo ./.product$index.out  mode=1 sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 sub_mode_A=1
-na_input=7
-./.product$index.out  mode=3  title=$title debug=1 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
+na_input=5
+echo ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
+./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
 #./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 #>> $logfile
 

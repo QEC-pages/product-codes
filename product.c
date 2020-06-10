@@ -13,7 +13,7 @@ using namespace std;
 
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, 
 	     int n_low, int n_high, int k_low, int k_high, int debug,
-	     int na_input, int Gax_row_input, int id_Gax, int id_Gaz);
+	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz);
 
 
 int main(int args, char ** argv){
@@ -47,7 +47,7 @@ int main(int args, char ** argv){
     //actually I can run the random simulation here. and let openmp control the threads
   case 2:
     //allow mode = 1,2, sub_mode_A = 1; sub_mode_B=1,2,3
-    simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0);
+    simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0);
     break;
   case 3:
     {
@@ -65,18 +65,25 @@ int main(int args, char ** argv){
       int na=na_input;
       for ( int Gax_row = 1; Gax_row< na-1; Gax_row++){
 	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -2 ;
-	const int id_Gaz_MAX = (int) pow(2, na - Gax_row) - 2;
-#pragma omp parallel for num_threads(num_cores)
+
+#pragma omp parallel for schedule(dynamic, 1) num_threads(num_cores)
 	for ( int id_Gax = 1; id_Gax < id_Gax_MAX ; id_Gax++){
-	  for ( int id_Gaz = 1; id_Gaz < id_Gaz_MAX ; id_Gaz++){
+	  cout<<"id_Gax="<<id_Gax<<",\t"<<endl;
+	  for ( int Gaz_row = 1; Gaz_row< min(Gax_row +1,na-Gax_row); Gaz_row ++){ //check
+	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 2;
+	    for ( int id_Gaz = 1; id_Gaz < id_Gaz_MAX ; id_Gaz++){
 	    //run the program. symmetric, symmetric inverse.
 	    // simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug);
-	    if (debug) cout<<"Gax_row="<<Gax_row<<endl;
-	    sub_mode_A=2;
-	    sub_mode_B=2;
-	    simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, id_Gaz);
-	    sub_mode_B=3;
-	    simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, id_Gaz);
+	      if (debug) cout<<"Gax_row="<<Gax_row<<",Gaz_row="<<Gaz_row<<endl;
+	      sub_mode_A=2;
+	      sub_mode_B=2;
+	      if (simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz)==2){
+		//duplicated case, skip following calculation		
+	      }else{
+		sub_mode_B=3;
+		simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz);
+	      }
+	    }
 	    //	    simulate(mode, sub_mode_A, sub_mode_B,
 	    //	     na, Gax_row, id_Gax, id_Gaz)
 	    //  generate_code(Gax, Gaz, na, Gax_row, id_Gax, id_Gaz);
@@ -95,7 +102,8 @@ int main(int args, char ** argv){
 
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, 
 	     int n_low, int n_high, int k_low, int k_high, int debug,
-	     int na_input, int Gax_row_input, int id_Gax, int id_Gaz){
+	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz){
+  //return 2 when the code is duplicate, or either dax = 1 or daz = 1
   if ( mode == 3) mode =1;
 
   Real_Timer timer;  timer.tic();
@@ -123,20 +131,31 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
       case 2://enumerate all codes with size na
 	//input: na, Gax_row, 
 	{
-	na=na_input; Gax_row=Gax_row_input;
-	generate_code(Gax, Gaz, na, Gax_row, id_Gax, id_Gaz);
-	Cax=getC(Gax,Gaz);
-	Caz=getC(Gax,Gaz,1);
-	int dax_temp = quantum_dist_v2(Gax,Gaz);
-	if (dax_temp ==1 ) {
-	  cout<<"discard when dax = 1"<<endl;
-	  return 0 ;
-	}
-	int daz_temp = quantum_dist_v2(Gax,Gaz,1);
-	if (daz_temp ==1 ) {
-	  cout<<"discard when daz = 1"<<endl;
-	  return 0 ;
-	}
+	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
+	  if ( generate_code(Gax, Gaz, na, Gax_row, id_Gax, Gaz_row, id_Gaz, debug) ==2 ){
+	    if (debug) cout<<"duplicated case, return 2"<<endl;
+	    //	    cout<<"*";
+	    return 2;
+	  }	
+	  Cax=getC(Gax,Gaz);
+	  Caz=getC(Gax,Gaz,1);
+	  int dax_temp = quantum_dist_v2(Gax,Gaz);
+	  if (dax_temp ==1 ) {
+	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
+	    if (debug) cout<<"discard when dax = 1"<<endl;
+	    return 2 ;
+	  }
+	  int daz_temp = quantum_dist_v2(Gax,Gaz,1);
+	  if (daz_temp ==1 ) {
+	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
+	    //	  cout<<"na="<<na<<",Gax_row="<<Gax_row<<",sub_mode_B="<<sub_mode_B<<",id_Gax="<<id_Gax<<", id_Gaz="<<id_Gaz<<",";
+	    if (debug) cout<<"discard when daz = 1"<<endl;
+	    return 2 ;
+	  }
+	  cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",daz="<<dax_temp<<",daz="<<daz_temp<<endl;
+	  cout<<"Gax"<<Gax<<endl;
+	  cout<<"Gaz"<<Gaz<<endl;
+
 	}
 	break;
       default:

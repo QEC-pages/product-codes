@@ -318,11 +318,16 @@ void syntax_test(){
 }
 
 
-void generate_code_test(int na, int Gax_row, int id_Gax, int id_Gaz){
+void generate_code_test(int na, int Gax_row, int id_Gax, int Gaz_row, int id_Gaz, int debug){
   GF2mat  Gax,  Gaz;
   //  int na=7, Gax_row=4, id_Gax=a, id_Gaz=b;
   //is_quantum_code(Gax,Gaz,Gax,Gaz);
-  generate_code(Gax, Gaz, na, Gax_row, id_Gax, id_Gaz);
+  //  int debug =1;
+  generate_code(Gax, Gaz, na, Gax_row, id_Gax, Gaz_row, id_Gaz,debug);
+  int dax = quantum_dist_v2(Gax,Gaz);
+  cout<<"dax="<<dax<<endl;
+  int daz = quantum_dist_v2(Gax,Gaz,1);
+  cout<<"daz="<<daz<<endl;
   //int generate_code(GF2mat & Gax, GF2mat & Gaz, int na, int Gax_row, int id_Gax, int id_Gaz);
   return;
 }
@@ -331,10 +336,19 @@ int main(int args, char ** argvs){
   //  cout<<"begin test"<<endl;
   Parser parser;
   parser.init(args, argvs);
-  int a = 7; parser.get(a,"a");
-  int b = 3; parser.get(b,"b");
-  int c = 1; parser.get(c,"c");
-  int d = 1; parser.get(d,"d");
+  int na = 7; parser.get(na,"na");
+  int Gax_row = 3; parser.get(Gax_row,"Gax_row");
+
+  int id_Gax = 1;   parser.get(id_Gax,"id_Gax");
+  bvec bvec_id_Gax("1 0 1 1 1 1 0 1 0 1 1 1 ");
+  id_Gax=bin2dec(bvec_id_Gax);
+  int Gaz_row = 1; parser.get(Gaz_row,"Gaz_row");
+  int id_Gaz = 1; parser.get(id_Gaz,"id_Gaz");
+  //  bvec bvec_id_Gaz("0 0 0 1 0 1 1 0 1 1 0 0");//give [7 1 3] CSS code
+  bvec bvec_id_Gaz("0 0 0 1 0 1 1 0 0 1 1 0");
+  id_Gaz=bin2dec(bvec_id_Gaz);
+  int debug=0;parser.get(debug,"debug");
+
   //   cout<<"args = "<<argvs[1] <<"\t";
   //   int k=atof(argvs[1]);
   
@@ -359,6 +373,6 @@ int main(int args, char ** argvs){
 
   //  syntax_test();
   //cout<<"finish test"<<endl;
-  generate_code_test(a,b,c,d);
+  generate_code_test(na,Gax_row,id_Gax,Gaz_row,id_Gaz,debug);
   return 0;
 }
