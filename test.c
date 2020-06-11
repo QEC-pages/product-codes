@@ -339,18 +339,19 @@ int main(int args, char ** argvs){
   //  cout<<"begin test"<<endl;
   Parser parser;
   parser.init(args, argvs);
+  parser.set_silentmode(true);
   int na = 7; parser.get(na,"na");
   int Gax_row = 3; parser.get(Gax_row,"Gax_row");
 
   int id_Gax = 1;   parser.get(id_Gax,"id_Gax");
   //  bvec bvec_id_Gax("1 0 1 1 1 1 0 1 0 1 1 1 ");
-  bvec bvec_id_Gax("1 0 0 1 0 0 ");
-  id_Gax=bin2dec(bvec_id_Gax);
+  //  bvec bvec_id_Gax("1 0 0 1 0 0 ");
+  //  id_Gax=bin2dec(bvec_id_Gax);
   int Gaz_row = 1; parser.get(Gaz_row,"Gaz_row");
   int id_Gaz = 1; parser.get(id_Gaz,"id_Gaz");
   //  bvec bvec_id_Gaz("0 0 0 1 0 1 1 0 1 1 0 0");//give [7 1 3] CSS code
-  bvec bvec_id_Gaz("1 1");
-  id_Gaz=bin2dec(bvec_id_Gaz);
+  //  bvec bvec_id_Gaz("1 1");
+  //  id_Gaz=bin2dec(bvec_id_Gaz);
   int debug=0;parser.get(debug,"debug");
 
   //   cout<<"args = "<<argvs[1] <<"\t";

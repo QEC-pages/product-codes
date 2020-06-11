@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=60
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=0-01:00:00     
+#SBATCH --time=0-02:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
 #SBATCH --error=log/product.stderror --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
@@ -16,14 +16,12 @@
 #SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
-# Load samtools
-# module load samtools
+# module load itpp
 
 # Change directory to where you submitted the job from, so that relative paths resolve properly
 # no need. the default folder is $SLURM_SUBMIT_DIR
 
 WORK_STATION=HEAD
-echo hello
 case $ON_SRUN in
     "TRUE")
 	case $ON_SBATCH in
@@ -34,12 +32,11 @@ case $ON_SRUN in
 	    *)		
 		echo "on srun"
 		WORK_STATION=SRUN		
-		if (( `pgrep -c .product` > 1 )); then		    
-		    echo "kill `pgrep -c .product` old jobs"
-		    pkill .product
+		if (( `pgrep -c .product` > 10 )); then		    
+		    echo "one should kill `pgrep -c .product` old jobs"
+#		    pkill .product
 		    # this will kill ./run_product.sh as well, so I change the name to run_prod.sh
 		fi
-
 		;;
 	esac
 	;;
@@ -49,9 +46,6 @@ case $ON_SRUN in
 	;;
 esac
 
-# Concatenate BAMs
-# samtools cat -h header.sam -o out.bam in1.bam in2.bam
-
 # Print name of node
 echo
 echo "============= The World is Unitary ============"
@@ -59,22 +53,16 @@ echo start job on `hostname` `date`
 echo
 
 
-#./run_counter_concatenation.sh
-
-#!/bin/zsh
-# record
-# 408 size 8
-# 407 size 7
 
 # job name should be short, for search reason
 job_name=product
-index=501
+index=507
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
 # 1: two random code; 2: identical reverse A B; 3: identical A B
 sub_mode=1
-#na_input=7
+na_input=6
 n_low=9
 n_high=9
 k_low=1
@@ -82,8 +70,6 @@ k_high=1
 # note for run info
 note="[n_low=$n_low, n_high=$n_high, k_low=$k_low, k_high=$k_high sub_mode=$sub_mode]"
 
-#echo "==========   new history file " `date` >> log/history.stdout
-#cat log/product.stdout >> log/history.stdout
 
 logfile=log/${job_name}${index}-size${na_input}.log
 statusfile=log/status-${job_name}${index}-size${na_input}.log
@@ -95,57 +81,53 @@ echo check logfile: $logfile statusfile:$statusfile
 
 #make counter_concatenation.out
 #cp counter_concatenation.out .${job_name}$index.out
-
 make product.out
 cp product.out .${job_name}$index.out
 
 #add index by 1 while rerun this script
 #the number of simultaneous process is limited by max_process.
 
-
-
-case `hostname` in 
-    "Chenrenkov")
-	folder=data/random2
-	;;
-    *)
-	folder=data_hpcc/random3
-	;;
-esac
-
+#case `hostname` in 
+#    "Chenrenkov")
+#	folder=data/random2
+#	;;
+#    *)
+#	folder=data_hpcc/random3
+#	;;
+#esac
 # TODO: remove above case when job finished
-folder=data/random3
 
-
-#echo start job on `hostname` size$na_input run$index $max_process/$max_trial `date`
-#echo $SLURM_JOB_ID $SLURM_JOB_NAME $SLURM_SUBMIT_DIR 
-#echo data folder $folder, log file: $logfile 
-
+#folder=data/random3
+#change to new folder, only save code with cases, add sub folder for each run
+folder=data/random4
+mkdir -p $folder/trial$index
+folder=$folder/trial$index
 
 echo start job on $WORK_STATION:`hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
 echo SLURM_JOB_ID:$SLURM_JOB_ID SLURM_JOB_NAME:$SLURM_JOB_NAME SLURM_JOB_DIR:$SLURM_SUBMIT_DIR >> $logfile
-echo note:$note, sub_mode:$sub_mode, n_low:$n_low, n_high=$n_high, data_folder:$folder, log_file:$logfile status_file:$statusfile >> $logfile
+echo note:$note, sub_mode_A:$sub_mode_A, sub_mode_B:$sub_mode_B, na_input:$na_input, n_low:$n_low, n_high=$n_high, data_folder:$folder, log_file:$logfile status_file:$statusfile >> $logfile
 
 # duplicate info to stdout
 cat $logfile
 cat $logfile > $statusfile
 
-# size 9 32768
 
 (( i = 1 ))
 (( bi = 2 ))
 
 # it is actually 60.
-(( num_cores = 15 ))
+(( num_cores = 60 ))
 (( max_process = num_cores + 10 ))
 
 
-title=$folder/trial$index-$i
+title=$folder/trial$index
 #echo ./.product$index.out  mode=1 sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 sub_mode_A=1
-na_input=7
+#na_input=5
 echo ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
+ls -a
 ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
+#>>$log_file
 #./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 #>> $logfile
 

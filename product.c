@@ -78,13 +78,16 @@ int main(int args, char ** argv){
 	      if (debug) cout<<"Gax_row="<<Gax_row<<",Gaz_row="<<Gaz_row<<endl;
 	      sub_mode_A=2;
 	      sub_mode_B=2;
-	      if (simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz)==2){
+	      //	      cout<<title_str.c_str()<<endl;
+	      string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
+		+"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
+	      if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz)==2){
 		//duplicated case, skip following calculation		
 	      }else{
 		//continue calculation
-		cout<<"                                                           id_Gax_MAX="<<id_Gax_MAX<<",id_Gaz_MAX="<<id_Gaz_MAX<<endl;
+		cout<<"                                                                         id_Gax_MAX="<<id_Gax_MAX<<",id_Gaz_MAX="<<id_Gaz_MAX<<endl;
 		sub_mode_B=3;
-		simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz);
+		simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz);
 	      }
 	    }
 	    //	    simulate(mode, sub_mode_A, sub_mode_B,
@@ -142,6 +145,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	  }	
 	  Cax=getC(Gax,Gaz);
 	  Caz=getC(Gax,Gaz,1);
+	  //estimate distance here, and discard cases with distance 1
 	  int dax_temp = quantum_dist_v2(Gax,Gaz);
 	  if (dax_temp ==1 ) {
 	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
@@ -155,7 +159,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	    if (debug) cout<<"discard when daz = 1"<<endl;
 	    return 2 ;
 	  }
-	  cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",daz="<<dax_temp<<",daz="<<daz_temp<<endl;
+	  cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",dax="<<dax_temp<<",daz="<<daz_temp<<endl;
 	  //	  cout<<"Gax"<<Gax<<endl;
 	  //	  cout<<"Gaz"<<Gaz<<endl;
 
@@ -263,7 +267,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
   }
   //2 for concatenate
   //  if ( product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,2) == 2)    std::cout<<title<<std::endl;
-  //  flag_chain_complex=1;
+  flag_chain_complex=1;
   if (     flag_chain_complex ){
     //save code A B
     if ( mode ==1 ){
@@ -277,14 +281,8 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
     //    cout<<"mode 3 4"<<endl;
     if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,3) == 2)  
           std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
-    //    std::cout<<title<<","<<note<<std::endl;
-    //std::cout<<title<<","<<note<<",sub_mode: "<<sub_mode<<std::endl;
-    //std::cout<<title<<std::endl;
     if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  
           std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
-    //    std::cout<<title<<","<<note<<std::endl;
-    //std::cout<<title<<","<<note<<",sub_mode: "<<sub_mode<<std::endl;
-    //std::cout<<title<<std::endl;
   }
 
   if ( debug )  timer.toc_print();

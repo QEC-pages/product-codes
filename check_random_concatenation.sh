@@ -4,6 +4,7 @@ make counter_concatenation.out
 date
 folder=data/random2
 folder=data_hpcc/random3
+folder=data_hpcc/random4/trial501
 # folder to save counter examples
 report_folder=report/matrices
 
@@ -19,7 +20,7 @@ report_folder=report/matrices
 # size 15 trial427-1531 trial427-1421
 # size 10 , trial423-52068
 # size 8, trial412-784951
-for trial in trial493-16816 trial493-17128 trial486-36 trial485-3565 trial485-500 trial412-784951 trial423-52068 trial418-104413 trial410-323232 trial427-1421 trial427-1531 trial410-234473 trial411-572582
+for trial in trial501-na7-Gax_row2-id_Gax455-Gaz_row2-id_Gaz1008 trial501-na7-Gax_row2-id_Gax455-Gaz_row2-id_Gaz527 trial493-16816 trial493-17128 trial486-36 trial485-3565 trial485-500 trial412-784951 trial423-52068 trial418-104413 trial410-323232 trial427-1421 trial427-1531 trial410-234473 trial411-572582
 do
     title=$folder/$trial
     echo check $title
@@ -31,9 +32,10 @@ do
 #    ./counter_concatenation.out 2 $title 
 
 
-    ./counter_concatenation.out mode=2 title=$title debug=0 seed=999 &
+#    ./counter_concatenation.out mode=2 title=$title debug=0 seed=999 &
+    ./product.out mode=2 title=$title debug=1 seed=999 &
 #>> report/${trial}.log &
-#    break
+    break
 done
 wait
 echo done
