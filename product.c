@@ -61,13 +61,15 @@ int main(int args, char ** argv){
 	  for loop for Gaz
 	  esitimate the distance
 	 */
-  
+      //      cout<<"debug"<<endl;
       int na=na_input;
       for ( int Gax_row = 1; Gax_row< na-1; Gax_row++){
 	//	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -2 ;
 	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -1 ; //maximun all one
-#pragma omp parallel for schedule(dynamic, 1) num_threads(num_cores)
+#pragma omp parallel for schedule(guided) num_threads(num_cores)
 	for ( int id_Gax = 1; id_Gax < id_Gax_MAX+1 ; id_Gax++){
+	  if ( id_Gax % 100 == 0 )
+	    cout<<"start: id_Gax="<<id_Gax<<",\t id_Gax_MAX="<<id_Gax_MAX<<",\t Gax_row="<<Gax_row<<endl;
 	  //	  cout<<"                                                                 start: id_Gax="<<id_Gax<<",\t"<<endl;
 	  for ( int Gaz_row = 1; Gaz_row< min(Gax_row +1,na-Gax_row); Gaz_row ++){ //check
 	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 1; //maximun all one
@@ -146,7 +148,8 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	  Cax=getC(Gax,Gaz);
 	  Caz=getC(Gax,Gaz,1);
 	  //estimate distance here, and discard cases with distance 1
-	  int dax_temp = quantum_dist_v2(Gax,Gaz);
+	  // for a strong and quick filter, discard cases with distance 2 as well, not sure if this is a valid constraint
+	  int dax_temp = quantum_dist_v2(Gax,Gaz);	  
 	  if (dax_temp < 3 ) {
 	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
 	    if (debug) cout<<"discard when dax = 1"<<endl;

@@ -22,12 +22,14 @@
 # no need. the default folder is $SLURM_SUBMIT_DIR
 
 WORK_STATION=HEAD
+(( num_cores = 15 ))
 case $ON_SRUN in
     "TRUE")
 	case $ON_SBATCH in
 	    "TRUE")
 		echo "on sbatch"
 		WORK_STATION=SBATCH
+		(( num_cores = 60 ))
 		;;
 	    *)		
 		echo "on srun"
@@ -56,13 +58,13 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=510
+index=513
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
 # 1: two random code; 2: identical reverse A B; 3: identical A B
 sub_mode=1
-na_input=7
+na_input=9
 n_low=9
 n_high=9
 k_low=1
@@ -116,7 +118,7 @@ cat $logfile > $statusfile
 (( bi = 2 ))
 
 # it is actually 60.
-(( num_cores = 60 ))
+#(( num_cores = 15 ))
 (( max_process = num_cores + 10 ))
 
 
@@ -126,7 +128,8 @@ sub_mode_A=1
 #na_input=5
 echo ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
 
-./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note >>$logfile
+./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
+#>>$logfile
 #./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 #>> $logfile
 

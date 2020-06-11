@@ -10,6 +10,8 @@ make test.out
 # 7 qubit code
 ./test.out na=7 Gax_row=3 id_Gax=3511 Gaz_row=3 id_Gaz=2657 debug=1
 
+#trial508-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386
+
 for i in {1..10..1}
 do
     continue
