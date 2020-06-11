@@ -1,0 +1,31 @@
+start job on SRUN:c01 size7 run510 max_process:/max_trial:1000000 Thu Jun 11 00:26:32 PDT 2020
+SLURM_JOB_ID:1551486 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode_A:, sub_mode_B:, na_input:7, n_low:9, n_high=9, data_folder:data/random4/trial510, log_file:log/product510-size7.log status_file:log/status-product510-size7.log
+sub_mode_B=2,na=7,Gax_row=3,id_Gax=3511,Gaz_row=3, id_Gaz=2657,dax=3,daz=3
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:2.38505
+sub_mode_B=2,na=7,Gax_row=3,id_Gax=3767,Gaz_row=3, id_Gaz=2386,dax=3,daz=3
+sub_mode_B=2,na=7,Gax_row=3,id_Gax=3803,Gaz_row=3, id_Gaz=2131,dax=3,daz=3
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:4.4294
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:2.14024
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.99553
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:4.18037
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:3.90112
+sub_mode_B=2,na=7,Gax_row=3,id_Gax=3799,Gaz_row=3, id_Gaz=2371,dax=3,daz=3
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:3.51812
+                                                                         id_Gax_MAX=4095,id_Gaz_MAX=4095
+sub_mode_B=3,na=7,Gax_row=3,id_Gax=3511,Gaz_row=3, id_Gaz=2657,dax=3,daz=3
+                                                                         id_Gax_MAX=4095,id_Gaz_MAX=4095
+sub_mode_B=3,na=7,Gax_row=3,id_Gax=3767,Gaz_row=3, id_Gaz=2386,dax=3,daz=3
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:5.00816
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.56294
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.56121
+                                                                         id_Gax_MAX=4095,id_Gaz_MAX=4095
+sub_mode_B=3,na=7,Gax_row=3,id_Gax=3803,Gaz_row=3, id_Gaz=2131,dax=3,daz=3
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:3.07257
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:3.11042
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.65131
+                                                                         id_Gax_MAX=4095,id_Gaz_MAX=4095
+sub_mode_B=3,na=7,Gax_row=3,id_Gax=3799,Gaz_row=3, id_Gaz=2371,dax=3,daz=3
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:3.17801
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.46341
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial510/trial510-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:2.87278

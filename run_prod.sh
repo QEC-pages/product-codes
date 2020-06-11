@@ -56,13 +56,13 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=509
+index=510
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
 # 1: two random code; 2: identical reverse A B; 3: identical A B
 sub_mode=1
-na_input=8
+na_input=7
 n_low=9
 n_high=9
 k_low=1
@@ -125,7 +125,7 @@ title=$folder/trial$index
 sub_mode_A=1
 #na_input=5
 echo ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
-ls -a
+
 ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note >>$logfile
 #./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 #>> $logfile

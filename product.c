@@ -147,13 +147,13 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	  Caz=getC(Gax,Gaz,1);
 	  //estimate distance here, and discard cases with distance 1
 	  int dax_temp = quantum_dist_v2(Gax,Gaz);
-	  if (dax_temp ==1 ) {
+	  if (dax_temp < 3 ) {
 	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
 	    if (debug) cout<<"discard when dax = 1"<<endl;
 	    return 2 ;
 	  }
 	  int daz_temp = quantum_dist_v2(Gax,Gaz,1);
-	  if (daz_temp ==1 ) {
+	  if (daz_temp < 3 ) {
 	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
 	    //	  cout<<"na="<<na<<",Gax_row="<<Gax_row<<",sub_mode_B="<<sub_mode_B<<",id_Gax="<<id_Gax<<", id_Gaz="<<id_Gaz<<",";
 	    if (debug) cout<<"discard when daz = 1"<<endl;
