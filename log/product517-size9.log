@@ -1,0 +1,36 @@
+start job on SBATCH:i59 size9 run517 max_process:/max_trial:1000000 Thu Jun 11 23:24:07 PDT 2020
+SLURM_JOB_ID:1559920 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode_A:, sub_mode_B:, na_input:9, n_low:9, n_high=9, data_folder:data/random4/trial517, log_file:log/product517-size9.log status_file:log/status-product517-size9.log
+start: id_Gax=100,	 id_Gax_MAX=255,	 Gax_row=1
+start: id_Gax=200,	 id_Gax_MAX=255,	 Gax_row=1
+start: id_Gax=7600,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=7300,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=9900,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=3000,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=7900,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=7000,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=6000,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=4700,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=4500,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=4300,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=9100,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=9800,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=4100,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=4900,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=9700,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=300,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=8600,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=1600,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=5100,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=3900,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=8200,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=2800,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=1100,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=2100,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=9600,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=6700,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=3700,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=5300,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=6200,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=9000,	 id_Gax_MAX=16383,	 Gax_row=2
+start: id_Gax=5500,	 id_Gax_MAX=16383,	 Gax_row=2

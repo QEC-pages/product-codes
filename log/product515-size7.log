@@ -1,0 +1,426 @@
+start job on SBATCH:i56 size7 run515 max_process:/max_trial:1000000 Thu Jun 11 23:22:46 PDT 2020
+SLURM_JOB_ID:1559915 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode_A:, sub_mode_B:, na_input:7, n_low:9, n_high=9, data_folder:data/random4/trial515, log_file:log/product515-size7.log status_file:log/status-product515-size7.log
+start: id_Gax=600,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=500,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=400,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=200,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=700,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=800,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=300,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=100,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=900,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=400,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=700,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1800,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2600,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2200,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2100,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1600,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2500,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2300,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=600,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1200,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1700,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1300,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1900,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1100,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=100,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=900,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=300,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1400,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2700,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1500,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=500,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2800,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=800,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3100,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3500,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3300,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=200,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3600,	 id_Gax_MAX=4095,	 Gax_row=3
+1/10M
+2/10M
+3/10M
+4/10M
+5/10M
+6/10M
+7/10M
+8/10M
+9/10M
+10/10M
+11/10M
+12/10M
+13/10M
+14/10M
+15/10M
+16/10M
+17/10M
+18/10M
+19/10M
+20/10M
+21/10M
+22/10M
+23/10M
+24/10M
+25/10M
+26/10M
+27/10M
+28/10M
+29/10M
+30/10M
+31/10M
+32/10M
+33/10M
+34/10M
+35/10M
+36/10M
+37/10M
+38/10M
+39/10M
+40/10M
+41/10M
+42/10M
+43/10M
+44/10M
+45/10M
+46/10M
+47/10M
+48/10M
+49/10M
+50/10M
+51/10M
+52/10M
+53/10M
+54/10M
+55/10M
+56/10M
+57/10M
+58/10M
+59/10M
+start: id_Gax=2900,	 id_Gax_MAX=4095,	 Gax_row=3
+60/10M
+61/10M
+62/10M
+63/10M
+64/10M
+65/10M
+66/10M
+67/10M
+68/10M
+69/10M
+70/10M
+71/10M
+72/10M
+73/10M
+74/10M
+75/10M
+76/10M
+77/10M
+78/10M
+79/10M
+80/10M
+81/10M
+82/10M
+83/10M
+84/10M
+85/10M
+86/10M
+87/10M
+88/10M
+89/10M
+90/10M
+91/10M
+92/10M
+93/10M
+94/10M
+95/10M
+96/10M
+97/10M
+98/10M
+99/10M
+100/10M
+101/10M
+102/10M
+103/10M
+104/10M
+105/10M
+106/10M
+107/10M
+108/10M
+109/10M
+110/10M
+111/10M
+112/10M
+113/10M
+114/10M
+115/10M
+116/10M
+117/10M
+118/10M
+119/10M
+start: id_Gax=3900,	 id_Gax_MAX=4095,	 Gax_row=3
+120/11M
+121/11M
+122/11M
+123/11M
+124/11M
+125/11M
+126/11M
+127/11M
+128/11M
+129/11M
+130/11M
+131/11M
+132/11M
+133/11M
+134/11M
+135/11M
+136/11M
+137/11M
+138/11M
+139/11M
+140/11M
+141/11M
+142/11M
+143/11M
+144/11M
+145/11M
+146/11M
+147/11M
+148/11M
+149/11M
+150/11M
+151/11M
+152/11M
+153/11M
+154/11M
+155/11M
+156/11M
+157/11M
+158/11M
+159/11M
+160/11M
+161/11M
+162/11M
+163/11M
+164/11M
+165/11M
+166/11M
+167/11M
+168/11M
+169/11M
+170/11M
+171/11M
+172/11M
+173/11M
+174/11M
+175/11M
+176/11M
+177/11M
+178/11M
+179/11M
+start: id_Gax=3200,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=3
+180/12M
+181/12M
+182/12M
+183/12M
+184/12M
+185/12M
+186/12M
+187/12M
+188/12M
+189/12M
+190/12M
+191/12M
+192/12M
+193/12M
+194/12M
+195/12M
+196/12M
+197/12M
+198/12M
+199/12M
+200/12M
+201/12M
+202/12M
+203/12M
+204/12M
+205/12M
+206/12M
+207/12M
+208/12M
+209/12M
+210/12M
+211/12M
+212/12M
+213/12M
+214/12M
+215/12M
+216/12M
+217/12M
+218/12M
+219/12M
+220/12M
+221/12M
+222/12M
+223/12M
+224/12M
+225/12M
+226/12M
+227/12M
+228/12M
+229/12M
+230/12M
+231/12M
+232/12M
+233/12M
+234/12M
+235/12M
+236/12M
+237/12M
+238/12M
+start: id_Gax=2400,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3400,	 id_Gax_MAX=4095,	 Gax_row=3
+239/12M
+240/13M
+241/13M
+242/13M
+243/13M
+244/13M
+245/13M
+246/13M
+247/13M
+248/13M
+249/13M
+250/13M
+251/13M
+252/13M
+253/13M
+254/13M
+255/13M
+256/13M
+257/13M
+258/13M
+259/13M
+260/13M
+261/13M
+262/13M
+263/13M
+264/13M
+265/13M
+266/13M
+267/13M
+268/13M
+269/13M
+270/13M
+271/13M
+272/13M
+273/13M
+274/13M
+275/13M
+276/13M
+277/13M
+278/13M
+279/13M
+280/13M
+281/13M
+282/13M
+283/13M
+284/13M
+285/13M
+286/13M
+287/13M
+288/13M
+289/13M
+290/13M
+291/13M
+292/13M
+293/13M
+294/13M
+295/13M
+296/13M
+297/13M
+298/13M
+299/13M
+300/13M
+301/13M
+302/13M
+303/13M
+304/13M
+305/13M
+306/13M
+307/13M
+308/13M
+309/13M
+310/13M
+311/13M
+312/13M
+313/13M
+314/13M
+315/13M
+316/13M
+317/13M
+318/13M
+319/13M
+320/13M
+321/13M
+322/13M
+323/13M
+324/13M
+325/13M
+326/13M
+327/13M
+328/13M
+329/13M
+330/13M
+331/13M
+332/13M
+333/13M
+334/13M
+335/13M
+336/13M
+337/13M
+338/13M
+339/13M
+340/13M
+341/13M
+342/13M
+343/13M
+344/13M
+345/13M
+346/13M
+347/13M
+348/13M
+349/13M
+350/13M
+351/13M
+352/13M
+353/13M
+354/13M
+355/13M
+356/13M
+357/13M
+358/13M
+359/13M
+360/13M
+361/13M
+362/13M
+363/13M
+364/13M
+365/13M
+366/13M
+367/13M
+368/13M
+369/13M
+370/13M
+371/13M
+372/13M
+373/13M
+374/13M
+375/13M
+376/13M

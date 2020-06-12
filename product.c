@@ -91,7 +91,7 @@ int main(int args, char ** argv){
 	      }else{
 		//continue calculation
 		calculated_trials++;
-		cout<<calculated_trials<<"/"<<total_trials<<endl;
+		cout<<calculated_trials<<"/"<<( total_trials/1000000 )<<"M"<<endl;
 		//cout<<"                                                                         id_Gax_MAX="<<id_Gax_MAX<<",id_Gaz_MAX="<<id_Gaz_MAX<<endl;
 		sub_mode_B=3;
 		simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz);

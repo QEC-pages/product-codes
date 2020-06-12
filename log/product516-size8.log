@@ -1,0 +1,125 @@
+start job on SBATCH:i58 size8 run516 max_process:/max_trial:1000000 Thu Jun 11 23:23:02 PDT 2020
+SLURM_JOB_ID:1559917 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode_A:, sub_mode_B:, na_input:8, n_low:9, n_high=9, data_folder:data/random4/trial516, log_file:log/product516-size8.log status_file:log/status-product516-size8.log
+start: id_Gax=100,	 id_Gax_MAX=127,	 Gax_row=1
+start: id_Gax=400,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=700,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1800,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2600,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1600,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2100,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2500,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2200,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2300,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=600,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1200,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1100,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1700,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1300,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1400,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1900,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=300,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2400,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=900,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2700,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=500,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2900,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=1500,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=2800,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=800,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3200,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3100,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3400,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=200,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3500,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=100,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3700,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3300,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3600,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3800,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=3900,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=2
+start: id_Gax=6000,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=14900,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=13000,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=15200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=10900,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=14600,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=19800,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=1100,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=15500,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=18900,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=16900,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=14300,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=6900,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=5100,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=15800,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=9000,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=12000,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=19600,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=9400,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=14000,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=8600,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=18200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=17700,	 id_Gax_MAX=32767,	 Gax_row=3
+1/63M
+start: id_Gax=9800,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=16100,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=12700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=11300,	 id_Gax_MAX=32767,	 Gax_row=3
+2/69M
+start: id_Gax=8200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=3200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=600,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=2700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=13700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=18700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=3700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=17200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=10200,	 id_Gax_MAX=32767,	 Gax_row=3
+3/84M
+start: id_Gax=5600,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=6500,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=7800,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=2200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=16400,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=20700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=4200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=20500,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=13400,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=10600,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=20300,	 id_Gax_MAX=32767,	 Gax_row=3
+4/112M
+start: id_Gax=1700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=11700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=19200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=12400,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=7400,	 id_Gax_MAX=32767,	 Gax_row=3
+5/121M
+start: id_Gax=4700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=18500,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=17500,	 id_Gax_MAX=32767,	 Gax_row=3
+6/127M
+start: id_Gax=100,	 id_Gax_MAX=32767,	 Gax_row=3
+7/133M
+8/135M
+start: id_Gax=6100,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=15000,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=11000,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=13100,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=17000,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=15300,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=1200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=14700,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=15600,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=5200,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=14400,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=7000,	 id_Gax_MAX=32767,	 Gax_row=3
+9/161M
+start: id_Gax=19400,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=9100,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=15900,	 id_Gax_MAX=32767,	 Gax_row=3
+start: id_Gax=19700,	 id_Gax_MAX=32767,	 Gax_row=3
