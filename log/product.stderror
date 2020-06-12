@@ -149,3 +149,4 @@ slurmstepd-c45: error: _is_a_lwp: open() /proc/56434/status failed: No such file
 slurmstepd-c45: error: _is_a_lwp: open() /proc/59167/status failed: No such file or directory
 /var/spool/slurmd/job1551631/slurm_script:128: no such file or directory: 
 slurmstepd-i07: error: *** JOB 1551685 ON i07 CANCELLED AT 2020-06-11T02:11:25 DUE TO TIME LIMIT ***
+slurmstepd-c36: error: _is_a_lwp: open() /proc/5795/status failed: No such file or directory

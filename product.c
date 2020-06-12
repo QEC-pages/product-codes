@@ -62,6 +62,8 @@ int main(int args, char ** argv){
 	  esitimate the distance
 	 */
       //      cout<<"debug"<<endl;
+      //statistic counts
+      int total_trials=0, calculated_trials=0, distance_2_trials=0;
       int na=na_input;
       for ( int Gax_row = 1; Gax_row< na-1; Gax_row++){
 	//	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -2 ;
@@ -75,6 +77,7 @@ int main(int args, char ** argv){
 	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 1; //maximun all one
 	    //	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 2;
 	    for ( int id_Gaz = 1; id_Gaz < id_Gaz_MAX+1 ; id_Gaz++){
+	      total_trials++;
 	    //run the program. symmetric, symmetric inverse.
 	    // simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug);
 	      if (debug) cout<<"Gax_row="<<Gax_row<<",Gaz_row="<<Gaz_row<<endl;
@@ -87,7 +90,9 @@ int main(int args, char ** argv){
 		//duplicated case, skip following calculation		
 	      }else{
 		//continue calculation
-		cout<<"                                                                         id_Gax_MAX="<<id_Gax_MAX<<",id_Gaz_MAX="<<id_Gaz_MAX<<endl;
+		calculated_trials++;
+		cout<<calculated_trials<<"/"<<total_trials<<endl;
+		//cout<<"                                                                         id_Gax_MAX="<<id_Gax_MAX<<",id_Gaz_MAX="<<id_Gaz_MAX<<endl;
 		sub_mode_B=3;
 		simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz);
 	      }
@@ -149,20 +154,26 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	  Caz=getC(Gax,Gaz,1);
 	  //estimate distance here, and discard cases with distance 1
 	  // for a strong and quick filter, discard cases with distance 2 as well, not sure if this is a valid constraint
+	  /*
 	  int dax_temp = quantum_dist_v2(Gax,Gaz);	  
-	  if (dax_temp < 3 ) {
+	  if (dax_temp < 2 ) {
+	    //	    cout<<"Gax"<<Gax<<endl<<"Cax"<<Cax<<endl;
+	    //	    cout<<"Gaz"<<Gaz<<endl<<"Caz"<<Caz<<endl;
+	    //	    exit(1);
+	    cout<<"*";
 	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
 	    if (debug) cout<<"discard when dax = 1"<<endl;
 	    return 2 ;
 	  }
 	  int daz_temp = quantum_dist_v2(Gax,Gaz,1);
-	  if (daz_temp < 3 ) {
+	  if (daz_temp < 2 ) {
+	    cout<<"+";
 	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
 	    //	  cout<<"na="<<na<<",Gax_row="<<Gax_row<<",sub_mode_B="<<sub_mode_B<<",id_Gax="<<id_Gax<<", id_Gaz="<<id_Gaz<<",";
 	    if (debug) cout<<"discard when daz = 1"<<endl;
 	    return 2 ;
-	  }
-	  cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",dax="<<dax_temp<<",daz="<<daz_temp<<endl;
+	    }*/
+
 	  //	  cout<<"Gax"<<Gax<<endl;
 	  //	  cout<<"Gaz"<<Gaz<<endl;
 
@@ -237,6 +248,14 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 
   int dax = quantum_dist_v2(Gax,Gaz);
   int daz = quantum_dist_v2(Gax,Gaz,1);
+
+  if ( dax ==2 && daz == 2){
+    //    cout<<"=";
+    return 2;
+  }
+  //  cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz;
+  //  cout<<",dax="<<dax<<",daz="<<daz;
+  //  cout<<endl;
 
   //  cout<<"check code B"<<endl;
   if ( ! is_quantum_code(Gbx,Gbz,Cbx,Cbz)) throw "invalid code";

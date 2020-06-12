@@ -58,7 +58,7 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=513
+index=514
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
@@ -132,7 +132,7 @@ echo ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=
 #>>$logfile
 #./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 #>> $logfile
-
+date
 return
 
 echo return
