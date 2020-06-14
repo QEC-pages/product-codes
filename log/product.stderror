@@ -154,3 +154,8 @@ product.c: In function 'int main(int, char**)':
 product.c:66:48: warning: unused variable 'distance_2_trials' [-Wunused-variable]
        int total_trials=0, calculated_trials=0, distance_2_trials=0;
                                                 ^
+slurmstepd-i58: error: *** JOB 1559917 ON i58 CANCELLED AT 2020-06-12T01:23:28 DUE TO TIME LIMIT ***
+slurmstepd-i59: error: *** JOB 1559920 ON i59 CANCELLED AT 2020-06-12T01:24:28 DUE TO TIME LIMIT ***
+slurmstepd-c41: error: _is_a_lwp: 1 read() attempts on /proc/41689/status failed: No such process
+slurmstepd-c41: error: _is_a_lwp: 1 read() attempts on /proc/60132/status failed: No such process
+slurmstepd-c41: error: *** JOB 1528930 ON c41 CANCELLED AT 2020-06-13T23:27:16 DUE TO TIME LIMIT ***

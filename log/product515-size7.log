@@ -424,3 +424,348 @@ start: id_Gax=3400,	 id_Gax_MAX=4095,	 Gax_row=3
 374/13M
 375/13M
 376/13M
+377/13M
+378/13M
+379/13M
+380/13M
+381/13M
+382/13M
+383/13M
+384/13M
+385/13M
+386/13M
+387/13M
+388/13M
+389/13M
+390/13M
+391/13M
+392/13M
+393/13M
+394/13M
+395/13M
+396/13M
+397/13M
+398/13M
+399/13M
+400/13M
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3700,	 id_Gax_MAX=4095,	 Gax_row=3
+401/13M
+402/13M
+403/13M
+404/13M
+405/13M
+406/13M
+407/13M
+408/13M
+409/13M
+410/13M
+411/13M
+412/13M
+413/13M
+414/13M
+415/13M
+416/13M
+417/13M
+418/13M
+419/13M
+420/13M
+421/13M
+422/13M
+423/13M
+424/13M
+425/13M
+426/13M
+427/13M
+428/13M
+429/13M
+430/13M
+431/13M
+432/13M
+433/13M
+434/13M
+435/13M
+436/13M
+437/13M
+438/13M
+439/13M
+440/13M
+441/13M
+442/13M
+443/13M
+444/13M
+445/13M
+446/13M
+447/13M
+448/14M
+449/14M
+450/14M
+451/14M
+452/14M
+453/14M
+454/14M
+455/14M
+456/14M
+457/14M
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.1327
+458/14M
+459/14M
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:2.26617
+460/14M
+461/14M
+462/14M
+463/14M
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.1235
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:2.26827
+464/14M
+465/14M
+466/14M
+467/14M
+468/14M
+469/14M
+470/14M
+471/14M
+472/14M
+473/14M
+474/14M
+475/14M
+476/14M
+477/14M
+478/14M
+479/14M
+480/14M
+481/14M
+482/14M
+start: id_Gax=3800,	 id_Gax_MAX=4095,	 Gax_row=3
+483/14M
+484/14M
+485/14M
+486/14M
+487/14M
+488/14M
+489/14M
+490/14M
+491/14M
+492/14M
+493/14M
+494/14M
+495/14M
+496/14M
+497/14M
+498/14M
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.00609
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.97324
+499/14M
+500/14M
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:0.96928
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.95124
+501/14M
+502/14M
+503/14M
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:0.946977
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.90483
+504/14M
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:0.937797
+505/14M
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.89844
+506/14M
+507/14M
+508/14M
+509/14M
+510/14M
+511/14M
+512/14M
+513/14M
+514/14M
+515/14M
+516/14M
+517/14M
+518/14M
+519/14M
+520/14M
+521/14M
+522/14M
+523/14M
+524/14M
+525/14M
+526/14M
+527/14M
+528/14M
+529/14M
+530/14M
+531/14M
+532/14M
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:0.936228
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.87756
+533/14M
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:0.930827
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=7. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=7,7,49;ka,kb=1,1;data/random4/trial515/trial515-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131,n_low=9 n_high=9 k_low=1 k_high=1 sub_mode=1, time:1.87419
+534/14M
+535/14M
+536/14M
+537/14M
+538/14M
+start: id_Gax=700,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=400,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1800,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1600,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2500,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2100,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2600,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2300,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=600,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1200,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1300,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2400,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1400,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=100,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=300,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1100,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1900,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=900,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2700,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1500,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=500,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=800,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2800,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1700,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=200,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3100,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3400,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3200,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3300,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3700,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3800,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3900,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3600,	 id_Gax_MAX=4095,	 Gax_row=4
+539/14M
+540/14M
+541/14M
+542/14M
+543/14M
+544/14M
+545/14M
+546/14M
+547/14M
+548/14M
+549/14M
+550/14M
+551/14M
+552/14M
+553/14M
+554/14M
+555/14M
+556/14M
+557/14M
+558/14M
+559/14M
+560/14M
+561/14M
+562/14M
+563/14M
+564/14M
+565/14M
+566/14M
+567/14M
+568/14M
+569/14M
+570/14M
+571/14M
+572/14M
+573/14M
+574/14M
+575/14M
+576/14M
+577/14M
+578/14M
+579/14M
+580/14M
+581/14M
+582/14M
+583/14M
+584/14M
+585/14M
+586/14M
+587/14M
+588/14M
+589/14M
+590/14M
+591/14M
+592/14M
+start: id_Gax=2200,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2900,	 id_Gax_MAX=4095,	 Gax_row=4
+593/14M
+594/14M
+595/14M
+596/14M
+597/14M
+598/14M
+599/14M
+600/14M
+601/14M
+602/14M
+603/14M
+604/14M
+605/14M
+606/14M
+607/14M
+608/14M
+609/14M
+610/14M
+611/14M
+612/14M
+613/14M
+614/14M
+615/14M
+616/14M
+617/14M
+618/14M
+619/14M
+620/14M
+621/14M
+622/14M
+623/14M
+624/14M
+625/14M
+626/14M
+627/14M
+628/14M
+629/14M
+630/14M
+631/14M
+632/14M
+633/14M
+634/14M
+635/14M
+start: id_Gax=3500,	 id_Gax_MAX=4095,	 Gax_row=4
+636/14M
+637/14M
+638/14M
+639/14M
+640/14M
+641/14M
+642/14M
+643/14M
+644/14M
+645/14M
+646/14M
+647/14M
+648/14M
+649/14M
+650/14M
+start: id_Gax=600,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=500,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=400,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=200,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=700,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=300,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=800,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=100,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=900,	 id_Gax_MAX=1023,	 Gax_row=5
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=5
+651/14M
+652/14M

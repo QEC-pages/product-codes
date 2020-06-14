@@ -118,3 +118,4 @@ start job on SBATCH:i59 size9 run517 max_process:/max_trial:1000000 Thu Jun 11 2
 SLURM_JOB_ID:1559920 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
 note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode_A:, sub_mode_B:, na_input:9, n_low:9, n_high=9, data_folder:data/random4/trial517, log_file:log/product517-size9.log status_file:log/status-product517-size9.log
 ./.product517.out mode=3 title=data/random4/trial517/trial517 debug=0 na_input=9 seed=1 num_cores=60 note=[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1]
+Thu Jun 11 23:30:38 PDT 2020
