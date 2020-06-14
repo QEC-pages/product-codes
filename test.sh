@@ -1,6 +1,6 @@
 
-make test.out
-
+#make test.out
+make test
 #trial501-na7-Gax_row2-id_Gax455-Gaz_row2-id_Gaz1008
 
 ./test.out na=7 Gax_row=2 id_Gax=455 Gaz_row=2 id_Gaz=1008 debug=0

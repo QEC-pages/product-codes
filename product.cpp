@@ -2,7 +2,7 @@
 /*
 This code produce two random quantum codes and construct concatenated codes and reduced code. Then check their distance.
  */
-#include "weilei_lib/my_lib.h"
+#include "weilei_lib/weilei_lib.h"
 #include <itpp/itbase.h>
 #include <ctime> //to get current time
 using namespace itpp;
@@ -26,7 +26,7 @@ int main(int args, char ** argv){
   int sub_mode_B = -1; parser.get(sub_mode_B,"sub_mode_B");
   std::string title_str="no-title";  parser.get(title_str,"title");
   std::string note="no-note"; parser.get(note,"note");
-  int debug = 1; //default debug on
+  int debug = 0; //default debug on
   parser.get(debug,"debug");
   int seed=1; parser.get(seed,"seed");
   //  std::cout<<"\t seed:"<<seed;
