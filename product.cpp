@@ -7,7 +7,7 @@ This code produce two random quantum codes and construct concatenated codes and 
 #include <ctime> //to get current time
 using namespace itpp;
 using namespace std;
-
+using namespace common;
 
 //int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, int n_low, int n_high, int k_low, int k_high, int debug);
 

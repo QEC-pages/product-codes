@@ -44,7 +44,7 @@ lib:
 %.o:%.cpp
 	$(CXX) $(START) $(END) -c $<
 
-object_files=$(INC_DIR)/mm_read.o $(INC_DIR)/mmio.o $(INC_DIR)/mm_write.o $(INC_DIR)/lib.o $(INC_DIR)/dist.o $(INC_DIR)/product.o $(INC_DIR)/bp.o
+object_files=$(INC_DIR)/mm_read.o $(INC_DIR)/mmio.o $(INC_DIR)/mm_write.o $(INC_DIR)/lib.o $(INC_DIR)/dist.o $(INC_DIR)/product_lib.o $(INC_DIR)/bp.o 
 #test-link:test.o $(obejct_files)
 %.out:%.o $(obejct_files)
 	$(CXX) $(START) $(END) -o $@ $< $(object_files)
