@@ -1,3 +1,5 @@
+MAKEFLAGS += --no-print-directory
+
 INC_DIR=weilei_lib
 #INC_DIR=~/working/weilei_lib
 CXX=g++ -O3 -Wall -std=c++11 -fopenmp
