@@ -1,0 +1,378 @@
+\hypertarget{class_b_p___decoder}{}\doxysection{B\+P\+\_\+\+Decoder Class Reference}
+\label{class_b_p___decoder}\index{BP\_Decoder@{BP\_Decoder}}
+
+
+{\ttfamily \#include $<$bp\+\_\+decoder.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_b_p___decoder_aae5d589cc8342455d8241827aaad0223}{is\+\_\+\+H\+\_\+valid}} (itpp\+::\+G\+F2mat H\+\_\+temp)
+\item 
+void \mbox{\hyperlink{class_b_p___decoder_ad04132878c0d58cfa60f691378114228}{init}} (itpp\+::\+G\+F2mat H\+\_\+temp)
+\item 
+void \mbox{\hyperlink{class_b_p___decoder_ad72ecfb8dda62e6f162f3353132bd9f2}{set\+\_\+exit\+\_\+iteration}} (int exit\+\_\+iteration\+\_\+temp)
+\item 
+void \mbox{\hyperlink{class_b_p___decoder_a782a49d74bd79d66f4bc99cf05de3e83}{set\+\_\+decode\+\_\+mode}} (int decode\+\_\+mode\+\_\+temp)
+\item 
+void \mbox{\hyperlink{class_b_p___decoder_adde68add9a98d1dfa78e192cb14cd16c}{set\+\_\+decode\+\_\+mode\+\_\+str}} (std\+::string decode\+\_\+mode\+\_\+str\+\_\+temp)
+\item 
+void \mbox{\hyperlink{class_b_p___decoder_a5d67928decef06d4b78900223bdcc7ee}{set\+\_\+silent\+\_\+mode}} (bool silent\+\_\+mode\+\_\+temp)
+\item 
+void \mbox{\hyperlink{class_b_p___decoder_aa89b8c164dbeade120e2a8f48afbc798}{set\+\_\+debug\+\_\+mode}} (bool debug\+\_\+mode\+\_\+temp)
+\item 
+void \mbox{\hyperlink{class_b_p___decoder_ae005ea96bc0ac27fe675effda77ae92e}{print\+\_\+info}} ()
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_aa2a8ab19762a3d11fcbc0fff657454b6}{decode}} (itpp\+::bvec syndrome, const itpp\+::vec \&L\+L\+Rin, itpp\+::vec \&L\+L\+Rout)
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_aa3d22625e02f2ddc7847bf5a3e6dc5a7}{bp\+\_\+syndrome\+\_\+llr}} (itpp\+::bvec syndrome, const itpp\+::vec \&L\+L\+Rin, itpp\+::vec \&L\+L\+Rout)
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_abfac77cd0bc04db3c96b275713332ce1}{bp\+\_\+schedule}} (itpp\+::bvec syndrome, const itpp\+::vec \&L\+L\+Rin, itpp\+::vec \&L\+L\+Rout)
+\item 
+bool \mbox{\hyperlink{class_b_p___decoder_a6a43ceacbce0fea4b6e4d42acd25cf47}{match\+\_\+syndrome}} (itpp\+::vec L\+LR, itpp\+::bvec syndrome)
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_a3ac0b485ffaa9c3d7b750f9645eadb70}{bp\+\_\+flexible}} (itpp\+::bvec syndrome, const itpp\+::vec \&L\+L\+Rin, itpp\+::vec \&L\+L\+Rout)
+\item 
+void \mbox{\hyperlink{class_b_p___decoder_a8180c7979e024a4790baedbf569cf24f}{set\+\_\+schedule\+\_\+mode}} (int schedule\+\_\+mode\+\_\+temp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_b_p___decoder_add6084bd9fdf6d7cdddbd2373fe8e4a4}{silent\+\_\+mode}} = false
+\item 
+bool \mbox{\hyperlink{class_b_p___decoder_a4954920445fef9f4adebc6ad584590f1}{debug}} = false
+\item 
+const double \mbox{\hyperlink{class_b_p___decoder_a78ef54bfda31583ee7a40a55e783ec41}{I\+N\+F\+\_\+\+BP}} =10000
+\item 
+itpp\+::\+G\+F2mat \mbox{\hyperlink{class_b_p___decoder_ab8cfd4f6e30fce2d1720d5d3c43e4eec}{H}}
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_a2a96a35c1a527489d2f001e5a7e6c5b8}{exit\+\_\+iteration}} =50
+\item 
+double \mbox{\hyperlink{class_b_p___decoder_aec1bdad8e7ce4acb4e6c24ab12f803f1}{alpha}} =1.\+0
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_ad76ef4af8e055584550a064fcd3c8a9d}{decode\+\_\+mode}} = 2
+\item 
+std\+::string \mbox{\hyperlink{class_b_p___decoder_ad4c61a566302deabb55fd10bd54d4cc5}{decode\+\_\+mode\+\_\+str}} =\char`\"{}min sum\char`\"{}
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_a5ce7493e0571c56ea4a3c5fa61cc7e84}{nvar}}
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_ad04f14212a9ba74b8b90c72e40a1f2a4}{ncheck}}
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_abaf14c81f76c7bb0fc77294722987693}{nedge}}
+\item 
+bool \mbox{\hyperlink{class_b_p___decoder_a385f9d77b657fc3e087ecac2eea0cfda}{is\+\_\+initialized}} =false
+\item 
+int \mbox{\hyperlink{class_b_p___decoder_a0db4502a40bc77e736f50f12436af797}{schedule\+\_\+mode}} =0
+\item 
+std\+::string \mbox{\hyperlink{class_b_p___decoder_a894a9c466b4084c0669c6ce35a218654}{schedule\+\_\+mode\+\_\+str}} =\char`\"{}no \mbox{\hyperlink{class_b_p___decoder_a85a34e1bb4a6a13383b061bbeab40a6e}{schedule}}, parallel\char`\"{}
+\item 
+itpp\+::mat \mbox{\hyperlink{class_b_p___decoder_a85a34e1bb4a6a13383b061bbeab40a6e}{schedule}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 23 of file bp\+\_\+decoder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_p___decoder_a3ac0b485ffaa9c3d7b750f9645eadb70}\label{class_b_p___decoder_a3ac0b485ffaa9c3d7b750f9645eadb70}} 
+\index{BP\_Decoder@{BP\_Decoder}!bp\_flexible@{bp\_flexible}}
+\index{bp\_flexible@{bp\_flexible}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{bp\_flexible()}{bp\_flexible()}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::bp\+\_\+flexible (\begin{DoxyParamCaption}\item[{itpp\+::bvec}]{syndrome,  }\item[{const itpp\+::vec \&}]{L\+L\+Rin,  }\item[{itpp\+::vec \&}]{L\+L\+Rout }\end{DoxyParamCaption})}
+
+
+
+Definition at line 597 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_abfac77cd0bc04db3c96b275713332ce1}\label{class_b_p___decoder_abfac77cd0bc04db3c96b275713332ce1}} 
+\index{BP\_Decoder@{BP\_Decoder}!bp\_schedule@{bp\_schedule}}
+\index{bp\_schedule@{bp\_schedule}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{bp\_schedule()}{bp\_schedule()}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::bp\+\_\+schedule (\begin{DoxyParamCaption}\item[{itpp\+::bvec}]{syndrome,  }\item[{const itpp\+::vec \&}]{L\+L\+Rin,  }\item[{itpp\+::vec \&}]{L\+L\+Rout }\end{DoxyParamCaption})}
+
+
+
+Definition at line 464 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_aa3d22625e02f2ddc7847bf5a3e6dc5a7}\label{class_b_p___decoder_aa3d22625e02f2ddc7847bf5a3e6dc5a7}} 
+\index{BP\_Decoder@{BP\_Decoder}!bp\_syndrome\_llr@{bp\_syndrome\_llr}}
+\index{bp\_syndrome\_llr@{bp\_syndrome\_llr}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{bp\_syndrome\_llr()}{bp\_syndrome\_llr()}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::bp\+\_\+syndrome\+\_\+llr (\begin{DoxyParamCaption}\item[{itpp\+::bvec}]{syndrome,  }\item[{const itpp\+::vec \&}]{L\+L\+Rin,  }\item[{itpp\+::vec \&}]{L\+L\+Rout }\end{DoxyParamCaption})}
+
+
+
+Definition at line 287 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_aa2a8ab19762a3d11fcbc0fff657454b6}\label{class_b_p___decoder_aa2a8ab19762a3d11fcbc0fff657454b6}} 
+\index{BP\_Decoder@{BP\_Decoder}!decode@{decode}}
+\index{decode@{decode}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::decode (\begin{DoxyParamCaption}\item[{itpp\+::bvec}]{syndrome,  }\item[{const itpp\+::vec \&}]{L\+L\+Rin,  }\item[{itpp\+::vec \&}]{L\+L\+Rout }\end{DoxyParamCaption})}
+
+
+
+Definition at line 263 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_ad04132878c0d58cfa60f691378114228}\label{class_b_p___decoder_ad04132878c0d58cfa60f691378114228}} 
+\index{BP\_Decoder@{BP\_Decoder}!init@{init}}
+\index{init@{init}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void B\+P\+\_\+\+Decoder\+::init (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat}]{H\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 82 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_aae5d589cc8342455d8241827aaad0223}\label{class_b_p___decoder_aae5d589cc8342455d8241827aaad0223}} 
+\index{BP\_Decoder@{BP\_Decoder}!is\_H\_valid@{is\_H\_valid}}
+\index{is\_H\_valid@{is\_H\_valid}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{is\_H\_valid()}{is\_H\_valid()}}
+{\footnotesize\ttfamily bool B\+P\+\_\+\+Decoder\+::is\+\_\+\+H\+\_\+valid (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat}]{H\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 70 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a6a43ceacbce0fea4b6e4d42acd25cf47}\label{class_b_p___decoder_a6a43ceacbce0fea4b6e4d42acd25cf47}} 
+\index{BP\_Decoder@{BP\_Decoder}!match\_syndrome@{match\_syndrome}}
+\index{match\_syndrome@{match\_syndrome}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{match\_syndrome()}{match\_syndrome()}}
+{\footnotesize\ttfamily bool B\+P\+\_\+\+Decoder\+::match\+\_\+syndrome (\begin{DoxyParamCaption}\item[{itpp\+::vec}]{L\+LR,  }\item[{itpp\+::bvec}]{syndrome }\end{DoxyParamCaption})}
+
+
+
+Definition at line 281 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_ae005ea96bc0ac27fe675effda77ae92e}\label{class_b_p___decoder_ae005ea96bc0ac27fe675effda77ae92e}} 
+\index{BP\_Decoder@{BP\_Decoder}!print\_info@{print\_info}}
+\index{print\_info@{print\_info}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{print\_info()}{print\_info()}}
+{\footnotesize\ttfamily void B\+P\+\_\+\+Decoder\+::print\+\_\+info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_aa89b8c164dbeade120e2a8f48afbc798}\label{class_b_p___decoder_aa89b8c164dbeade120e2a8f48afbc798}} 
+\index{BP\_Decoder@{BP\_Decoder}!set\_debug\_mode@{set\_debug\_mode}}
+\index{set\_debug\_mode@{set\_debug\_mode}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{set\_debug\_mode()}{set\_debug\_mode()}}
+{\footnotesize\ttfamily void B\+P\+\_\+\+Decoder\+::set\+\_\+debug\+\_\+mode (\begin{DoxyParamCaption}\item[{bool}]{debug\+\_\+mode\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a782a49d74bd79d66f4bc99cf05de3e83}\label{class_b_p___decoder_a782a49d74bd79d66f4bc99cf05de3e83}} 
+\index{BP\_Decoder@{BP\_Decoder}!set\_decode\_mode@{set\_decode\_mode}}
+\index{set\_decode\_mode@{set\_decode\_mode}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{set\_decode\_mode()}{set\_decode\_mode()}}
+{\footnotesize\ttfamily void B\+P\+\_\+\+Decoder\+::set\+\_\+decode\+\_\+mode (\begin{DoxyParamCaption}\item[{int}]{decode\+\_\+mode\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 122 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_adde68add9a98d1dfa78e192cb14cd16c}\label{class_b_p___decoder_adde68add9a98d1dfa78e192cb14cd16c}} 
+\index{BP\_Decoder@{BP\_Decoder}!set\_decode\_mode\_str@{set\_decode\_mode\_str}}
+\index{set\_decode\_mode\_str@{set\_decode\_mode\_str}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{set\_decode\_mode\_str()}{set\_decode\_mode\_str()}}
+{\footnotesize\ttfamily void B\+P\+\_\+\+Decoder\+::set\+\_\+decode\+\_\+mode\+\_\+str (\begin{DoxyParamCaption}\item[{std\+::string}]{decode\+\_\+mode\+\_\+str\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 144 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_ad72ecfb8dda62e6f162f3353132bd9f2}\label{class_b_p___decoder_ad72ecfb8dda62e6f162f3353132bd9f2}} 
+\index{BP\_Decoder@{BP\_Decoder}!set\_exit\_iteration@{set\_exit\_iteration}}
+\index{set\_exit\_iteration@{set\_exit\_iteration}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{set\_exit\_iteration()}{set\_exit\_iteration()}}
+{\footnotesize\ttfamily void B\+P\+\_\+\+Decoder\+::set\+\_\+exit\+\_\+iteration (\begin{DoxyParamCaption}\item[{int}]{exit\+\_\+iteration\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 114 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a8180c7979e024a4790baedbf569cf24f}\label{class_b_p___decoder_a8180c7979e024a4790baedbf569cf24f}} 
+\index{BP\_Decoder@{BP\_Decoder}!set\_schedule\_mode@{set\_schedule\_mode}}
+\index{set\_schedule\_mode@{set\_schedule\_mode}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{set\_schedule\_mode()}{set\_schedule\_mode()}}
+{\footnotesize\ttfamily void B\+P\+\_\+\+Decoder\+::set\+\_\+schedule\+\_\+mode (\begin{DoxyParamCaption}\item[{int}]{schedule\+\_\+mode\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 155 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a5d67928decef06d4b78900223bdcc7ee}\label{class_b_p___decoder_a5d67928decef06d4b78900223bdcc7ee}} 
+\index{BP\_Decoder@{BP\_Decoder}!set\_silent\_mode@{set\_silent\_mode}}
+\index{set\_silent\_mode@{set\_silent\_mode}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{set\_silent\_mode()}{set\_silent\_mode()}}
+{\footnotesize\ttfamily void B\+P\+\_\+\+Decoder\+::set\+\_\+silent\+\_\+mode (\begin{DoxyParamCaption}\item[{bool}]{silent\+\_\+mode\+\_\+temp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file bp\+\_\+decoder.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_b_p___decoder_aec1bdad8e7ce4acb4e6c24ab12f803f1}\label{class_b_p___decoder_aec1bdad8e7ce4acb4e6c24ab12f803f1}} 
+\index{BP\_Decoder@{BP\_Decoder}!alpha@{alpha}}
+\index{alpha@{alpha}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily double B\+P\+\_\+\+Decoder\+::alpha =1.\+0}
+
+
+
+Definition at line 30 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a4954920445fef9f4adebc6ad584590f1}\label{class_b_p___decoder_a4954920445fef9f4adebc6ad584590f1}} 
+\index{BP\_Decoder@{BP\_Decoder}!debug@{debug}}
+\index{debug@{debug}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily bool B\+P\+\_\+\+Decoder\+::debug = false}
+
+
+
+Definition at line 26 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_ad76ef4af8e055584550a064fcd3c8a9d}\label{class_b_p___decoder_ad76ef4af8e055584550a064fcd3c8a9d}} 
+\index{BP\_Decoder@{BP\_Decoder}!decode\_mode@{decode\_mode}}
+\index{decode\_mode@{decode\_mode}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{decode\_mode}{decode\_mode}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::decode\+\_\+mode = 2}
+
+
+
+Definition at line 31 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_ad4c61a566302deabb55fd10bd54d4cc5}\label{class_b_p___decoder_ad4c61a566302deabb55fd10bd54d4cc5}} 
+\index{BP\_Decoder@{BP\_Decoder}!decode\_mode\_str@{decode\_mode\_str}}
+\index{decode\_mode\_str@{decode\_mode\_str}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{decode\_mode\_str}{decode\_mode\_str}}
+{\footnotesize\ttfamily std\+::string B\+P\+\_\+\+Decoder\+::decode\+\_\+mode\+\_\+str =\char`\"{}min sum\char`\"{}}
+
+
+
+Definition at line 32 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a2a96a35c1a527489d2f001e5a7e6c5b8}\label{class_b_p___decoder_a2a96a35c1a527489d2f001e5a7e6c5b8}} 
+\index{BP\_Decoder@{BP\_Decoder}!exit\_iteration@{exit\_iteration}}
+\index{exit\_iteration@{exit\_iteration}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{exit\_iteration}{exit\_iteration}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::exit\+\_\+iteration =50}
+
+
+
+Definition at line 29 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_ab8cfd4f6e30fce2d1720d5d3c43e4eec}\label{class_b_p___decoder_ab8cfd4f6e30fce2d1720d5d3c43e4eec}} 
+\index{BP\_Decoder@{BP\_Decoder}!H@{H}}
+\index{H@{H}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{H}{H}}
+{\footnotesize\ttfamily itpp\+::\+G\+F2mat B\+P\+\_\+\+Decoder\+::H}
+
+
+
+Definition at line 28 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a78ef54bfda31583ee7a40a55e783ec41}\label{class_b_p___decoder_a78ef54bfda31583ee7a40a55e783ec41}} 
+\index{BP\_Decoder@{BP\_Decoder}!INF\_BP@{INF\_BP}}
+\index{INF\_BP@{INF\_BP}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{INF\_BP}{INF\_BP}}
+{\footnotesize\ttfamily const double B\+P\+\_\+\+Decoder\+::\+I\+N\+F\+\_\+\+BP =10000}
+
+
+
+Definition at line 27 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a385f9d77b657fc3e087ecac2eea0cfda}\label{class_b_p___decoder_a385f9d77b657fc3e087ecac2eea0cfda}} 
+\index{BP\_Decoder@{BP\_Decoder}!is\_initialized@{is\_initialized}}
+\index{is\_initialized@{is\_initialized}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{is\_initialized}{is\_initialized}}
+{\footnotesize\ttfamily bool B\+P\+\_\+\+Decoder\+::is\+\_\+initialized =false}
+
+
+
+Definition at line 35 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_ad04f14212a9ba74b8b90c72e40a1f2a4}\label{class_b_p___decoder_ad04f14212a9ba74b8b90c72e40a1f2a4}} 
+\index{BP\_Decoder@{BP\_Decoder}!ncheck@{ncheck}}
+\index{ncheck@{ncheck}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{ncheck}{ncheck}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::ncheck}
+
+
+
+Definition at line 33 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_abaf14c81f76c7bb0fc77294722987693}\label{class_b_p___decoder_abaf14c81f76c7bb0fc77294722987693}} 
+\index{BP\_Decoder@{BP\_Decoder}!nedge@{nedge}}
+\index{nedge@{nedge}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{nedge}{nedge}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::nedge}
+
+
+
+Definition at line 33 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a5ce7493e0571c56ea4a3c5fa61cc7e84}\label{class_b_p___decoder_a5ce7493e0571c56ea4a3c5fa61cc7e84}} 
+\index{BP\_Decoder@{BP\_Decoder}!nvar@{nvar}}
+\index{nvar@{nvar}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{nvar}{nvar}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::nvar}
+
+
+
+Definition at line 33 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a85a34e1bb4a6a13383b061bbeab40a6e}\label{class_b_p___decoder_a85a34e1bb4a6a13383b061bbeab40a6e}} 
+\index{BP\_Decoder@{BP\_Decoder}!schedule@{schedule}}
+\index{schedule@{schedule}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{schedule}{schedule}}
+{\footnotesize\ttfamily itpp\+::mat B\+P\+\_\+\+Decoder\+::schedule}
+
+
+
+Definition at line 55 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a0db4502a40bc77e736f50f12436af797}\label{class_b_p___decoder_a0db4502a40bc77e736f50f12436af797}} 
+\index{BP\_Decoder@{BP\_Decoder}!schedule\_mode@{schedule\_mode}}
+\index{schedule\_mode@{schedule\_mode}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{schedule\_mode}{schedule\_mode}}
+{\footnotesize\ttfamily int B\+P\+\_\+\+Decoder\+::schedule\+\_\+mode =0}
+
+
+
+Definition at line 53 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_a894a9c466b4084c0669c6ce35a218654}\label{class_b_p___decoder_a894a9c466b4084c0669c6ce35a218654}} 
+\index{BP\_Decoder@{BP\_Decoder}!schedule\_mode\_str@{schedule\_mode\_str}}
+\index{schedule\_mode\_str@{schedule\_mode\_str}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{schedule\_mode\_str}{schedule\_mode\_str}}
+{\footnotesize\ttfamily std\+::string B\+P\+\_\+\+Decoder\+::schedule\+\_\+mode\+\_\+str =\char`\"{}no \mbox{\hyperlink{class_b_p___decoder_a85a34e1bb4a6a13383b061bbeab40a6e}{schedule}}, parallel\char`\"{}}
+
+
+
+Definition at line 54 of file bp\+\_\+decoder.\+h.
+
+\mbox{\Hypertarget{class_b_p___decoder_add6084bd9fdf6d7cdddbd2373fe8e4a4}\label{class_b_p___decoder_add6084bd9fdf6d7cdddbd2373fe8e4a4}} 
+\index{BP\_Decoder@{BP\_Decoder}!silent\_mode@{silent\_mode}}
+\index{silent\_mode@{silent\_mode}!BP\_Decoder@{BP\_Decoder}}
+\doxysubsubsection{\texorpdfstring{silent\_mode}{silent\_mode}}
+{\footnotesize\ttfamily bool B\+P\+\_\+\+Decoder\+::silent\+\_\+mode = false}
+
+
+
+Definition at line 25 of file bp\+\_\+decoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+weilei\+\_\+lib/\mbox{\hyperlink{bp__decoder_8h}{bp\+\_\+decoder.\+h}}\end{DoxyCompactItemize}

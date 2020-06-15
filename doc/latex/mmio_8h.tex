@@ -1,0 +1,786 @@
+\hypertarget{mmio_8h}{}\doxysection{weilei\+\_\+lib/mmio.h File Reference}
+\label{mmio_8h}\index{weilei\_lib/mmio.h@{weilei\_lib/mmio.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a338442ee1967d47ab7f2e4c3cccf75dd}{M\+M\+\_\+\+M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH}}~1025
+\item 
+\#define \mbox{\hyperlink{mmio_8h_af63c90afdcf0c7bb538ef8963b0385d9}{Matrix\+Market\+Banner}}~\char`\"{}\%\%Matrix\+Market\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a532f9540afd8f387f6f846714ecd4d36}{M\+M\+\_\+\+M\+A\+X\+\_\+\+T\+O\+K\+E\+N\+\_\+\+L\+E\+N\+G\+TH}}~64
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a39b0b604a9348b9f662a0587a0c29911}{mm\+\_\+is\+\_\+matrix}}(typecode)~((typecode)\mbox{[}0\mbox{]}==\textquotesingle{}M\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_aee7772c709001e294bd67e6fd8382dc3}{mm\+\_\+is\+\_\+sparse}}(typecode)~((typecode)\mbox{[}1\mbox{]}==\textquotesingle{}C\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a922acd6ee972f16bae8349729bd22d28}{mm\+\_\+is\+\_\+coordinate}}(typecode)~((typecode)\mbox{[}1\mbox{]}==\textquotesingle{}C\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a0839683fb6e8a9ce931aec600871f8f8}{mm\+\_\+is\+\_\+dense}}(typecode)~((typecode)\mbox{[}1\mbox{]}==\textquotesingle{}A\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a74c82110c8610df75aad31ee0e57bc8c}{mm\+\_\+is\+\_\+array}}(typecode)~((typecode)\mbox{[}1\mbox{]}==\textquotesingle{}A\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a099de03c35a8b30cf035c46b5349e48b}{mm\+\_\+is\+\_\+complex}}(typecode)~((typecode)\mbox{[}2\mbox{]}==\textquotesingle{}C\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a6afdb9ff27a7a940a7e6538c961d2b72}{mm\+\_\+is\+\_\+real}}(typecode)~((typecode)\mbox{[}2\mbox{]}==\textquotesingle{}R\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_aa105a83b200825c5c9c8e5d44b905187}{mm\+\_\+is\+\_\+pattern}}(typecode)~((typecode)\mbox{[}2\mbox{]}==\textquotesingle{}P\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_ad405f8a31e4f487e04269e372def0071}{mm\+\_\+is\+\_\+integer}}(typecode)~((typecode)\mbox{[}2\mbox{]}==\textquotesingle{}I\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_ae3eab2d2f506a37bc1cda68b21bce9c4}{mm\+\_\+is\+\_\+symmetric}}(typecode)~((typecode)\mbox{[}3\mbox{]}==\textquotesingle{}S\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_aadc12b70af792b1b5c820267396342ce}{mm\+\_\+is\+\_\+general}}(typecode)~((typecode)\mbox{[}3\mbox{]}==\textquotesingle{}G\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a714cfbd11fe0bcdd72ec7eac5ef27a73}{mm\+\_\+is\+\_\+skew}}(typecode)~((typecode)\mbox{[}3\mbox{]}==\textquotesingle{}K\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a409f46e8143876e3b6681728318d866f}{mm\+\_\+is\+\_\+hermitian}}(typecode)~((typecode)\mbox{[}3\mbox{]}==\textquotesingle{}H\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_ab94a2a33e79dda9a50645718c3055bde}{mm\+\_\+set\+\_\+matrix}}(typecode)~(($\ast$typecode)\mbox{[}0\mbox{]}=\textquotesingle{}M\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a60425fdf2040cff47da380e2904af1e2}{mm\+\_\+set\+\_\+coordinate}}(typecode)~(($\ast$typecode)\mbox{[}1\mbox{]}=\textquotesingle{}C\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a2234ddc053712126166ca92e590fa2bf}{mm\+\_\+set\+\_\+array}}(typecode)~(($\ast$typecode)\mbox{[}1\mbox{]}=\textquotesingle{}A\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_abba2bdfdc6f133207b52e70b31f07534}{mm\+\_\+set\+\_\+dense}}(typecode)~\mbox{\hyperlink{mmio_8h_a2234ddc053712126166ca92e590fa2bf}{mm\+\_\+set\+\_\+array}}(typecode)
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a38129ce74fa250f778730f1344135c16}{mm\+\_\+set\+\_\+sparse}}(typecode)~\mbox{\hyperlink{mmio_8h_a60425fdf2040cff47da380e2904af1e2}{mm\+\_\+set\+\_\+coordinate}}(typecode)
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a1d2710c2c5c84322c5ebad36811c0636}{mm\+\_\+set\+\_\+complex}}(typecode)~(($\ast$typecode)\mbox{[}2\mbox{]}=\textquotesingle{}C\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_aef12252aecf7a4af6baa752dc9d29698}{mm\+\_\+set\+\_\+real}}(typecode)~(($\ast$typecode)\mbox{[}2\mbox{]}=\textquotesingle{}R\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_ac9bdbe4b4fb164f60460b56c815902c4}{mm\+\_\+set\+\_\+pattern}}(typecode)~(($\ast$typecode)\mbox{[}2\mbox{]}=\textquotesingle{}P\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a88726ec878ed03d713d9cf1519ac822d}{mm\+\_\+set\+\_\+integer}}(typecode)~(($\ast$typecode)\mbox{[}2\mbox{]}=\textquotesingle{}I\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a5b5292978fc119acc10444b282fe994c}{mm\+\_\+set\+\_\+symmetric}}(typecode)~(($\ast$typecode)\mbox{[}3\mbox{]}=\textquotesingle{}S\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a244392516ea33cb49f27d53d36c71d4a}{mm\+\_\+set\+\_\+general}}(typecode)~(($\ast$typecode)\mbox{[}3\mbox{]}=\textquotesingle{}G\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a355520c4b7b525bd79972117368967b1}{mm\+\_\+set\+\_\+skew}}(typecode)~(($\ast$typecode)\mbox{[}3\mbox{]}=\textquotesingle{}K\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a1df99ff9edf59d44b3866633ee98dbdf}{mm\+\_\+set\+\_\+hermitian}}(typecode)~(($\ast$typecode)\mbox{[}3\mbox{]}=\textquotesingle{}H\textquotesingle{})
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a4d63d071fcfb7c11c77ced59b38b2b38}{mm\+\_\+clear\+\_\+typecode}}(typecode)
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a61be6348c808d02530d151e59f0b456f}{mm\+\_\+initialize\+\_\+typecode}}(typecode)~\mbox{\hyperlink{mmio_8h_a4d63d071fcfb7c11c77ced59b38b2b38}{mm\+\_\+clear\+\_\+typecode}}(typecode)
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a1e36f866ae2805a8b1a6fb626863decc}{M\+M\+\_\+\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE}}~11
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a35f109af00ebbbd4d008f8fcbc8ed9c1}{M\+M\+\_\+\+P\+R\+E\+M\+A\+T\+U\+R\+E\+\_\+\+E\+OF}}~12
+\item 
+\#define \mbox{\hyperlink{mmio_8h_add74a290ac25b62447f27f5faed05f5d}{M\+M\+\_\+\+N\+O\+T\+\_\+\+M\+TX}}~13
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a92a9e51b7e612248c29398422613c83d}{M\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+ER}}~14
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a7c4977adc296451d59e66972fd4e58db}{M\+M\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+T\+Y\+PE}}~15
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a8397a5d870f5a9827caa1c4b766de609}{M\+M\+\_\+\+L\+I\+N\+E\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG}}~16
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a823b41c658a5cbedb8e724fb3b9fe79e}{M\+M\+\_\+\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+F\+I\+LE}}~17
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a103aac2f6e2ac7c7b063726f58dda8af}{M\+M\+\_\+\+M\+T\+X\+\_\+\+S\+TR}}~\char`\"{}matrix\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_accb347ba4db3bf355de9b3750a80ad86}{M\+M\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+TR}}~\char`\"{}array\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_ad54c538e24b85cc0ce790e53c96b18f8}{M\+M\+\_\+\+D\+E\+N\+S\+E\+\_\+\+S\+TR}}~\char`\"{}array\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a5cf347e6e895c61edaf4b82e0d6b39bf}{M\+M\+\_\+\+C\+O\+O\+R\+D\+I\+N\+A\+T\+E\+\_\+\+S\+TR}}~\char`\"{}coordinate\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a720ba16714f07ad6ae39055683aa3cb3}{M\+M\+\_\+\+S\+P\+A\+R\+S\+E\+\_\+\+S\+TR}}~\char`\"{}coordinate\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a53e740b82aa1fcc72b48aac6304b38bf}{M\+M\+\_\+\+C\+O\+M\+P\+L\+E\+X\+\_\+\+S\+TR}}~\char`\"{}complex\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_adb63588b8225c991b215b37befd8909e}{M\+M\+\_\+\+R\+E\+A\+L\+\_\+\+S\+TR}}~\char`\"{}real\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_ae7d131244c25d09dd27ffe7188572a3e}{M\+M\+\_\+\+I\+N\+T\+\_\+\+S\+TR}}~\char`\"{}integer\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a4f2a311f3cebaf460f028b00d4d1e6c6}{M\+M\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+S\+TR}}~\char`\"{}general\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_ac004e8f7880b764acaa4b02a6ac80d43}{M\+M\+\_\+\+S\+Y\+M\+M\+\_\+\+S\+TR}}~\char`\"{}symmetric\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a99c6e5fbe593f517fc63cbd25dd387a0}{M\+M\+\_\+\+H\+E\+R\+M\+\_\+\+S\+TR}}~\char`\"{}hermitian\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a357908ad5dada2cd90176746e073cd0e}{M\+M\+\_\+\+S\+K\+E\+W\+\_\+\+S\+TR}}~\char`\"{}skew-\/symmetric\char`\"{}
+\item 
+\#define \mbox{\hyperlink{mmio_8h_a1f4d6203428af6f9711140288fe8061b}{M\+M\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+S\+TR}}~\char`\"{}pattern\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{mmio_8h_ae59430e91ee3c56cbe666976066f0a56}{mm\+\_\+typecode\+\_\+to\+\_\+str}} (\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8h_ad8204d233b87eeba15de78abae85c814}{mm\+\_\+read\+\_\+banner}} (F\+I\+LE $\ast$f, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} $\ast$matcode)
+\item 
+int \mbox{\hyperlink{mmio_8h_acf80791ad47f3c907c9145f7573eb33c}{mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+size}} (F\+I\+LE $\ast$f, int $\ast$M, int $\ast$N, int $\ast$nz)
+\item 
+int \mbox{\hyperlink{mmio_8h_a77d0cc326838831814294614d1010ca5}{mm\+\_\+read\+\_\+mtx\+\_\+array\+\_\+size}} (F\+I\+LE $\ast$f, int $\ast$M, int $\ast$N)
+\item 
+int \mbox{\hyperlink{mmio_8h_a1ae61f76394b37d9c41a0a1b63e5a3a1}{mm\+\_\+write\+\_\+banner}} (F\+I\+LE $\ast$f, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8h_ad6f7429821e10fc084d1d7da481029f3}{mm\+\_\+write\+\_\+mtx\+\_\+crd\+\_\+size}} (F\+I\+LE $\ast$f, int M, int N, int nz)
+\item 
+int \mbox{\hyperlink{mmio_8h_a4d0fe7a313521b054e1eaa7b38c6e514}{mm\+\_\+write\+\_\+mtx\+\_\+array\+\_\+size}} (F\+I\+LE $\ast$f, int M, int N)
+\item 
+int \mbox{\hyperlink{mmio_8h_aa1015f3b0282e7ef7ef3448fca37958d}{mm\+\_\+is\+\_\+valid}} (\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8h_a68d9871d7292ea09a915e05a3588ad4c}{mm\+\_\+write\+\_\+mtx\+\_\+crd}} (char fname\mbox{[}$\,$\mbox{]}, int M, int N, int nz, int I\mbox{[}$\,$\mbox{]}, int J\mbox{[}$\,$\mbox{]}, double val\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8h_a865459b4a6c07939c06e3fe9365fc2a2}{mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+data}} (F\+I\+LE $\ast$f, int M, int N, int nz, int I\mbox{[}$\,$\mbox{]}, int J\mbox{[}$\,$\mbox{]}, double val\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8h_acc95fad8ef63aa0cd6cf0d02a4188109}{mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+entry}} (F\+I\+LE $\ast$f, int $\ast$I, int $\ast$J, double $\ast$real, double $\ast$img, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mmio_8h_af63c90afdcf0c7bb538ef8963b0385d9}\label{mmio_8h_af63c90afdcf0c7bb538ef8963b0385d9}} 
+\index{mmio.h@{mmio.h}!MatrixMarketBanner@{MatrixMarketBanner}}
+\index{MatrixMarketBanner@{MatrixMarketBanner}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MatrixMarketBanner}{MatrixMarketBanner}}
+{\footnotesize\ttfamily \#define Matrix\+Market\+Banner~\char`\"{}\%\%Matrix\+Market\char`\"{}}
+
+
+
+Definition at line 21 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_accb347ba4db3bf355de9b3750a80ad86}\label{mmio_8h_accb347ba4db3bf355de9b3750a80ad86}} 
+\index{mmio.h@{mmio.h}!MM\_ARRAY\_STR@{MM\_ARRAY\_STR}}
+\index{MM\_ARRAY\_STR@{MM\_ARRAY\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_ARRAY\_STR}{MM\_ARRAY\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+A\+R\+R\+A\+Y\+\_\+\+S\+TR~\char`\"{}array\char`\"{}}
+
+
+
+Definition at line 121 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a4d63d071fcfb7c11c77ced59b38b2b38}\label{mmio_8h_a4d63d071fcfb7c11c77ced59b38b2b38}} 
+\index{mmio.h@{mmio.h}!mm\_clear\_typecode@{mm\_clear\_typecode}}
+\index{mm\_clear\_typecode@{mm\_clear\_typecode}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_clear\_typecode}{mm\_clear\_typecode}}
+{\footnotesize\ttfamily \#define mm\+\_\+clear\+\_\+typecode(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{                                    ((*typecode)[0]=(*typecode)[1]= \(\backslash\)}
+\DoxyCodeLine{                                    (*typecode)[2]=\textcolor{charliteral}{' '},(*typecode)[3]=\textcolor{charliteral}{'G'})}
+
+\end{DoxyCode}
+
+
+Definition at line 86 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a53e740b82aa1fcc72b48aac6304b38bf}\label{mmio_8h_a53e740b82aa1fcc72b48aac6304b38bf}} 
+\index{mmio.h@{mmio.h}!MM\_COMPLEX\_STR@{MM\_COMPLEX\_STR}}
+\index{MM\_COMPLEX\_STR@{MM\_COMPLEX\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_COMPLEX\_STR}{MM\_COMPLEX\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+C\+O\+M\+P\+L\+E\+X\+\_\+\+S\+TR~\char`\"{}complex\char`\"{}}
+
+
+
+Definition at line 125 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a5cf347e6e895c61edaf4b82e0d6b39bf}\label{mmio_8h_a5cf347e6e895c61edaf4b82e0d6b39bf}} 
+\index{mmio.h@{mmio.h}!MM\_COORDINATE\_STR@{MM\_COORDINATE\_STR}}
+\index{MM\_COORDINATE\_STR@{MM\_COORDINATE\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_COORDINATE\_STR}{MM\_COORDINATE\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+C\+O\+O\+R\+D\+I\+N\+A\+T\+E\+\_\+\+S\+TR~\char`\"{}coordinate\char`\"{}}
+
+
+
+Definition at line 123 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a1e36f866ae2805a8b1a6fb626863decc}\label{mmio_8h_a1e36f866ae2805a8b1a6fb626863decc}} 
+\index{mmio.h@{mmio.h}!MM\_COULD\_NOT\_READ\_FILE@{MM\_COULD\_NOT\_READ\_FILE}}
+\index{MM\_COULD\_NOT\_READ\_FILE@{MM\_COULD\_NOT\_READ\_FILE}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_COULD\_NOT\_READ\_FILE}{MM\_COULD\_NOT\_READ\_FILE}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+R\+E\+A\+D\+\_\+\+F\+I\+LE~11}
+
+
+
+Definition at line 95 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a823b41c658a5cbedb8e724fb3b9fe79e}\label{mmio_8h_a823b41c658a5cbedb8e724fb3b9fe79e}} 
+\index{mmio.h@{mmio.h}!MM\_COULD\_NOT\_WRITE\_FILE@{MM\_COULD\_NOT\_WRITE\_FILE}}
+\index{MM\_COULD\_NOT\_WRITE\_FILE@{MM\_COULD\_NOT\_WRITE\_FILE}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_COULD\_NOT\_WRITE\_FILE}{MM\_COULD\_NOT\_WRITE\_FILE}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+F\+I\+LE~17}
+
+
+
+Definition at line 101 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_ad54c538e24b85cc0ce790e53c96b18f8}\label{mmio_8h_ad54c538e24b85cc0ce790e53c96b18f8}} 
+\index{mmio.h@{mmio.h}!MM\_DENSE\_STR@{MM\_DENSE\_STR}}
+\index{MM\_DENSE\_STR@{MM\_DENSE\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_DENSE\_STR}{MM\_DENSE\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+D\+E\+N\+S\+E\+\_\+\+S\+TR~\char`\"{}array\char`\"{}}
+
+
+
+Definition at line 122 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a4f2a311f3cebaf460f028b00d4d1e6c6}\label{mmio_8h_a4f2a311f3cebaf460f028b00d4d1e6c6}} 
+\index{mmio.h@{mmio.h}!MM\_GENERAL\_STR@{MM\_GENERAL\_STR}}
+\index{MM\_GENERAL\_STR@{MM\_GENERAL\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_GENERAL\_STR}{MM\_GENERAL\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+S\+TR~\char`\"{}general\char`\"{}}
+
+
+
+Definition at line 128 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a99c6e5fbe593f517fc63cbd25dd387a0}\label{mmio_8h_a99c6e5fbe593f517fc63cbd25dd387a0}} 
+\index{mmio.h@{mmio.h}!MM\_HERM\_STR@{MM\_HERM\_STR}}
+\index{MM\_HERM\_STR@{MM\_HERM\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_HERM\_STR}{MM\_HERM\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+H\+E\+R\+M\+\_\+\+S\+TR~\char`\"{}hermitian\char`\"{}}
+
+
+
+Definition at line 130 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a61be6348c808d02530d151e59f0b456f}\label{mmio_8h_a61be6348c808d02530d151e59f0b456f}} 
+\index{mmio.h@{mmio.h}!mm\_initialize\_typecode@{mm\_initialize\_typecode}}
+\index{mm\_initialize\_typecode@{mm\_initialize\_typecode}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_initialize\_typecode}{mm\_initialize\_typecode}}
+{\footnotesize\ttfamily \#define mm\+\_\+initialize\+\_\+typecode(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~\mbox{\hyperlink{mmio_8h_a4d63d071fcfb7c11c77ced59b38b2b38}{mm\+\_\+clear\+\_\+typecode}}(typecode)}
+
+
+
+Definition at line 89 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_ae7d131244c25d09dd27ffe7188572a3e}\label{mmio_8h_ae7d131244c25d09dd27ffe7188572a3e}} 
+\index{mmio.h@{mmio.h}!MM\_INT\_STR@{MM\_INT\_STR}}
+\index{MM\_INT\_STR@{MM\_INT\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_INT\_STR}{MM\_INT\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+I\+N\+T\+\_\+\+S\+TR~\char`\"{}integer\char`\"{}}
+
+
+
+Definition at line 127 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a74c82110c8610df75aad31ee0e57bc8c}\label{mmio_8h_a74c82110c8610df75aad31ee0e57bc8c}} 
+\index{mmio.h@{mmio.h}!mm\_is\_array@{mm\_is\_array}}
+\index{mm\_is\_array@{mm\_is\_array}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_array}{mm\_is\_array}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+array(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}1\mbox{]}==\textquotesingle{}A\textquotesingle{})}
+
+
+
+Definition at line 52 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a099de03c35a8b30cf035c46b5349e48b}\label{mmio_8h_a099de03c35a8b30cf035c46b5349e48b}} 
+\index{mmio.h@{mmio.h}!mm\_is\_complex@{mm\_is\_complex}}
+\index{mm\_is\_complex@{mm\_is\_complex}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_complex}{mm\_is\_complex}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+complex(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}2\mbox{]}==\textquotesingle{}C\textquotesingle{})}
+
+
+
+Definition at line 54 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a922acd6ee972f16bae8349729bd22d28}\label{mmio_8h_a922acd6ee972f16bae8349729bd22d28}} 
+\index{mmio.h@{mmio.h}!mm\_is\_coordinate@{mm\_is\_coordinate}}
+\index{mm\_is\_coordinate@{mm\_is\_coordinate}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_coordinate}{mm\_is\_coordinate}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+coordinate(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}1\mbox{]}==\textquotesingle{}C\textquotesingle{})}
+
+
+
+Definition at line 50 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a0839683fb6e8a9ce931aec600871f8f8}\label{mmio_8h_a0839683fb6e8a9ce931aec600871f8f8}} 
+\index{mmio.h@{mmio.h}!mm\_is\_dense@{mm\_is\_dense}}
+\index{mm\_is\_dense@{mm\_is\_dense}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_dense}{mm\_is\_dense}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+dense(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}1\mbox{]}==\textquotesingle{}A\textquotesingle{})}
+
+
+
+Definition at line 51 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_aadc12b70af792b1b5c820267396342ce}\label{mmio_8h_aadc12b70af792b1b5c820267396342ce}} 
+\index{mmio.h@{mmio.h}!mm\_is\_general@{mm\_is\_general}}
+\index{mm\_is\_general@{mm\_is\_general}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_general}{mm\_is\_general}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+general(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}3\mbox{]}==\textquotesingle{}G\textquotesingle{})}
+
+
+
+Definition at line 60 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a409f46e8143876e3b6681728318d866f}\label{mmio_8h_a409f46e8143876e3b6681728318d866f}} 
+\index{mmio.h@{mmio.h}!mm\_is\_hermitian@{mm\_is\_hermitian}}
+\index{mm\_is\_hermitian@{mm\_is\_hermitian}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_hermitian}{mm\_is\_hermitian}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+hermitian(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}3\mbox{]}==\textquotesingle{}H\textquotesingle{})}
+
+
+
+Definition at line 62 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_ad405f8a31e4f487e04269e372def0071}\label{mmio_8h_ad405f8a31e4f487e04269e372def0071}} 
+\index{mmio.h@{mmio.h}!mm\_is\_integer@{mm\_is\_integer}}
+\index{mm\_is\_integer@{mm\_is\_integer}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_integer}{mm\_is\_integer}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+integer(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}2\mbox{]}==\textquotesingle{}I\textquotesingle{})}
+
+
+
+Definition at line 57 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a39b0b604a9348b9f662a0587a0c29911}\label{mmio_8h_a39b0b604a9348b9f662a0587a0c29911}} 
+\index{mmio.h@{mmio.h}!mm\_is\_matrix@{mm\_is\_matrix}}
+\index{mm\_is\_matrix@{mm\_is\_matrix}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_matrix}{mm\_is\_matrix}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+matrix(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}0\mbox{]}==\textquotesingle{}M\textquotesingle{})}
+
+
+
+Definition at line 47 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_aa105a83b200825c5c9c8e5d44b905187}\label{mmio_8h_aa105a83b200825c5c9c8e5d44b905187}} 
+\index{mmio.h@{mmio.h}!mm\_is\_pattern@{mm\_is\_pattern}}
+\index{mm\_is\_pattern@{mm\_is\_pattern}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_pattern}{mm\_is\_pattern}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+pattern(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}2\mbox{]}==\textquotesingle{}P\textquotesingle{})}
+
+
+
+Definition at line 56 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a6afdb9ff27a7a940a7e6538c961d2b72}\label{mmio_8h_a6afdb9ff27a7a940a7e6538c961d2b72}} 
+\index{mmio.h@{mmio.h}!mm\_is\_real@{mm\_is\_real}}
+\index{mm\_is\_real@{mm\_is\_real}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_real}{mm\_is\_real}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+real(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}2\mbox{]}==\textquotesingle{}R\textquotesingle{})}
+
+
+
+Definition at line 55 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a714cfbd11fe0bcdd72ec7eac5ef27a73}\label{mmio_8h_a714cfbd11fe0bcdd72ec7eac5ef27a73}} 
+\index{mmio.h@{mmio.h}!mm\_is\_skew@{mm\_is\_skew}}
+\index{mm\_is\_skew@{mm\_is\_skew}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_skew}{mm\_is\_skew}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+skew(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}3\mbox{]}==\textquotesingle{}K\textquotesingle{})}
+
+
+
+Definition at line 61 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_aee7772c709001e294bd67e6fd8382dc3}\label{mmio_8h_aee7772c709001e294bd67e6fd8382dc3}} 
+\index{mmio.h@{mmio.h}!mm\_is\_sparse@{mm\_is\_sparse}}
+\index{mm\_is\_sparse@{mm\_is\_sparse}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_sparse}{mm\_is\_sparse}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+sparse(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}1\mbox{]}==\textquotesingle{}C\textquotesingle{})}
+
+
+
+Definition at line 49 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_ae3eab2d2f506a37bc1cda68b21bce9c4}\label{mmio_8h_ae3eab2d2f506a37bc1cda68b21bce9c4}} 
+\index{mmio.h@{mmio.h}!mm\_is\_symmetric@{mm\_is\_symmetric}}
+\index{mm\_is\_symmetric@{mm\_is\_symmetric}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_symmetric}{mm\_is\_symmetric}}
+{\footnotesize\ttfamily \#define mm\+\_\+is\+\_\+symmetric(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~((typecode)\mbox{[}3\mbox{]}==\textquotesingle{}S\textquotesingle{})}
+
+
+
+Definition at line 59 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a8397a5d870f5a9827caa1c4b766de609}\label{mmio_8h_a8397a5d870f5a9827caa1c4b766de609}} 
+\index{mmio.h@{mmio.h}!MM\_LINE\_TOO\_LONG@{MM\_LINE\_TOO\_LONG}}
+\index{MM\_LINE\_TOO\_LONG@{MM\_LINE\_TOO\_LONG}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_LINE\_TOO\_LONG}{MM\_LINE\_TOO\_LONG}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+L\+I\+N\+E\+\_\+\+T\+O\+O\+\_\+\+L\+O\+NG~16}
+
+
+
+Definition at line 100 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a338442ee1967d47ab7f2e4c3cccf75dd}\label{mmio_8h_a338442ee1967d47ab7f2e4c3cccf75dd}} 
+\index{mmio.h@{mmio.h}!MM\_MAX\_LINE\_LENGTH@{MM\_MAX\_LINE\_LENGTH}}
+\index{MM\_MAX\_LINE\_LENGTH@{MM\_MAX\_LINE\_LENGTH}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_MAX\_LINE\_LENGTH}{MM\_MAX\_LINE\_LENGTH}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH~1025}
+
+
+
+Definition at line 20 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a532f9540afd8f387f6f846714ecd4d36}\label{mmio_8h_a532f9540afd8f387f6f846714ecd4d36}} 
+\index{mmio.h@{mmio.h}!MM\_MAX\_TOKEN\_LENGTH@{MM\_MAX\_TOKEN\_LENGTH}}
+\index{MM\_MAX\_TOKEN\_LENGTH@{MM\_MAX\_TOKEN\_LENGTH}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_MAX\_TOKEN\_LENGTH}{MM\_MAX\_TOKEN\_LENGTH}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+M\+A\+X\+\_\+\+T\+O\+K\+E\+N\+\_\+\+L\+E\+N\+G\+TH~64}
+
+
+
+Definition at line 22 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a103aac2f6e2ac7c7b063726f58dda8af}\label{mmio_8h_a103aac2f6e2ac7c7b063726f58dda8af}} 
+\index{mmio.h@{mmio.h}!MM\_MTX\_STR@{MM\_MTX\_STR}}
+\index{MM\_MTX\_STR@{MM\_MTX\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_MTX\_STR}{MM\_MTX\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+M\+T\+X\+\_\+\+S\+TR~\char`\"{}matrix\char`\"{}}
+
+
+
+Definition at line 120 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a92a9e51b7e612248c29398422613c83d}\label{mmio_8h_a92a9e51b7e612248c29398422613c83d}} 
+\index{mmio.h@{mmio.h}!MM\_NO\_HEADER@{MM\_NO\_HEADER}}
+\index{MM\_NO\_HEADER@{MM\_NO\_HEADER}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_NO\_HEADER}{MM\_NO\_HEADER}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+N\+O\+\_\+\+H\+E\+A\+D\+ER~14}
+
+
+
+Definition at line 98 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_add74a290ac25b62447f27f5faed05f5d}\label{mmio_8h_add74a290ac25b62447f27f5faed05f5d}} 
+\index{mmio.h@{mmio.h}!MM\_NOT\_MTX@{MM\_NOT\_MTX}}
+\index{MM\_NOT\_MTX@{MM\_NOT\_MTX}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_NOT\_MTX}{MM\_NOT\_MTX}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+N\+O\+T\+\_\+\+M\+TX~13}
+
+
+
+Definition at line 97 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a1f4d6203428af6f9711140288fe8061b}\label{mmio_8h_a1f4d6203428af6f9711140288fe8061b}} 
+\index{mmio.h@{mmio.h}!MM\_PATTERN\_STR@{MM\_PATTERN\_STR}}
+\index{MM\_PATTERN\_STR@{MM\_PATTERN\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_PATTERN\_STR}{MM\_PATTERN\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+P\+A\+T\+T\+E\+R\+N\+\_\+\+S\+TR~\char`\"{}pattern\char`\"{}}
+
+
+
+Definition at line 132 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a35f109af00ebbbd4d008f8fcbc8ed9c1}\label{mmio_8h_a35f109af00ebbbd4d008f8fcbc8ed9c1}} 
+\index{mmio.h@{mmio.h}!MM\_PREMATURE\_EOF@{MM\_PREMATURE\_EOF}}
+\index{MM\_PREMATURE\_EOF@{MM\_PREMATURE\_EOF}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_PREMATURE\_EOF}{MM\_PREMATURE\_EOF}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+P\+R\+E\+M\+A\+T\+U\+R\+E\+\_\+\+E\+OF~12}
+
+
+
+Definition at line 96 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_adb63588b8225c991b215b37befd8909e}\label{mmio_8h_adb63588b8225c991b215b37befd8909e}} 
+\index{mmio.h@{mmio.h}!MM\_REAL\_STR@{MM\_REAL\_STR}}
+\index{MM\_REAL\_STR@{MM\_REAL\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_REAL\_STR}{MM\_REAL\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+R\+E\+A\+L\+\_\+\+S\+TR~\char`\"{}real\char`\"{}}
+
+
+
+Definition at line 126 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a2234ddc053712126166ca92e590fa2bf}\label{mmio_8h_a2234ddc053712126166ca92e590fa2bf}} 
+\index{mmio.h@{mmio.h}!mm\_set\_array@{mm\_set\_array}}
+\index{mm\_set\_array@{mm\_set\_array}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_array}{mm\_set\_array}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+array(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}1\mbox{]}=\textquotesingle{}A\textquotesingle{})}
+
+
+
+Definition at line 71 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a1d2710c2c5c84322c5ebad36811c0636}\label{mmio_8h_a1d2710c2c5c84322c5ebad36811c0636}} 
+\index{mmio.h@{mmio.h}!mm\_set\_complex@{mm\_set\_complex}}
+\index{mm\_set\_complex@{mm\_set\_complex}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_complex}{mm\_set\_complex}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+complex(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}2\mbox{]}=\textquotesingle{}C\textquotesingle{})}
+
+
+
+Definition at line 75 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a60425fdf2040cff47da380e2904af1e2}\label{mmio_8h_a60425fdf2040cff47da380e2904af1e2}} 
+\index{mmio.h@{mmio.h}!mm\_set\_coordinate@{mm\_set\_coordinate}}
+\index{mm\_set\_coordinate@{mm\_set\_coordinate}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_coordinate}{mm\_set\_coordinate}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+coordinate(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}1\mbox{]}=\textquotesingle{}C\textquotesingle{})}
+
+
+
+Definition at line 70 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_abba2bdfdc6f133207b52e70b31f07534}\label{mmio_8h_abba2bdfdc6f133207b52e70b31f07534}} 
+\index{mmio.h@{mmio.h}!mm\_set\_dense@{mm\_set\_dense}}
+\index{mm\_set\_dense@{mm\_set\_dense}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_dense}{mm\_set\_dense}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+dense(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~\mbox{\hyperlink{mmio_8h_a2234ddc053712126166ca92e590fa2bf}{mm\+\_\+set\+\_\+array}}(typecode)}
+
+
+
+Definition at line 72 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a244392516ea33cb49f27d53d36c71d4a}\label{mmio_8h_a244392516ea33cb49f27d53d36c71d4a}} 
+\index{mmio.h@{mmio.h}!mm\_set\_general@{mm\_set\_general}}
+\index{mm\_set\_general@{mm\_set\_general}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_general}{mm\_set\_general}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+general(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}3\mbox{]}=\textquotesingle{}G\textquotesingle{})}
+
+
+
+Definition at line 82 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a1df99ff9edf59d44b3866633ee98dbdf}\label{mmio_8h_a1df99ff9edf59d44b3866633ee98dbdf}} 
+\index{mmio.h@{mmio.h}!mm\_set\_hermitian@{mm\_set\_hermitian}}
+\index{mm\_set\_hermitian@{mm\_set\_hermitian}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_hermitian}{mm\_set\_hermitian}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+hermitian(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}3\mbox{]}=\textquotesingle{}H\textquotesingle{})}
+
+
+
+Definition at line 84 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a88726ec878ed03d713d9cf1519ac822d}\label{mmio_8h_a88726ec878ed03d713d9cf1519ac822d}} 
+\index{mmio.h@{mmio.h}!mm\_set\_integer@{mm\_set\_integer}}
+\index{mm\_set\_integer@{mm\_set\_integer}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_integer}{mm\_set\_integer}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+integer(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}2\mbox{]}=\textquotesingle{}I\textquotesingle{})}
+
+
+
+Definition at line 78 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_ab94a2a33e79dda9a50645718c3055bde}\label{mmio_8h_ab94a2a33e79dda9a50645718c3055bde}} 
+\index{mmio.h@{mmio.h}!mm\_set\_matrix@{mm\_set\_matrix}}
+\index{mm\_set\_matrix@{mm\_set\_matrix}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_matrix}{mm\_set\_matrix}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+matrix(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}0\mbox{]}=\textquotesingle{}M\textquotesingle{})}
+
+
+
+Definition at line 69 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_ac9bdbe4b4fb164f60460b56c815902c4}\label{mmio_8h_ac9bdbe4b4fb164f60460b56c815902c4}} 
+\index{mmio.h@{mmio.h}!mm\_set\_pattern@{mm\_set\_pattern}}
+\index{mm\_set\_pattern@{mm\_set\_pattern}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_pattern}{mm\_set\_pattern}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+pattern(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}2\mbox{]}=\textquotesingle{}P\textquotesingle{})}
+
+
+
+Definition at line 77 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_aef12252aecf7a4af6baa752dc9d29698}\label{mmio_8h_aef12252aecf7a4af6baa752dc9d29698}} 
+\index{mmio.h@{mmio.h}!mm\_set\_real@{mm\_set\_real}}
+\index{mm\_set\_real@{mm\_set\_real}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_real}{mm\_set\_real}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+real(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}2\mbox{]}=\textquotesingle{}R\textquotesingle{})}
+
+
+
+Definition at line 76 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a355520c4b7b525bd79972117368967b1}\label{mmio_8h_a355520c4b7b525bd79972117368967b1}} 
+\index{mmio.h@{mmio.h}!mm\_set\_skew@{mm\_set\_skew}}
+\index{mm\_set\_skew@{mm\_set\_skew}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_skew}{mm\_set\_skew}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+skew(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}3\mbox{]}=\textquotesingle{}K\textquotesingle{})}
+
+
+
+Definition at line 83 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a38129ce74fa250f778730f1344135c16}\label{mmio_8h_a38129ce74fa250f778730f1344135c16}} 
+\index{mmio.h@{mmio.h}!mm\_set\_sparse@{mm\_set\_sparse}}
+\index{mm\_set\_sparse@{mm\_set\_sparse}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_sparse}{mm\_set\_sparse}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+sparse(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~\mbox{\hyperlink{mmio_8h_a60425fdf2040cff47da380e2904af1e2}{mm\+\_\+set\+\_\+coordinate}}(typecode)}
+
+
+
+Definition at line 73 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a5b5292978fc119acc10444b282fe994c}\label{mmio_8h_a5b5292978fc119acc10444b282fe994c}} 
+\index{mmio.h@{mmio.h}!mm\_set\_symmetric@{mm\_set\_symmetric}}
+\index{mm\_set\_symmetric@{mm\_set\_symmetric}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_set\_symmetric}{mm\_set\_symmetric}}
+{\footnotesize\ttfamily \#define mm\+\_\+set\+\_\+symmetric(\begin{DoxyParamCaption}\item[{}]{typecode }\end{DoxyParamCaption})~(($\ast$typecode)\mbox{[}3\mbox{]}=\textquotesingle{}S\textquotesingle{})}
+
+
+
+Definition at line 81 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a357908ad5dada2cd90176746e073cd0e}\label{mmio_8h_a357908ad5dada2cd90176746e073cd0e}} 
+\index{mmio.h@{mmio.h}!MM\_SKEW\_STR@{MM\_SKEW\_STR}}
+\index{MM\_SKEW\_STR@{MM\_SKEW\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_SKEW\_STR}{MM\_SKEW\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+S\+K\+E\+W\+\_\+\+S\+TR~\char`\"{}skew-\/symmetric\char`\"{}}
+
+
+
+Definition at line 131 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a720ba16714f07ad6ae39055683aa3cb3}\label{mmio_8h_a720ba16714f07ad6ae39055683aa3cb3}} 
+\index{mmio.h@{mmio.h}!MM\_SPARSE\_STR@{MM\_SPARSE\_STR}}
+\index{MM\_SPARSE\_STR@{MM\_SPARSE\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_SPARSE\_STR}{MM\_SPARSE\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+S\+P\+A\+R\+S\+E\+\_\+\+S\+TR~\char`\"{}coordinate\char`\"{}}
+
+
+
+Definition at line 124 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_ac004e8f7880b764acaa4b02a6ac80d43}\label{mmio_8h_ac004e8f7880b764acaa4b02a6ac80d43}} 
+\index{mmio.h@{mmio.h}!MM\_SYMM\_STR@{MM\_SYMM\_STR}}
+\index{MM\_SYMM\_STR@{MM\_SYMM\_STR}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_SYMM\_STR}{MM\_SYMM\_STR}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+S\+Y\+M\+M\+\_\+\+S\+TR~\char`\"{}symmetric\char`\"{}}
+
+
+
+Definition at line 129 of file mmio.\+h.
+
+\mbox{\Hypertarget{mmio_8h_a7c4977adc296451d59e66972fd4e58db}\label{mmio_8h_a7c4977adc296451d59e66972fd4e58db}} 
+\index{mmio.h@{mmio.h}!MM\_UNSUPPORTED\_TYPE@{MM\_UNSUPPORTED\_TYPE}}
+\index{MM\_UNSUPPORTED\_TYPE@{MM\_UNSUPPORTED\_TYPE}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_UNSUPPORTED\_TYPE}{MM\_UNSUPPORTED\_TYPE}}
+{\footnotesize\ttfamily \#define M\+M\+\_\+\+U\+N\+S\+U\+P\+P\+O\+R\+T\+E\+D\+\_\+\+T\+Y\+PE~15}
+
+
+
+Definition at line 99 of file mmio.\+h.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}\label{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}} 
+\index{mmio.h@{mmio.h}!MM\_typecode@{MM\_typecode}}
+\index{MM\_typecode@{MM\_typecode}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{MM\_typecode}{MM\_typecode}}
+{\footnotesize\ttfamily typedef char M\+M\+\_\+typecode\mbox{[}4\mbox{]}}
+
+
+
+Definition at line 23 of file mmio.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mmio_8h_aa1015f3b0282e7ef7ef3448fca37958d}\label{mmio_8h_aa1015f3b0282e7ef7ef3448fca37958d}} 
+\index{mmio.h@{mmio.h}!mm\_is\_valid@{mm\_is\_valid}}
+\index{mm\_is\_valid@{mm\_is\_valid}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_valid()}{mm\_is\_valid()}}
+{\footnotesize\ttfamily int mm\+\_\+is\+\_\+valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_ad8204d233b87eeba15de78abae85c814}\label{mmio_8h_ad8204d233b87eeba15de78abae85c814}} 
+\index{mmio.h@{mmio.h}!mm\_read\_banner@{mm\_read\_banner}}
+\index{mm\_read\_banner@{mm\_read\_banner}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_banner()}{mm\_read\_banner()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+banner (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} $\ast$}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 94 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_a77d0cc326838831814294614d1010ca5}\label{mmio_8h_a77d0cc326838831814294614d1010ca5}} 
+\index{mmio.h@{mmio.h}!mm\_read\_mtx\_array\_size@{mm\_read\_mtx\_array\_size}}
+\index{mm\_read\_mtx\_array\_size@{mm\_read\_mtx\_array\_size}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_array\_size()}{mm\_read\_mtx\_array\_size()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+array\+\_\+size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int $\ast$}]{M,  }\item[{int $\ast$}]{N }\end{DoxyParamCaption})}
+
+
+
+Definition at line 218 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_a865459b4a6c07939c06e3fe9365fc2a2}\label{mmio_8h_a865459b4a6c07939c06e3fe9365fc2a2}} 
+\index{mmio.h@{mmio.h}!mm\_read\_mtx\_crd\_data@{mm\_read\_mtx\_crd\_data}}
+\index{mm\_read\_mtx\_crd\_data@{mm\_read\_mtx\_crd\_data}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_crd\_data()}{mm\_read\_mtx\_crd\_data()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+data (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int}]{M,  }\item[{int}]{N,  }\item[{int}]{nz,  }\item[{int}]{I\mbox{[}$\,$\mbox{]},  }\item[{int}]{J\mbox{[}$\,$\mbox{]},  }\item[{double}]{val\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 263 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_acc95fad8ef63aa0cd6cf0d02a4188109}\label{mmio_8h_acc95fad8ef63aa0cd6cf0d02a4188109}} 
+\index{mmio.h@{mmio.h}!mm\_read\_mtx\_crd\_entry@{mm\_read\_mtx\_crd\_entry}}
+\index{mm\_read\_mtx\_crd\_entry@{mm\_read\_mtx\_crd\_entry}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_crd\_entry()}{mm\_read\_mtx\_crd\_entry()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+entry (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int $\ast$}]{I,  }\item[{int $\ast$}]{J,  }\item[{double $\ast$}]{real,  }\item[{double $\ast$}]{img,  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 296 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_acf80791ad47f3c907c9145f7573eb33c}\label{mmio_8h_acf80791ad47f3c907c9145f7573eb33c}} 
+\index{mmio.h@{mmio.h}!mm\_read\_mtx\_crd\_size@{mm\_read\_mtx\_crd\_size}}
+\index{mm\_read\_mtx\_crd\_size@{mm\_read\_mtx\_crd\_size}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_crd\_size()}{mm\_read\_mtx\_crd\_size()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int $\ast$}]{M,  }\item[{int $\ast$}]{N,  }\item[{int $\ast$}]{nz }\end{DoxyParamCaption})}
+
+
+
+Definition at line 187 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_ae59430e91ee3c56cbe666976066f0a56}\label{mmio_8h_ae59430e91ee3c56cbe666976066f0a56}} 
+\index{mmio.h@{mmio.h}!mm\_typecode\_to\_str@{mm\_typecode\_to\_str}}
+\index{mm\_typecode\_to\_str@{mm\_typecode\_to\_str}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_typecode\_to\_str()}{mm\_typecode\_to\_str()}}
+{\footnotesize\ttfamily char$\ast$ mm\+\_\+typecode\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 453 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_a1ae61f76394b37d9c41a0a1b63e5a3a1}\label{mmio_8h_a1ae61f76394b37d9c41a0a1b63e5a3a1}} 
+\index{mmio.h@{mmio.h}!mm\_write\_banner@{mm\_write\_banner}}
+\index{mm\_write\_banner@{mm\_write\_banner}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_write\_banner()}{mm\_write\_banner()}}
+{\footnotesize\ttfamily int mm\+\_\+write\+\_\+banner (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 384 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_a4d0fe7a313521b054e1eaa7b38c6e514}\label{mmio_8h_a4d0fe7a313521b054e1eaa7b38c6e514}} 
+\index{mmio.h@{mmio.h}!mm\_write\_mtx\_array\_size@{mm\_write\_mtx\_array\_size}}
+\index{mm\_write\_mtx\_array\_size@{mm\_write\_mtx\_array\_size}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_write\_mtx\_array\_size()}{mm\_write\_mtx\_array\_size()}}
+{\footnotesize\ttfamily int mm\+\_\+write\+\_\+mtx\+\_\+array\+\_\+size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int}]{M,  }\item[{int}]{N }\end{DoxyParamCaption})}
+
+
+
+Definition at line 247 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_a68d9871d7292ea09a915e05a3588ad4c}\label{mmio_8h_a68d9871d7292ea09a915e05a3588ad4c}} 
+\index{mmio.h@{mmio.h}!mm\_write\_mtx\_crd@{mm\_write\_mtx\_crd}}
+\index{mm\_write\_mtx\_crd@{mm\_write\_mtx\_crd}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_write\_mtx\_crd()}{mm\_write\_mtx\_crd()}}
+{\footnotesize\ttfamily int mm\+\_\+write\+\_\+mtx\+\_\+crd (\begin{DoxyParamCaption}\item[{char}]{fname\mbox{[}$\,$\mbox{]},  }\item[{int}]{M,  }\item[{int}]{N,  }\item[{int}]{nz,  }\item[{int}]{I\mbox{[}$\,$\mbox{]},  }\item[{int}]{J\mbox{[}$\,$\mbox{]},  }\item[{double}]{val\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 397 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8h_ad6f7429821e10fc084d1d7da481029f3}\label{mmio_8h_ad6f7429821e10fc084d1d7da481029f3}} 
+\index{mmio.h@{mmio.h}!mm\_write\_mtx\_crd\_size@{mm\_write\_mtx\_crd\_size}}
+\index{mm\_write\_mtx\_crd\_size@{mm\_write\_mtx\_crd\_size}!mmio.h@{mmio.h}}
+\doxysubsubsection{\texorpdfstring{mm\_write\_mtx\_crd\_size()}{mm\_write\_mtx\_crd\_size()}}
+{\footnotesize\ttfamily int mm\+\_\+write\+\_\+mtx\+\_\+crd\+\_\+size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int}]{M,  }\item[{int}]{N,  }\item[{int}]{nz }\end{DoxyParamCaption})}
+
+
+
+Definition at line 179 of file mmio.\+c.
+

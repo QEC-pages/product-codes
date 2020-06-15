@@ -1,0 +1,44 @@
+\hypertarget{lib_8h}{}\doxysection{weilei\+\_\+lib/lib.h File Reference}
+\label{lib_8h}\index{weilei\_lib/lib.h@{weilei\_lib/lib.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$itpp/itbase.\+h$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacecommon}{common}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacecommon_a71f7ab65b8afbe48b20c3f0bf1718920}{common\+::color\+\_\+text}} (std\+::string str)
+\item 
+std\+::string \mbox{\hyperlink{namespacecommon_ac0574cdad620f562781ffd872199cf2c}{common\+::red\+\_\+text}} (std\+::string str)
+\item 
+std\+::string \mbox{\hyperlink{namespacecommon_a8f1179c30ccfb1746daba7efa8efa524}{common\+::blue\+\_\+text}} (std\+::string str)
+\item 
+int \mbox{\hyperlink{namespacecommon_a29cce5bfce8861e09a31d3d255aa03b8}{common\+::get\+\_\+time}} (int mode=1)
+\item 
+bool \mbox{\hyperlink{namespacecommon_a4245edcb3f38865b8ba1bdd4c1b55cc3}{common\+::is\+\_\+quantum\+\_\+code}} (itpp\+::\+G\+F2mat \&\mbox{\hyperlink{css_8h_ac6c0c617396c45d8ca4df6a9a5eec668}{G\+\_\+x}}, itpp\+::\+G\+F2mat \&\mbox{\hyperlink{css_8h_a20465bc2a190632eb5e68a21065b7c5b}{G\+\_\+z}})
+\item 
+bool \mbox{\hyperlink{namespacecommon_a1f35b491dad48c2cf2bf602e067f4708}{common\+::is\+\_\+quantum\+\_\+code}} (itpp\+::\+G\+F2mat \&Gx, itpp\+::\+G\+F2mat \&Gz, itpp\+::\+G\+F2mat \&Cx, itpp\+::\+G\+F2mat \&Cz)
+\item 
+itpp\+::\+G\+F2mat \mbox{\hyperlink{namespacecommon_a1b9cada7d2095a6979d19ac55144fb0a}{common\+::make\+\_\+it\+\_\+full\+\_\+rank}} (itpp\+::\+G\+F2mat fat)
+\item 
+int \mbox{\hyperlink{namespacecommon_a10677321b5788f46718d1e982abca85e}{common\+::\+G\+F2mat\+Print}} (itpp\+::\+G\+F2mat \&G, std\+::string name)
+\item 
+int \mbox{\hyperlink{namespacecommon_ae66be78b10ca8b95ffebda40c4fcec0e}{common\+::mat\+Print}} (itpp\+::mat G, char $\ast$name=(char $\ast$) \char`\"{} \char`\"{})
+\item 
+itpp\+::\+G\+F2mat \mbox{\hyperlink{namespacecommon_ad87e400464744c2ce6c165e08b63475f}{common\+::kron}} (itpp\+::\+G\+F2mat A, itpp\+::\+G\+F2mat B)
+\item 
+std\+::string \mbox{\hyperlink{namespacecommon_a597678e38a84f9d482bff24f82af59ea}{common\+::\+Number\+To\+String}} (int p\+Number)
+\item 
+itpp\+::\+G\+F2mat \mbox{\hyperlink{namespacecommon_ab4e81255939f5eb6d850a4d78b8077c0}{common\+::append\+\_\+vector}} (itpp\+::\+G\+F2mat G, itpp\+::bvec b)
+\item 
+itpp\+::\+G\+F2mat \mbox{\hyperlink{namespacecommon_ac1d64201bc8ef0852ddd18cc910a097e}{common\+::get\+\_\+\+G\+F2mat}} (char $\ast$filename\+\_\+prefix, char $\ast$filename\+\_\+suffix)
+\item 
+itpp\+::\+G\+F2mat \mbox{\hyperlink{namespacecommon_a174ca286c2cebe02f7bc2fc682a99cc5}{common\+::get\+\_\+\+G\+F2mat}} (char $\ast$parent\+\_\+folder, char $\ast$folder, char $\ast$filename)
+\item 
+double \mbox{\hyperlink{namespacecommon_a084d53f93f9048f19d45e4b57e2181d5}{common\+::get\+\_\+error\+\_\+density}} (itpp\+::\+G\+F2mat E)
+\item 
+int \mbox{\hyperlink{namespacecommon_a0e95e0751161a9f930ead1336d061b56}{common\+::mat2gnudata}} (itpp\+::mat data, std\+::string filename, std\+::string header)
+\end{DoxyCompactItemize}

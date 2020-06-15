@@ -1,10 +1,12 @@
-# how many test has been run
+## log
+
+### how many test has been run
 - `*` means case has been found
 - `-` means case not found
 
 
 
-## Identical classical code with X and Z switched
+### Identical classical code with X and Z switched
 stdout file: product.stdout
 
 | size | subsystem code | file name | `#` of tests | chain complex | file name |

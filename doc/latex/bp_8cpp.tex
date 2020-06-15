@@ -1,0 +1,134 @@
+\hypertarget{bp_8cpp}{}\doxysection{weilei\+\_\+lib/bp.cpp File Reference}
+\label{bp_8cpp}\index{weilei\_lib/bp.cpp@{weilei\_lib/bp.cpp}}
+{\ttfamily \#include \char`\"{}dist.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$itpp/itbase.\+h$>$}\newline
+{\ttfamily \#include $<$itpp/itcomm.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}weilei\+\_\+lib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+itpp\+::bvec \mbox{\hyperlink{bp_8cpp_a78744b361166f2b6494b8dcfefb96dd3}{reduce\+\_\+weight}} (itpp\+::bvec e, itpp\+::\+G\+F2mat G)
+\item 
+itpp\+::bvec \mbox{\hyperlink{bp_8cpp_a2040627c6a4c2b3a1f1b80ee0c46dd14}{qllr\+\_\+to\+\_\+bvec}} (itpp\+::\+Q\+L\+L\+Rvec llr, int bound)
+\item 
+itpp\+::\+G\+F2mat \mbox{\hyperlink{bp_8cpp_a42d02f4c7e21c7cfb0323a12f46c9926}{read\+\_\+one\+\_\+matrix}} (char $\ast$filename\+\_\+prefix, char $\ast$type, char $\ast$filename\+\_\+suffix)
+\item 
+int \mbox{\hyperlink{bp_8cpp_a00703d649f766a2fe1d35ebae5ac406a}{check\+\_\+matrices}} (itpp\+::\+G\+F2mat $\ast$G, itpp\+::\+G\+F2mat $\ast$H, itpp\+::\+G\+F2mat $\ast$U, itpp\+::\+G\+F2mat $\ast$W, itpp\+::mat $\ast$K)
+\item 
+int \mbox{\hyperlink{bp_8cpp_a4f9f2bf0ca40c1db7d7e26042711438a}{remove\+\_\+rows}} (itpp\+::\+G\+F2mat $\ast$G, itpp\+::bvec rows\+\_\+to\+\_\+remove)
+\item 
+int \mbox{\hyperlink{bp_8cpp_a8780949e175077d5058efc409e30625c}{remove\+\_\+cols}} (itpp\+::\+G\+F2mat $\ast$G, itpp\+::bvec cols\+\_\+to\+\_\+remove)
+\item 
+int \mbox{\hyperlink{bp_8cpp_ae3aba82ae2bd4fa89663de6e1a7d38da}{remove\+\_\+cols\+\_\+mat}} (itpp\+::mat $\ast$G, itpp\+::bvec cols\+\_\+to\+\_\+remove)
+\item 
+bool \mbox{\hyperlink{bp_8cpp_aa6b9ceb99002a65d22cfa5092c597f9e}{check\+\_\+row\+\_\+weight}} (itpp\+::\+G\+F2mat $\ast$H)
+\item 
+int \mbox{\hyperlink{bp_8cpp_abdde14e547dbbc92339f6ab3b73d5c93}{reduce\+\_\+matrices}} (itpp\+::\+G\+F2mat $\ast$G, itpp\+::\+G\+F2mat $\ast$H, itpp\+::\+G\+F2mat $\ast$U, itpp\+::\+G\+F2mat $\ast$W, itpp\+::mat $\ast$K)
+\item 
+int \mbox{\hyperlink{bp_8cpp_ae8a90ffb8af25de15eedd67be270272f}{read\+\_\+matrices\+\_\+for\+\_\+partial\+\_\+sum}} (char $\ast$filename\+\_\+prefix, char $\ast$filename\+\_\+suffix, itpp\+::\+G\+F2mat $\ast$G, itpp\+::\+G\+F2mat $\ast$H, itpp\+::\+G\+F2mat $\ast$U, itpp\+::\+G\+F2mat $\ast$W, itpp\+::mat $\ast$K)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{bp_8cpp_a00703d649f766a2fe1d35ebae5ac406a}\label{bp_8cpp_a00703d649f766a2fe1d35ebae5ac406a}} 
+\index{bp.cpp@{bp.cpp}!check\_matrices@{check\_matrices}}
+\index{check\_matrices@{check\_matrices}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_matrices()}{check\_matrices()}}
+{\footnotesize\ttfamily int check\+\_\+matrices (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat $\ast$}]{G,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{H,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{U,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{W,  }\item[{itpp\+::mat $\ast$}]{K }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_aa6b9ceb99002a65d22cfa5092c597f9e}\label{bp_8cpp_aa6b9ceb99002a65d22cfa5092c597f9e}} 
+\index{bp.cpp@{bp.cpp}!check\_row\_weight@{check\_row\_weight}}
+\index{check\_row\_weight@{check\_row\_weight}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_row\_weight()}{check\_row\_weight()}}
+{\footnotesize\ttfamily bool check\+\_\+row\+\_\+weight (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat $\ast$}]{H }\end{DoxyParamCaption})}
+
+
+
+Definition at line 175 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_a2040627c6a4c2b3a1f1b80ee0c46dd14}\label{bp_8cpp_a2040627c6a4c2b3a1f1b80ee0c46dd14}} 
+\index{bp.cpp@{bp.cpp}!qllr\_to\_bvec@{qllr\_to\_bvec}}
+\index{qllr\_to\_bvec@{qllr\_to\_bvec}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{qllr\_to\_bvec()}{qllr\_to\_bvec()}}
+{\footnotesize\ttfamily itpp\+::bvec qllr\+\_\+to\+\_\+bvec (\begin{DoxyParamCaption}\item[{itpp\+::\+Q\+L\+L\+Rvec}]{llr,  }\item[{int}]{bound }\end{DoxyParamCaption})}
+
+
+
+Definition at line 38 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_ae8a90ffb8af25de15eedd67be270272f}\label{bp_8cpp_ae8a90ffb8af25de15eedd67be270272f}} 
+\index{bp.cpp@{bp.cpp}!read\_matrices\_for\_partial\_sum@{read\_matrices\_for\_partial\_sum}}
+\index{read\_matrices\_for\_partial\_sum@{read\_matrices\_for\_partial\_sum}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_matrices\_for\_partial\_sum()}{read\_matrices\_for\_partial\_sum()}}
+{\footnotesize\ttfamily int read\+\_\+matrices\+\_\+for\+\_\+partial\+\_\+sum (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename\+\_\+prefix,  }\item[{char $\ast$}]{filename\+\_\+suffix,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{G,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{H,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{U,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{W,  }\item[{itpp\+::mat $\ast$}]{K }\end{DoxyParamCaption})}
+
+
+
+Definition at line 230 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_a42d02f4c7e21c7cfb0323a12f46c9926}\label{bp_8cpp_a42d02f4c7e21c7cfb0323a12f46c9926}} 
+\index{bp.cpp@{bp.cpp}!read\_one\_matrix@{read\_one\_matrix}}
+\index{read\_one\_matrix@{read\_one\_matrix}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{read\_one\_matrix()}{read\_one\_matrix()}}
+{\footnotesize\ttfamily itpp\+::\+G\+F2mat read\+\_\+one\+\_\+matrix (\begin{DoxyParamCaption}\item[{char $\ast$}]{filename\+\_\+prefix,  }\item[{char $\ast$}]{type,  }\item[{char $\ast$}]{filename\+\_\+suffix }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_abdde14e547dbbc92339f6ab3b73d5c93}\label{bp_8cpp_abdde14e547dbbc92339f6ab3b73d5c93}} 
+\index{bp.cpp@{bp.cpp}!reduce\_matrices@{reduce\_matrices}}
+\index{reduce\_matrices@{reduce\_matrices}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{reduce\_matrices()}{reduce\_matrices()}}
+{\footnotesize\ttfamily int reduce\+\_\+matrices (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat $\ast$}]{G,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{H,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{U,  }\item[{itpp\+::\+G\+F2mat $\ast$}]{W,  }\item[{itpp\+::mat $\ast$}]{K }\end{DoxyParamCaption})}
+
+
+
+Definition at line 189 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_a78744b361166f2b6494b8dcfefb96dd3}\label{bp_8cpp_a78744b361166f2b6494b8dcfefb96dd3}} 
+\index{bp.cpp@{bp.cpp}!reduce\_weight@{reduce\_weight}}
+\index{reduce\_weight@{reduce\_weight}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{reduce\_weight()}{reduce\_weight()}}
+{\footnotesize\ttfamily itpp\+::bvec reduce\+\_\+weight (\begin{DoxyParamCaption}\item[{itpp\+::bvec}]{e,  }\item[{itpp\+::\+G\+F2mat}]{G }\end{DoxyParamCaption})}
+
+
+
+Definition at line 16 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_a8780949e175077d5058efc409e30625c}\label{bp_8cpp_a8780949e175077d5058efc409e30625c}} 
+\index{bp.cpp@{bp.cpp}!remove\_cols@{remove\_cols}}
+\index{remove\_cols@{remove\_cols}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{remove\_cols()}{remove\_cols()}}
+{\footnotesize\ttfamily int remove\+\_\+cols (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat $\ast$}]{G,  }\item[{itpp\+::bvec}]{cols\+\_\+to\+\_\+remove }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_ae3aba82ae2bd4fa89663de6e1a7d38da}\label{bp_8cpp_ae3aba82ae2bd4fa89663de6e1a7d38da}} 
+\index{bp.cpp@{bp.cpp}!remove\_cols\_mat@{remove\_cols\_mat}}
+\index{remove\_cols\_mat@{remove\_cols\_mat}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{remove\_cols\_mat()}{remove\_cols\_mat()}}
+{\footnotesize\ttfamily int remove\+\_\+cols\+\_\+mat (\begin{DoxyParamCaption}\item[{itpp\+::mat $\ast$}]{G,  }\item[{itpp\+::bvec}]{cols\+\_\+to\+\_\+remove }\end{DoxyParamCaption})}
+
+
+
+Definition at line 157 of file bp.\+cpp.
+
+\mbox{\Hypertarget{bp_8cpp_a4f9f2bf0ca40c1db7d7e26042711438a}\label{bp_8cpp_a4f9f2bf0ca40c1db7d7e26042711438a}} 
+\index{bp.cpp@{bp.cpp}!remove\_rows@{remove\_rows}}
+\index{remove\_rows@{remove\_rows}!bp.cpp@{bp.cpp}}
+\doxysubsubsection{\texorpdfstring{remove\_rows()}{remove\_rows()}}
+{\footnotesize\ttfamily int remove\+\_\+rows (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat $\ast$}]{G,  }\item[{itpp\+::bvec}]{rows\+\_\+to\+\_\+remove }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file bp.\+cpp.
+

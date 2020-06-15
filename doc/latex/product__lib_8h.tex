@@ -1,0 +1,89 @@
+\hypertarget{product__lib_8h}{}\doxysection{weilei\+\_\+lib/product\+\_\+lib.h File Reference}
+\label{product__lib_8h}\index{weilei\_lib/product\_lib.h@{weilei\_lib/product\_lib.h}}
+{\ttfamily \#include \char`\"{}dist.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$itpp/itbase.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}weilei\+\_\+lib.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{product__lib_8h_a76aa6de91b3f07288ff018fb766572d8}{get\+Random\+Quantum\+Code}} (int n, int Gx\+\_\+row, int Gz\+\_\+row, itpp\+::\+G\+F2mat \&Gx, itpp\+::\+G\+F2mat \&Gz, itpp\+::\+G\+F2mat \&Cx, itpp\+::\+G\+F2mat \&Cz)
+\item 
+int \mbox{\hyperlink{product__lib_8h_a7841407112a56d6549c95563741203d3}{get\+Good\+Quantum\+Code}} (int n, int Gx\+\_\+row, int Gz\+\_\+row, itpp\+::\+G\+F2mat \&Gx, itpp\+::\+G\+F2mat \&Gz, itpp\+::\+G\+F2mat \&Cx, itpp\+::\+G\+F2mat \&Cz, int debug)
+\item 
+void \mbox{\hyperlink{product__lib_8h_a51ce32a9f84152882a5ce5404d46f465}{set\+\_\+submatrix}} (itpp\+::\+G\+F2mat \&G, itpp\+::\+G\+F2mat sub, int row, int col)
+\item 
+int \mbox{\hyperlink{product__lib_8h_acf164b7dff321ddaf3b6d48a8f5753a1}{generate\+\_\+code}} (itpp\+::\+G\+F2mat \&Gax, itpp\+::\+G\+F2mat \&Gaz, int na, int Gax\+\_\+row, int id\+\_\+\+Gax, int Gaz\+\_\+row, int id\+\_\+\+Gaz, int debug)
+\item 
+int \mbox{\hyperlink{product__lib_8h_a15f27c8f6ae9c31efdc62238052a8a15}{product}} (itpp\+::\+G\+F2mat Gax, itpp\+::\+G\+F2mat Gaz, itpp\+::\+G\+F2mat Gbx, itpp\+::\+G\+F2mat Gbz, int ddax, int ddaz, int ddbx, int ddbz, int debug, int mode)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{product__lib_8h_ad37c0c635c7d491703c0e4acd22a36ef}{M\+A\+X\+\_\+M}} =6
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{product__lib_8h_acf164b7dff321ddaf3b6d48a8f5753a1}\label{product__lib_8h_acf164b7dff321ddaf3b6d48a8f5753a1}} 
+\index{product\_lib.h@{product\_lib.h}!generate\_code@{generate\_code}}
+\index{generate\_code@{generate\_code}!product\_lib.h@{product\_lib.h}}
+\doxysubsubsection{\texorpdfstring{generate\_code()}{generate\_code()}}
+{\footnotesize\ttfamily int generate\+\_\+code (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat \&}]{Gax,  }\item[{itpp\+::\+G\+F2mat \&}]{Gaz,  }\item[{int}]{na,  }\item[{int}]{Gax\+\_\+row,  }\item[{int}]{id\+\_\+\+Gax,  }\item[{int}]{Gaz\+\_\+row,  }\item[{int}]{id\+\_\+\+Gaz,  }\item[{int}]{debug }\end{DoxyParamCaption})}
+
+
+
+Definition at line 186 of file product\+\_\+lib.\+cpp.
+
+\mbox{\Hypertarget{product__lib_8h_a7841407112a56d6549c95563741203d3}\label{product__lib_8h_a7841407112a56d6549c95563741203d3}} 
+\index{product\_lib.h@{product\_lib.h}!getGoodQuantumCode@{getGoodQuantumCode}}
+\index{getGoodQuantumCode@{getGoodQuantumCode}!product\_lib.h@{product\_lib.h}}
+\doxysubsubsection{\texorpdfstring{getGoodQuantumCode()}{getGoodQuantumCode()}}
+{\footnotesize\ttfamily int get\+Good\+Quantum\+Code (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{Gx\+\_\+row,  }\item[{int}]{Gz\+\_\+row,  }\item[{itpp\+::\+G\+F2mat \&}]{Gx,  }\item[{itpp\+::\+G\+F2mat \&}]{Gz,  }\item[{itpp\+::\+G\+F2mat \&}]{Cx,  }\item[{itpp\+::\+G\+F2mat \&}]{Cz,  }\item[{int}]{debug }\end{DoxyParamCaption})}
+
+
+
+Definition at line 96 of file product\+\_\+lib.\+cpp.
+
+\mbox{\Hypertarget{product__lib_8h_a76aa6de91b3f07288ff018fb766572d8}\label{product__lib_8h_a76aa6de91b3f07288ff018fb766572d8}} 
+\index{product\_lib.h@{product\_lib.h}!getRandomQuantumCode@{getRandomQuantumCode}}
+\index{getRandomQuantumCode@{getRandomQuantumCode}!product\_lib.h@{product\_lib.h}}
+\doxysubsubsection{\texorpdfstring{getRandomQuantumCode()}{getRandomQuantumCode()}}
+{\footnotesize\ttfamily int get\+Random\+Quantum\+Code (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{Gx\+\_\+row,  }\item[{int}]{Gz\+\_\+row,  }\item[{itpp\+::\+G\+F2mat \&}]{Gx,  }\item[{itpp\+::\+G\+F2mat \&}]{Gz,  }\item[{itpp\+::\+G\+F2mat \&}]{Cx,  }\item[{itpp\+::\+G\+F2mat \&}]{Cz }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file product\+\_\+lib.\+cpp.
+
+\mbox{\Hypertarget{product__lib_8h_a15f27c8f6ae9c31efdc62238052a8a15}\label{product__lib_8h_a15f27c8f6ae9c31efdc62238052a8a15}} 
+\index{product\_lib.h@{product\_lib.h}!product@{product}}
+\index{product@{product}!product\_lib.h@{product\_lib.h}}
+\doxysubsubsection{\texorpdfstring{product()}{product()}}
+{\footnotesize\ttfamily int product (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat}]{Gax,  }\item[{itpp\+::\+G\+F2mat}]{Gaz,  }\item[{itpp\+::\+G\+F2mat}]{Gbx,  }\item[{itpp\+::\+G\+F2mat}]{Gbz,  }\item[{int}]{ddax,  }\item[{int}]{ddaz,  }\item[{int}]{ddbx,  }\item[{int}]{ddbz,  }\item[{int}]{debug,  }\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 369 of file product\+\_\+lib.\+cpp.
+
+\mbox{\Hypertarget{product__lib_8h_a51ce32a9f84152882a5ce5404d46f465}\label{product__lib_8h_a51ce32a9f84152882a5ce5404d46f465}} 
+\index{product\_lib.h@{product\_lib.h}!set\_submatrix@{set\_submatrix}}
+\index{set\_submatrix@{set\_submatrix}!product\_lib.h@{product\_lib.h}}
+\doxysubsubsection{\texorpdfstring{set\_submatrix()}{set\_submatrix()}}
+{\footnotesize\ttfamily void set\+\_\+submatrix (\begin{DoxyParamCaption}\item[{itpp\+::\+G\+F2mat \&}]{G,  }\item[{itpp\+::\+G\+F2mat}]{sub,  }\item[{int}]{row,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Definition at line 131 of file product\+\_\+lib.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{product__lib_8h_ad37c0c635c7d491703c0e4acd22a36ef}\label{product__lib_8h_ad37c0c635c7d491703c0e4acd22a36ef}} 
+\index{product\_lib.h@{product\_lib.h}!MAX\_M@{MAX\_M}}
+\index{MAX\_M@{MAX\_M}!product\_lib.h@{product\_lib.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_M}{MAX\_M}}
+{\footnotesize\ttfamily const int M\+A\+X\+\_\+M =6}
+
+
+
+Definition at line 13 of file product\+\_\+lib.\+h.
+

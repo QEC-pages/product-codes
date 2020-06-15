@@ -8,6 +8,10 @@
 //#include <iostream>
 #include <ctime> //get time in seconds
 #include <chrono> // get time in milli seconds
+using namespace itpp;
+using namespace std;
+using namespace common;
+
 
 int copy_test(){//fail
   cout<<"copy the text in a file to the end of another file"<<endl;
@@ -336,6 +340,19 @@ void generate_code_test(int na, int Gax_row, int id_Gax, int Gaz_row, int id_Gaz
   return;
 }
 
+void kron_test(){
+  GF2mat A(2,2), B(2,2);
+  A.set(1,1,1);
+  A.set(1,0,1);
+  B.set(1,1,1);
+  B.set(0,1,1);
+  GF2mat C = kron(A,B);
+  cout<<"A="<<A<<endl
+      <<"B="<<B<<endl
+      <<"C="<<C<<endl;
+  return;
+}
+
 int main(int args, char ** argvs){
   //  cout<<"begin test"<<endl;
   Parser parser;
@@ -378,7 +395,10 @@ int main(int args, char ** argvs){
   //  switch_test(k);
 
   //  syntax_test();
-  //cout<<"finish test"<<endl;
-  generate_code_test(na,Gax_row,id_Gax,Gaz_row,id_Gaz,debug);
+
+  //  generate_code_test(na,Gax_row,id_Gax,Gaz_row,id_Gaz,debug);
+  kron_test();
+
+    //cout<<"finish test"<<endl;
   return 0;
 }

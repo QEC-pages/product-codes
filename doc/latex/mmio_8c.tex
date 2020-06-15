@@ -1,0 +1,165 @@
+\hypertarget{mmio_8c}{}\doxysection{weilei\+\_\+lib/mmio.c File Reference}
+\label{mmio_8c}\index{weilei\_lib/mmio.c@{weilei\_lib/mmio.c}}
+{\ttfamily \#include \char`\"{}mmio.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mmio_8c_aa1015f3b0282e7ef7ef3448fca37958d}{mm\+\_\+is\+\_\+valid}} (\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8c_ad8204d233b87eeba15de78abae85c814}{mm\+\_\+read\+\_\+banner}} (F\+I\+LE $\ast$f, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} $\ast$matcode)
+\item 
+int \mbox{\hyperlink{mmio_8c_ad6f7429821e10fc084d1d7da481029f3}{mm\+\_\+write\+\_\+mtx\+\_\+crd\+\_\+size}} (F\+I\+LE $\ast$f, int M, int N, int nz)
+\item 
+int \mbox{\hyperlink{mmio_8c_acf80791ad47f3c907c9145f7573eb33c}{mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+size}} (F\+I\+LE $\ast$f, int $\ast$M, int $\ast$N, int $\ast$nz)
+\item 
+int \mbox{\hyperlink{mmio_8c_a77d0cc326838831814294614d1010ca5}{mm\+\_\+read\+\_\+mtx\+\_\+array\+\_\+size}} (F\+I\+LE $\ast$f, int $\ast$M, int $\ast$N)
+\item 
+int \mbox{\hyperlink{mmio_8c_a4d0fe7a313521b054e1eaa7b38c6e514}{mm\+\_\+write\+\_\+mtx\+\_\+array\+\_\+size}} (F\+I\+LE $\ast$f, int M, int N)
+\item 
+int \mbox{\hyperlink{mmio_8c_a865459b4a6c07939c06e3fe9365fc2a2}{mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+data}} (F\+I\+LE $\ast$f, int M, int N, int nz, int I\mbox{[}$\,$\mbox{]}, int J\mbox{[}$\,$\mbox{]}, double val\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8c_a9b35386bc4a8284ece9185e6a314e6fb}{mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+entry}} (F\+I\+LE $\ast$f, int $\ast$I, int $\ast$J, double $\ast$real, double $\ast$imag, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8c_a20f55cb677aa71256a6c27311d164ee7}{mm\+\_\+read\+\_\+mtx\+\_\+crd}} (char $\ast$fname, int $\ast$M, int $\ast$N, int $\ast$nz, int $\ast$$\ast$I, int $\ast$$\ast$J, double $\ast$$\ast$val, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} $\ast$matcode)
+\item 
+int \mbox{\hyperlink{mmio_8c_a1ae61f76394b37d9c41a0a1b63e5a3a1}{mm\+\_\+write\+\_\+banner}} (F\+I\+LE $\ast$f, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+int \mbox{\hyperlink{mmio_8c_a68d9871d7292ea09a915e05a3588ad4c}{mm\+\_\+write\+\_\+mtx\+\_\+crd}} (char fname\mbox{[}$\,$\mbox{]}, int M, int N, int nz, int I\mbox{[}$\,$\mbox{]}, int J\mbox{[}$\,$\mbox{]}, double val\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\item 
+char $\ast$ \mbox{\hyperlink{mmio_8c_ac37b950ca2d922353bb1d33dcb9762e4}{mm\+\_\+strdup}} (const char $\ast$s)
+\item 
+char $\ast$ \mbox{\hyperlink{mmio_8c_ae59430e91ee3c56cbe666976066f0a56}{mm\+\_\+typecode\+\_\+to\+\_\+str}} (\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} matcode)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mmio_8c_aa1015f3b0282e7ef7ef3448fca37958d}\label{mmio_8c_aa1015f3b0282e7ef7ef3448fca37958d}} 
+\index{mmio.c@{mmio.c}!mm\_is\_valid@{mm\_is\_valid}}
+\index{mm\_is\_valid@{mm\_is\_valid}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_is\_valid()}{mm\_is\_valid()}}
+{\footnotesize\ttfamily int mm\+\_\+is\+\_\+valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 84 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_ad8204d233b87eeba15de78abae85c814}\label{mmio_8c_ad8204d233b87eeba15de78abae85c814}} 
+\index{mmio.c@{mmio.c}!mm\_read\_banner@{mm\_read\_banner}}
+\index{mm\_read\_banner@{mm\_read\_banner}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_banner()}{mm\_read\_banner()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+banner (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} $\ast$}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 94 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_a77d0cc326838831814294614d1010ca5}\label{mmio_8c_a77d0cc326838831814294614d1010ca5}} 
+\index{mmio.c@{mmio.c}!mm\_read\_mtx\_array\_size@{mm\_read\_mtx\_array\_size}}
+\index{mm\_read\_mtx\_array\_size@{mm\_read\_mtx\_array\_size}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_array\_size()}{mm\_read\_mtx\_array\_size()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+array\+\_\+size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int $\ast$}]{M,  }\item[{int $\ast$}]{N }\end{DoxyParamCaption})}
+
+
+
+Definition at line 218 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_a20f55cb677aa71256a6c27311d164ee7}\label{mmio_8c_a20f55cb677aa71256a6c27311d164ee7}} 
+\index{mmio.c@{mmio.c}!mm\_read\_mtx\_crd@{mm\_read\_mtx\_crd}}
+\index{mm\_read\_mtx\_crd@{mm\_read\_mtx\_crd}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_crd()}{mm\_read\_mtx\_crd()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+crd (\begin{DoxyParamCaption}\item[{char $\ast$}]{fname,  }\item[{int $\ast$}]{M,  }\item[{int $\ast$}]{N,  }\item[{int $\ast$}]{nz,  }\item[{int $\ast$$\ast$}]{I,  }\item[{int $\ast$$\ast$}]{J,  }\item[{double $\ast$$\ast$}]{val,  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}} $\ast$}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 331 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_a865459b4a6c07939c06e3fe9365fc2a2}\label{mmio_8c_a865459b4a6c07939c06e3fe9365fc2a2}} 
+\index{mmio.c@{mmio.c}!mm\_read\_mtx\_crd\_data@{mm\_read\_mtx\_crd\_data}}
+\index{mm\_read\_mtx\_crd\_data@{mm\_read\_mtx\_crd\_data}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_crd\_data()}{mm\_read\_mtx\_crd\_data()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+data (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int}]{M,  }\item[{int}]{N,  }\item[{int}]{nz,  }\item[{int}]{I\mbox{[}$\,$\mbox{]},  }\item[{int}]{J\mbox{[}$\,$\mbox{]},  }\item[{double}]{val\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 263 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_a9b35386bc4a8284ece9185e6a314e6fb}\label{mmio_8c_a9b35386bc4a8284ece9185e6a314e6fb}} 
+\index{mmio.c@{mmio.c}!mm\_read\_mtx\_crd\_entry@{mm\_read\_mtx\_crd\_entry}}
+\index{mm\_read\_mtx\_crd\_entry@{mm\_read\_mtx\_crd\_entry}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_crd\_entry()}{mm\_read\_mtx\_crd\_entry()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+entry (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int $\ast$}]{I,  }\item[{int $\ast$}]{J,  }\item[{double $\ast$}]{real,  }\item[{double $\ast$}]{imag,  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 296 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_acf80791ad47f3c907c9145f7573eb33c}\label{mmio_8c_acf80791ad47f3c907c9145f7573eb33c}} 
+\index{mmio.c@{mmio.c}!mm\_read\_mtx\_crd\_size@{mm\_read\_mtx\_crd\_size}}
+\index{mm\_read\_mtx\_crd\_size@{mm\_read\_mtx\_crd\_size}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_read\_mtx\_crd\_size()}{mm\_read\_mtx\_crd\_size()}}
+{\footnotesize\ttfamily int mm\+\_\+read\+\_\+mtx\+\_\+crd\+\_\+size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int $\ast$}]{M,  }\item[{int $\ast$}]{N,  }\item[{int $\ast$}]{nz }\end{DoxyParamCaption})}
+
+
+
+Definition at line 187 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_ac37b950ca2d922353bb1d33dcb9762e4}\label{mmio_8c_ac37b950ca2d922353bb1d33dcb9762e4}} 
+\index{mmio.c@{mmio.c}!mm\_strdup@{mm\_strdup}}
+\index{mm\_strdup@{mm\_strdup}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_strdup()}{mm\_strdup()}}
+{\footnotesize\ttfamily char$\ast$ mm\+\_\+strdup (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+
+Create a new copy of a string s. \mbox{\hyperlink{mmio_8c_ac37b950ca2d922353bb1d33dcb9762e4}{mm\+\_\+strdup()}} is a common routine, but not part of A\+N\+SI C, so it is included here. Used by \mbox{\hyperlink{mmio_8c_ae59430e91ee3c56cbe666976066f0a56}{mm\+\_\+typecode\+\_\+to\+\_\+str()}}. 
+
+Definition at line 446 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_ae59430e91ee3c56cbe666976066f0a56}\label{mmio_8c_ae59430e91ee3c56cbe666976066f0a56}} 
+\index{mmio.c@{mmio.c}!mm\_typecode\_to\_str@{mm\_typecode\_to\_str}}
+\index{mm\_typecode\_to\_str@{mm\_typecode\_to\_str}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_typecode\_to\_str()}{mm\_typecode\_to\_str()}}
+{\footnotesize\ttfamily char$\ast$ mm\+\_\+typecode\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 453 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_a1ae61f76394b37d9c41a0a1b63e5a3a1}\label{mmio_8c_a1ae61f76394b37d9c41a0a1b63e5a3a1}} 
+\index{mmio.c@{mmio.c}!mm\_write\_banner@{mm\_write\_banner}}
+\index{mm\_write\_banner@{mm\_write\_banner}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_write\_banner()}{mm\_write\_banner()}}
+{\footnotesize\ttfamily int mm\+\_\+write\+\_\+banner (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 384 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_a4d0fe7a313521b054e1eaa7b38c6e514}\label{mmio_8c_a4d0fe7a313521b054e1eaa7b38c6e514}} 
+\index{mmio.c@{mmio.c}!mm\_write\_mtx\_array\_size@{mm\_write\_mtx\_array\_size}}
+\index{mm\_write\_mtx\_array\_size@{mm\_write\_mtx\_array\_size}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_write\_mtx\_array\_size()}{mm\_write\_mtx\_array\_size()}}
+{\footnotesize\ttfamily int mm\+\_\+write\+\_\+mtx\+\_\+array\+\_\+size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int}]{M,  }\item[{int}]{N }\end{DoxyParamCaption})}
+
+
+
+Definition at line 247 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_a68d9871d7292ea09a915e05a3588ad4c}\label{mmio_8c_a68d9871d7292ea09a915e05a3588ad4c}} 
+\index{mmio.c@{mmio.c}!mm\_write\_mtx\_crd@{mm\_write\_mtx\_crd}}
+\index{mm\_write\_mtx\_crd@{mm\_write\_mtx\_crd}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_write\_mtx\_crd()}{mm\_write\_mtx\_crd()}}
+{\footnotesize\ttfamily int mm\+\_\+write\+\_\+mtx\+\_\+crd (\begin{DoxyParamCaption}\item[{char}]{fname\mbox{[}$\,$\mbox{]},  }\item[{int}]{M,  }\item[{int}]{N,  }\item[{int}]{nz,  }\item[{int}]{I\mbox{[}$\,$\mbox{]},  }\item[{int}]{J\mbox{[}$\,$\mbox{]},  }\item[{double}]{val\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{mmio_8h_a27c4a0610b9f2ecb5edb6430e79ae9ee}{M\+M\+\_\+typecode}}}]{matcode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 397 of file mmio.\+c.
+
+\mbox{\Hypertarget{mmio_8c_ad6f7429821e10fc084d1d7da481029f3}\label{mmio_8c_ad6f7429821e10fc084d1d7da481029f3}} 
+\index{mmio.c@{mmio.c}!mm\_write\_mtx\_crd\_size@{mm\_write\_mtx\_crd\_size}}
+\index{mm\_write\_mtx\_crd\_size@{mm\_write\_mtx\_crd\_size}!mmio.c@{mmio.c}}
+\doxysubsubsection{\texorpdfstring{mm\_write\_mtx\_crd\_size()}{mm\_write\_mtx\_crd\_size()}}
+{\footnotesize\ttfamily int mm\+\_\+write\+\_\+mtx\+\_\+crd\+\_\+size (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{int}]{M,  }\item[{int}]{N,  }\item[{int}]{nz }\end{DoxyParamCaption})}
+
+
+
+Definition at line 179 of file mmio.\+c.
+
