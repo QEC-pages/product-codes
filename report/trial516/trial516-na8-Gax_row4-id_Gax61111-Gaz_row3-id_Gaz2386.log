@@ -1,0 +1,64 @@
+input seed: 999 --> converted seed:5699299942
+data_hpcc/random4/trial516/trial516-na8-Gax_row4-id_Gax61111-Gaz_row3-id_Gaz2386
+check data_hpcc/random4/trial516/trial516-na8-Gax_row4-id_Gax61111-Gaz_row3-id_Gaz2386
+Gax ---- GF(2) matrix of dimension 4*8 -- Density: 0.5 ----
+      1 0 0 0 1 1 1 0 
+      0 1 0 0 1 1 1 0 
+      0 0 1 0 1 0 1 1 
+      0 0 0 1 0 1 1 1 
+
+Gaz ---- GF(2) matrix of dimension 3*8 -- Density: 0.625 ----
+      1 1 0 1 1 0 0 1 
+      1 1 1 0 0 1 0 1 
+      1 1 1 1 0 0 1 0 
+
+Cax ---- GF(2) matrix of dimension 1*8 -- Density: 0.375 ----
+      0 0 0 0 1 1 0 1 
+
+Caz ---- GF(2) matrix of dimension 1*8 -- Density: 0.375 ----
+      0 0 0 0 1 1 0 1 
+
+Gbx ---- GF(2) matrix of dimension 3*8 -- Density: 0.625 ----
+      1 1 0 1 1 0 0 1 
+      1 1 1 0 0 1 0 1 
+      1 1 1 1 0 0 1 0 
+
+Gbz ---- GF(2) matrix of dimension 4*8 -- Density: 0.5 ----
+      1 0 0 0 1 1 1 0 
+      0 1 0 0 1 1 1 0 
+      0 0 1 0 1 0 1 1 
+      0 0 0 1 0 1 1 1 
+
+Cbx ---- GF(2) matrix of dimension 1*8 -- Density: 0.375 ----
+      0 0 0 0 1 1 0 1 
+
+Cbz ---- GF(2) matrix of dimension 1*8 -- Density: 0.375 ----
+      0 0 0 0 1 1 0 1 
+
+GF2mat Gcx, size = (56,64), density = 0.0691964
+GF2mat Gcz, size = (19,64), density = 0.273849
+mode (0) is quantum code
+quantum_dist: reach min distance when iq = 3, continue to run with trialQ = 1000
+dax,daz,dbx,dbz = 3,3,3,3,
+[1;31mCASE:[0m mode (0) dax*dbx=9, dcx=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc,8,8,64;ka,kb=1,1;data_hpcc/random4/trial516/trial516-na8-Gax_row4-id_Gax61111-Gaz_row3-id_Gaz2386,no-note, time:1.93077
+GF2mat Gcx, size = (19,64), density = 0.273849
+GF2mat Gcz, size = (56,64), density = 0.0691964
+mode (1) is quantum code
+quantum_dist: reach min distance when iq = 1, continue to run with trialQ = 1000
+dax,daz,dbx,dbz = 3,3,3,3,
+[1;31mCASE:[0m mode (1) daz*dbz=9, dcz=8. dax,daz,dbx,dbz = 3,3,3,3;na,nb,nc=8,8,64;ka,kb=1,1;data_hpcc/random4/trial516/trial516-na8-Gax_row4-id_Gax61111-Gaz_row3-id_Gaz2386,no-note, time:3.69846
+mode (3)
+GF2mat Gcx, size = (56,89), density = 0.0716292
+GF2mat Gcz, size = (56,89), density = 0.0716292
+mode (3) is quantum code
+quantum_dist: reach min distance when iq = 51, continue to run with trialQ = 1000
+dax,daz,dbx,dbz = 3,3,3,3,
+dcz = daz*dbz = 9
+mode (4)
+GF2mat Gcx, size = (56,89), density = 0.0716292
+GF2mat Gcz, size = (56,89), density = 0.0716292
+mode (4) is quantum code
+quantum_dist: reach min distance when iq = 57, continue to run with trialQ = 1000
+dax,daz,dbx,dbz = 3,3,3,3,
+dcx = dax*dbx = 9
+Elapsed time = 8.26133 seconds

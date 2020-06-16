@@ -221,7 +221,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
       }
       //      cout<<"got two good quantum code"<<endl;
       break;
-    case 2:      //from given input. This is to manually double check some result
+  case 2:      //from given input. This is to manually double check some result
       if (debug)  cout<<"check "<<title<<endl;
       Gax=MM_to_GF2mat(filename_Gax); Gaz=MM_to_GF2mat(filename_Gaz);
       Gbx=MM_to_GF2mat(filename_Gbx); Gbz=MM_to_GF2mat(filename_Gbz);
@@ -232,6 +232,18 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
       Caz=getC(Gax,Gaz,1);
       Cbx=getC(Gbx,Gbz);
       Cbz=getC(Gbx,Gbz,1);
+
+      //manually change code B for a quick check, because submode_B=2 is not saved in file, onl submode_B=3
+      if (false){
+  	  kb=ka;        
+	  nb=na;
+          Gbx_row=Gaz_row;
+          Gbz_row=Gax_row;
+          Gbx=Gaz;
+          Gbz=Gax;
+          Cbx=Caz;
+          Cbz=Cax;
+      }
 
 
       if (debug)  {cout<<"Gax "<<Gax<<endl;  cout<<"Gaz "<<Gaz<<endl;  cout<<"Cax "<<Cax<<endl;  cout<<"Caz "<<Caz<<endl;}

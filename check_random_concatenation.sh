@@ -20,7 +20,13 @@ report_folder=report/matrices
 # size 15 trial427-1531 trial427-1421
 # size 10 , trial423-52068
 # size 8, trial412-784951
-for trial in trial508/trial508-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657 trial508/trial508-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386 trial508/trial508-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131 trial508/trial508-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371
+
+
+# trial516/trial516-na8-Gax_row4-id_Gax61111-Gaz_row3-id_Gaz2386
+# size 8 d=7 when identical, which is a bit unexpected
+# d=8 when reverse symmetrical, that is proved
+
+for trial in trial516/trial516-na8-Gax_row4-id_Gax61111-Gaz_row3-id_Gaz2386 trial508/trial508-na7-Gax_row3-id_Gax3511-Gaz_row3-id_Gaz2657 trial508/trial508-na7-Gax_row3-id_Gax3767-Gaz_row3-id_Gaz2386 trial508/trial508-na7-Gax_row3-id_Gax3803-Gaz_row3-id_Gaz2131 trial508/trial508-na7-Gax_row3-id_Gax3799-Gaz_row3-id_Gaz2371
 #trial501-na7-Gax_row2-id_Gax455-Gaz_row2-id_Gaz1008 trial501-na7-Gax_row2-id_Gax455-Gaz_row2-id_Gaz527 trial493-16816 trial493-17128 trial486-36 trial485-3565 trial485-500 trial412-784951 trial423-52068 trial418-104413 trial410-323232 trial427-1421 trial427-1531 trial410-234473 trial411-572582
 do
     title=$folder/$trial
@@ -34,9 +40,10 @@ do
 
 
 #    ./counter_concatenation.out mode=2 title=$title debug=0 seed=999 &
+#    mkdir -p report/trial516
     ./product.out mode=2 title=$title debug=1 seed=999 
 #>> report/${trial}.log &
-#    break
+    break
 done
 wait
 echo done

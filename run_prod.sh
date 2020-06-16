@@ -48,6 +48,9 @@ case $ON_SRUN in
 	;;
 esac
 
+# add this when run srun in short
+#(( num_cores = 60 ))
+
 # Print name of node
 echo
 echo "============= The World is Unitary ============"
@@ -58,13 +61,13 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=517
+index=518
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
 # 1: two random code; 2: identical reverse A B; 3: identical A B
-sub_mode=1
-na_input=9
+sub_mode=3 #not used when mode=3
+na_input=7
 n_low=9
 n_high=9
 k_low=1
@@ -83,7 +86,8 @@ echo check logfile: $logfile statusfile:$statusfile
 
 #make counter_concatenation.out
 #cp counter_concatenation.out .${job_name}$index.out
-make product.out
+#make product.out
+make product
 cp product.out .${job_name}$index.out
 
 #add index by 1 while rerun this script
@@ -128,7 +132,8 @@ sub_mode_A=1
 #na_input=5
 echo ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
 
-./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note >>$logfile
+./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
+#>>$logfile
 #./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 #>> $logfile
 date
