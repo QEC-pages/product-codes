@@ -261,10 +261,12 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
   int dax = quantum_dist_v2(Gax,Gaz);
   int daz = quantum_dist_v2(Gax,Gaz,1);
 
-  if ( dax ==2 && daz == 2){
+  //there is no valid reason to discard this case. For test purpose, this make the program much faster and should not miss a real case
+  /*  if ( dax ==2 && daz == 2){
     //    cout<<"=";
     return 2;
-  }
+    }*/
+
   //  cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz;
   //  cout<<",dax="<<dax<<",daz="<<daz;
   //  cout<<endl;

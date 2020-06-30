@@ -1,3 +1,5 @@
+target:
+	echo "show-case diff head-2diff"
 show-case:
 	grep CASE product*.log > case.log
 	git diff case.log

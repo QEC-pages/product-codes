@@ -1,0 +1,5 @@
+start job on SRUN:c25 size3 run520 max_process:/max_trial:1000000 Mon Jun 29 22:15:23 PDT 2020
+SLURM_JOB_ID:1645734 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=3], sub_mode_A:, sub_mode_B:, na_input:3, n_low:9, n_high=9, data_folder:data/random4/trial520, log_file:log/product520-size3.log status_file:log/status-product520-size3.log
+
+finish job on c25 520 25/1000000 Mon Jun 29 22:15:23 PDT 2020
