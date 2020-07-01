@@ -13,7 +13,9 @@ using namespace common;
 
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, 
 	     int n_low, int n_high, int k_low, int k_high, int debug,
-	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz);
+	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,
+	     SubsystemProductCode code
+	     );
 
 
 int main(int args, char ** argv){
@@ -46,14 +48,15 @@ int main(int args, char ** argv){
   case 1:
     //actually I can run all random simulation here. and let openmp control the threads. Insted of running it one by one
   case 2:
+    {
     //run a random simulation
     //allow mode = 1,2, sub_mode_A = 1; sub_mode_B=1,2,3
-    simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0);
+    SubsystemProductCode code_temp;
+    simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0, code_temp);
+    }
     break;
-  case 3:
+  case 3:       //enumerate all cases with size na
     {
-      //enumerate all cases with size na
-
       //statistic counts
       int total_trials=0, calculated_trials=0;//, distance_2_trials=0;
       int na=na_input;
@@ -68,14 +71,29 @@ int main(int args, char ** argv){
 	    for ( int id_Gaz = 1; id_Gaz < id_Gaz_MAX+1 ; id_Gaz++){
 	      total_trials++;
 	    //run the program. symmetric, reverse symmetric.
-	    // simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug);
 	      if (debug) cout<<"Gax_row="<<Gax_row<<",Gaz_row="<<Gaz_row<<endl;
 	      sub_mode_A=2;//enumerate all cases
 	      sub_mode_B=2;//reverse identical code A and B
 	      //	      cout<<title_str.c_str()<<endl;
 	      string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
 		+"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
-	      if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz)==2){
+
+	      //use data wrapper class
+	      SubsystemProductCode code;
+	      CSSCode codeA;
+	      codeA.n=na;
+	      codeA.Gx_row=Gax_row;
+	      codeA.id_Gx=id_Gax;
+	      codeA.Gz_row=Gaz_row;
+	      codeA.id_Gz=id_Gaz;
+	      /*
+	      code.na=na;
+	      code.Gax_row=Gax_row;
+	      code.id_Gax=id_Gax;
+	      code.Gaz_row=Gaz_row;
+	      code.id_Gaz=id_Gaz;
+	      */
+	      if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, code)==2){
 		//duplicated case, skip following calculation		
 	      }else{
 		//continue calculation
@@ -83,7 +101,7 @@ int main(int args, char ** argv){
 		cout<<calculated_trials<<"/"<<( total_trials/1000000 )<<"M"<<endl;
 		//cout<<"                                                                         id_Gax_MAX="<<id_Gax_MAX<<",id_Gaz_MAX="<<id_Gaz_MAX<<endl;
 		sub_mode_B=3;
-		simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz);
+		simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, code);
 	      }
 	    }
 	  }
@@ -98,9 +116,11 @@ int main(int args, char ** argv){
   return 0;
 }
 
-int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, 
-	     int n_low, int n_high, int k_low, int k_high, int debug,
-	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz){
+int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B,     //general info
+	     int n_low, int n_high, int k_low, int k_high, int debug,                     //for random simulation
+	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,   //for enumarating all cases
+	     SubsystemProductCode code
+	     ){
   //return 2 when the code is duplicate, or either dax = 1 or daz = 1
   if ( mode == 3) mode =1;
 
@@ -109,6 +129,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
   GF2mat Gbx,Gbz,Cbx,Cbz;
   int na,ka, Gax_row,Gaz_row;//k is not necessary number of qubits
   int nb,kb, Gbx_row,Gbz_row;
+  int id_Gbx, id_Gbz;
   //  int flag_save_matrices=0; // use flag_chain_complex
 
   //only save for cases
@@ -152,7 +173,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
           nb=randi(n_low,n_high); kb = randi(k_low,k_high);Gbx_row=randi(1,nb-kb-1); Gbz_row=nb-kb-Gbx_row;
           getGoodQuantumCode(nb,Gbx_row,Gbz_row,Gbx,Gbz,Cbx,Cbz,debug);
           break;
-        case 2: // identical reverse code A for code B  
+        case 2: // use identical reverse code A for code B  
           //reverse X and Z of code A for code B
           kb=ka;        
           nb=na;
@@ -163,7 +184,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
           Cbx=Caz;
           Cbz=Cax;
           break;
-        case 3: //identical code A for code B
+        case 3: //use identical code A for code B
           kb=ka;        
           nb=na;
           Gbx_row=Gax_row;
@@ -173,6 +194,22 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
           Cbx=Cax;
           Cbz=Caz;
           break;
+      case 4: //enumerate all codes with size nb=na
+	//input: na, Gax_row, ...
+	{
+	  //	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
+	  nb=code.codeB.n; Gbx_row=code.codeB.Gx_row; Gbz_row=code.codeB.Gz_row;
+	  id_Gbx=code.codeB.id_Gx; id_Gbz=code.codeB.id_Gz;
+	  if ( generate_code(Gbx, Gbz, nb, Gbx_row, id_Gbx, Gbz_row, id_Gbz, debug) ==2 ){
+	    if (debug) cout<<"duplicated case, return 2"<<endl;
+	    //	    cout<<"*";
+	    return 2;
+	  }	
+	  Cbx=getC(Gbx,Gbz);
+	  Cbz=getC(Gbx,Gbz,1);
+	}
+	break;
+
       default:
 	cout<<"simulate(): illegal sub_mode_A value"<<endl;
 	throw 2;
