@@ -34,7 +34,7 @@ int main(int args, char ** argv){
   seed = seed+get_time(3);
   itpp::RNG_reset(seed); 
   if (debug)   std::cout<<"converted seed:"<<seed;
-  //std::cout<<std::endl;
+
 
   int na_input;  parser.get(na_input,"na_input");
   int n_low;  parser.get(n_low,"n_low");
@@ -44,45 +44,34 @@ int main(int args, char ** argv){
 
   switch (mode){
   case 1:
-    //actually I can run the random simulation here. and let openmp control the threads
+    //actually I can run all random simulation here. and let openmp control the threads. Insted of running it one by one
   case 2:
+    //run a random simulation
     //allow mode = 1,2, sub_mode_A = 1; sub_mode_B=1,2,3
     simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0);
     break;
   case 3:
     {
+      //enumerate all cases with size na
 
-  //mode need to be determined here.
-
-  //parallel for loop
-	/*
-	  for loop for Gax_row
-	  parallel for loop for Gax
-	  for loop for Gaz
-	  esitimate the distance
-	 */
-      //      cout<<"debug"<<endl;
       //statistic counts
-      int total_trials=0, calculated_trials=0, distance_2_trials=0;
+      int total_trials=0, calculated_trials=0;//, distance_2_trials=0;
       int na=na_input;
-      for ( int Gax_row = 1; Gax_row< na-1; Gax_row++){
-	//	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -2 ;
-	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -1 ; //maximun all one
+      for ( int Gax_row = 1; Gax_row< na-1; Gax_row++){ //loop through Gax_row
+	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -1 ; //maximun when all bits are one
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
 	for ( int id_Gax = 1; id_Gax < id_Gax_MAX+1 ; id_Gax++){
 	  if ( id_Gax % 100 == 0 )
 	    cout<<"start: id_Gax="<<id_Gax<<",\t id_Gax_MAX="<<id_Gax_MAX<<",\t Gax_row="<<Gax_row<<endl;
-	  //	  cout<<"                                                                 start: id_Gax="<<id_Gax<<",\t"<<endl;
 	  for ( int Gaz_row = 1; Gaz_row< min(Gax_row +1,na-Gax_row); Gaz_row ++){ //check
-	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 1; //maximun all one
-	    //	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 2;
+	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 1; //maximum when all bits are 1
 	    for ( int id_Gaz = 1; id_Gaz < id_Gaz_MAX+1 ; id_Gaz++){
 	      total_trials++;
-	    //run the program. symmetric, symmetric inverse.
+	    //run the program. symmetric, reverse symmetric.
 	    // simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug);
 	      if (debug) cout<<"Gax_row="<<Gax_row<<",Gaz_row="<<Gaz_row<<endl;
-	      sub_mode_A=2;
-	      sub_mode_B=2;
+	      sub_mode_A=2;//enumerate all cases
+	      sub_mode_B=2;//reverse identical code A and B
 	      //	      cout<<title_str.c_str()<<endl;
 	      string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
 		+"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
@@ -97,10 +86,6 @@ int main(int args, char ** argv){
 		simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz);
 	      }
 	    }
-	    //	    simulate(mode, sub_mode_A, sub_mode_B,
-	    //	     na, Gax_row, id_Gax, id_Gaz)
-	    //  generate_code(Gax, Gaz, na, Gax_row, id_Gax, id_Gaz);
-	//n_low,n_high
 	  }
 	}
       }
@@ -136,13 +121,13 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
   switch( mode ){
     case 1://generate random codes and save
       switch ( sub_mode_A ){//sub mode for code A
-      case 1:
+      case 1: //generate a random CSS code with distance > 1
 	na=randi(n_low,n_high); ka = randi(k_low,k_high);Gax_row=randi(1,na-ka-1); Gaz_row=na-ka-Gax_row;
 	getGoodQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz,debug);
       //getRandomQuantumCode(na,Gax_row,Gaz_row,Gax,Gaz,Cax,Caz);
 	break;
       case 2://enumerate all codes with size na
-	//input: na, Gax_row, 
+	//input: na, Gax_row, ...
 	{
 	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
 	  if ( generate_code(Gax, Gaz, na, Gax_row, id_Gax, Gaz_row, id_Gaz, debug) ==2 ){
@@ -152,31 +137,6 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	  }	
 	  Cax=getC(Gax,Gaz);
 	  Caz=getC(Gax,Gaz,1);
-	  //estimate distance here, and discard cases with distance 1
-	  // for a strong and quick filter, discard cases with distance 2 as well, not sure if this is a valid constraint
-	  /*
-	  int dax_temp = quantum_dist_v2(Gax,Gaz);	  
-	  if (dax_temp < 2 ) {
-	    //	    cout<<"Gax"<<Gax<<endl<<"Cax"<<Cax<<endl;
-	    //	    cout<<"Gaz"<<Gaz<<endl<<"Caz"<<Caz<<endl;
-	    //	    exit(1);
-	    cout<<"*";
-	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
-	    if (debug) cout<<"discard when dax = 1"<<endl;
-	    return 2 ;
-	  }
-	  int daz_temp = quantum_dist_v2(Gax,Gaz,1);
-	  if (daz_temp < 2 ) {
-	    cout<<"+";
-	    if (debug) cout<<"sub_mode_B="<<sub_mode_B<<",na="<<na<<",Gax_row="<<Gax_row<<",id_Gax="<<id_Gax<<",Gaz_row="<<Gaz_row<<", id_Gaz="<<id_Gaz<<",";
-	    //	  cout<<"na="<<na<<",Gax_row="<<Gax_row<<",sub_mode_B="<<sub_mode_B<<",id_Gax="<<id_Gax<<", id_Gaz="<<id_Gaz<<",";
-	    if (debug) cout<<"discard when daz = 1"<<endl;
-	    return 2 ;
-	    }*/
-
-	  //	  cout<<"Gax"<<Gax<<endl;
-	  //	  cout<<"Gaz"<<Gaz<<endl;
-
 	}
 	break;
       default:
@@ -185,7 +145,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	break;
       }
 
-      switch ( sub_mode_B){
+      switch ( sub_mode_B ){
         case 1: //two random codes
       
           //random code B
