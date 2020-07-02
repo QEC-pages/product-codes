@@ -4,13 +4,13 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=60
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=1-00:00:00     
+#SBATCH --time=0-02:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
 #SBATCH --error=log/product.stderror --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
+#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
 #SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
@@ -59,7 +59,7 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=529
+index=531
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
@@ -68,8 +68,8 @@ mode=3
 # 1: two random code; 2: identical reverse A B; 3: identical A B
 #sub_mode=3 #not used when mode=3
 sub_mode_A=3
-sub_mode_B=2 #4 #enumerate code B as well
-na_input=4
+sub_mode_B=4 #4 #enumerate code B as well
+na_input=6
 n_low=9
 n_high=9
 k_low=1
@@ -79,8 +79,9 @@ note="[n_low=$n_low, n_high=$n_high, k_low=$k_low, k_high=$k_high sub_mode=$sub_
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
-statusfile=log/status-${job_name}${index}-size${na_input}.log
-echo check logfile: $logfile statusfile:$statusfile
+#statusfile=log/status-${job_name}${index}-size${na_input}.log
+echo check logfile: $logfile 
+#statusfile:$statusfile
 
 #index=221 #218-221 - for reduced code.
 #index=200-217 for concatenation
@@ -108,7 +109,7 @@ echo note:$note, sub_mode_A:$sub_mode_A, sub_mode_B:$sub_mode_B, na_input:$na_in
 
 # duplicate info to stdout
 cat $logfile
-cat $logfile > $statusfile
+#cat $logfile > $statusfile
 
 
 (( i = 1 ))

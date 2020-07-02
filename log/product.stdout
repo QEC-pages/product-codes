@@ -19299,3 +19299,37 @@ start: id_Gax=3500,	 id_Gax_MAX=4095,	 Gax_row=2
 9215/12M
 9216/12M
 9217/12M
+on sbatch
+on sbatch
+
+
+============= The World is Unitary ============
+============= The World is Unitary ============
+start job on i56 Wed Jul 1 22:31:24 PDT 2020
+start job on i11 Wed Jul 1 22:31:24 PDT 2020
+
+
+check logfile: log/product531-size6.log statusfile:log/status-product531-size6.log
+check logfile: log/product530-size7.log statusfile:log/status-product530-size7.log
+make product.o && make lib && make product.out
+make product.o && make lib && make product.out
+g++ -O3 -Wall -std=c++11 -fopenmp `pkg-config --cflags itpp` `pkg-config --libs itpp` -c product.cpp
+g++ -O3 -Wall -std=c++11 -fopenmp `pkg-config --cflags itpp` `pkg-config --libs itpp` -c product.cpp
+cd weilei_lib && make all
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[4]: Nothing to be done for `all'.
+g++ -O3 -Wall -std=c++11 -fopenmp `pkg-config --cflags itpp` `pkg-config --libs itpp` -o product.out product.o weilei_lib/mm_read.o weilei_lib/mmio.o weilei_lib/mm_write.o weilei_lib/lib.o weilei_lib/dist.o weilei_lib/product_lib.o weilei_lib/bp.o 
+g++ -O3 -Wall -std=c++11 -fopenmp `pkg-config --cflags itpp` `pkg-config --libs itpp` -o product.out product.o weilei_lib/mm_read.o weilei_lib/mmio.o weilei_lib/mm_write.o weilei_lib/lib.o weilei_lib/dist.o weilei_lib/product_lib.o weilei_lib/bp.o 
+start job on SBATCH:i56 size6 run531 max_process:/max_trial:1000000 Wed Jul 1 22:31:28 PDT 2020
+SLURM_JOB_ID:1689654 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial531, log_file:log/product531-size6.log status_file:log/status-product531-size6.log
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}
+start job on SBATCH:i11 size7 run530 max_process:/max_trial:1000000 Wed Jul 1 22:31:28 PDT 2020
+SLURM_JOB_ID:1689649 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:7, n_low:9, n_high=9, data_folder:data/random4/trial530, log_file:log/product530-size7.log status_file:log/status-product530-size7.log
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}

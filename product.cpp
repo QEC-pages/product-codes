@@ -36,13 +36,14 @@ int main(int args, char ** argv){
   itpp::RNG_reset(seed); 
   if (debug)   std::cout<<"converted seed:"<<seed;
 
-
   int na_input;  parser.get(na_input,"na_input");
   int n_low;  parser.get(n_low,"n_low");
   int n_high;  parser.get(n_high,"n_high");
   int k_low;  parser.get(k_low,"k_low");
   int k_high;  parser.get(k_high,"k_high");
 
+
+  Real_Timer timer;  timer.tic();
 
   //the maximum number of cases to be evaluated is 1 million. Duplicated cases and distance 1 cases are not saved here.
   const int id_list_max=100000; 
@@ -70,7 +71,7 @@ int main(int args, char ** argv){
 	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -1 ; //maximun when all bits are one
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
 	for ( int id_Gax = 1; id_Gax < id_Gax_MAX+1 ; id_Gax++){
-	  if ( id_Gax % 500 == 0 )
+	  if ( id_Gax % 1000 == 0 )
 	    cout<<"start: id_Gax="<<id_Gax<<",\t id_Gax_MAX="<<id_Gax_MAX<<",\t Gax_row="<<Gax_row<<endl;
 	  for ( int Gaz_row = 1; Gaz_row< min(Gax_row +1,na-Gax_row); Gaz_row ++){ //check
 	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 1; //maximum when all bits are 1
@@ -101,7 +102,7 @@ int main(int args, char ** argv){
 		  {		    
 		    for ( int i_id = 0; i_id < 5; i_id ++) id_list[calculated_trials][i_id] = id[i_id];
 		    calculated_trials++;
-		    cout<<calculated_trials<<"/"<<( total_trials/1000000 )<<"M"<<endl;
+		    //	    cout<<calculated_trials<<"/"<<( total_trials/1000000 )<<"M"<<endl;
 		  }
 		}
 		//      }
@@ -129,7 +130,10 @@ int main(int args, char ** argv){
 	}
       }
    
-      cout<<"start calculating for "<< calculated_trials<<" cases."<<endl;
+      //      cout<<calculated_trials<<"/"<<( total_trials/1000000 )<<"M"<<endl;
+      cout<<"start calculating for "<< calculated_trials<<" cases out of "<<total_trials<<" trials."<<endl;
+      cout<<"time used: "<<timer.toc()<< " sec"<<endl;
+      timer.tic();
 
       sub_mode_A=2;//enumerate all cases. must be 2 at this point
       //	      sub_mode_B=2;//reverse identical code A and B
@@ -137,12 +141,22 @@ int main(int args, char ** argv){
       case 2:
 
 	{
+	  int count=0;
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
 	  for (int iAB = 0; iAB <calculated_trials; iAB++){
+#pragma omp critical
+	    { 
+	      count ++;
+	      if ( count % 10 == 0){		
+		cout<<count*100/calculated_trials<<"% finished. total: "<<calculated_trials
+		    <<", remaining time:"<<timer.toc()/count*(calculated_trials-count)/60<<" min"
+		    <<endl;
+	      }
+	    }
 	    int iA = iAB ;
 	    //	    int iB = iAB ;
 	    //	    if ( iA > iB ) continue; //remove duplicate	
-	    cout<<"iA="<<iA<<endl;
+
 	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
 	    //	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
 	    CSSCode codeB;
@@ -158,12 +172,23 @@ int main(int args, char ** argv){
 	break;// sub_mode_B = 2; // include 3
       case 4:
 	{
-	  //#pragma omp parallel for schedule(guided) num_threads(num_cores)
-	  for (int iAB = 0; iAB <calculated_trials*calculated_trials; iAB++){
+	  int count=0;
+	  const int total = calculated_trials*calculated_trials;
+#pragma omp parallel for schedule(guided) num_threads(num_cores)
+	  for (int iAB = 0; iAB <total; iAB++){
+#pragma omp critical
+	    {
+	      count++;
+	      if (count % 100 ==0){
+		cout<<count*100/total<<"% finished. total: "<<total
+		    <<", remaining time:"<<timer.toc()/count*(total-count)/60<<" min"
+		    <<endl;
+	      }
+	    }
 	    int iA = iAB / calculated_trials;
 	    int iB = iAB % calculated_trials;
 	    if ( iA > iB ) continue; //remove duplicate	
-	    cout<<"iA="<<iA<<", iB = "<<iB<<endl;
+	    //	    cout<<"iA="<<iA<<", iB = "<<iB<<endl;
 	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
 	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
 	    SubsystemProductCode codeC(codeA,codeB);
@@ -229,12 +254,8 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
 
 	  //	  cout<<"debug"<<endl;
-	  if ( code.is_defined == 0 ){
-	    if ( code.codeA.is_defined )
-	      cout<<"subsystem code not defined, but code A is defined"<<endl;
-	    else
-	      cout<<"subsystem code not defined,"<<endl;
-	  }
+	  if ( code.codeA.is_defined == 0 )
+	      cout<<"code A is not defined,"<<endl;
 
 	  na = code.codeA.n;
 	  Gax_row = code.codeA.Gx_row;

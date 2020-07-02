@@ -160,3 +160,17 @@ slurmstepd-c41: error: _is_a_lwp: 1 read() attempts on /proc/41689/status failed
 slurmstepd-c41: error: _is_a_lwp: 1 read() attempts on /proc/60132/status failed: No such process
 slurmstepd-c41: error: *** JOB 1528930 ON c41 CANCELLED AT 2020-06-13T23:27:16 DUE TO TIME LIMIT ***
 slurmstepd-i08: error: *** JOB 1646375 ON i08 CANCELLED AT 2020-06-30T00:21:06 DUE TO TIME LIMIT ***
+product.cpp: In function 'int simulate(std::string, std::string, int, int, int, int, int, int, int, int, int, int, int, int, int, SubsystemProductCode)':
+product.cpp:233:7: warning: variable 'id_Gbx' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+       ^
+product.cpp: In function 'int simulate(std::string, std::string, int, int, int, int, int, int, int, int, int, int, int, int, int, SubsystemProductCode)':
+product.cpp:233:7: warning: variable 'id_Gbx' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+       ^
+product.cpp:233:15: warning: variable 'id_Gbz' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+               ^
+product.cpp:233:15: warning: variable 'id_Gbz' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+               ^
