@@ -1,0 +1,5 @@
+start job on SRUN:c30 size3 run528 max_process:/max_trial:1000000 Wed Jul 1 14:49:40 PDT 2020
+SLURM_JOB_ID:1675706 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:3, n_low:9, n_high=9, data_folder:data/random4/trial528, log_file:log/product528-size3.log status_file:log/status-product528-size3.log
+
+finish job on c30 528 25/1000000 Wed Jul 1 14:49:40 PDT 2020

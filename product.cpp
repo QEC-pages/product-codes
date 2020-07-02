@@ -17,7 +17,6 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	     SubsystemProductCode code
 	     );
 
-
 int main(int args, char ** argv){
   itpp::Parser parser;
   parser.init(args,argv);
@@ -44,15 +43,22 @@ int main(int args, char ** argv){
   int k_low;  parser.get(k_low,"k_low");
   int k_high;  parser.get(k_high,"k_high");
 
+
+  //the maximum number of cases to be evaluated is 1 million. Duplicated cases and distance 1 cases are not saved here.
+  const int id_list_max=100000; 
+  int id_list[id_list_max][5];
+  //  save five number for the input of CSSCode codeA(na,Gax_row,id_Gax,Gaz_row,id_Gaz);
+
   switch (mode){
   case 1:
     //actually I can run all random simulation here. and let openmp control the threads. Insted of running it one by one
+      //run a random simulation
   case 2:
     {
-    //run a random simulation
-    //allow mode = 1,2, sub_mode_A = 1; sub_mode_B=1,2,3
-    SubsystemProductCode code_temp;
-    simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0, code_temp);
+      //check a specific case
+      //allow mode = 1,2, sub_mode_A = 1; sub_mode_B=1,2,3
+      SubsystemProductCode code_temp;
+      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0, code_temp);
     }
     break;
   case 3:       //enumerate all cases with size na
@@ -64,35 +70,49 @@ int main(int args, char ** argv){
 	const int id_Gax_MAX = (int) pow(2,  Gax_row * (na-Gax_row) ) -1 ; //maximun when all bits are one
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
 	for ( int id_Gax = 1; id_Gax < id_Gax_MAX+1 ; id_Gax++){
-	  if ( id_Gax % 100 == 0 )
+	  if ( id_Gax % 500 == 0 )
 	    cout<<"start: id_Gax="<<id_Gax<<",\t id_Gax_MAX="<<id_Gax_MAX<<",\t Gax_row="<<Gax_row<<endl;
 	  for ( int Gaz_row = 1; Gaz_row< min(Gax_row +1,na-Gax_row); Gaz_row ++){ //check
 	    const int id_Gaz_MAX = (int) pow(2, Gaz_row*(na - Gax_row)) - 1; //maximum when all bits are 1
 	    for ( int id_Gaz = 1; id_Gaz < id_Gaz_MAX+1 ; id_Gaz++){
 	      total_trials++;
+
 	    //run the program. symmetric, reverse symmetric.
 	      if (debug) cout<<"Gax_row="<<Gax_row<<",Gaz_row="<<Gaz_row<<endl;
-	      sub_mode_A=2;//enumerate all cases
-	      sub_mode_B=2;//reverse identical code A and B
+
+	      //use data wrapper class
+	      CSSCode codeA(na,Gax_row,id_Gax,Gaz_row,id_Gaz);
+	      SubsystemProductCode code;
+
+	      //note: to enumerate one CSS code, run it here. to simulate two codes, generate all code here, then run it later.
+	      //	      if (sub_mode_B ==4){ //enumerate code B as well.
+		//		if ( generate_code(Gax, Gaz, na, Gax_row, id_Gax, Gaz_row, id_Gaz, debug) ==2 ){
+
+		if ( codeA.generate_by_id(debug) == 2){
+		  if (debug) cout<<"duplicated case, return 2"<<endl;
+		  //	    cout<<"*";
+		  //		  return 2;
+		}else{
+		  //it is valid code, save it for running later
+		  
+		  int id[5] = {na,Gax_row,id_Gax,Gaz_row,id_Gaz};
+		  //cout<<"save id when calculated_trials = "<<calculated_trials<<endl;
+#pragma omp critical
+		  {		    
+		    for ( int i_id = 0; i_id < 5; i_id ++) id_list[calculated_trials][i_id] = id[i_id];
+		    calculated_trials++;
+		    cout<<calculated_trials<<"/"<<( total_trials/1000000 )<<"M"<<endl;
+		  }
+		}
+		//      }
+
+		//	      sub_mode_A=2;//enumerate all cases
+	      //	      sub_mode_B=2;//reverse identical code A and B
 	      //	      cout<<title_str.c_str()<<endl;
 	      string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
 		+"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
 
-	      //use data wrapper class
-	      SubsystemProductCode code;
-	      CSSCode codeA;
-	      codeA.n=na;
-	      codeA.Gx_row=Gax_row;
-	      codeA.id_Gx=id_Gax;
-	      codeA.Gz_row=Gaz_row;
-	      codeA.id_Gz=id_Gaz;
 	      /*
-	      code.na=na;
-	      code.Gax_row=Gax_row;
-	      code.id_Gax=id_Gax;
-	      code.Gaz_row=Gaz_row;
-	      code.id_Gaz=id_Gaz;
-	      */
 	      if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, code)==2){
 		//duplicated case, skip following calculation		
 	      }else{
@@ -103,10 +123,38 @@ int main(int args, char ** argv){
 		sub_mode_B=3;
 		simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, code);
 	      }
+	      */
 	    }
 	  }
 	}
       }
+   
+      cout<<"start calculating for "<< calculated_trials<<" cases."<<endl;
+
+      sub_mode_A=2;//enumerate all cases. must be 2 at this point
+      //	      sub_mode_B=2;//reverse identical code A and B
+
+#pragma omp parallel for schedule(guided) num_threads(num_cores)
+      for (int iAB = 0; iAB <calculated_trials*calculated_trials; iAB++){
+	int iA = iAB / calculated_trials;
+	int iB = iAB % calculated_trials;
+	if ( iA > iB ) continue; //remove duplicate	
+	cout<<"iA="<<iA<<", iB = "<<iB<<endl;
+	CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
+	CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
+	//	CSSCode codeB;
+	//	cout<<"construct codeC"<<endl;
+	SubsystemProductCode codeC(codeA,codeB);
+	//	cout<<"codeA.n = "<<codeA.n<<endl;
+	//	cout<<"codeC.codeA.n = "<<codeC.codeA.n<<endl;
+	string title_str_trial=title_str+"-test";
+	//	string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
+	// +"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
+	//	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, codeC)==2){
+	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC)==2){
+	}
+      }
+      //
     }
     break;
   default:
@@ -122,7 +170,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	     SubsystemProductCode code
 	     ){
   //return 2 when the code is duplicate, or either dax = 1 or daz = 1
-  if ( mode == 3) mode =1;
+  if ( mode == 3) mode =1; //mode 3 do some preprocessing in main()
 
   Real_Timer timer;  timer.tic();
   GF2mat Gax,Gaz,Cax,Caz;
@@ -151,11 +199,29 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	//input: na, Gax_row, ...
 	{
 	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
-	  if ( generate_code(Gax, Gaz, na, Gax_row, id_Gax, Gaz_row, id_Gaz, debug) ==2 ){
+
+	  //	  cout<<"debug"<<endl;
+	  if ( code.is_defined == 0 )
+	    cout<<"subsystem code not defined"<<endl;
+
+	  na = code.codeA.n;
+	  Gax_row = code.codeA.Gx_row;
+	  Gaz_row = code.codeA.Gz_row;
+	  
+	  //	  cout<<"code.codeA.n = "<<code.codeA.n<<endl;
+	  //debug=1;
+	  if ( code.codeA.generate_by_id(debug) == 2){
 	    if (debug) cout<<"duplicated case, return 2"<<endl;
-	    //	    cout<<"*";
 	    return 2;
-	  }	
+	  }
+	  Gax = code.codeA.Gx;
+	  Gaz = code.codeA.Gz;
+	  //	  cout<<Gax<<endl;
+
+	  /*	  if ( generate_code(Gax, Gaz, na, Gax_row, id_Gax, Gaz_row, id_Gaz, debug) ==2 ){
+	    if (debug) cout<<"duplicated case, return 2"<<endl;
+	    return 2;
+	    }*/	
 	  Cax=getC(Gax,Gaz);
 	  Caz=getC(Gax,Gaz,1);
 	}
@@ -197,14 +263,23 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
       case 4: //enumerate all codes with size nb=na
 	//input: na, Gax_row, ...
 	{
+	  //	  cout<<"running sub_mode_B =4"<<endl;
+	  if ( code.codeB.generate_by_id(debug) == 2){
+	    if (debug) cout<<"duplicated case, return 2"<<endl;
+	    return 2;
+	  }
 	  //	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
 	  nb=code.codeB.n; Gbx_row=code.codeB.Gx_row; Gbz_row=code.codeB.Gz_row;
 	  id_Gbx=code.codeB.id_Gx; id_Gbz=code.codeB.id_Gz;
+	  /*
 	  if ( generate_code(Gbx, Gbz, nb, Gbx_row, id_Gbx, Gbz_row, id_Gbz, debug) ==2 ){
 	    if (debug) cout<<"duplicated case, return 2"<<endl;
 	    //	    cout<<"*";
 	    return 2;
-	  }	
+	    }*/
+	  Gbx=code.codeB.Gx;
+	  Gbz=code.codeB.Gz;
+
 	  Cbx=getC(Gbx,Gbz);
 	  Cbz=getC(Gbx,Gbz,1);
 	}
