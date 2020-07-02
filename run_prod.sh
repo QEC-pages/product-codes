@@ -59,7 +59,7 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=528
+index=529
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
@@ -68,8 +68,8 @@ mode=3
 # 1: two random code; 2: identical reverse A B; 3: identical A B
 #sub_mode=3 #not used when mode=3
 sub_mode_A=3
-sub_mode_B=4 #enumerate code B as well
-na_input=6
+sub_mode_B=2 #4 #enumerate code B as well
+na_input=4
 n_low=9
 n_high=9
 k_low=1

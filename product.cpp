@@ -133,29 +133,57 @@ int main(int args, char ** argv){
 
       sub_mode_A=2;//enumerate all cases. must be 2 at this point
       //	      sub_mode_B=2;//reverse identical code A and B
+      switch ( sub_mode_B ){
+      case 2:
 
+	{
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
-      for (int iAB = 0; iAB <calculated_trials*calculated_trials; iAB++){
-	int iA = iAB / calculated_trials;
-	int iB = iAB % calculated_trials;
-	if ( iA > iB ) continue; //remove duplicate	
-	cout<<"iA="<<iA<<", iB = "<<iB<<endl;
-	CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
-	CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
-	//	CSSCode codeB;
-	//	cout<<"construct codeC"<<endl;
-	SubsystemProductCode codeC(codeA,codeB);
-	//	cout<<"codeA.n = "<<codeA.n<<endl;
-	//	cout<<"codeC.codeA.n = "<<codeC.codeA.n<<endl;
-	string title_str_trial=title_str+"-test";
-	//	string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
-	// +"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
-	//	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, codeC)==2){
-	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC)==2){
+	  for (int iAB = 0; iAB <calculated_trials; iAB++){
+	    int iA = iAB ;
+	    //	    int iB = iAB ;
+	    //	    if ( iA > iB ) continue; //remove duplicate	
+	    cout<<"iA="<<iA<<endl;
+	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
+	    //	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
+	    CSSCode codeB;
+	    SubsystemProductCode codeC(codeA,codeB);
+	    string title_str_trial=title_str+"-test";
+	    //	string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
+	    // +"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
+	    //	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, codeC)==2){
+	    simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC);
+	    simulate(title_str_trial, note, mode, sub_mode_A, 3, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC);
+	  }  
 	}
-      }
-      //
-    }
+	break;// sub_mode_B = 2; // include 3
+      case 4:
+	{
+	  //#pragma omp parallel for schedule(guided) num_threads(num_cores)
+	  for (int iAB = 0; iAB <calculated_trials*calculated_trials; iAB++){
+	    int iA = iAB / calculated_trials;
+	    int iB = iAB % calculated_trials;
+	    if ( iA > iB ) continue; //remove duplicate	
+	    cout<<"iA="<<iA<<", iB = "<<iB<<endl;
+	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
+	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
+	    SubsystemProductCode codeC(codeA,codeB);
+	    string title_str_trial=title_str+"-test";
+	    //	string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
+	    // +"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
+	    //	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, codeC)==2){
+	    if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC)==2){
+	    }
+	  }
+	}  
+	break;//sub_mode_B=4
+      default:
+	cout<<"main(): illegal sub_mode_B value"<<sub_mode_B<<endl;
+	throw 2;    
+      }//switch (sub_mode_B)
+
+
+}// mode=3
+
     break;
   default:
     cout<<"main(): illegal mode value"<<endl;
@@ -201,8 +229,12 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
 	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
 
 	  //	  cout<<"debug"<<endl;
-	  if ( code.is_defined == 0 )
-	    cout<<"subsystem code not defined"<<endl;
+	  if ( code.is_defined == 0 ){
+	    if ( code.codeA.is_defined )
+	      cout<<"subsystem code not defined, but code A is defined"<<endl;
+	    else
+	      cout<<"subsystem code not defined,"<<endl;
+	  }
 
 	  na = code.codeA.n;
 	  Gax_row = code.codeA.Gx_row;
