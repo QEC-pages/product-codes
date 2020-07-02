@@ -174,8 +174,10 @@ int main(int args, char ** argv){
 	{
 	  int count=0;
 	  const int total = calculated_trials*calculated_trials;
+	  count = total/10*9; // start from half
+	  //	  cout<<"start from half"<<endl;
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
-	  for (int iAB = 0; iAB <total; iAB++){
+	  for (int iAB = count; iAB <total; iAB++){
 #pragma omp critical
 	    {
 	      count++;

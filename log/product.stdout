@@ -19333,3 +19333,37 @@ note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:
 cmd () {
 	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
 }
+on sbatch
+
+============= The World is Unitary ============
+start job on i12 Wed Jul 1 22:42:18 PDT 2020
+
+check logfile: log/product532-size6.log
+make product.o && make lib && make product.out
+make[3]: `product.o' is up to date.
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.out' is up to date.
+start job on SBATCH:i12 size6 run532 max_process:/max_trial:1000000 Wed Jul 1 22:42:18 PDT 2020
+SLURM_JOB_ID:1689720 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial532, log_file:log/product532-size6.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}
+on sbatch
+
+============= The World is Unitary ============
+start job on i11 Thu Jul 2 15:09:39 PDT 2020
+
+check logfile: log/product533-size6.log
+make product.o && make lib && make product.out
+make[3]: `product.o' is up to date.
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.out' is up to date.
+start job on SBATCH:i11 size6 run533 max_process:/max_trial:1000000 Thu Jul 2 15:09:39 PDT 2020
+SLURM_JOB_ID:1694771 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial533, log_file:log/product533-size6.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}

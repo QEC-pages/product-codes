@@ -59,7 +59,7 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=531
+index=533
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
