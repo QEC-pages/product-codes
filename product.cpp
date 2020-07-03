@@ -174,14 +174,17 @@ int main(int args, char ** argv){
 	{
 	  int count=0;
 	  const int total = calculated_trials*calculated_trials;
-	  count = total/10*9; // start from half
+	  count = total/100*75; // start from half
 	  //	  cout<<"start from half"<<endl;
+	  //guided for better speed
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
+	  //
+	  //#pragma omp parallel for schedule(dynamical,1) num_threads(num_cores)
 	  for (int iAB = count; iAB <total; iAB++){
 #pragma omp critical
 	    {
 	      count++;
-	      if (count % 100 ==0){
+	      if (count % 500 ==0){
 		cout<<count*100/total<<"% finished. total: "<<total
 		    <<", remaining time:"<<timer.toc()/count*(total-count)/60<<" min"
 		    <<endl;
@@ -189,7 +192,7 @@ int main(int args, char ** argv){
 	    }
 	    int iA = iAB / calculated_trials;
 	    int iB = iAB % calculated_trials;
-	    if ( iA > iB ) continue; //remove duplicate	
+	    if ( iA < iB ) continue; //remove duplicate	
 	    //	    cout<<"iA="<<iA<<", iB = "<<iB<<endl;
 	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
 	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);

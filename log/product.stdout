@@ -19367,3 +19367,98 @@ note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:
 cmd () {
 	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
 }
+Thu Jul  2 15:11:59 PDT 2020
+finish job on i11 533 70/1000000 Thu Jul 2 15:11:59 PDT 2020
+on sbatch
+
+============= The World is Unitary ============
+start job on i11 Thu Jul 2 15:25:45 PDT 2020
+
+check logfile: log/product534-size6.log
+make product.o && make lib && make product.out
+make[3]: `product.o' is up to date.
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.out' is up to date.
+start job on SBATCH:i11 size6 run534 max_process:/max_trial:1000000 Thu Jul 2 15:25:45 PDT 2020
+SLURM_JOB_ID:1694865 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial534, log_file:log/product534-size6.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}
+on sbatch
+
+============= The World is Unitary ============
+start job on i12 Thu Jul 2 15:26:18 PDT 2020
+
+check logfile: log/product535-size6.log
+make product.o && make lib && make product.out
+g++ -O3 -Wall -std=c++11 -fopenmp `pkg-config --cflags itpp` `pkg-config --libs itpp` -c product.cpp
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+g++ -O3 -Wall -std=c++11 -fopenmp `pkg-config --cflags itpp` `pkg-config --libs itpp` -o product.out product.o weilei_lib/mm_read.o weilei_lib/mmio.o weilei_lib/mm_write.o weilei_lib/lib.o weilei_lib/dist.o weilei_lib/product_lib.o weilei_lib/bp.o 
+start job on SBATCH:i12 size6 run535 max_process:/max_trial:1000000 Thu Jul 2 15:26:21 PDT 2020
+SLURM_JOB_ID:1694867 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial535, log_file:log/product535-size6.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}
+on sbatch
+
+============= The World is Unitary ============
+start job on i13 Thu Jul 2 15:31:29 PDT 2020
+
+check logfile: log/product536-size6.log
+make product.o && make lib && make product.out
+make[3]: `product.o' is up to date.
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.out' is up to date.
+start job on SBATCH:i13 size6 run536 max_process:/max_trial:1000000 Thu Jul 2 15:31:29 PDT 2020
+SLURM_JOB_ID:1694893 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial536, log_file:log/product536-size6.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}
+on sbatch
+
+============= The World is Unitary ============
+start job on i42 Thu Jul 2 15:32:00 PDT 2020
+
+check logfile: log/product536-size6.log
+make product.o && make lib && make product.out
+make[3]: `product.o' is up to date.
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.out' is up to date.
+start job on SBATCH:i42 size6 run536 max_process:/max_trial:1000000 Thu Jul 2 15:32:00 PDT 2020
+SLURM_JOB_ID:1694899 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial536, log_file:log/product536-size6.log status_file:
+Thu Jul  2 15:32:00 PDT 2020
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}
+finish job on i13 536 70/1000000 Thu Jul 2 15:32:00 PDT 2020
+on sbatch
+
+============= The World is Unitary ============
+start job on i07 Thu Jul 2 15:43:02 PDT 2020
+
+check logfile: log/product537-size6.log
+make product.o && make lib && make product.out
+g++ -O3 -Wall -std=c++11 -fopenmp `pkg-config --cflags itpp` `pkg-config --libs itpp` -c product.cpp
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+g++ -O3 -Wall -std=c++11 -fopenmp `pkg-config --cflags itpp` `pkg-config --libs itpp` -o product.out product.o weilei_lib/mm_read.o weilei_lib/mmio.o weilei_lib/mm_write.o weilei_lib/lib.o weilei_lib/dist.o weilei_lib/product_lib.o weilei_lib/bp.o 
+start job on SBATCH:i07 size6 run537 max_process:/max_trial:1000000 Thu Jul 2 15:43:05 PDT 2020
+SLURM_JOB_ID:1695007 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial537, log_file:log/product537-size6.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
+}
+Thu Jul  2 15:54:26 PDT 2020
+finish job on i42 536 70/1000000 Thu Jul 2 15:54:26 PDT 2020
+Thu Jul  2 16:27:28 PDT 2020
+finish job on i07 537 70/1000000 Thu Jul 2 16:27:28 PDT 2020
+Thu Jul  2 16:57:43 PDT 2020
+finish job on i12 535 70/1000000 Thu Jul 2 16:57:43 PDT 2020
