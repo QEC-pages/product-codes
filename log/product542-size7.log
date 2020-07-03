@@ -1,0 +1,6 @@
+start job on SBATCH:c47 size7 run542 max_process:/max_trial:1000000 Thu Jul 2 17:52:57 PDT 2020
+SLURM_JOB_ID:1697351 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:7, n_low:9, n_high=9, data_folder:data/random4/trial542, log_file:log/product542-size7.log status_file:
+
+finish job on c22 542 70/1000000 Thu Jul 2 17:52:57 PDT 2020
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=2

@@ -2,15 +2,15 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=60
+#SBATCH --cpus-per-task=64
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=0-02:00:00     
+#SBATCH --time=30-00:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
 #SBATCH --error=log/product.stderror --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
+#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
 #SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
@@ -59,7 +59,7 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=537
+index=544
 # 250-266  for random code on cherenkov
 
 max_trial=1000000
@@ -69,7 +69,7 @@ mode=3
 #sub_mode=3 #not used when mode=3
 sub_mode_A=3
 sub_mode_B=4 #4 #enumerate code B as well
-na_input=6
+na_input=7
 n_low=9
 n_high=9
 k_low=1

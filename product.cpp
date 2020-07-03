@@ -174,8 +174,10 @@ int main(int args, char ** argv){
 	{
 	  int count=0;
 	  const int total = calculated_trials*calculated_trials;
-	  count = total/100*75; // start from half
-	  //	  cout<<"start from half"<<endl;
+	  const int chunk_size_max = 10000;
+	  const int chunk_size = ( total/100 < chunk_size_max ) ? total/100:chunk_size_max ;
+	  count = total/10*7; // start from some point, 50%, 70%, ...
+	  cout<<"start from count = "<<count<<endl;
 	  //guided for better speed
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
 	  //
@@ -184,8 +186,8 @@ int main(int args, char ** argv){
 #pragma omp critical
 	    {
 	      count++;
-	      if (count % 500 ==0){
-		cout<<count*100/total<<"% finished. total: "<<total
+	      if (count % chunk_size == 0){
+		cout<<count<<", "<<(int) (count*1.0/total*100)<<"% finished. total: "<<total
 		    <<", remaining time:"<<timer.toc()/count*(total-count)/60<<" min"
 		    <<endl;
 	      }

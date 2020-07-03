@@ -1,0 +1,238 @@
+start job on SBATCH:c23 size7 run540 max_process:/max_trial:1000000 Thu Jul 2 17:32:02 PDT 2020
+SLURM_JOB_ID:1697233 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:7, n_low:9, n_high=9, data_folder:data/random4/trial540, log_file:log/product540-size7.log status_file:
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=5
+start calculating for 9284 cases out of 9988649 trials.
+time used: 13.3987 sec
+2000, 0% finished. total: 86192656, remaining time:1.74533 min
+4000, 0% finished. total: 86192656, remaining time:3.79951 min
+6000, 0% finished. total: 86192656, remaining time:4.0472 min
+8000, 0% finished. total: 86192656, remaining time:4.28983 min
+10000, 0% finished. total: 86192656, remaining time:4.67758 min
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=4
+12000, 0% finished. total: 86192656, remaining time:5.15694 min
+14000, 0% finished. total: 86192656, remaining time:4.7625 min
+16000, 0% finished. total: 86192656, remaining time:4.65579 min
+18000, 0% finished. total: 86192656, remaining time:4.8743 min
+20000, 0% finished. total: 86192656, remaining time:5.04462 min
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=5
+22000, 0% finished. total: 86192656, remaining time:5.20973 min
+start calculating for 9284 cases out of 8206124 trials.
+time used: 13.4939 sec
+24000, 0% finished. total: 86192656, remaining time:5.48523 min
+26000, 0% finished. total: 86192656, remaining time:5.38414 min
+2000, 0% finished. total: 86192656, remaining time:6.37872 min
+4000, 0% finished. total: 86192656, remaining time:5.34873 min
+28000, 0% finished. total: 86192656, remaining time:5.3916 min
+30000, 0% finished. total: 86192656, remaining time:5.45903 min
+6000, 0% finished. total: 86192656, remaining time:5.81545 min
+32000, 0% finished. total: 86192656, remaining time:5.43647 min
+8000, 0% finished. total: 86192656, remaining time:6.02699 min
+10000, 0% finished. total: 86192656, remaining time:5.40955 min
+34000, 0% finished. total: 86192656, remaining time:5.48307 min
+12000, 0% finished. total: 86192656, remaining time:5.15024 min
+36000, 0% finished. total: 86192656, remaining time:5.35189 min
+38000, 0% finished. total: 86192656, remaining time:5.38848 min
+14000, 0% finished. total: 86192656, remaining time:5.56253 min
+40000, 0% finished. total: 86192656, remaining time:5.34613 min
+16000, 0% finished. total: 86192656, remaining time:5.91028 min
+42000, 0% finished. total: 86192656, remaining time:5.3532 min
+44000, 0% finished. total: 86192656, remaining time:5.35694 min
+18000, 0% finished. total: 86192656, remaining time:6.12232 min
+46000, 0% finished. total: 86192656, remaining time:5.33398 min
+48000, 0% finished. total: 86192656, remaining time:5.34575 min
+20000, 0% finished. total: 86192656, remaining time:6.39415 min
+50000, 0% finished. total: 86192656, remaining time:5.27193 min
+22000, 0% finished. total: 86192656, remaining time:6.40711 min
+52000, 0% finished. total: 86192656, remaining time:5.24972 min
+54000, 0% finished. total: 86192656, remaining time:5.20399 min
+24000, 0% finished. total: 86192656, remaining time:6.47869 min
+56000, 0% finished. total: 86192656, remaining time:5.17007 min
+26000, 0% finished. total: 86192656, remaining time:6.67775 min
+58000, 0% finished. total: 86192656, remaining time:5.27954 min
+60000, 0% finished. total: 86192656, remaining time:5.26232 min
+28000, 0% finished. total: 86192656, remaining time:6.82978 min
+62000, 0% finished. total: 86192656, remaining time:5.21662 min
+64000, 0% finished. total: 86192656, remaining time:5.17976 min
+30000, 0% finished. total: 86192656, remaining time:6.8291 min
+66000, 0% finished. total: 86192656, remaining time:5.12384 min
+68000, 0% finished. total: 86192656, remaining time:5.12155 min
+32000, 0% finished. total: 86192656, remaining time:6.93122 min
+70000, 0% finished. total: 86192656, remaining time:5.04982 min
+34000, 0% finished. total: 86192656, remaining time:6.8907 min
+72000, 0% finished. total: 86192656, remaining time:5.07552 min
+74000, 0% finished. total: 86192656, remaining time:5.10251 min
+36000, 0% finished. total: 86192656, remaining time:6.94646 min
+76000, 0% finished. total: 86192656, remaining time:5.03416 min
+38000, 0% finished. total: 86192656, remaining time:6.96598 min
+78000, 0% finished. total: 86192656, remaining time:5.04853 min
+40000, 0% finished. total: 86192656, remaining time:6.9032 min
+80000, 0% finished. total: 86192656, remaining time:5.07684 min
+82000, 0% finished. total: 86192656, remaining time:5.10003 min
+42000, 0% finished. total: 86192656, remaining time:6.94891 min
+84000, 0% finished. total: 86192656, remaining time:5.02885 min
+44000, 0% finished. total: 86192656, remaining time:6.85168 min
+86000, 0% finished. total: 86192656, remaining time:5.04433 min
+88000, 0% finished. total: 86192656, remaining time:5.04327 min
+46000, 0% finished. total: 86192656, remaining time:6.85918 min
+90000, 0% finished. total: 86192656, remaining time:4.97002 min
+92000, 0% finished. total: 86192656, remaining time:4.95699 min
+94000, 0% finished. total: 86192656, remaining time:4.88042 min
+48000, 0% finished. total: 86192656, remaining time:6.88152 min
+96000, 0% finished. total: 86192656, remaining time:4.80648 min
+98000, 0% finished. total: 86192656, remaining time:4.81252 min
+100000, 0% finished. total: 86192656, remaining time:4.74084 min
+50000, 0% finished. total: 86192656, remaining time:6.93793 min
+102000, 0% finished. total: 86192656, remaining time:4.66502 min
+104000, 0% finished. total: 86192656, remaining time:4.68102 min
+106000, 0% finished. total: 86192656, remaining time:4.59722 min
+52000, 0% finished. total: 86192656, remaining time:6.93269 min
+54000, 0% finished. total: 86192656, remaining time:6.89577 min
+56000, 0% finished. total: 86192656, remaining time:6.83638 min
+58000, 0% finished. total: 86192656, remaining time:6.78885 min
+60000, 0% finished. total: 86192656, remaining time:6.70047 min
+62000, 0% finished. total: 86192656, remaining time:6.6122 min
+64000, 0% finished. total: 86192656, remaining time:6.49556 min
+66000, 0% finished. total: 86192656, remaining time:6.40658 min
+68000, 0% finished. total: 86192656, remaining time:6.31984 min
+70000, 0% finished. total: 86192656, remaining time:6.2336 min
+72000, 0% finished. total: 86192656, remaining time:6.14006 min
+74000, 0% finished. total: 86192656, remaining time:6.04221 min
+76000, 0% finished. total: 86192656, remaining time:5.95061 min
+78000, 0% finished. total: 86192656, remaining time:5.85752 min
+80000, 0% finished. total: 86192656, remaining time:5.76555 min
+82000, 0% finished. total: 86192656, remaining time:5.68488 min
+84000, 0% finished. total: 86192656, remaining time:5.60839 min
+86000, 0% finished. total: 86192656, remaining time:5.52728 min
+88000, 0% finished. total: 86192656, remaining time:5.44525 min
+90000, 0% finished. total: 86192656, remaining time:5.36625 min
+92000, 0% finished. total: 86192656, remaining time:5.27853 min
+94000, 0% finished. total: 86192656, remaining time:5.18956 min
+96000, 0% finished. total: 86192656, remaining time:5.10018 min
+98000, 0% finished. total: 86192656, remaining time:5.01326 min
+100000, 0% finished. total: 86192656, remaining time:4.92804 min
+102000, 0% finished. total: 86192656, remaining time:4.84877 min
+104000, 0% finished. total: 86192656, remaining time:4.77144 min
+106000, 0% finished. total: 86192656, remaining time:4.70939 min
+108000, 0% finished. total: 86192656, remaining time:319.603 min
+110000, 0% finished. total: 86192656, remaining time:313.787 min
+112000, 0% finished. total: 86192656, remaining time:308.178 min
+114000, 0% finished. total: 86192656, remaining time:302.766 min
+116000, 0% finished. total: 86192656, remaining time:297.541 min
+108000, 0% finished. total: 86192656, remaining time:339.288 min
+110000, 0% finished. total: 86192656, remaining time:333.169 min
+112000, 0% finished. total: 86192656, remaining time:327.214 min
+114000, 0% finished. total: 86192656, remaining time:321.467 min
+116000, 0% finished. total: 86192656, remaining time:315.92 min
+118000, 0% finished. total: 86192656, remaining time:735.501 min
+120000, 0% finished. total: 86192656, remaining time:723.33 min
+122000, 0% finished. total: 86192656, remaining time:711.458 min
+124000, 0% finished. total: 86192656, remaining time:699.968 min
+118000, 0% finished. total: 86192656, remaining time:770.698 min
+120000, 0% finished. total: 86192656, remaining time:757.901 min
+122000, 0% finished. total: 86192656, remaining time:745.461 min
+124000, 0% finished. total: 86192656, remaining time:733.422 min
+126000, 0% finished. total: 86192656, remaining time:802.221 min
+126000, 0% finished. total: 86192656, remaining time:843.919 min
+128000, 0% finished. total: 86192656, remaining time:1298.2 min
+130000, 0% finished. total: 86192656, remaining time:1278.24 min
+132000, 0% finished. total: 86192656, remaining time:1258.85 min
+134000, 0% finished. total: 86192656, remaining time:1240.03 min
+136000, 0% finished. total: 86192656, remaining time:1939.37 min
+138000, 0% finished. total: 86192656, remaining time:1911.26 min
+140000, 0% finished. total: 86192656, remaining time:1883.92 min
+142000, 0% finished. total: 86192656, remaining time:1857.34 min
+144000, 0% finished. total: 86192656, remaining time:1831.5 min
+146000, 0% finished. total: 86192656, remaining time:2632.17 min
+148000, 0% finished. total: 86192656, remaining time:2596.54 min
+150000, 0% finished. total: 86192656, remaining time:2561.86 min
+152000, 0% finished. total: 86192656, remaining time:2528.1 min
+154000, 0% finished. total: 86192656, remaining time:2495.21 min
+156000, 0% finished. total: 86192656, remaining time:3384 min
+158000, 0% finished. total: 86192656, remaining time:3341.14 min
+160000, 0% finished. total: 86192656, remaining time:3299.3 min
+162000, 0% finished. total: 86192656, remaining time:3258.5 min
+164000, 0% finished. total: 86192656, remaining time:3218.69 min
+166000, 0% finished. total: 86192656, remaining time:4196.72 min
+168000, 0% finished. total: 86192656, remaining time:4146.66 min
+170000, 0% finished. total: 86192656, remaining time:4097.78 min
+172000, 0% finished. total: 86192656, remaining time:4050.04 min
+174000, 0% finished. total: 86192656, remaining time:4003.4 min
+176000, 0% finished. total: 86192656, remaining time:5048.8 min
+178000, 0% finished. total: 86192656, remaining time:4992 min
+180000, 0% finished. total: 86192656, remaining time:4936.42 min
+182000, 0% finished. total: 86192656, remaining time:4882.06 min
+184000, 0% finished. total: 86192656, remaining time:4828.88 min
+186000, 0% finished. total: 86192656, remaining time:5931.59 min
+188000, 0% finished. total: 86192656, remaining time:5868.38 min
+190000, 0% finished. total: 86192656, remaining time:5806.47 min
+192000, 0% finished. total: 86192656, remaining time:5745.85 min
+194000, 0% finished. total: 86192656, remaining time:5686.49 min
+196000, 0% finished. total: 86192656, remaining time:6840.63 min
+198000, 0% finished. total: 86192656, remaining time:6771.38 min
+200000, 0% finished. total: 86192656, remaining time:6703.51 min
+202000, 0% finished. total: 86192656, remaining time:6636.99 min
+204000, 0% finished. total: 86192656, remaining time:6571.77 min
+206000, 0% finished. total: 86192656, remaining time:7774.48 min
+208000, 0% finished. total: 86192656, remaining time:7699.58 min
+210000, 0% finished. total: 86192656, remaining time:7626.07 min
+212000, 0% finished. total: 86192656, remaining time:7553.96 min
+214000, 0% finished. total: 86192656, remaining time:7483.19 min
+216000, 0% finished. total: 86192656, remaining time:8752.36 min
+218000, 0% finished. total: 86192656, remaining time:8671.87 min
+220000, 0% finished. total: 86192656, remaining time:8592.83 min
+222000, 0% finished. total: 86192656, remaining time:8515.22 min
+224000, 0% finished. total: 86192656, remaining time:8439 min
+226000, 0% finished. total: 86192656, remaining time:9711.42 min
+228000, 0% finished. total: 86192656, remaining time:9626.04 min
+230000, 0% finished. total: 86192656, remaining time:9542.11 min
+232000, 0% finished. total: 86192656, remaining time:9459.63 min
+234000, 0% finished. total: 86192656, remaining time:9378.56 min
+236000, 0% finished. total: 86192656, remaining time:10460 min
+238000, 0% finished. total: 86192656, remaining time:10601.8 min
+240000, 0% finished. total: 86192656, remaining time:10513.2 min
+242000, 0% finished. total: 86192656, remaining time:10426.1 min
+244000, 0% finished. total: 86192656, remaining time:10340.4 min
+246000, 0% finished. total: 86192656, remaining time:10912 min
+248000, 0% finished. total: 86192656, remaining time:11594.2 min
+250000, 0% finished. total: 86192656, remaining time:11501.2 min
+252000, 0% finished. total: 86192656, remaining time:11409.6 min
+254000, 0% finished. total: 86192656, remaining time:11319.5 min
+256000, 0% finished. total: 86192656, remaining time:11328.8 min
+258000, 0% finished. total: 86192656, remaining time:12599.2 min
+260000, 0% finished. total: 86192656, remaining time:12502 min
+262000, 0% finished. total: 86192656, remaining time:12406.3 min
+264000, 0% finished. total: 86192656, remaining time:12312 min
+266000, 0% finished. total: 86192656, remaining time:12219.2 min
+268000, 0% finished. total: 86192656, remaining time:13574.9 min
+270000, 0% finished. total: 86192656, remaining time:13474.1 min
+272000, 0% finished. total: 86192656, remaining time:13374.7 min
+274000, 0% finished. total: 86192656, remaining time:13276.7 min
+276000, 0% finished. total: 86192656, remaining time:13180.2 min
+278000, 0% finished. total: 86192656, remaining time:13120.9 min
+280000, 0% finished. total: 86192656, remaining time:13026.8 min
+282000, 0% finished. total: 86192656, remaining time:12934.1 min
+284000, 0% finished. total: 86192656, remaining time:12842.8 min
+286000, 0% finished. total: 86192656, remaining time:12752.7 min
+288000, 0% finished. total: 86192656, remaining time:14108 min
+290000, 0% finished. total: 86192656, remaining time:14010.4 min
+292000, 0% finished. total: 86192656, remaining time:13914.1 min
+294000, 0% finished. total: 86192656, remaining time:13819.1 min
+296000, 0% finished. total: 86192656, remaining time:13725.4 min
