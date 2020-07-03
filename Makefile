@@ -11,7 +11,7 @@ ITPP=`pkg-config --cflags itpp` `pkg-config --libs itpp`
 
 
 #make object file for target file
-%.o:%.cpp
+%.o:%.cpp $(object_files)
 	$(CXX) $(START) $(END) -c $<
 #compile object files for lib files
 lib:
@@ -21,7 +21,7 @@ object_files=$(INC_DIR)/mm_read.o $(INC_DIR)/mmio.o $(INC_DIR)/mm_write.o $(INC_
 %.out:%.o $(obejct_files)
 	$(CXX) $(ITPP) -o $@ $< $(object_files)
 
-cmd=make $@.o && make lib && make $@.out
+cmd=make lib && make $@.o  && make $@.out
 # eg: make test.o && make lib && make test.out
 product:
 	$(cmd)

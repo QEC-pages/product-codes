@@ -1,0 +1,36 @@
+start job on SBATCH:i11 size7 run551 max_process:/max_trial:1000 Thu Jul 2 23:49:05 PDT 2020
+SLURM_JOB_ID:1704555 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=7, n_high=7, k_low=1, k_high=1 sub_mode=], sub_mode_A:1, sub_mode_B:4, na_input:7, n_low:7, n_high=7, data_folder:data/random4/trial551, num_core=, log_file:log/product551-size7.log status_file:
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=5
+start calculating for 9284 cases out of 12684646 trials.
+time used: 5.9215 sec
+wrong input or no input for sub_mode_A. It should be 2
+10000, 0% finished. total: 86192656, remaining time:0.560469 min
+20000, 0% finished. total: 86192656, remaining time:0.556021 min
+30000, 0% finished. total: 86192656, remaining time:0.554073 min
+40000, 0% finished. total: 86192656, remaining time:0.553247 min
+50000, 0% finished. total: 86192656, remaining time:0.546948 min
+60000, 0% finished. total: 86192656, remaining time:0.545341 min
+70000, 0% finished. total: 86192656, remaining time:0.539946 min
+80000, 0% finished. total: 86192656, remaining time:0.530812 min
+90000, 0% finished. total: 86192656, remaining time:0.521286 min
+100000, 0% finished. total: 86192656, remaining time:0.508506 min
+110000, 0% finished. total: 86192656, remaining time:105.394 min
+120000, 0% finished. total: 86192656, remaining time:234.182 min
+130000, 0% finished. total: 86192656, remaining time:406.049 min
+140000, 0% finished. total: 86192656, remaining time:605.352 min
+150000, 0% finished. total: 86192656, remaining time:831.954 min
+160000, 0% finished. total: 86192656, remaining time:1085.96 min
+170000, 0% finished. total: 86192656, remaining time:1357.45 min
+180000, 0% finished. total: 86192656, remaining time:1635.67 min
+190000, 0% finished. total: 86192656, remaining time:1922.48 min
+200000, 0% finished. total: 86192656, remaining time:2221.67 min

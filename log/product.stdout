@@ -19591,3 +19591,37 @@ note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:
 cmd () {
 	./.product$index.out mode=$mode sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i num_cores=$num_cores note=$note
 }
+on sbatch
+
+============= The World is Unitary ============
+start job on i11 Thu Jul 2 23:49:05 PDT 2020
+
+check logfile: log/product551-size7.log
+make lib && make product.o  && make product.out
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.o' is up to date.
+make[3]: `product.out' is up to date.
+start job on SBATCH:i11 size7 run551 max_process:/max_trial:1000 Thu Jul 2 23:49:05 PDT 2020
+SLURM_JOB_ID:1704555 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=7, n_high=7, k_low=1, k_high=1 sub_mode=], sub_mode_A:1, sub_mode_B:4, na_input:7, n_low:7, n_high=7, data_folder:data/random4/trial551, num_core=, log_file:log/product551-size7.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 seed=1 note=$note num_cores=$num_cores n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial na_input=$na_input
+}
+on sbatch
+
+============= The World is Unitary ============
+start job on i47 Thu Jul 2 23:51:53 PDT 2020
+
+check logfile: log/product552-size6.log
+make lib && make product.o  && make product.out
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.o' is up to date.
+make[3]: `product.out' is up to date.
+start job on SBATCH:i47 size6 run552 max_process:/max_trial:1000 Thu Jul 2 23:51:53 PDT 2020
+SLURM_JOB_ID:1704573 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=7, n_high=7, k_low=1, k_high=1 sub_mode=], sub_mode_A:1, sub_mode_B:4, na_input:6, n_low:7, n_high=7, data_folder:data/random4/trial552, num_core=, log_file:log/product552-size6.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 seed=1 note=$note num_cores=$num_cores n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial na_input=$na_input
+}

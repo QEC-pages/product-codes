@@ -1,0 +1,17 @@
+start job on SBATCH:i47 size6 run552 max_process:/max_trial:1000 Thu Jul 2 23:51:53 PDT 2020
+SLURM_JOB_ID:1704573 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=7, n_high=7, k_low=1, k_high=1 sub_mode=], sub_mode_A:1, sub_mode_B:4, na_input:6, n_low:7, n_high=7, data_folder:data/random4/trial552, num_core=, log_file:log/product552-size6.log status_file:
+start calculating for 469 cases out of 72577 trials.
+time used: 0.104294 sec
+wrong input or no input for sub_mode_A. It should be 2
+2199, 0% finished. total: 219961, remaining time:0.0781166 min
+4398, 1% finished. total: 219961, remaining time:0.0649239 min
+6597, 2% finished. total: 219961, remaining time:3.08169 min
+8796, 3% finished. total: 219961, remaining time:9.1367 min
+10995, 4% finished. total: 219961, remaining time:12.702 min
+13194, 5% finished. total: 219961, remaining time:16.3397 min
+15393, 6% finished. total: 219961, remaining time:16.6876 min
+17592, 7% finished. total: 219961, remaining time:18.324 min
+19791, 8% finished. total: 219961, remaining time:20.2297 min
+21990, 9% finished. total: 219961, remaining time:20.9964 min
+24189, 10% finished. total: 219961, remaining time:22.9721 min

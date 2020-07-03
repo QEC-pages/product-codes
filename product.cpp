@@ -18,7 +18,7 @@ using namespace common;
  */
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, 
 	     int n_low, int n_high, int k_low, int k_high, int debug,
-	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,
+	     //	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,
 	     SubsystemProductCode code
 	     );
 
@@ -26,27 +26,28 @@ int main(int args, char ** argv){
   itpp::Parser parser;
   parser.init(args,argv);
   parser.set_silentmode(true);
-  int num_cores=2; parser.get(num_cores,"num_cores");
+  int num_cores; parser.get(num_cores,"num_cores");
   int mode = -1; parser.get(mode,"mode"); //default values are illegal, to make sure there is an input value
   int sub_mode_A = -1; parser.get(sub_mode_A,"sub_mode_A");
   int sub_mode_B = -1; parser.get(sub_mode_B,"sub_mode_B");
   std::string title_str="no-title";  parser.get(title_str,"title");
   std::string note="no-note"; parser.get(note,"note");
-  int debug = 0; //default debug on
+  int debug; //default debug on
   parser.get(debug,"debug");
-  int seed=1; parser.get(seed,"seed");
+  int seed; parser.get(seed,"seed");
   //  std::cout<<"\t seed:"<<seed;
   if (debug) std::cout<<"input seed: "<<seed<<" --> ";
   seed = seed+get_time(3);
   itpp::RNG_reset(seed); 
   if (debug)   std::cout<<"converted seed:"<<seed;
 
+  //parameters for random simulation
   int na_input;  parser.get(na_input,"na_input");
   int n_low;  parser.get(n_low,"n_low");
   int n_high;  parser.get(n_high,"n_high");
   int k_low;  parser.get(k_low,"k_low");
   int k_high;  parser.get(k_high,"k_high");
-
+  int max_trial; parser.get(max_trial,"max_trial");
 
   Real_Timer timer;  timer.tic();
 
@@ -61,8 +62,21 @@ int main(int args, char ** argv){
       //run a random simulation
     {
       //allow mode = 1, sub_mode_A = 1; sub_mode_B=1,2,3
-      SubsystemProductCode code_temp;
-      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0, code_temp);
+      cout<<"max_trial = "<<max_trial<<endl;
+      int count=0;
+#pragma omp parallel for schedule(guided) num_threads(num_cores)
+      for ( int i =0; i< max_trial; i++){
+	SubsystemProductCode code_temp;
+	//      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0, code_temp);
+	string title_str_trial = title_str +"-" +to_string(i);
+	simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug, code_temp);
+#pragma omp critical
+	{
+	  count++;
+	  if ( count % 10 == 0 ) 
+	    cout<<"count="<<count<<endl;
+	}
+      }
     }
     break;    
   case 2:
@@ -70,7 +84,8 @@ int main(int args, char ** argv){
       //check a specific case
       //allow mode = 2, sub_mode_A = 1; sub_mode_B=1,2,3
       SubsystemProductCode code_temp;
-      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0,0,0, debug,0,0,0,0,0, code_temp);
+      //      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0,0,0, debug,0,0,0,0,0, code_temp);
+      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0,0,0, debug, code_temp);
     }
     break;
   case 3:       //enumerate all cases with size na
@@ -133,6 +148,9 @@ int main(int args, char ** argv){
       cout<<"time used: "<<timer.toc()<< " sec"<<endl;
       timer.tic();
 
+      if ( sub_mode_A != 2)
+	cout<<"wrong input or no input for sub_mode_A. It should be 2"<<endl;
+
       sub_mode_A=2;//enumerate all cases. must be 2 at this point
       //	      sub_mode_B=2;//reverse identical code A and B
       switch ( sub_mode_B ){
@@ -163,8 +181,11 @@ int main(int args, char ** argv){
 	    string title_str_trial=title_str+"-na"+to_string(codeA.n)+"-Gax_row"+to_string(codeA.Gx_row)+"-id_Gax"+to_string(codeA.id_Gx)
 	      +"-Gaz_row"+to_string(codeA.Gz_row)+"-id_Gaz"+to_string(codeA.id_Gz);
 	    //	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, codeC)==2){
-	    simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC);
-	    simulate(title_str_trial, note, mode, sub_mode_A, 3, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC);
+	    //	    simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC);
+	    //	    simulate(title_str_trial, note, mode, sub_mode_A, 3, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC);
+
+	    simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, codeC);
+	    simulate(title_str_trial, note, mode, sub_mode_A, 3, 0, 0, 0, 0, debug,  codeC);
 	  }  
 	}
 	break;// sub_mode_B = 2; // include 3
@@ -208,8 +229,9 @@ int main(int args, char ** argv){
 	    //	string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
 	    // +"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
 	    //	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, codeC)==2){
-	    if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC)==2){
-	    }
+	    //	    simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC)
+	    simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, codeC);
+	    
 	  }
 	}  
 	break;//sub_mode_B=4
@@ -231,7 +253,7 @@ int main(int args, char ** argv){
 
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B,     //general info
 	     int n_low, int n_high, int k_low, int k_high, int debug,                     //for random simulation
-	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,   //for enumarating all cases
+	     //int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,   //for enumarating all cases
 	     SubsystemProductCode code
 	     ){
   //return 2 when the code is duplicate, or either dax = 1 or daz = 1
@@ -263,7 +285,8 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
       case 2://enumerate all codes with size na
 	//input: na, Gax_row, ...
 	{
-	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
+	  //	  na=na_input; Gax_row=Gax_row_input; Gaz_row=Gaz_row_input;
+
 
 	  //	  cout<<"debug"<<endl;
 	  if ( code.codeA.is_defined == 0 )
@@ -440,7 +463,7 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
   }
   //2 for concatenate
   //  if ( product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,2) == 2)    std::cout<<title<<std::endl;
-  flag_chain_complex=1;
+  //  flag_chain_complex=1; //force estimate the chain complex code
   if (     flag_chain_complex ){
     //save code A B
     if ( mode ==1 ){
@@ -454,8 +477,27 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
     //    cout<<"mode 3 4"<<endl;
     if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,3) == 2)  
           std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
-    if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  
-          std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
+
+    if ( mode == 1 && sub_mode_A == 2 && sub_mode_B == 4){
+      //pass
+      //no need to calculate it because all codes will be enumerated, hence include a symmetry between X and Z
+    }else{
+      if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  
+	std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
+    }
+
+    //check rank
+    /*
+    if (Gax.row_rank() < Gax.rows())
+      cout<<common::red_text("Gax not full rank")<<endl;
+    if (Gaz.row_rank() < Gaz.rows())
+      cout<<common::red_text("Gaz not full rank")<<endl;
+    if (Gbx.row_rank() < Gbx.rows())
+      cout<<common::red_text("Gbx not full rank")<<endl;
+    if (Gbz.row_rank() < Gbz.rows())
+      cout<<common::red_text("Gbz not full rank")<<endl;
+    */
+
   }
 
   if ( debug )  timer.toc_print();

@@ -59,19 +59,22 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=545
+index=552
 # 250-266  for random code on cherenkov
 
-max_trial=1000000
+max_trial=1000 #1000000
 debug=0
 mode=3
-# 1: two random code; 2: identical reverse A B; 3: identical A B
+# mode:: 1:random codes; 2: check case; 3: enumerate all cases
 #sub_mode=3 #not used when mode=3
-sub_mode_A=3
+sub_mode_A=1
+#sub_mode_A:: 1: random; 2: enumerate all
 sub_mode_B=4 #4 #enumerate code B as well
-na_input=7
-n_low=9
-n_high=9
+#sub_mode_B:: 1: random; 2: reverse symmetry; 3: symmetry/identical; 4: enumerate all cases
+na_input=6
+
+n_low=7
+n_high=7
 k_low=1
 k_high=1
 # note for run info
@@ -105,27 +108,34 @@ folder=$folder/trial$index
 
 echo start job on $WORK_STATION:`hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
 echo SLURM_JOB_ID:$SLURM_JOB_ID SLURM_JOB_NAME:$SLURM_JOB_NAME SLURM_JOB_DIR:$SLURM_SUBMIT_DIR >> $logfile
-echo note:$note, sub_mode_A:$sub_mode_A, sub_mode_B:$sub_mode_B, na_input:$na_input, n_low:$n_low, n_high=$n_high, data_folder:$folder, log_file:$logfile status_file:$statusfile >> $logfile
+echo note:$note, sub_mode_A:$sub_mode_A, sub_mode_B:$sub_mode_B, na_input:$na_input, \
+    n_low:$n_low, n_high=$n_high, data_folder:$folder, \
+    num_core=$num_core, log_file:$logfile status_file:$statusfile >> $logfile
 
 # duplicate info to stdout
 cat $logfile
 #cat $logfile > $statusfile
 
 
-(( i = 1 ))
-#(( bi = 2 ))
+#(( i = 1 ))
 
 # it is actually 60.
 #(( num_cores = 15 ))
-(( max_process = num_cores + 10 ))
+#(( max_process = num_cores + 10 ))
 
 
 title=$folder/trial$index
-#echo ./.product$index.out  mode=1 sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 
-#na_input=5
 cmd () {
-    ./.product$index.out  mode=$mode  sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i  num_cores=$num_cores note=$note
+#for mode=3
+#    ./.product$index.out  mode=$mode   sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
+# for mode=1
+#    ./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note max_trial=$max_trial
+# for all
+    ./.product$index.out  mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B \
+	title=$title debug=0 seed=1  note=$note num_cores=$num_cores \
+	n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial \
+	na_input=$na_input 
 }
 declare -f cmd
 
