@@ -11,6 +11,11 @@ using namespace common;
 
 //int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, int n_low, int n_high, int k_low, int k_high, int debug);
 
+/** generate two codes to make a product code and estimate their distances
+ * Now it can run mode=2 enumerate symmetric and reverse symmetric casee
+ * and mode=3, enumerate all cases
+ * how about case 1? enumerate all cases
+ */
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, 
 	     int n_low, int n_high, int k_low, int k_high, int debug,
 	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,
@@ -54,12 +59,18 @@ int main(int args, char ** argv){
   case 1:
     //actually I can run all random simulation here. and let openmp control the threads. Insted of running it one by one
       //run a random simulation
+    {
+      //allow mode = 1, sub_mode_A = 1; sub_mode_B=1,2,3
+      SubsystemProductCode code_temp;
+      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0, code_temp);
+    }
+    break;    
   case 2:
     {
       //check a specific case
-      //allow mode = 1,2, sub_mode_A = 1; sub_mode_B=1,2,3
+      //allow mode = 2, sub_mode_A = 1; sub_mode_B=1,2,3
       SubsystemProductCode code_temp;
-      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0, code_temp);
+      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0,0,0, debug,0,0,0,0,0, code_temp);
     }
     break;
   case 3:       //enumerate all cases with size na
@@ -112,19 +123,6 @@ int main(int args, char ** argv){
 	      //	      cout<<title_str.c_str()<<endl;
 	      string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
 		+"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
-
-	      /*
-	      if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, code)==2){
-		//duplicated case, skip following calculation		
-	      }else{
-		//continue calculation
-		calculated_trials++;
-		cout<<calculated_trials<<"/"<<( total_trials/1000000 )<<"M"<<endl;
-		//cout<<"                                                                         id_Gax_MAX="<<id_Gax_MAX<<",id_Gaz_MAX="<<id_Gaz_MAX<<endl;
-		sub_mode_B=3;
-		simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, code);
-	      }
-	      */
 	    }
 	  }
 	}
@@ -159,11 +157,11 @@ int main(int args, char ** argv){
 
 	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
 	    //	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
-	    CSSCode codeB;
+	    CSSCode codeB; //codeB will be the same as codeA, or reverse symmetric codeA
 	    SubsystemProductCode codeC(codeA,codeB);
-	    string title_str_trial=title_str+"-test";
-	    //	string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
-	    // +"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
+	    //string title_str_trial=title_str+"-test";
+	    string title_str_trial=title_str+"-na"+to_string(codeA.n)+"-Gax_row"+to_string(codeA.Gx_row)+"-id_Gax"+to_string(codeA.id_Gx)
+	      +"-Gaz_row"+to_string(codeA.Gz_row)+"-id_Gaz"+to_string(codeA.id_Gz);
 	    //	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, codeC)==2){
 	    simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC);
 	    simulate(title_str_trial, note, mode, sub_mode_A, 3, 0, 0, 0, 0, debug, 0,0,0,0,0, codeC);
@@ -174,10 +172,10 @@ int main(int args, char ** argv){
 	{
 	  int count=0;
 	  const int total = calculated_trials*calculated_trials;
-	  const int chunk_size_max = 10000;
+	  const int chunk_size_max = 10000;                         //chunk to display progress
 	  const int chunk_size = ( total/100 < chunk_size_max ) ? total/100:chunk_size_max ;
-	  count = total/10*7; // start from some point, 50%, 70%, ...
-	  cout<<"start from count = "<<count<<endl;
+	  //	  count = total/10*7; // start from some point, 50%, 70%, ...
+	  //	  cout<<"start from count = "<<count<<endl;
 	  //guided for better speed
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
 	  //
@@ -185,6 +183,7 @@ int main(int args, char ** argv){
 	  for (int iAB = count; iAB <total; iAB++){
 #pragma omp critical
 	    {
+	      //display progress information
 	      count++;
 	      if (count % chunk_size == 0){
 		cout<<count<<", "<<(int) (count*1.0/total*100)<<"% finished. total: "<<total
@@ -199,7 +198,13 @@ int main(int args, char ** argv){
 	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
 	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
 	    SubsystemProductCode codeC(codeA,codeB);
-	    string title_str_trial=title_str+"-test";
+	    //	    string title_str_trial=title_str+"-test";
+	    string title_str_trial=title_str
+	      +"-A-"+to_string(codeA.n)+"-"+to_string(codeA.Gx_row)+"-"+to_string(codeA.id_Gx)
+	      +"-"+to_string(codeA.Gz_row)+"-"+to_string(codeA.id_Gz)
+	      +"-B-"+to_string(codeB.n)+"-"+to_string(codeB.Gx_row)+"-"+to_string(codeB.id_Gx)
+	      +"-"+to_string(codeB.Gz_row)+"-"+to_string(codeB.id_Gz);
+
 	    //	string title_str_trial=title_str+"-na"+to_string(na)+"-Gax_row"+to_string(Gax_row)+"-id_Gax"+to_string(id_Gax)
 	    // +"-Gaz_row"+to_string(Gaz_row)+"-id_Gaz"+to_string(id_Gaz);
 	    //	if (simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, 0, 0, 0, 0, debug, na, Gax_row, id_Gax, Gaz_row, id_Gaz, codeC)==2){
