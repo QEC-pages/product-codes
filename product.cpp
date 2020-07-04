@@ -1,6 +1,8 @@
 //Weilei Zeng, Nov 26 2018
-/*
-This code produce two random quantum codes and construct concatenated codes and reduced code. Then check their distance.
+/**
+ *\file product.cpp
+ *\author Weilei Zeng
+ * This code produce two random quantum codes and construct concatenated codes and reduced code. Then check their distance.
  */
 #include "weilei_lib/weilei_lib.h"
 #include <itpp/itbase.h>
@@ -11,6 +13,13 @@ using namespace common;
 
 //int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, int n_low, int n_high, int k_low, int k_high, int debug);
 
+/** from given input parameter, generate two CSS codes and check
+ *  result for subsystem product codes, concatenated codes and
+ *  higher-dimensional hypergraph product codes.
+ *@param mode 1 for random, 2 for check, 3 for two identical code ( or reversed)
+ *@param sub_mode_A random construction or enumerate all cases with give size
+ *@param sub_mode_B random code, identical, or reverse identical
+ */
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, 
 	     int n_low, int n_high, int k_low, int k_high, int debug,
 	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz);

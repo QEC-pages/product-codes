@@ -95,145 +95,143 @@ $(document).ready(function(){initNavTree('mm__write_8cpp_source.html',''); initR
 <div class="title">mm_write.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="mm__write_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Weilei Zeng</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*   revised from Matrix Market I/O example program</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">*   (See http://math.nist.gov/MatrixMarket for details.)</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//recomend file format for Matrix Market file is .mm</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//the segmentation fault is finally solved by reserve memory for I,J and Vval. May 2018</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//trouble shooting: segmentation fault:  directory not exist; wrong folder name</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mmio_8h.html">mmio.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//#include &lt;fstream&gt; //ofstream ifstream</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;itpp/itbase.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<a href="mm__write_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//recomend file format for Matrix Market file is .mm</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//the segmentation fault is finally solved by reserve memory for I,J and Vval. May 2018</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//trouble shooting: segmentation fault:  directory not exist; wrong folder name</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mmio_8h.html">mmio.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//#include &lt;fstream&gt; //ofstream ifstream</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;itpp/itbase.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//int GF2mat_to_MM(GF2mat G, char* file_name=&quot;mm_temp.dat&quot;)</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="mm__write_8h.html#ab3f5b7364c616ed2027932f8851c59c6">   17</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mm__write_8cpp.html#af2fe7166e465d278d2158476b1fda29f">GF2mat_to_MM</a>(itpp::GF2mat G, <span class="keywordtype">char</span>* file_name, <span class="keywordtype">int</span> debug)</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">int</span> M=G.rows(),N=G.cols(),nt=M*N;<span class="comment">//nt is the total number of elements, will find nz later. nz is the number of non-zero elements</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="comment">//make nt smaller; the size of int[] should be less than about 2000000+; otherwise it creat segmentation fault</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="comment">//this could be fixed by seperate int[] into smaller ones, but in this case the matrix is already too bigfor any calculation</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">// std::cout&lt;&lt;&quot;density of GF2mat: &quot;&lt;&lt;G.density()&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  nt=floor(1+nt*(G.density()+0.001)  );</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="mmio_8h.html#a27c4a0610b9f2ecb5edb6430e79ae9ee">MM_typecode</a> matcode;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">int</span> *I, *J;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  I = (<span class="keywordtype">int</span> *) malloc(nt * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  J = (<span class="keywordtype">int</span> *) malloc(nt * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">double</span> * val;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  val = (<span class="keywordtype">double</span> *) malloc(nt * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">//  int I[nt],J[nt];//the location of nonzero elements</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">//usually nt is much larger than nz, where nz/nt is the density of the code. There is some wasted memory here.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">//  double val[nt];//have to use double to save the binary value in order to match the format of the file, didn&#39;t affect the result so far</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">int</span> pos=0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> m=0;m&lt;M;m++){</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//      std::cout&lt;&lt;&quot;\t m=&quot;&lt;&lt;m&lt;&lt;&quot;,&quot;;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n=0;n&lt;N;n++){</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">if</span>(G.get(m,n)){<span class="comment">//if it is nonzero</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        I[pos]=m;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        J[pos]=n;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        val[pos]=1;<span class="comment">//we know it is one. so dont use G.get(m,n)</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        pos++;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//int GF2mat_to_MM(GF2mat G, char* file_name=&quot;mm_temp.dat&quot;)</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="mm__write_8h.html#ab3f5b7364c616ed2027932f8851c59c6">   18</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mm__write_8cpp.html#af2fe7166e465d278d2158476b1fda29f">GF2mat_to_MM</a>(itpp::GF2mat G, <span class="keywordtype">char</span>* file_name, <span class="keywordtype">int</span> debug)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">int</span> M=G.rows(),N=G.cols(),nt=M*N;<span class="comment">//nt is the total number of elements, will find nz later. nz is the number of non-zero elements</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="comment">//make nt smaller; the size of int[] should be less than about 2000000+; otherwise it creat segmentation fault</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">//this could be fixed by seperate int[] into smaller ones, but in this case the matrix is already too bigfor any calculation</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="comment">// std::cout&lt;&lt;&quot;density of GF2mat: &quot;&lt;&lt;G.density()&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  nt=floor(1+nt*(G.density()+0.001)  );</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">int</span> *I, *J;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  I = (<span class="keywordtype">int</span> *) malloc(nt * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  J = (<span class="keywordtype">int</span> *) malloc(nt * <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">double</span> * val;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  val = (<span class="keywordtype">double</span> *) malloc(nt * <span class="keyword">sizeof</span>(<span class="keywordtype">double</span>));</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">//  int I[nt],J[nt];//the location of nonzero elements</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">//usually nt is much larger than nz, where nz/nt is the density of the code. There is some wasted memory here.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">//  double val[nt];//have to use double to save the binary value in order to match the format of the file, didn&#39;t affect the result so far</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">int</span> pos=0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> m=0;m&lt;M;m++){</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//      std::cout&lt;&lt;&quot;\t m=&quot;&lt;&lt;m&lt;&lt;&quot;,&quot;;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n=0;n&lt;N;n++){</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">if</span>(G.get(m,n)){<span class="comment">//if it is nonzero</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        I[pos]=m;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        J[pos]=n;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        val[pos]=1;<span class="comment">//we know it is one. so dont use G.get(m,n)</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        pos++;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">int</span> nz=pos;<span class="comment">//number of nonzero elements</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//std::cout&lt;&lt;&quot;number of ones in the matrix is nz= &quot;&lt;&lt;nz&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="mmio_8h.html#a61be6348c808d02530d151e59f0b456f">mm_initialize_typecode</a>(&amp;matcode);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="mmio_8h.html#ab94a2a33e79dda9a50645718c3055bde">mm_set_matrix</a>(&amp;matcode);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="mmio_8h.html#a60425fdf2040cff47da380e2904af1e2">mm_set_coordinate</a>(&amp;matcode);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="mmio_8h.html#aef12252aecf7a4af6baa752dc9d29698">mm_set_real</a>(&amp;matcode);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//create a file and wrote into it.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    FILE *fout;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    fout=fopen(file_name,<span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="mmio_8c.html#a1ae61f76394b37d9c41a0a1b63e5a3a1">mm_write_banner</a>(fout, matcode); </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="mmio_8c.html#ad6f7429821e10fc084d1d7da481029f3">mm_write_mtx_crd_size</a>(fout, M, N, nz);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">/* NOTE: matrix market files use 1-based indices, i.e. first element</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">      of a vector has index 1, not 0.  */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//it is not necessary to seperate the reading and writing in 2 loops</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;nz; i++)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        fprintf(fout, <span class="stringliteral">&quot;%d %d %10.3g\n&quot;</span>, I[i]+1, J[i]+1, val[i]);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    fclose(fout);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> ( debug )   std::cout&lt;&lt;<span class="stringliteral">&quot;wrote the matrix (density:&quot;</span>&lt;&lt;G.density()&lt;&lt;<span class="stringliteral">&quot;) into file &quot;</span>&lt;&lt;file_name&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//int mat_to_MM(mat G, char* filename=&quot;mm_temp.dat&quot;)</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="mm__write_8h.html#a6305173d6abe122b027c24bb3d403057">   73</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a>(itpp::mat G, <span class="keywordtype">char</span> * filename){<span class="comment">//use this when G is not a binary matrix</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">//dose not work sometimes and not sure why. Segmentation fault in line:   mm_write_banner(fout, matcode);</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> M=G.rows(),N=G.cols(),nt=M*N;<span class="comment">//nt is the total number of elements, will find nz later. nz is the number of non-zero elements</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">//make nt smaller; the size of int[] should be less than about 2000000+</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">//nt=floor(1+nt*G.density());//design to be not sparse and small size</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="mmio_8h.html#a27c4a0610b9f2ecb5edb6430e79ae9ee">MM_typecode</a> matcode;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">int</span> I[nt],J[nt];<span class="comment">//the location of nonzero elements</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">//usually nt is much larger than nz, where nz/nt is the density of the code. There is some wasted memory here.</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">double</span> val[nt];<span class="comment">//have to use double to save the binary value in order to match the format of the file, didn&#39;t affect the result so far</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">int</span> pos=0;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> m=0;m&lt;M;m++){</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n=0;n&lt;N;n++){</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">if</span>(G.get(m,n)){<span class="comment">//if it is nonzero</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    I[pos]=m;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    J[pos]=n;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    val[pos]=G.get(m,n);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    pos++;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">int</span> nz=pos;<span class="comment">//number of nonzero elements</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="mmio_8h.html#a61be6348c808d02530d151e59f0b456f">mm_initialize_typecode</a>(&amp;matcode);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="mmio_8h.html#ab94a2a33e79dda9a50645718c3055bde">mm_set_matrix</a>(&amp;matcode);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="mmio_8h.html#a60425fdf2040cff47da380e2904af1e2">mm_set_coordinate</a>(&amp;matcode);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="mmio_8h.html#aef12252aecf7a4af6baa752dc9d29698">mm_set_real</a>(&amp;matcode);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">//create a file and wrote into it.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//    std::cout&lt;&lt;filename&lt;&lt;&quot;, &quot;&lt;&lt;M&lt;&lt;&quot;, &quot;&lt;&lt;N&lt;&lt;&quot;, &quot;&lt;&lt;nz&lt;&lt;std::endl;</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  FILE *fout;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  fout=fopen(filename,<span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="mmio_8c.html#a1ae61f76394b37d9c41a0a1b63e5a3a1">mm_write_banner</a>(fout, matcode);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="mmio_8c.html#ad6f7429821e10fc084d1d7da481029f3">mm_write_mtx_crd_size</a>(fout, M, N, nz);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="comment">/* NOTE: matrix market files use 1-based indices, i.e. first element</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">      of a vector has index 1, not 0.  */</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">//it is not necessary to seperate the reading and writing in 2 loops</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;nz; i++){</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    fprintf(fout, <span class="stringliteral">&quot;%d %d %g\n&quot;</span>, I[i]+1, J[i]+1, val[i]);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">//originally use %10.3g, now use %g</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  fclose(fout);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  std::cout&lt;&lt;<span class="stringliteral">&quot;wrote the matrix into file &quot;</span>&lt;&lt;filename&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="mm__write_8h.html#ab3c95df9784e69f9d6ace87bf27af1de">  121</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mm__write_8cpp.html#af2fe7166e465d278d2158476b1fda29f">GF2mat_to_MM</a>(itpp::mat G, std::string file_name){</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">char</span> temp[file_name.length()+1];</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  strcpy(temp, file_name.c_str());</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="mm__write_8cpp.html#af2fe7166e465d278d2158476b1fda29f">GF2mat_to_MM</a>(G, temp);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="mm__write_8h.html#abb2f81dc973fa780763187ddf840c08c">  128</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a>(itpp::mat G, std::string file_name){</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">char</span> temp[file_name.length()+1];</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  strcpy(temp, file_name.c_str());</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a>(G, temp);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> nz=pos;<span class="comment">//number of nonzero elements</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//std::cout&lt;&lt;&quot;number of ones in the matrix is nz= &quot;&lt;&lt;nz&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="mmio_8h.html#a27c4a0610b9f2ecb5edb6430e79ae9ee">MM_typecode</a> matcode;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="mmio_8h.html#a61be6348c808d02530d151e59f0b456f">mm_initialize_typecode</a>(&amp;matcode);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="mmio_8h.html#ab94a2a33e79dda9a50645718c3055bde">mm_set_matrix</a>(&amp;matcode);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="mmio_8h.html#a60425fdf2040cff47da380e2904af1e2">mm_set_coordinate</a>(&amp;matcode);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="mmio_8h.html#aef12252aecf7a4af6baa752dc9d29698">mm_set_real</a>(&amp;matcode);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//create a file and wrote into it.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    FILE *fout;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    fout=fopen(file_name,<span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="mmio_8c.html#a1ae61f76394b37d9c41a0a1b63e5a3a1">mm_write_banner</a>(fout, matcode); </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="mmio_8c.html#ad6f7429821e10fc084d1d7da481029f3">mm_write_mtx_crd_size</a>(fout, M, N, nz);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">/* NOTE: matrix market files use 1-based indices, i.e. first element</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">      of a vector has index 1, not 0.  */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//it is not necessary to seperate the reading and writing in 2 loops</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;nz; i++)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        fprintf(fout, <span class="stringliteral">&quot;%d %d %10.3g\n&quot;</span>, I[i]+1, J[i]+1, val[i]);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    fclose(fout);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> ( debug )   std::cout&lt;&lt;<span class="stringliteral">&quot;wrote the matrix (density:&quot;</span>&lt;&lt;G.density()&lt;&lt;<span class="stringliteral">&quot;) into file &quot;</span>&lt;&lt;file_name&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//int mat_to_MM(mat G, char* filename=&quot;mm_temp.dat&quot;)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="mm__write_8h.html#a6305173d6abe122b027c24bb3d403057">   75</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a>(itpp::mat G, <span class="keywordtype">char</span> * filename){<span class="comment">//use this when G is not a binary matrix</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">//dose not work sometimes and not sure why. Segmentation fault in line:   mm_write_banner(fout, matcode);</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">int</span> M=G.rows(),N=G.cols(),nt=M*N;<span class="comment">//nt is the total number of elements, will find nz later. nz is the number of non-zero elements</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">//make nt smaller; the size of int[] should be less than about 2000000+</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">//nt=floor(1+nt*G.density());//design to be not sparse and small size</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="mmio_8h.html#a27c4a0610b9f2ecb5edb6430e79ae9ee">MM_typecode</a> matcode;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">int</span> I[nt],J[nt];<span class="comment">//the location of nonzero elements</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">//usually nt is much larger than nz, where nz/nt is the density of the code. There is some wasted memory here.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">double</span> val[nt];<span class="comment">//have to use double to save the binary value in order to match the format of the file, didn&#39;t affect the result so far</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">int</span> pos=0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> m=0;m&lt;M;m++){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n=0;n&lt;N;n++){</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">if</span>(G.get(m,n)){<span class="comment">//if it is nonzero</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    I[pos]=m;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    J[pos]=n;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    val[pos]=G.get(m,n);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    pos++;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">int</span> nz=pos;<span class="comment">//number of nonzero elements</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="mmio_8h.html#a61be6348c808d02530d151e59f0b456f">mm_initialize_typecode</a>(&amp;matcode);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="mmio_8h.html#ab94a2a33e79dda9a50645718c3055bde">mm_set_matrix</a>(&amp;matcode);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="mmio_8h.html#a60425fdf2040cff47da380e2904af1e2">mm_set_coordinate</a>(&amp;matcode);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="mmio_8h.html#aef12252aecf7a4af6baa752dc9d29698">mm_set_real</a>(&amp;matcode);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">//create a file and wrote into it.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//    std::cout&lt;&lt;filename&lt;&lt;&quot;, &quot;&lt;&lt;M&lt;&lt;&quot;, &quot;&lt;&lt;N&lt;&lt;&quot;, &quot;&lt;&lt;nz&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  FILE *fout;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  fout=fopen(filename,<span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="mmio_8c.html#a1ae61f76394b37d9c41a0a1b63e5a3a1">mm_write_banner</a>(fout, matcode);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="mmio_8c.html#ad6f7429821e10fc084d1d7da481029f3">mm_write_mtx_crd_size</a>(fout, M, N, nz);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="comment">/* NOTE: matrix market files use 1-based indices, i.e. first element</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">      of a vector has index 1, not 0.  */</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">//it is not necessary to seperate the reading and writing in 2 loops</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;nz; i++){</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    fprintf(fout, <span class="stringliteral">&quot;%d %d %g\n&quot;</span>, I[i]+1, J[i]+1, val[i]);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">//originally use %10.3g, now use %g</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  fclose(fout);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  std::cout&lt;&lt;<span class="stringliteral">&quot;wrote the matrix into file &quot;</span>&lt;&lt;filename&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="mm__write_8h.html#ab3c95df9784e69f9d6ace87bf27af1de">  123</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mm__write_8cpp.html#af2fe7166e465d278d2158476b1fda29f">GF2mat_to_MM</a>(itpp::mat G, std::string file_name){</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">char</span> temp[file_name.length()+1];</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  strcpy(temp, file_name.c_str());</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="mm__write_8cpp.html#af2fe7166e465d278d2158476b1fda29f">GF2mat_to_MM</a>(G, temp);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="mm__write_8h.html#abb2f81dc973fa780763187ddf840c08c">  130</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a>(itpp::mat G, std::string file_name){</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">char</span> temp[file_name.length()+1];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  strcpy(temp, file_name.c_str());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a>(G, temp);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ammio_8h_html_aef12252aecf7a4af6baa752dc9d29698"><div class="ttname"><a href="mmio_8h.html#aef12252aecf7a4af6baa752dc9d29698">mm_set_real</a></div><div class="ttdeci">#define mm_set_real(typecode)</div><div class="ttdef"><b>Definition:</b> <a href="mmio_8h_source.html#l00076">mmio.h:75</a></div></div>
 <div class="ttc" id="ammio_8h_html"><div class="ttname"><a href="mmio_8h.html">mmio.h</a></div></div>
-<div class="ttc" id="amm__write_8cpp_html_af2fe7166e465d278d2158476b1fda29f"><div class="ttname"><a href="mm__write_8cpp.html#af2fe7166e465d278d2158476b1fda29f">GF2mat_to_MM</a></div><div class="ttdeci">int GF2mat_to_MM(itpp::GF2mat G, char *file_name, int debug)</div><div class="ttdef"><b>Definition:</b> <a href="mm__write_8cpp_source.html#l00017">mm_write.cpp:17</a></div></div>
+<div class="ttc" id="amm__write_8cpp_html_af2fe7166e465d278d2158476b1fda29f"><div class="ttname"><a href="mm__write_8cpp.html#af2fe7166e465d278d2158476b1fda29f">GF2mat_to_MM</a></div><div class="ttdeci">int GF2mat_to_MM(itpp::GF2mat G, char *file_name, int debug)</div><div class="ttdef"><b>Definition:</b> <a href="mm__write_8cpp_source.html#l00018">mm_write.cpp:18</a></div></div>
 <div class="ttc" id="ammio_8c_html_ad6f7429821e10fc084d1d7da481029f3"><div class="ttname"><a href="mmio_8c.html#ad6f7429821e10fc084d1d7da481029f3">mm_write_mtx_crd_size</a></div><div class="ttdeci">int mm_write_mtx_crd_size(FILE *f, int M, int N, int nz)</div><div class="ttdef"><b>Definition:</b> <a href="mmio_8c_source.html#l00179">mmio.c:179</a></div></div>
-<div class="ttc" id="amm__write_8cpp_html_a43fa4cd6780c2cae3ae6a9a70004cb45"><div class="ttname"><a href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a></div><div class="ttdeci">int mat_to_MM(itpp::mat G, char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="mm__write_8cpp_source.html#l00073">mm_write.cpp:73</a></div></div>
+<div class="ttc" id="amm__write_8cpp_html_a43fa4cd6780c2cae3ae6a9a70004cb45"><div class="ttname"><a href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a></div><div class="ttdeci">int mat_to_MM(itpp::mat G, char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="mm__write_8cpp_source.html#l00075">mm_write.cpp:75</a></div></div>
 <div class="ttc" id="ammio_8h_html_ab94a2a33e79dda9a50645718c3055bde"><div class="ttname"><a href="mmio_8h.html#ab94a2a33e79dda9a50645718c3055bde">mm_set_matrix</a></div><div class="ttdeci">#define mm_set_matrix(typecode)</div><div class="ttdef"><b>Definition:</b> <a href="mmio_8h_source.html#l00069">mmio.h:68</a></div></div>
 <div class="ttc" id="ammio_8h_html_a27c4a0610b9f2ecb5edb6430e79ae9ee"><div class="ttname"><a href="mmio_8h.html#a27c4a0610b9f2ecb5edb6430e79ae9ee">MM_typecode</a></div><div class="ttdeci">char MM_typecode[4]</div><div class="ttdef"><b>Definition:</b> <a href="mmio_8h_source.html#l00023">mmio.h:23</a></div></div>
 <div class="ttc" id="ammio_8c_html_a1ae61f76394b37d9c41a0a1b63e5a3a1"><div class="ttname"><a href="mmio_8c.html#a1ae61f76394b37d9c41a0a1b63e5a3a1">mm_write_banner</a></div><div class="ttdeci">int mm_write_banner(FILE *f, MM_typecode matcode)</div><div class="ttdef"><b>Definition:</b> <a href="mmio_8c_source.html#l00384">mmio.c:384</a></div></div>
@@ -243,7 +241,7 @@ $(document).ready(function(){initNavTree('mm__write_8cpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a9c213a27231a52ff96793c1fd60c874.html">weilei_lib</a></li><li class="navelem"><a class="el" href="mm__write_8cpp.html">mm_write.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 15 2020 12:04:52 for CSS product code by
+    <li class="footer">Generated on Sat Jul 4 2020 00:01:32 for CSS product code by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

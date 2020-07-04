@@ -2,3 +2,5 @@ data/
 backup20181121/
 outdated/
 .*.out
+*.o
+*.out

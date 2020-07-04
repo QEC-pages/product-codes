@@ -25,16 +25,15 @@
 var NAVTREE =
 [
   [ "CSS product code", "index.html", [
-    [ "CSS product codes", "index.html", [
-      [ "Introduction", "index.html#autotoc_md3", [
-        [ "modify or rewrite the previous program to check for more cases.", "index.html#autotoc_md4", [
-          [ "progress", "index.html#autotoc_md5", null ],
-          [ "TODO:", "index.html#autotoc_md6", null ]
-        ] ]
+    [ "Overview", "index.html", [
+      [ "Introduction", "index.html#autotoc_md4", null ]
+    ] ],
+    [ "log(To be updated)", "md_log_readme.html", [
+      [ "list of log files", "md_log_readme.html#autotoc_md1", [
+        [ "how many test has been run", "md_log_readme.html#autotoc_md2", null ],
+        [ "Identical classical code with X and Z switched", "md_log_readme.html#autotoc_md3", null ]
       ] ]
     ] ],
-    [ "log", "md_log_readme.html", null ],
-    [ "README", "md__r_e_a_d_m_e.html", null ],
     [ "Report", "md_report__r_e_a_d_m_e.html", [
       [ "running statistics", "md_report__r_e_a_d_m_e.html#autotoc_md8", null ],
       [ "result", "md_report__r_e_a_d_m_e.html#autotoc_md9", null ],
@@ -74,8 +73,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"mmio_8c.html#ad8204d233b87eeba15de78abae85c814",
-"trial485-3565_gaz_012_8mm.html"
+"mmio_8c.html#ae59430e91ee3c56cbe666976066f0a56",
+"trial485-3565_gaz_012_8mm_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
