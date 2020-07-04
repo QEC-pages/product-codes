@@ -399,6 +399,9 @@ int main(int args, char ** argvs){
   //  generate_code_test(na,Gax_row,id_Gax,Gaz_row,id_Gaz,debug);
   kron_test();
 
+
+  CSSCode code;
+  generate_code(code,1);
     //cout<<"finish test"<<endl;
   return 0;
 }

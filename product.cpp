@@ -19,7 +19,7 @@ using namespace common;
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, 
 	     int n_low, int n_high, int k_low, int k_high, int debug,
 	     //	     int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,
-	     SubsystemProductCode code
+	     SubsystemProductCSSCode code
 	     );
 
 int main(int args, char ** argv){
@@ -66,7 +66,7 @@ int main(int args, char ** argv){
       int count=0;
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
       for ( int i =0; i< max_trial; i++){
-	SubsystemProductCode code_temp;
+	SubsystemProductCSSCode code_temp;
 	//      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug,0,0,0,0,0, code_temp);
 	string title_str_trial = title_str +"-" +to_string(i);
 	simulate(title_str_trial, note, mode, sub_mode_A, sub_mode_B, n_low, n_high, k_low, k_high, debug, code_temp);
@@ -83,7 +83,7 @@ int main(int args, char ** argv){
     {
       //check a specific case
       //allow mode = 2, sub_mode_A = 1; sub_mode_B=1,2,3
-      SubsystemProductCode code_temp;
+      SubsystemProductCSSCode code_temp;
       //      simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0,0,0, debug,0,0,0,0,0, code_temp);
       simulate(title_str, note, mode, sub_mode_A, sub_mode_B, 0, 0,0,0, debug, code_temp);
     }
@@ -109,7 +109,7 @@ int main(int args, char ** argv){
 
 	      //use data wrapper class
 	      CSSCode codeA(na,Gax_row,id_Gax,Gaz_row,id_Gaz);
-	      SubsystemProductCode code;
+	      SubsystemProductCSSCode code;
 
 	      //note: to enumerate one CSS code, run it here. to simulate two codes, generate all code here, then run it later.
 	      //	      if (sub_mode_B ==4){ //enumerate code B as well.
@@ -176,7 +176,7 @@ int main(int args, char ** argv){
 	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
 	    //	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
 	    CSSCode codeB; //codeB will be the same as codeA, or reverse symmetric codeA
-	    SubsystemProductCode codeC(codeA,codeB);
+	    SubsystemProductCSSCode codeC(codeA,codeB);
 	    //string title_str_trial=title_str+"-test";
 	    string title_str_trial=title_str+"-na"+to_string(codeA.n)+"-Gax_row"+to_string(codeA.Gx_row)+"-id_Gax"+to_string(codeA.id_Gx)
 	      +"-Gaz_row"+to_string(codeA.Gz_row)+"-id_Gaz"+to_string(codeA.id_Gz);
@@ -218,7 +218,7 @@ int main(int args, char ** argv){
 	    //	    cout<<"iA="<<iA<<", iB = "<<iB<<endl;
 	    CSSCode codeA(id_list[iA][0],id_list[iA][1],id_list[iA][2],id_list[iA][3],id_list[iA][4]);
 	    CSSCode codeB(id_list[iB][0],id_list[iB][1],id_list[iB][2],id_list[iB][3],id_list[iB][4]);
-	    SubsystemProductCode codeC(codeA,codeB);
+	    SubsystemProductCSSCode codeC(codeA,codeB);
 	    //	    string title_str_trial=title_str+"-test";
 	    string title_str_trial=title_str
 	      +"-A-"+to_string(codeA.n)+"-"+to_string(codeA.Gx_row)+"-"+to_string(codeA.id_Gx)
@@ -239,8 +239,6 @@ int main(int args, char ** argv){
 	cout<<"main(): illegal sub_mode_B value"<<sub_mode_B<<endl;
 	throw 2;    
       }//switch (sub_mode_B)
-
-
 }// mode=3
 
     break;
@@ -254,7 +252,7 @@ int main(int args, char ** argv){
 int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mode_B,     //general info
 	     int n_low, int n_high, int k_low, int k_high, int debug,                     //for random simulation
 	     //int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz,   //for enumarating all cases
-	     SubsystemProductCode code
+	     SubsystemProductCSSCode code
 	     ){
   //return 2 when the code is duplicate, or either dax = 1 or daz = 1
   if ( mode == 3) mode =1; //mode 3 do some preprocessing in main()
@@ -478,13 +476,13 @@ int simulate(string title_str, string note, int mode, int sub_mode_A, int sub_mo
     if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,3) == 2)  
           std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
 
-    if ( mode == 1 && sub_mode_A == 2 && sub_mode_B == 4){
+    //    if ( mode == 1 && sub_mode_A == 2 && sub_mode_B == 4){ // this cannot be used because it was removed when generating the code by saying Gx_row <= Gz_row
       //pass
       //no need to calculate it because all codes will be enumerated, hence include a symmetry between X and Z
-    }else{
-      if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  
-	std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
-    }
+
+    if  (product(Gax,Gaz,Gbx,Gbz,dax,daz,dbx,dbz,debug,4) == 2)  
+      std::cout<<title<<","<<note<<", time:"<<timer.toc()<<std::endl;
+
 
     //check rank
     /*
