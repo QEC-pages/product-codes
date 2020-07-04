@@ -1,5 +1,6 @@
 //#include "weilei_lib/my_lib.h"
 #include "weilei_lib/weilei_lib.h"
+//#include "weilei_lib.h"
 #include <stdio.h>
 #include <itpp/itbase.h>
 #include <fstream>

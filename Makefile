@@ -1,13 +1,17 @@
 MAKEFLAGS += --no-print-directory
 
+# build options to test dynamic library
+LIB_WEILEI_PATH=/rhome/wzeng002/.local/lib
+LIB_WEILEI=-L$(LIB_WEILEI_PATH) -lweilei -Iweilei_lib
+
+
 INC_DIR=weilei_lib
 #INC_DIR=~/working/weilei_lib
-CXX=g++ -O3 -Wall -std=c++11 -fopenmp
+CXX=g++ -O3 -Wall -std=c++11 -fopenmp 
 # optimization options -O2 -O5 -Os
 ITPP=`pkg-config --cflags itpp` `pkg-config --libs itpp`
 #full command example
 #g++ `pkg-config --cflags itpp` -o hello.out hello.cpp `pkg-config --libs itpp` -fopenmp
-
 
 
 #make object file for target file
@@ -33,7 +37,7 @@ clean:
 	rm *.o
 	rm *.out
 
-
+#job management
 sbatch-dry-run:
 	sbatch --test run_prod.sh
 sbatch:
@@ -42,7 +46,16 @@ pkill-product:
 	pkill .product
 
 
-#to be discared
+
+#test dynamic lib
+dynamic:$(LIB_WEILEI_PATH)/libweilei.so
+	cd weilei_lib && make libweilei.so
+	$(CXX) $(ITPP) -o test_dynamic.out test.cpp -lweilei -L$(LIB_WEILEI_PATH)
+	./test_dynamic.out
+
+
+
+############to be discared
 
 START=`pkg-config --cflags itpp`
 END=`pkg-config --libs itpp`
