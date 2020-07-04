@@ -159,3 +159,67 @@ slurmstepd-i59: error: *** JOB 1559920 ON i59 CANCELLED AT 2020-06-12T01:24:28 D
 slurmstepd-c41: error: _is_a_lwp: 1 read() attempts on /proc/41689/status failed: No such process
 slurmstepd-c41: error: _is_a_lwp: 1 read() attempts on /proc/60132/status failed: No such process
 slurmstepd-c41: error: *** JOB 1528930 ON c41 CANCELLED AT 2020-06-13T23:27:16 DUE TO TIME LIMIT ***
+slurmstepd-i08: error: *** JOB 1646375 ON i08 CANCELLED AT 2020-06-30T00:21:06 DUE TO TIME LIMIT ***
+product.cpp: In function 'int simulate(std::string, std::string, int, int, int, int, int, int, int, int, int, int, int, int, int, SubsystemProductCode)':
+product.cpp:233:7: warning: variable 'id_Gbx' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+       ^
+product.cpp: In function 'int simulate(std::string, std::string, int, int, int, int, int, int, int, int, int, int, int, int, int, SubsystemProductCode)':
+product.cpp:233:7: warning: variable 'id_Gbx' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+       ^
+product.cpp:233:15: warning: variable 'id_Gbz' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+               ^
+product.cpp:233:15: warning: variable 'id_Gbz' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+               ^
+slurmstepd-i11: error: *** JOB 1689649 ON i11 CANCELLED AT 2020-07-02T00:31:56 DUE TO TIME LIMIT ***
+slurmstepd-i56: error: *** JOB 1689654 ON i56 CANCELLED AT 2020-07-02T00:31:58 DUE TO TIME LIMIT ***
+slurmstepd-i12: error: *** JOB 1689720 ON i12 CANCELLED AT 2020-07-02T00:42:34 DUE TO TIME LIMIT ***
+product.cpp: In function 'int simulate(std::string, std::string, int, int, int, int, int, int, int, int, int, int, int, int, int, SubsystemProductCode)':
+product.cpp:238:7: warning: variable 'id_Gbx' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+       ^
+product.cpp:238:15: warning: variable 'id_Gbz' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+               ^
+product.cpp: In function 'int simulate(std::string, std::string, int, int, int, int, int, int, int, int, int, int, int, int, int, SubsystemProductCode)':
+product.cpp:238:7: warning: variable 'id_Gbx' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+       ^
+product.cpp:238:15: warning: variable 'id_Gbz' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+               ^
+slurmstepd-i11: error: *** JOB 1694865 ON i11 CANCELLED AT 2020-07-02T17:10:44 ***
+product.cpp: In function 'int simulate(std::string, std::string, int, int, int, int, int, int, int, int, int, int, int, int, int, SubsystemProductCode)':
+product.cpp:238:7: warning: variable 'id_Gbx' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+       ^
+product.cpp:238:15: warning: variable 'id_Gbz' set but not used [-Wunused-but-set-variable]
+   int id_Gbx, id_Gbz;
+               ^
+product.cpp: In function 'int main(int, char**)':
+product.cpp:178:70: error: 'chuank_size_max' was not declared in this scope
+    const int chunk_size = ( total/100 < chunk_size_max ) ? total/100:chuank_size_max ;
+                                                                      ^
+product.cpp: In function 'int main(int, char**)':
+product.cpp:178:70: error: 'chuank_size_max' was not declared in this scope
+    const int chunk_size = ( total/100 < chunk_size_max ) ? total/100:chuank_size_max ;
+                                                                      ^
+make[3]: *** [product.o] Error 1
+make[3]: *** [product.o] Error 1
+make[2]: *** [product] Error 2
+make[2]: *** [product] Error 2
+slurmstepd-c22: error: *** JOB 1697232 ON c22 CANCELLED AT 2020-07-02T17:34:03 ***
+product.cpp: In function 'int main(int, char**)':
+product.cpp:178:70: error: 'chuank_size_max' was not declared in this scope
+    const int chunk_size = ( total/100 < chunk_size_max ) ? total/100:chuank_size_max ;
+                                                                      ^
+make[3]: *** [product.o] Error 1
+make[2]: *** [product] Error 2
+slurmstepd-i11: error: *** JOB 1697126 ON i11 CANCELLED AT 2020-07-02T17:49:09 ***
+slurmstepd-i12: error: *** JOB 1697167 ON i12 CANCELLED AT 2020-07-02T17:49:13 ***
+slurmstepd-c22: error: *** JOB 1697326 ON c22 CANCELLED AT 2020-07-02T17:51:42 ***
+slurmstepd-c47: error: *** JOB 1697351 ON c47 CANCELLED AT 2020-07-02T17:52:59 ***
+slurmstepd-i11: error: *** JOB 1704555 ON i11 CANCELLED AT 2020-07-03T01:48:58 DUE TO TIME LIMIT ***

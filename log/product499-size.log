@@ -1,3 +1,3 @@
-start job on SBATCH:c41 size run499 max_process:/max_trial:1000000 Sat Jun 6 23:27:02 PDT 2020
-SLURM_JOB_ID:1528930 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+start job on SRUN:c25 size run499 max_process:/max_trial:1000000 Mon Jun 29 22:13:41 PDT 2020
+SLURM_JOB_ID:1645734 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
 note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode:1, n_low:9, n_high=9, data_folder:data/random3, log_file:log/product499-size.log status_file:log/status-product499-size.log

@@ -1,43 +1,13 @@
-start job on SBATCH:c41 size run499 max_process:/max_trial:1000000 Sat Jun 6 23:27:02 PDT 2020
-SLURM_JOB_ID:1528930 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+start job on SRUN:c25 size run499 max_process:/max_trial:1000000 Mon Jun 29 22:13:41 PDT 2020
+SLURM_JOB_ID:1645734 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
 note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=1], sub_mode:1, n_low:9, n_high=9, data_folder:data/random3, log_file:log/product499-size.log status_file:log/status-product499-size.log
-0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-2
-0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-4
-0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-7
-0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-11
-0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-16
-0 Sat Jun 6 23:27:02 PDT 2020 data/random3/trial499-23
-0 Sat Jun 6 23:27:03 PDT 2020 data/random3/trial499-32
-0 Sat Jun 6 23:27:03 PDT 2020 data/random3/trial499-44
-0 Sat Jun 6 23:27:03 PDT 2020 data/random3/trial499-60
-74 Sat Jun 6 23:27:24 PDT 2020 data/random3/trial499-82
-71 Sat Jun 6 23:27:27 PDT 2020 data/random3/trial499-111
-76 Sat Jun 6 23:27:39 PDT 2020 data/random3/trial499-150
-74 Sat Jun 6 23:27:48 PDT 2020 data/random3/trial499-202
-73 Sat Jun 6 23:28:04 PDT 2020 data/random3/trial499-271
-76 Sat Jun 6 23:28:27 PDT 2020 data/random3/trial499-363
-76 Sat Jun 6 23:28:56 PDT 2020 data/random3/trial499-486
-75 Sat Jun 6 23:29:36 PDT 2020 data/random3/trial499-650
-73 Sat Jun 6 23:30:29 PDT 2020 data/random3/trial499-868
-73 Sat Jun 6 23:31:36 PDT 2020 data/random3/trial499-1159
-75 Sat Jun 6 23:33:11 PDT 2020 data/random3/trial499-1547
-76 Sat Jun 6 23:35:16 PDT 2020 data/random3/trial499-2064
-74 Sat Jun 6 23:37:59 PDT 2020 data/random3/trial499-2754
-75 Sat Jun 6 23:41:43 PDT 2020 data/random3/trial499-3674
-75 Sat Jun 6 23:46:40 PDT 2020 data/random3/trial499-4900
-75 Sat Jun 6 23:53:12 PDT 2020 data/random3/trial499-6535
-75 Sun Jun 7 00:01:59 PDT 2020 data/random3/trial499-8715
-74 Sun Jun 7 00:24:49 PDT 2020 data/random3/trial499-11622
-75 Sun Jun 7 00:40:20 PDT 2020 data/random3/trial499-15498
-74 Sun Jun 7 01:01:05 PDT 2020 data/random3/trial499-20666
-76 Sun Jun 7 01:28:38 PDT 2020 data/random3/trial499-27556
-75 Sun Jun 7 02:05:26 PDT 2020 data/random3/trial499-36743
-75 Sun Jun 7 02:54:41 PDT 2020 data/random3/trial499-48992
-114 Sun Jun 7 04:00:50 PDT 2020 data/random3/trial499-65324
-7 Sun Jun 7 09:10:47 PDT 2020 data/random3/trial499-87100
-8 Sun Jun 7 17:37:09 PDT 2020 data/random3/trial499-116135
-8 Mon Jun 8 04:58:17 PDT 2020 data/random3/trial499-154848
-8 Mon Jun 8 20:13:48 PDT 2020 data/random3/trial499-206466
-8 Tue Jun 9 17:25:24 PDT 2020 data/random3/trial499-275290
-8 Wed Jun 10 20:19:17 PDT 2020 data/random3/trial499-367055
-8 Fri Jun 12 07:59:42 PDT 2020 data/random3/trial499-489408
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-2
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-4
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-7
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-11
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-16
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-23
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-32
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-44
+1 Mon Jun 29 22:13:41 PDT 2020 data/random3/trial499-60
+76 Mon Jun 29 22:14:21 PDT 2020 data/random3/trial499-82

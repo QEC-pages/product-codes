@@ -1,0 +1,91 @@
+start job on SBATCH:c22 size7 run543 max_process:/max_trial:1000000 Thu Jul 2 17:53:58 PDT 2020
+SLURM_JOB_ID:1697363 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:7, n_low:9, n_high=9, data_folder:data/random4/trial543, log_file:log/product543-size7.log status_file:
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=5
+start calculating for 9284 cases out of 8604614 trials.
+time used: 12.0918 sec
+start from count = 60334855
+60340000, 20% finished. total: 86192656, remaining time:6.2974e-05 min
+60350000, 20% finished. total: 86192656, remaining time:0.000179335 min
+60360000, 20% finished. total: 86192656, remaining time:5.01851 min
+60370000, 20% finished. total: 86192656, remaining time:14.7974 min
+60380000, 20% finished. total: 86192656, remaining time:22.6244 min
+60390000, 20% finished. total: 86192656, remaining time:34.1564 min
+60400000, 20% finished. total: 86192656, remaining time:44.4487 min
+60410000, 20% finished. total: 86192656, remaining time:56.8005 min
+60420000, 20% finished. total: 86192656, remaining time:64.7551 min
+60430000, 20% finished. total: 86192656, remaining time:74.1006 min
+60440000, 20% finished. total: 86192656, remaining time:86.0538 min
+60450000, 20% finished. total: 86192656, remaining time:98.059 min
+60460000, 20% finished. total: 86192656, remaining time:110.098 min
+60470000, 20% finished. total: 86192656, remaining time:122.06 min
+60480000, 20% finished. total: 86192656, remaining time:131.014 min
+60490000, 20% finished. total: 86192656, remaining time:142.971 min
+60500000, 20% finished. total: 86192656, remaining time:150.829 min
+60510000, 20% finished. total: 86192656, remaining time:161.858 min
+60520000, 20% finished. total: 86192656, remaining time:174.092 min
+60530000, 20% finished. total: 86192656, remaining time:183.602 min
+60540000, 20% finished. total: 86192656, remaining time:191.194 min
+60550000, 20% finished. total: 86192656, remaining time:201.639 min
+60560000, 20% finished. total: 86192656, remaining time:212.305 min
+60570000, 20% finished. total: 86192656, remaining time:224.598 min
+60580000, 20% finished. total: 86192656, remaining time:236.909 min
+60590000, 20% finished. total: 86192656, remaining time:247.316 min
+60600000, 20% finished. total: 86192656, remaining time:255.119 min
+60610000, 20% finished. total: 86192656, remaining time:265.021 min
+60620000, 20% finished. total: 86192656, remaining time:274.004 min
+60630000, 20% finished. total: 86192656, remaining time:284.399 min
+60640000, 20% finished. total: 86192656, remaining time:292.803 min
+60650000, 20% finished. total: 86192656, remaining time:300.605 min
+60660000, 20% finished. total: 86192656, remaining time:310.919 min
+60670000, 20% finished. total: 86192656, remaining time:323.498 min
+60680000, 20% finished. total: 86192656, remaining time:335.808 min
+60690000, 20% finished. total: 86192656, remaining time:346.11 min
+60700000, 20% finished. total: 86192656, remaining time:357.5 min
+60710000, 20% finished. total: 86192656, remaining time:367.077 min
+60720000, 20% finished. total: 86192656, remaining time:377.492 min
+60730000, 20% finished. total: 86192656, remaining time:387.1 min
+60740000, 20% finished. total: 86192656, remaining time:396.708 min
+60750000, 20% finished. total: 86192656, remaining time:406.692 min
+60760000, 20% finished. total: 86192656, remaining time:416.817 min
+60770000, 20% finished. total: 86192656, remaining time:425.916 min
+60780000, 20% finished. total: 86192656, remaining time:432.137 min
+60790000, 20% finished. total: 86192656, remaining time:441.137 min
+60800000, 20% finished. total: 86192656, remaining time:446.838 min
+60810000, 20% finished. total: 86192656, remaining time:455.357 min
+60820000, 20% finished. total: 86192656, remaining time:462.372 min
+60830000, 20% finished. total: 86192656, remaining time:472.818 min
+60840000, 20% finished. total: 86192656, remaining time:480.372 min
+60850000, 20% finished. total: 86192656, remaining time:491.246 min
+60860000, 20% finished. total: 86192656, remaining time:499.12 min
+60870000, 20% finished. total: 86192656, remaining time:510.892 min
+60880000, 20% finished. total: 86192656, remaining time:522.526 min
+60890000, 20% finished. total: 86192656, remaining time:530.425 min
+60900000, 20% finished. total: 86192656, remaining time:540.439 min
+60910000, 20% finished. total: 86192656, remaining time:549.893 min
+60920000, 20% finished. total: 86192656, remaining time:560.594 min
+60930000, 20% finished. total: 86192656, remaining time:569.578 min
+60940000, 20% finished. total: 86192656, remaining time:573.783 min
+60950000, 20% finished. total: 86192656, remaining time:579.279 min
+60960000, 20% finished. total: 86192656, remaining time:586.527 min
+60970000, 20% finished. total: 86192656, remaining time:594.768 min
+60980000, 20% finished. total: 86192656, remaining time:605.216 min
+60990000, 20% finished. total: 86192656, remaining time:617.384 min
+61000000, 20% finished. total: 86192656, remaining time:628.73 min
+61010000, 20% finished. total: 86192656, remaining time:636.758 min
+61020000, 20% finished. total: 86192656, remaining time:646.754 min
+61030000, 20% finished. total: 86192656, remaining time:656.772 min
+61040000, 20% finished. total: 86192656, remaining time:664.145 min
+61050000, 20% finished. total: 86192656, remaining time:674.779 min
+61060000, 21% finished. total: 86192656, remaining time:682.17 min
+61070000, 21% finished. total: 86192656, remaining time:694.342 min
+61080000, 21% finished. total: 86192656, remaining time:704.519 min

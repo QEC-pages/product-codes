@@ -1,0 +1,53 @@
+start job on SBATCH:i42 size6 run536 max_process:/max_trial:1000000 Thu Jul 2 15:32:00 PDT 2020
+SLURM_JOB_ID:1694899 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:6, n_low:9, n_high=9, data_folder:data/random4/trial536, log_file:log/product536-size6.log status_file:
+
+finish job on i13 536 70/1000000 Thu Jul 2 15:32:00 PDT 2020
+start calculating for 469 cases out of 82247 trials.
+time used: 0.124365 sec
+90% finished. total: 219961, remaining time:5.43644e-05 min
+90% finished. total: 219961, remaining time:0.0483115 min
+90% finished. total: 219961, remaining time:0.0924945 min
+90% finished. total: 219961, remaining time:0.142938 min
+90% finished. total: 219961, remaining time:0.190381 min
+91% finished. total: 219961, remaining time:0.232837 min
+91% finished. total: 219961, remaining time:0.275184 min
+91% finished. total: 219961, remaining time:0.311988 min
+91% finished. total: 219961, remaining time:0.34812 min
+92% finished. total: 219961, remaining time:0.382028 min
+92% finished. total: 219961, remaining time:0.410727 min
+92% finished. total: 219961, remaining time:0.436006 min
+92% finished. total: 219961, remaining time:0.462142 min
+92% finished. total: 219961, remaining time:0.483139 min
+93% finished. total: 219961, remaining time:0.496051 min
+93% finished. total: 219961, remaining time:0.5119 min
+93% finished. total: 219961, remaining time:0.522083 min
+93% finished. total: 219961, remaining time:0.532753 min
+94% finished. total: 219961, remaining time:0.544022 min
+94% finished. total: 219961, remaining time:0.547067 min
+94% finished. total: 219961, remaining time:0.551831 min
+94% finished. total: 219961, remaining time:0.555737 min
+95% finished. total: 219961, remaining time:0.554722 min
+95% finished. total: 219961, remaining time:0.55198 min
+95% finished. total: 219961, remaining time:0.548688 min
+95% finished. total: 219961, remaining time:0.542783 min
+95% finished. total: 219961, remaining time:0.533877 min
+96% finished. total: 219961, remaining time:0.522049 min
+96% finished. total: 219961, remaining time:0.508793 min
+96% finished. total: 219961, remaining time:0.493543 min
+96% finished. total: 219961, remaining time:0.473873 min
+97% finished. total: 219961, remaining time:0.454311 min
+97% finished. total: 219961, remaining time:0.432674 min
+97% finished. total: 219961, remaining time:0.408084 min
+97% finished. total: 219961, remaining time:0.380652 min
+97% finished. total: 219961, remaining time:0.352253 min
+98% finished. total: 219961, remaining time:0.321469 min
+98% finished. total: 219961, remaining time:0.287701 min
+98% finished. total: 219961, remaining time:0.252271 min
+98% finished. total: 219961, remaining time:0.214825 min
+99% finished. total: 219961, remaining time:0.175404 min
+99% finished. total: 219961, remaining time:0.133839 min
+99% finished. total: 219961, remaining time:0.0901322 min
+99% finished. total: 219961, remaining time:0.0442427 min
+
+finish job on i42 536 70/1000000 Thu Jul 2 15:54:26 PDT 2020

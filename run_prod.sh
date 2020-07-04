@@ -1,10 +1,8 @@
 #!/bin/zsh -l
 
-
-
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=60
+#SBATCH --cpus-per-task=64
 #SBATCH --mem-per-cpu=1G
 #SBATCH --time=0-02:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
@@ -23,6 +21,7 @@
 
 WORK_STATION=HEAD
 (( num_cores = 15 ))
+# ON_SRUN and ON_SBATCH are manually defined environment variable when requesting the resource.
 case $ON_SRUN in
     "TRUE")
 	case $ON_SBATCH in
@@ -48,7 +47,7 @@ case $ON_SRUN in
 	;;
 esac
 
-# add this when run srun in short
+# add this when running srun on partition short
 #(( num_cores = 60 ))
 
 # Print name of node
@@ -58,18 +57,24 @@ echo start job on `hostname` `date`
 echo
 
 
-
 # job name should be short, for search reason
 job_name=product
-index=518
+index=552
 # 250-266  for random code on cherenkov
 
-max_trial=1000000
-# 1: two random code; 2: identical reverse A B; 3: identical A B
-sub_mode=3 #not used when mode=3
-na_input=7
-n_low=9
-n_high=9
+max_trial=1000 #1000000
+debug=0
+mode=3
+# mode:: 1:random codes; 2: check case; 3: enumerate all cases
+#sub_mode=3 #not used when mode=3
+sub_mode_A=1
+#sub_mode_A:: 1: random; 2: enumerate all
+sub_mode_B=4 #4 #enumerate code B as well
+#sub_mode_B:: 1: random; 2: reverse symmetry; 3: symmetry/identical; 4: enumerate all cases
+na_input=6
+
+n_low=7
+n_high=7
 k_low=1
 k_high=1
 # note for run info
@@ -77,8 +82,9 @@ note="[n_low=$n_low, n_high=$n_high, k_low=$k_low, k_high=$k_high sub_mode=$sub_
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
-statusfile=log/status-${job_name}${index}-size${na_input}.log
-echo check logfile: $logfile statusfile:$statusfile
+#statusfile=log/status-${job_name}${index}-size${na_input}.log
+echo check logfile: $logfile 
+#statusfile:$statusfile
 
 #index=221 #218-221 - for reduced code.
 #index=200-217 for concatenation
@@ -93,15 +99,6 @@ cp product.out .${job_name}$index.out
 #add index by 1 while rerun this script
 #the number of simultaneous process is limited by max_process.
 
-#case `hostname` in 
-#    "Chenrenkov")
-#	folder=data/random2
-#	;;
-#    *)
-#	folder=data_hpcc/random3
-#	;;
-#esac
-# TODO: remove above case when job finished
 
 #folder=data/random3
 #change to new folder, only save code with cases, add sub folder for each run
@@ -111,78 +108,50 @@ folder=$folder/trial$index
 
 echo start job on $WORK_STATION:`hostname` size$na_input run$index max_process:$max_process/max_trial:$max_trial `date` > $logfile
 echo SLURM_JOB_ID:$SLURM_JOB_ID SLURM_JOB_NAME:$SLURM_JOB_NAME SLURM_JOB_DIR:$SLURM_SUBMIT_DIR >> $logfile
-echo note:$note, sub_mode_A:$sub_mode_A, sub_mode_B:$sub_mode_B, na_input:$na_input, n_low:$n_low, n_high=$n_high, data_folder:$folder, log_file:$logfile status_file:$statusfile >> $logfile
+echo note:$note, sub_mode_A:$sub_mode_A, sub_mode_B:$sub_mode_B, na_input:$na_input, \
+    n_low:$n_low, n_high=$n_high, data_folder:$folder, \
+    num_core=$num_core, log_file:$logfile status_file:$statusfile >> $logfile
 
 # duplicate info to stdout
 cat $logfile
-cat $logfile > $statusfile
+#cat $logfile > $statusfile
 
 
-(( i = 1 ))
-(( bi = 2 ))
+#(( i = 1 ))
 
 # it is actually 60.
 #(( num_cores = 15 ))
-(( max_process = num_cores + 10 ))
+#(( max_process = num_cores + 10 ))
 
 
 title=$folder/trial$index
-#echo ./.product$index.out  mode=1 sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
-sub_mode_A=1
-#na_input=5
-echo ./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
 
-./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
-#>>$logfile
+cmd () {
+#for mode=3
+#    ./.product$index.out  mode=$mode   sub_mode_B=$sub_mode_B title=$title debug=$debug na_input=$na_input seed=$i  num_cores=$num_cores note=$note 
+# for mode=1
+#    ./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note max_trial=$max_trial
+# for all
+    ./.product$index.out  mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B \
+	title=$title debug=0 seed=1  note=$note num_cores=$num_cores \
+	n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial \
+	na_input=$na_input 
+}
+declare -f cmd
+
+case $WORK_STATION in
+    "SRUN")
+	cmd
+#	./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note
+	;;
+    "SBATCH")
+	cmd >> $logfile
+#	./.product$index.out  mode=3  title=$title debug=0 na_input=$na_input seed=$i  num_cores=$num_cores note=$note >>$logfile
+	;;
+esac
 #./.product$index.out  mode=1 sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode title=$title debug=1 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note 
 #>> $logfile
 date
-return
-
-echo return
-
-while (( i < max_trial ))
-do
-    # control number of processes according to the speed and number of cores
-    num_process=`pgrep -c ${job_name}`
-#    echo -n num_process: $num_process , 
-#    echo max_process: $max_process
-    if (( num_process < num_cores  )) then
-	(( max_process = max_process + max_process / 10 ))
-    fi
-    if (( num_process > num_cores * 2 )) then
-	(( max_process = max_process - max_process / 10 ))
-    fi
-
-
-    for (( j = num_process ; j < max_process ; j++ ))
-    do	
-	    title=$folder/trial$index-$i
-#	    ./random_concatenation.out 1 $title    >>data/result/result$index-$i.log &
-	    #./counter_concatenation.out mode=1 title=$title debug=0 &
-	    #./.product$index.out  mode=1 title=$title debug=0 na_input=$na_input seed=$i  >> $logfile &
-	    ./.product$index.out  mode=1 sub_mode=$sub_mode title=$title debug=0 n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high seed=$i  note=$note >> $logfile &
-	    #>>data/result/result$index-$i.log &	    
-	    #1 for generate random code
-	    #./random_concatenation.out  >>data/result/result$index-$i.log &
-	    if (( i  == bi )) then
-
-		#echo -n "[$bi]" >> $logfile
-		#the following is a bit strange, and show different output using less and cat
-		#echo -ne ${max_trial} $title `date` \\r
-		echo $num_process `date` $na_input $title  
-		echo $num_process `date` $na_input $title >> $statusfile
-		#echo ${max_trial} $title `date` >> $logfile
-		# add 20 % for next check point
-		(( bi = bi + bi / 3 + 2 ))
-	    fi
-	    (( i++ ))
-
-    done
-
-    sleep 0.2
-done
-
 
 wait
 echo >> $logfile

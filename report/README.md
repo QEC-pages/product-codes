@@ -26,3 +26,8 @@
 ## files
 - each test has a unique `trial number`, the log files is in this folder, and the matrices are saved in `MatrixMarket` format in `/matrices`
 - the shell script to generate those file is `../check_random_concatenation.sh`
+
+
+## result on Jul 2, enumerate all codes up to size 6
+- no case found for size 3-6.
+- size 7 would take one month to finish

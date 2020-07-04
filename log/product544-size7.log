@@ -1,0 +1,3 @@
+start job on SRUN:c29 size7 run544 max_process:/max_trial:1000000 Thu Jul 2 18:03:35 PDT 2020
+SLURM_JOB_ID:1694729 SLURM_JOB_NAME:zsh SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/workspace
+note:[n_low=9, n_high=9, k_low=1, k_high=1 sub_mode=], sub_mode_A:3, sub_mode_B:4, na_input:7, n_low:9, n_high=9, data_folder:data/random4/trial544, log_file:log/product544-size7.log status_file:
