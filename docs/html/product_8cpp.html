@@ -105,8 +105,8 @@ $(document).ready(function(){initNavTree('product_8cpp.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2bc284f1ccf62e1e5d6f5105ddc71905"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="product_8cpp.html#a2bc284f1ccf62e1e5d6f5105ddc71905">simulate</a> (string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, int n_low, int n_high, int k_low, int k_high, int debug, int na_input, int Gax_row_input, int id_Gax, int Gaz_row_input, int id_Gaz)</td></tr>
-<tr class="separator:a2bc284f1ccf62e1e5d6f5105ddc71905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d59cb89198ace25f0c56b37fc701c22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="product_8cpp.html#a9d59cb89198ace25f0c56b37fc701c22">simulate</a> (string title_str, string note, int mode, int sub_mode_A, int sub_mode_B, int n_low, int n_high, int k_low, int k_high, int debug, <a class="el" href="class_subsystem_product_c_s_s_code.html">SubsystemProductCSSCode</a> code)</td></tr>
+<tr class="separator:a9d59cb89198ace25f0c56b37fc701c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab423fe86e32010f050d776f64231d2b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="product_8cpp.html#ab423fe86e32010f050d776f64231d2b1">main</a> (int args, char **argv)</td></tr>
 <tr class="separator:ab423fe86e32010f050d776f64231d2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -141,12 +141,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="product_8cpp_source.html#l00028">28</a> of file <a class="el" href="product_8cpp_source.html">product.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="product_8cpp_source.html#l00034">34</a> of file <a class="el" href="product_8cpp_source.html">product.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a2bc284f1ccf62e1e5d6f5105ddc71905"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bc284f1ccf62e1e5d6f5105ddc71905">&#9670;&nbsp;</a></span>simulate()</h2>
+<a id="a9d59cb89198ace25f0c56b37fc701c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d59cb89198ace25f0c56b37fc701c22">&#9670;&nbsp;</a></span>simulate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,32 +214,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>na_input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Gax_row_input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id_Gax</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Gaz_row_input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id_Gaz</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_subsystem_product_c_s_s_code.html">SubsystemProductCSSCode</a>&#160;</td>
+          <td class="paramname"><em>code</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -248,16 +224,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>from given input parameter, generate two <a class="el" href="class_c_s_s.html" title="a parser for CSS codes">CSS</a> codes and check result for subsystem product codes, concatenated codes and higher-dimensional hypergraph product codes. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>from given input parameter, generate two CSS codes and check result for subsystem product codes, concatenated codes and higher-dimensional hypergraph product codes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mode</td><td>1 for random, 2 for check, 3 for two identical code ( or reversed) </td></tr>
     <tr><td class="paramname">sub_mode_A</td><td>random construction or enumerate all cases with give size </td></tr>
-    <tr><td class="paramname">sub_mode_B</td><td>random code, identical, or reverse identical </td></tr>
+    <tr><td class="paramname">sub_mode_B</td><td>random code, identical, or reverse identical generate two codes to make a product code and estimate their distances Now it can run mode=2 enumerate symmetric and reverse symmetric casee and mode=3, enumerate all cases how about case 1? enumerate all cases </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="product_8cpp_source.html#l00125">125</a> of file <a class="el" href="product_8cpp_source.html">product.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="product_8cpp_source.html#l00261">261</a> of file <a class="el" href="product_8cpp_source.html">product.cpp</a>.</p>
 
 </div>
 </div>
@@ -267,7 +243,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="product_8cpp.html">product.cpp</a></li>
-    <li class="footer">Generated on Sat Jul 4 2020 00:01:32 for CSS product code by
+    <li class="footer">Generated on Sat Jul 4 2020 00:25:41 for CSS product code by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">   82</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">common::rand_dist</a>(itpp::GF2mat C, <span class="keywordtype">int</span> perm_try){<span class="comment">//default perm_try=10</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">//  return min wt of rows in C</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">if</span> (C.rows()&lt;7){ <span class="comment">//for small codes, use true min wt decoding</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="css_8h.html#a27ae1dd5b3bc312c4c9942074b80b3fe">min_wt_decoding</a>(C);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacecommon.html#a465d743c58916cfea99a1e51a5f01c59">min_wt_decoding</a>(C);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">//use random window decoder to find min wt of C</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">//  RNG_randomize(); do not use it here. run it in the main program</span></div>
@@ -215,13 +215,13 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  itpp::ivec P;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">int</span> rank_of_G = G.transpose().T_fact(T,U,P);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">if</span> ( rank_of_G == G.cols()  ){</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="css_8h.html#a14c9dbab105f1b8b8182a022d73e610c">INF</a>;<span class="comment">//999;//999 for infinity</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacecommon.html#ae81b177746ec7eb96f99b9c3a2dd1041">INF</a>;<span class="comment">//999;//999 for infinity</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  itpp::GF2mat H = T.get_submatrix(rank_of_G,0,G.cols()-1,G.cols()-1);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">if</span> (H.rows()&lt;7){<span class="comment">//use true min wt decoding for small codes.</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="css_8h.html#a27ae1dd5b3bc312c4c9942074b80b3fe">min_wt_decoding</a>(H);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacecommon.html#a465d743c58916cfea99a1e51a5f01c59">min_wt_decoding</a>(H);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">int</span> min_wt = <a class="code" href="css_8h.html#a35934c85caabcc67d8f42d2d9aceec5d">rand_dist</a>(H);<span class="comment">//default permutation = 10</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">int</span> min_wt = <a class="code" href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">rand_dist</a>(H);<span class="comment">//default permutation = 10</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">return</span> min_wt;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
@@ -237,34 +237,34 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="namespacecommon.html#ab4dbe7a319fbe38de1b2580a23c91d0a">  143</a></span>&#160;itpp::GF2mat <a class="code" href="namespacecommon.html#ab4dbe7a319fbe38de1b2580a23c91d0a">common::getC</a>(itpp::GF2mat <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>,itpp::GF2mat <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>,<span class="keywordtype">int</span> flip){</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="namespacecommon.html#ab4dbe7a319fbe38de1b2580a23c91d0a">  143</a></span>&#160;itpp::GF2mat <a class="code" href="namespacecommon.html#ab4dbe7a319fbe38de1b2580a23c91d0a">common::getC</a>(itpp::GF2mat G_x,itpp::GF2mat G_z,<span class="keywordtype">int</span> flip){</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="comment">//return C_x</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="comment">//flip=1 to get C_z</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordflow">if</span> (flip==1){</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    itpp::GF2mat temp=<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>=<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>=temp;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    itpp::GF2mat temp=G_x;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    G_x=G_z;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    G_z=temp;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  itpp::GF2mat T,U;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  itpp::ivec P;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">int</span> rank_of_G_z =   <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.transpose().T_fact(T,U,P);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  itpp::GF2mat Q=T.get_submatrix(rank_of_G_z,0,<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols()-1,<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols()-1);<span class="comment">//Q include G_x and C_x/L_x</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  itpp::GF2mat GQ=<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.concatenate_vertical(Q);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordtype">int</span> rank_of_G_z =   G_z.transpose().T_fact(T,U,P);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  itpp::GF2mat Q=T.get_submatrix(rank_of_G_z,0,G_z.cols()-1,G_z.cols()-1);<span class="comment">//Q include G_x and C_x/L_x</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  itpp::GF2mat GQ=G_x.concatenate_vertical(Q);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  GQ.T_fact(T,U,P);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">int</span> rank_of_G_x = <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.row_rank();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">int</span> rank_of_G_x = G_x.row_rank();</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">int</span> rank_of_Q = Q.rows();</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">if</span> (rank_of_G_x == rank_of_Q){</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;getC(): It is not a quantum code:zero rank for codeword space&quot;</span>&lt;&lt;std::endl;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">//    return;</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  }</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">if</span> ( <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.cols()-rank_of_G_z-rank_of_G_x &lt; 1){</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">if</span> ( G_x.cols()-rank_of_G_z-rank_of_G_x &lt; 1){</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;empty code space&quot;</span>&lt;&lt;std::endl;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;empty code space&quot;</span>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">//  itpp::GF2matPrint(G_x,&quot;G_x&quot;);</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="comment">//  itpp::GF2matPrint(U,&quot;U&quot;);</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  itpp::GF2mat C = U.get_submatrix(rank_of_G_x,0,rank_of_Q-1,<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.cols()-1 );</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  itpp::GF2mat C = U.get_submatrix(rank_of_G_x,0,rank_of_Q-1,G_x.cols()-1 );</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  </div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  C.permute_cols(P,<span class="keyword">true</span>);<span class="comment">//codewords/logical group </span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="comment">//check  if ((G_z*C.transpose()).is_zero() ){    std::cout&lt;&lt;&quot;GOOD C&quot;&lt;&lt;std::endl;  }</span></div>
@@ -273,45 +273,45 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="namespacecommon.html#ae2ba17139296db4319223227af72e99d">  179</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacecommon.html#ae2ba17139296db4319223227af72e99d">common::quantum_dist_v2</a>(itpp::GF2mat <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>, itpp::GF2mat <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>, <span class="keywordtype">int</span> flip){<span class="comment">//without expected value</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="namespacecommon.html#ae2ba17139296db4319223227af72e99d">  179</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacecommon.html#ae2ba17139296db4319223227af72e99d">common::quantum_dist_v2</a>(itpp::GF2mat G_x, itpp::GF2mat G_z, <span class="keywordtype">int</span> flip){<span class="comment">//without expected value</span></div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="comment">//right or x  distance of (G_x,G_z)</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="comment">//flip left and right if flip = 1;</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordtype">int</span> trialQ=500;<span class="comment">//100 is good for not so big codes;permute GQ this max amount of time</span></div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">//  int trialQflag=1;//a falg to control the max amout of permutation</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">if</span> (flip==1){<span class="comment">//flip G_x and G_z</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    itpp::GF2mat temp=<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>;    <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>=<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>;    <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>=temp;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    itpp::GF2mat temp=G_x;    G_x=G_z;    G_z=temp;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  itpp::GF2mat T,U;  itpp::ivec P;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">int</span> rank_of_G_z =   <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.transpose().T_fact(T,U,P);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">int</span> rank_of_G_z =   G_z.transpose().T_fact(T,U,P);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="comment">// for small code, use min_wt_decoding to return X distance</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols() - rank_of_G_z &lt; 11){</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="css_8h.html#a27ae1dd5b3bc312c4c9942074b80b3fe">min_wt_decoding</a>(<a class="code" href="css_8h.html#a92e1a1f0761f740c218c54bd7a694e9f">getC</a>(<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>, <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>), <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">if</span> (G_z.cols() - rank_of_G_z &lt; 11){</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacecommon.html#a465d743c58916cfea99a1e51a5f01c59">min_wt_decoding</a>(<a class="code" href="namespacecommon.html#ab4dbe7a319fbe38de1b2580a23c91d0a">getC</a>(G_x, G_z), G_x);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  } </div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  itpp::GF2mat Q=T.get_submatrix(rank_of_G_z,0,<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols()-1,<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols()-1);<span class="comment">//Q include G_x and C_x/L_x</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  itpp::GF2mat GQ=<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.concatenate_vertical(Q);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  itpp::GF2mat Q=T.get_submatrix(rank_of_G_z,0,G_z.cols()-1,G_z.cols()-1);<span class="comment">//Q include G_x and C_x/L_x</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  itpp::GF2mat GQ=G_x.concatenate_vertical(Q);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">int</span> min_wt=GQ.cols(),wt;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> iq=0;iq&lt;trialQ;iq++){</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    itpp::ivec perm = sort_index(  itpp::randu( GQ.cols()  ));<span class="comment">//random permutation</span></div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    GQ.permute_cols(perm,<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    GQ.T_fact(T,U,P);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">int</span> rank_of_G_x = <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.row_rank();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">int</span> rank_of_G_x = G_x.row_rank();</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">int</span> rank_of_Q = Q.rows();</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">if</span> (rank_of_G_x == rank_of_Q){</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="css_8h.html#a14c9dbab105f1b8b8182a022d73e610c">INF</a>;<span class="comment">//999 for infinity</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespacecommon.html#ae81b177746ec7eb96f99b9c3a2dd1041">INF</a>;<span class="comment">//999 for infinity</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    itpp::GF2mat C = U.get_submatrix(rank_of_G_x,0,rank_of_Q-1,<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.cols()-1 );</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    itpp::GF2mat C = U.get_submatrix(rank_of_G_x,0,rank_of_Q-1,G_x.cols()-1 );</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    C.permute_cols(P,<span class="keyword">true</span>);<span class="comment">//codewords/logical group //not necessary to permute it back here</span></div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  </div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    wt = <a class="code" href="css_8h.html#a35934c85caabcc67d8f42d2d9aceec5d">rand_dist</a>(C);<span class="comment">//defauylt permutation = 10</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    wt = <a class="code" href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">rand_dist</a>(C);<span class="comment">//defauylt permutation = 10</span></div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    trialQ=(wt&lt;min_wt)? ( (10*iq &gt; trialQ)? 10*iq : trialQ ):trialQ;<span class="comment">//make sure this is the true min weight</span></div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    min_wt=(wt&lt;min_wt)? wt:min_wt;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">if</span> (min_wt ==1) <span class="keywordflow">return</span> 1;</div>
@@ -322,7 +322,7 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  }</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">return</span> min_wt;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
-<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="namespacecommon.html#a71dea63a10493ab59f4545a2e1e8f94a">  228</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacecommon.html#a71dea63a10493ab59f4545a2e1e8f94a">common::quantum_dist</a>(itpp::GF2mat <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>, itpp::GF2mat <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>, <span class="keywordtype">int</span> dist_expected, <span class="keywordtype">int</span> debug, <span class="keywordtype">int</span> flip){</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="namespacecommon.html#a71dea63a10493ab59f4545a2e1e8f94a">  228</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacecommon.html#a71dea63a10493ab59f4545a2e1e8f94a">common::quantum_dist</a>(itpp::GF2mat G_x, itpp::GF2mat G_z, <span class="keywordtype">int</span> dist_expected, <span class="keywordtype">int</span> debug, <span class="keywordtype">int</span> flip){</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="comment">//right or x  distance of (G_x,G_z)</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="comment">//flip left and right if flip = 1;</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">int</span> trialQ=50000;<span class="comment">//1000;permute GQ this max amount of time</span></div>
@@ -330,40 +330,40 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordtype">int</span> trialQflag=1;<span class="comment">//a flag to adjust the max amount of permutation</span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  </div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">if</span> (flip==1){<span class="comment">//flip G_x and G_z</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    itpp::GF2mat temp=<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>;    <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>=<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>;    <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>=temp;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    itpp::GF2mat temp=G_x;    G_x=G_z;    G_z=temp;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  }</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  itpp::GF2mat T,U;  itpp::ivec P;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordtype">int</span> rank_of_G_z =   <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.transpose().T_fact(T,U,P);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  itpp::GF2mat Q=T.get_submatrix(rank_of_G_z,0,<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols()-1,<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols()-1);<span class="comment">//Q include G_x and C_x/L_x</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordtype">int</span> rank_of_G_z =   G_z.transpose().T_fact(T,U,P);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  itpp::GF2mat Q=T.get_submatrix(rank_of_G_z,0,G_z.cols()-1,G_z.cols()-1);<span class="comment">//Q include G_x and C_x/L_x</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="comment">//  std::cout&lt;&lt;Q.row_rank()&lt;&lt;&quot;,&quot;&lt;&lt;G_z.row_rank()&lt;&lt;&quot;,&quot;&lt;&lt;G_z.cols()&lt;&lt;std::endl;</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  itpp::GF2mat GQ=<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.concatenate_vertical(Q);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  itpp::GF2mat GQ=G_x.concatenate_vertical(Q);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordtype">int</span> min_wt=GQ.cols(),wt;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> iq=0;iq&lt;trialQ;iq++){</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    itpp::ivec perm = sort_index(  itpp::randu( GQ.cols()  ));<span class="comment">//random permutation</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    GQ.permute_cols(perm,<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    GQ.T_fact(T,U,P);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">int</span> rank_of_G_x = <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.row_rank();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">int</span> rank_of_G_x = G_x.row_rank();</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordtype">int</span> rank_of_Q = Q.rows();</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">if</span> (rank_of_G_x == rank_of_Q){</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="css_8h.html#a14c9dbab105f1b8b8182a022d73e610c">INF</a>;<span class="comment">//999 for infinity</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespacecommon.html#ae81b177746ec7eb96f99b9c3a2dd1041">INF</a>;<span class="comment">//999 for infinity</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    itpp::GF2mat C = U.get_submatrix(rank_of_G_x,0,rank_of_Q-1,<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.cols()-1 );</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    itpp::GF2mat C = U.get_submatrix(rank_of_G_x,0,rank_of_Q-1,G_x.cols()-1 );</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    C.permute_cols(P,<span class="keyword">true</span>);<span class="comment">//codewords/logical group //not necessary to permute it back here</span></div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="comment">//Question 1: does the row in C include some stabilizer generators which may increase its weight?</span></div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    wt = <a class="code" href="css_8h.html#a35934c85caabcc67d8f42d2d9aceec5d">rand_dist</a>(C);<span class="comment">//defauylt permutation = 10</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    wt = <a class="code" href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">rand_dist</a>(C);<span class="comment">//defauylt permutation = 10</span></div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    min_wt=(wt&lt;min_wt)? wt:min_wt;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">//std::cout&lt;&lt;&quot;iq = &quot;&lt;&lt;iq&lt;&lt;&quot;, [wt=&quot;&lt;&lt;wt&lt;&lt;&quot;] &quot;&lt;&lt;std::endl;;</span></div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">//  std::cout&lt;&lt;&quot;got min wt of logical operator C  = &quot;&lt;&lt;min_wt&lt;&lt;std::endl;</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="comment">//save_dist(min_wt,filename_dist);</span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">int</span> max_trial = 0;<span class="comment">//no need to run C again, always get the same result</span></div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i =0;i&lt;max_trial;i++){</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      wt=<a class="code" href="css_8h.html#a35934c85caabcc67d8f42d2d9aceec5d">rand_dist</a>(C);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      wt=<a class="code" href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">rand_dist</a>(C);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      min_wt=(wt&lt;min_wt)? wt:min_wt;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    }</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (trialQflag) {<span class="comment">//adjust the max number of permutation, only do this once</span></div>
@@ -381,8 +381,8 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
 <div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="namespacecommon.html#aa6ee21f31592282a5308891946fa742a">  292</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacecommon.html#aa6ee21f31592282a5308891946fa742a">common::hypergraph_dist</a>(itpp::GF2mat Aj, itpp::GF2mat Ajplus,<span class="keywordtype">int</span> dist_expected,<span class="keywordtype">int</span> flip){</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  itpp::GF2mat <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a> = Aj;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  itpp::GF2mat <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a> = Ajplus.transpose();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  itpp::GF2mat G_z = Aj;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  itpp::GF2mat G_x = Ajplus.transpose();</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="comment">//check commutation</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="comment">/*  if ( (Aj*Ajplus).is_zero()){</span></div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">    //pass</span></div>
@@ -391,9 +391,9 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">    }*/</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  </div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordflow">if</span> (flip==1){</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    itpp::GF2mat temp=<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>=<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>=temp;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    itpp::GF2mat temp=G_x;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    G_x=G_z;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    G_z=temp;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  }</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  </div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="comment">/* char * filename_G_x = argv[1];</span></div>
@@ -404,20 +404,20 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="comment">//  itpp::GF2mat G_z = MM_to_GF2mat(filename_G_z);</span></div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  itpp::GF2mat T,U;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  itpp::ivec P;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordtype">int</span> rank_of_G_z =   <a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.transpose().T_fact(T,U,P);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  itpp::GF2mat Q=T.get_submatrix(rank_of_G_z,0,<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols()-1,<a class="code" href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a>.cols()-1);<span class="comment">//Q include G_x and C_x/L_x</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordtype">int</span> rank_of_G_z =   G_z.transpose().T_fact(T,U,P);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  itpp::GF2mat Q=T.get_submatrix(rank_of_G_z,0,G_z.cols()-1,G_z.cols()-1);<span class="comment">//Q include G_x and C_x/L_x</span></div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="comment">//  itpp::GF2mat G_x=MM_to_GF2mat(filename_G_x);</span></div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  itpp::GF2mat GQ=<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.concatenate_vertical(Q);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  itpp::GF2mat GQ=G_x.concatenate_vertical(Q);</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordtype">int</span> min_wt=GQ.cols(),wt;</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="keywordtype">int</span> trialQ=1000;<span class="comment">//1000;</span></div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> iq=0;iq&lt;trialQ;iq++){</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    itpp::ivec perm = sort_index(  itpp::randu( GQ.cols()  ));</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    GQ.permute_cols(perm,<span class="keyword">false</span>);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    GQ.T_fact(T,U,P);</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">int</span> rank_of_G_x = <a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.row_rank();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordtype">int</span> rank_of_G_x = G_x.row_rank();</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">int</span> rank_of_Q = Q.rows();</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">if</span> (rank_of_G_x == rank_of_Q){</div>
@@ -428,13 +428,13 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      }</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      <span class="keywordflow">return</span> 999;<span class="comment">//999 for infinity</span></div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    itpp::GF2mat C = U.get_submatrix(rank_of_G_x,0,rank_of_Q-1,<a class="code" href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a>.cols()-1 );</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    itpp::GF2mat C = U.get_submatrix(rank_of_G_x,0,rank_of_Q-1,G_x.cols()-1 );</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    C.permute_cols(P,<span class="keyword">true</span>);<span class="comment">//codewords/logical group //not necessary to permute it back here</span></div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">//Question 1: does the row in C include some stabilizer generators which may increase its weight?</span></div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  </div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">//itpp::GF2mat_to_MM(C,filename_C_x);</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    wt = <a class="code" href="css_8h.html#a35934c85caabcc67d8f42d2d9aceec5d">rand_dist</a>(C);<span class="comment">//defauylt permutation = 10</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    wt = <a class="code" href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">rand_dist</a>(C);<span class="comment">//defauylt permutation = 10</span></div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    min_wt=(wt&lt;min_wt)? wt:min_wt;</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="comment">//  std::cout&lt;&lt;&quot;got min wt of logical operator C  = &quot;&lt;&lt;min_wt&lt;&lt;std::endl;</span></div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">//save_dist(min_wt,filename_dist);</span></div>
@@ -451,7 +451,7 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }<span class="keywordflow">else</span>{</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      <span class="comment">//continue another run</span></div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="comment">//      std::cout&lt;&lt;&quot;#RUN AGAIN#&quot;&lt;&lt;min_wt;</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      wt=<a class="code" href="css_8h.html#a35934c85caabcc67d8f42d2d9aceec5d">rand_dist</a>(C);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      wt=<a class="code" href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">rand_dist</a>(C);</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      min_wt=(wt&lt;min_wt)? wt:min_wt;</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <span class="comment">//      std::cout&lt;&lt;&quot;&lt;&quot;&lt;&lt;wt&lt;&lt;&quot;&gt;&quot;;</span></div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
@@ -528,7 +528,7 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
 <div class="line"><a name="l00439"></a><span class="lineno"><a class="line" href="namespacecommon.html#addda95e787e17fd0085edd67ef472bb8">  439</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacecommon.html#a14101bccfd5653a95f9f6c552595c062">common::draw_toric_x_error</a>(itpp::bvec error_bits, std::string header){</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  std::cout&lt;&lt;header.c_str()&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <a class="code" href="css_8h.html#ad621ceea86c12918ae754e4c2de2e7dc">draw_toric_x_error</a>(error_bits);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <a class="code" href="namespacecommon.html#a14101bccfd5653a95f9f6c552595c062">draw_toric_x_error</a>(error_bits);</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  </div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;}</div>
@@ -649,7 +649,7 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00559"></a><span class="lineno"><a class="line" href="namespacecommon.html#adc4095333355f0d6367ae3cf4918ed4c">  559</a></span>&#160;itpp::LDPC_Code <a class="code" href="namespacecommon.html#adc4095333355f0d6367ae3cf4918ed4c">common::MM_to_LDPC_Code</a>(<span class="keywordtype">char</span> * filename){</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  <span class="comment">//convert itpp::GF2mat saved in .mm file to itpp::LDPC_Code</span></div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;  itpp::GF2mat G=<a class="code" href="mm__read_8cpp.html#aa9327aa94412ecbfcd67af03cceb8550">MM_to_GF2mat</a>(filename);</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  <span class="keywordflow">return</span>  <a class="code" href="css_8h.html#a220665043b4080100ef334e3acf1d848">GF2mat_to_LDPC_Code</a>(G);</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;  <span class="keywordflow">return</span>  <a class="code" href="namespacecommon.html#ab92eccd6f3729363dd662c61989b1b7b">GF2mat_to_LDPC_Code</a>(G);</div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  <span class="comment">/*</span></div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="comment">  </span></div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="comment">  itpp::GF2mat_sparse Gs=G.sparsify();</span></div>
@@ -665,27 +665,21 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="ttc" id="alib_8h_html"><div class="ttname"><a href="lib_8h.html">lib.h</a></div><div class="ttdoc">lib for general functions, defined within namespace common</div></div>
 <div class="ttc" id="aconcatenation_8c_html_a8f123f5d9d72ac4361c03dfb97cc5095"><div class="ttname"><a href="concatenation_8c.html#a8f123f5d9d72ac4361c03dfb97cc5095">get_check_code734</a></div><div class="ttdeci">GF2mat get_check_code734(int L)</div><div class="ttdef"><b>Definition:</b> <a href="concatenation_8c_source.html#l00043">concatenation.c:43</a></div></div>
 <div class="ttc" id="anamespacecommon_html_a4e11db412889fa91c60dd3d6463ac1c3"><div class="ttname"><a href="namespacecommon.html#a4e11db412889fa91c60dd3d6463ac1c3">common::classical_dist</a></div><div class="ttdeci">int classical_dist(itpp::GF2mat G)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00114">dist.cpp:114</a></div></div>
-<div class="ttc" id="acss_8h_html_ac6c0c617396c45d8ca4df6a9a5eec668"><div class="ttname"><a href="css_8h.html#ac6c0c617396c45d8ca4df6a9a5eec668">G_x</a></div><div class="ttdeci">itpp::GF2mat G_x</div><div class="ttdef"><b>Definition:</b> <a href="css_8h_source.html#l00002">css.h:2</a></div></div>
 <div class="ttc" id="anamespacecommon_html_a5d93210c56c7f5315b9341a66a87828f"><div class="ttname"><a href="namespacecommon.html#a5d93210c56c7f5315b9341a66a87828f">common::get_check</a></div><div class="ttdeci">itpp::GF2mat get_check(int generator_flag, int L)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00524">dist.cpp:524</a></div></div>
 <div class="ttc" id="anamespacecommon_html_aefd63d8b6f5191f95cd661ea837f7418"><div class="ttname"><a href="namespacecommon.html#aefd63d8b6f5191f95cd661ea837f7418">common::nullSpace</a></div><div class="ttdeci">itpp::GF2mat nullSpace(itpp::GF2mat G)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00133">dist.cpp:133</a></div></div>
 <div class="ttc" id="anamespacecommon_html_a2870fe9e08d03362c8fb728d874d88f4"><div class="ttname"><a href="namespacecommon.html#a2870fe9e08d03362c8fb728d874d88f4">common::get_check_code734</a></div><div class="ttdeci">itpp::GF2mat get_check_code734(int L)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00471">dist.cpp:471</a></div></div>
-<div class="ttc" id="acss_8h_html_a220665043b4080100ef334e3acf1d848"><div class="ttname"><a href="css_8h.html#a220665043b4080100ef334e3acf1d848">GF2mat_to_LDPC_Code</a></div><div class="ttdeci">itpp::LDPC_Code GF2mat_to_LDPC_Code(itpp::GF2mat G)</div></div>
 <div class="ttc" id="anamespacecommon_html_ab92eccd6f3729363dd662c61989b1b7b"><div class="ttname"><a href="namespacecommon.html#ab92eccd6f3729363dd662c61989b1b7b">common::GF2mat_to_LDPC_Code</a></div><div class="ttdeci">itpp::LDPC_Code GF2mat_to_LDPC_Code(itpp::GF2mat G)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00550">dist.cpp:550</a></div></div>
 <div class="ttc" id="amm__read_8cpp_html_aa9327aa94412ecbfcd67af03cceb8550"><div class="ttname"><a href="mm__read_8cpp.html#aa9327aa94412ecbfcd67af03cceb8550">MM_to_GF2mat</a></div><div class="ttdeci">itpp::GF2mat MM_to_GF2mat(std::string file_name)</div><div class="ttdef"><b>Definition:</b> <a href="mm__read_8cpp_source.html#l00036">mm_read.cpp:36</a></div></div>
 <div class="ttc" id="aconcatenation_8c_html_a6c0623e3870740a7b530e5ac1e34a1d2"><div class="ttname"><a href="concatenation_8c.html#a6c0623e3870740a7b530e5ac1e34a1d2">get_check_code743</a></div><div class="ttdeci">GF2mat get_check_code743(int L)</div><div class="ttdef"><b>Definition:</b> <a href="concatenation_8c_source.html#l00061">concatenation.c:61</a></div></div>
 <div class="ttc" id="anamespacecommon_html_a5a49dcd20316566f32d75e6325e74307"><div class="ttname"><a href="namespacecommon.html#a5a49dcd20316566f32d75e6325e74307">common::find_error</a></div><div class="ttdeci">itpp::bvec find_error(itpp::bvec e_in, itpp::GF2mat H)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00446">dist.cpp:446</a></div></div>
 <div class="ttc" id="adist_8h_html"><div class="ttname"><a href="dist_8h.html">dist.h</a></div><div class="ttdoc">distance related functions, defined within namespace common</div></div>
-<div class="ttc" id="acss_8h_html_a20465bc2a190632eb5e68a21065b7c5b"><div class="ttname"><a href="css_8h.html#a20465bc2a190632eb5e68a21065b7c5b">G_z</a></div><div class="ttdeci">itpp::GF2mat G_z</div><div class="ttdef"><b>Definition:</b> <a href="css_8h_source.html#l00003">css.h:3</a></div></div>
 <div class="ttc" id="amm__write_8h_html"><div class="ttname"><a href="mm__write_8h.html">mm_write.h</a></div></div>
+<div class="ttc" id="anamespacecommon_html_ae81b177746ec7eb96f99b9c3a2dd1041"><div class="ttname"><a href="namespacecommon.html#ae81b177746ec7eb96f99b9c3a2dd1041">common::INF</a></div><div class="ttdeci">const int INF</div><div class="ttdef"><b>Definition:</b> <a href="dist_8h_source.html#l00019">dist.h:19</a></div></div>
 <div class="ttc" id="anamespacecommon_html_ae2ba17139296db4319223227af72e99d"><div class="ttname"><a href="namespacecommon.html#ae2ba17139296db4319223227af72e99d">common::quantum_dist_v2</a></div><div class="ttdeci">int quantum_dist_v2(itpp::GF2mat G_x, itpp::GF2mat G_z, int flip=0)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00179">dist.cpp:179</a></div></div>
-<div class="ttc" id="acss_8h_html_a27ae1dd5b3bc312c4c9942074b80b3fe"><div class="ttname"><a href="css_8h.html#a27ae1dd5b3bc312c4c9942074b80b3fe">min_wt_decoding</a></div><div class="ttdeci">class CSS min_wt_decoding(itpp::GF2mat C)</div></div>
 <div class="ttc" id="amm__write_8cpp_html_a43fa4cd6780c2cae3ae6a9a70004cb45"><div class="ttname"><a href="mm__write_8cpp.html#a43fa4cd6780c2cae3ae6a9a70004cb45">mat_to_MM</a></div><div class="ttdeci">int mat_to_MM(itpp::mat G, char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="mm__write_8cpp_source.html#l00075">mm_write.cpp:75</a></div></div>
 <div class="ttc" id="anamespacecommon_html_a1b9cada7d2095a6979d19ac55144fb0a"><div class="ttname"><a href="namespacecommon.html#a1b9cada7d2095a6979d19ac55144fb0a">common::make_it_full_rank</a></div><div class="ttdeci">itpp::GF2mat make_it_full_rank(itpp::GF2mat fat)</div><div class="ttdef"><b>Definition:</b> <a href="lib_8cpp_source.html#l00123">lib.cpp:123</a></div></div>
 <div class="ttc" id="anamespacecommon_html_ae8dffa9806ddd0d220fb09db4ccf557c"><div class="ttname"><a href="namespacecommon.html#ae8dffa9806ddd0d220fb09db4ccf557c">common::save_dist</a></div><div class="ttdeci">int save_dist(int d, char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00073">dist.cpp:73</a></div></div>
-<div class="ttc" id="acss_8h_html_a92e1a1f0761f740c218c54bd7a694e9f"><div class="ttname"><a href="css_8h.html#a92e1a1f0761f740c218c54bd7a694e9f">getC</a></div><div class="ttdeci">itpp::GF2mat getC(itpp::GF2mat G_x, itpp::GF2mat G_z, int flip=0)</div></div>
 <div class="ttc" id="aconcatenation_8c_html_ab0225f9bae1ebdd84aed9d8f8b0bb507"><div class="ttname"><a href="concatenation_8c.html#ab0225f9bae1ebdd84aed9d8f8b0bb507">get_check_rept</a></div><div class="ttdeci">GF2mat get_check_rept(int L)</div><div class="ttdef"><b>Definition:</b> <a href="concatenation_8c_source.html#l00085">concatenation.c:85</a></div></div>
-<div class="ttc" id="acss_8h_html_ad621ceea86c12918ae754e4c2de2e7dc"><div class="ttname"><a href="css_8h.html#ad621ceea86c12918ae754e4c2de2e7dc">draw_toric_x_error</a></div><div class="ttdeci">int draw_toric_x_error(itpp::bvec error_bits)</div></div>
-<div class="ttc" id="acss_8h_html_a14c9dbab105f1b8b8182a022d73e610c"><div class="ttname"><a href="css_8h.html#a14c9dbab105f1b8b8182a022d73e610c">INF</a></div><div class="ttdeci">const int INF</div><div class="ttdef"><b>Definition:</b> <a href="css_8h_source.html#l00015">css.h:15</a></div></div>
 <div class="ttc" id="anamespacecommon_html_aa6ee21f31592282a5308891946fa742a"><div class="ttname"><a href="namespacecommon.html#aa6ee21f31592282a5308891946fa742a">common::hypergraph_dist</a></div><div class="ttdeci">int hypergraph_dist(itpp::GF2mat Aj, itpp::GF2mat Ajplus, int dist_expected, int flip=0)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00292">dist.cpp:292</a></div></div>
 <div class="ttc" id="anamespacecommon_html_ae0e9f18c9c64fdb743ffaf3e7746bfc9"><div class="ttname"><a href="namespacecommon.html#ae0e9f18c9c64fdb743ffaf3e7746bfc9">common::rand_dist</a></div><div class="ttdeci">int rand_dist(itpp::GF2mat C, int perm_try=10)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00082">dist.cpp:82</a></div></div>
 <div class="ttc" id="anamespacecommon_html_ab7d9f3797598153b6972dd52466e47b3"><div class="ttname"><a href="namespacecommon.html#ab7d9f3797598153b6972dd52466e47b3">common::get_check_code743</a></div><div class="ttdeci">itpp::GF2mat get_check_code743(int L)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00490">dist.cpp:490</a></div></div>
@@ -696,13 +690,12 @@ $(document).ready(function(){initNavTree('dist_8cpp_source.html',''); initResiza
 <div class="ttc" id="anamespacecommon_html_a71f7ab65b8afbe48b20c3f0bf1718920"><div class="ttname"><a href="namespacecommon.html#a71f7ab65b8afbe48b20c3f0bf1718920">common::color_text</a></div><div class="ttdeci">std::string color_text(std::string str)</div><div class="ttdef"><b>Definition:</b> <a href="lib_8cpp_source.html#l00032">lib.cpp:32</a></div></div>
 <div class="ttc" id="anamespacecommon_html_a71dea63a10493ab59f4545a2e1e8f94a"><div class="ttname"><a href="namespacecommon.html#a71dea63a10493ab59f4545a2e1e8f94a">common::quantum_dist</a></div><div class="ttdeci">int quantum_dist(itpp::GF2mat G_x, itpp::GF2mat G_z, int dist_expected, int debug, int flip=0)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00228">dist.cpp:228</a></div></div>
 <div class="ttc" id="anamespacecommon_html_ab4dbe7a319fbe38de1b2580a23c91d0a"><div class="ttname"><a href="namespacecommon.html#ab4dbe7a319fbe38de1b2580a23c91d0a">common::getC</a></div><div class="ttdeci">itpp::GF2mat getC(itpp::GF2mat G_x, itpp::GF2mat G_z, int flip=0)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00143">dist.cpp:143</a></div></div>
-<div class="ttc" id="acss_8h_html_a35934c85caabcc67d8f42d2d9aceec5d"><div class="ttname"><a href="css_8h.html#a35934c85caabcc67d8f42d2d9aceec5d">rand_dist</a></div><div class="ttdeci">int rand_dist(itpp::GF2mat C, int perm_try=10)</div></div>
 <div class="ttc" id="anamespacecommon_html_a465d743c58916cfea99a1e51a5f01c59"><div class="ttname"><a href="namespacecommon.html#a465d743c58916cfea99a1e51a5f01c59">common::min_wt_decoding</a></div><div class="ttdeci">int min_wt_decoding(itpp::GF2mat C)</div><div class="ttdef"><b>Definition:</b> <a href="dist_8cpp_source.html#l00012">dist.cpp:12</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_a9c213a27231a52ff96793c1fd60c874.html">weilei_lib</a></li><li class="navelem"><a class="el" href="dist_8cpp.html">dist.cpp</a></li>
-    <li class="footer">Generated on Sat Jul 4 2020 00:01:32 for CSS product code by
+    <li class="footer">Generated on Sat Jul 4 2020 00:25:41 for CSS product code by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

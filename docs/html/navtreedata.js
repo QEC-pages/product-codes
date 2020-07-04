@@ -37,7 +37,8 @@ var NAVTREE =
     [ "Report", "md_report__r_e_a_d_m_e.html", [
       [ "running statistics", "md_report__r_e_a_d_m_e.html#autotoc_md8", null ],
       [ "result", "md_report__r_e_a_d_m_e.html#autotoc_md9", null ],
-      [ "files", "md_report__r_e_a_d_m_e.html#autotoc_md10", null ]
+      [ "files", "md_report__r_e_a_d_m_e.html#autotoc_md10", null ],
+      [ "result on Jul 2, enumerate all codes up to size 6", "md_report__r_e_a_d_m_e.html#autotoc_md11", null ]
     ] ],
     [ "weilei-lib v0.1", "md_weilei_lib__r_e_a_d_m_e.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -51,6 +52,7 @@ var NAVTREE =
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
@@ -60,7 +62,7 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
+        [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -73,8 +75,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"mmio_8c.html#ae59430e91ee3c56cbe666976066f0a56",
-"trial485-3565_gaz_012_8mm_source.html"
+"mmio_8c.html#a77d0cc326838831814294614d1010ca5",
+"trial427-1531_gaz_8mm.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
