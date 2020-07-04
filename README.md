@@ -1,14 +1,11 @@
-/** \file README.md
- * index page and also extra information
- * May 17, 2019
- */
  
-\mainpage CSS product codes 
+\mainpage Overview
 
 # Introduction
-	numerical sumulation for subsystem product code and higher dimensional hypergraph product code
+
+numerical sumulation for subsystem product code and higher dimensional hypergraph product code
 	
-## modify or rewrite the previous program to check for more cases.
+
 
 ### progress
 - [ ] parameter in mind: use small codes with large distance, typically k need to be small
