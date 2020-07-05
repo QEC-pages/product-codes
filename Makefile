@@ -14,14 +14,17 @@ ITPP=`pkg-config --cflags itpp` `pkg-config --libs itpp`
 #g++ `pkg-config --cflags itpp` -o hello.out hello.cpp `pkg-config --libs itpp` -fopenmp
 
 
+object_files=$(INC_DIR)/mm_read.o $(INC_DIR)/mmio.o $(INC_DIR)/mm_write.o $(INC_DIR)/lib.o $(INC_DIR)/dist.o $(INC_DIR)/product_lib.o $(INC_DIR)/bp.o 
+header_files=$(INC_DIR)/mm_read.h $(INC_DIR)/mmio.h $(INC_DIR)/mm_write.h $(INC_DIR)/lib.h $(INC_DIR)/dist.h $(INC_DIR)/product_lib.h $(INC_DIR)/bp.h
+
 #make object file for target file
-%.o:%.cpp $(object_files)
+%.o:%.cpp $(header_files)
 	$(CXX) $(START) $(END) -c $<
 #compile object files for lib files
 lib:
 	cd weilei_lib && make all
 #now link object files
-object_files=$(INC_DIR)/mm_read.o $(INC_DIR)/mmio.o $(INC_DIR)/mm_write.o $(INC_DIR)/lib.o $(INC_DIR)/dist.o $(INC_DIR)/product_lib.o $(INC_DIR)/bp.o 
+
 %.out:%.o $(obejct_files)
 	$(CXX) $(ITPP) -o $@ $< $(object_files)
 
