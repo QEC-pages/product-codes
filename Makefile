@@ -25,10 +25,10 @@ lib:
 	cd weilei_lib && make all
 #now link object files
 
-%.out:%.o $(obejct_files)
+%.out:%.o $(object_files)
 	$(CXX) $(ITPP) -o $@ $< $(object_files)
 
-cmd=make lib && make $@.o  && make $@.out
+cmd=make lib && make $@.o && make $@.out
 # eg: make test.o && make lib && make test.out
 product:
 	$(cmd)

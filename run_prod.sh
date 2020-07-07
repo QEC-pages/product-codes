@@ -2,15 +2,15 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=64
+#SBATCH --cpus-per-task=60
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=0-02:00:00     
+#SBATCH --time=0-10:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
 #SBATCH --error=log/product.stderror --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="product"
-#SBATCH -p short,batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
+#SBATCH -p batch,intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu, short
 #SBATCH --export=ALL,ON_SBATCH=TRUE #add environment variable
 
 # module itpp already load on zsh and bash
@@ -20,7 +20,7 @@
 # no need. the default folder is $SLURM_SUBMIT_DIR
 
 WORK_STATION=HEAD
-(( num_cores = 15 ))
+(( num_cores = 7 ))
 # ON_SRUN and ON_SBATCH are manually defined environment variable when requesting the resource.
 case $ON_SRUN in
     "TRUE")
@@ -59,7 +59,7 @@ echo
 
 # job name should be short, for search reason
 job_name=product
-index=552
+index=556
 # 250-266  for random code on cherenkov
 
 max_trial=1000 #1000000
@@ -67,11 +67,11 @@ debug=0
 mode=3
 # mode:: 1:random codes; 2: check case; 3: enumerate all cases
 #sub_mode=3 #not used when mode=3
-sub_mode_A=1
+sub_mode_A=2
 #sub_mode_A:: 1: random; 2: enumerate all
 sub_mode_B=4 #4 #enumerate code B as well
 #sub_mode_B:: 1: random; 2: reverse symmetry; 3: symmetry/identical; 4: enumerate all cases
-na_input=6
+na_input=7
 
 n_low=7
 n_high=7
