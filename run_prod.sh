@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=60
 #SBATCH --mem-per-cpu=1G
-#SBATCH --time=0-10:00:00     
+#SBATCH --time=2-00:00:00     
 #SBATCH --output=log/product.stdout --open-mode=append
 #SBATCH --error=log/product.stderror --open-mode=append
 #SBATCH --mail-user=wzeng002@ucr.edu
@@ -53,16 +53,15 @@ esac
 # Print name of node
 echo
 echo "============= The World is Unitary ============"
-echo start job on `hostname` `date`
+echo start job on $WORK_STATION `hostname` `date`
 echo
 
-
+# general parameters
 # job name should be short, for search reason
 job_name=product
-index=556
+index=561
 # 250-266  for random code on cherenkov
 
-max_trial=1000 #1000000
 debug=0
 mode=3
 # mode:: 1:random codes; 2: check case; 3: enumerate all cases
@@ -71,14 +70,24 @@ sub_mode_A=2
 #sub_mode_A:: 1: random; 2: enumerate all
 sub_mode_B=4 #4 #enumerate code B as well
 #sub_mode_B:: 1: random; 2: reverse symmetry; 3: symmetry/identical; 4: enumerate all cases
-na_input=7
 
+
+# for random simulation
+max_trial=1000 #1000000
 n_low=7
 n_high=7
 k_low=1
 k_high=1
+
+
+# for enumerate all cases
+na_input=7
+count_start_percentage=90
+
 # note for run info
-note="[n_low=$n_low, n_high=$n_high, k_low=$k_low, k_high=$k_high sub_mode=$sub_mode]"
+note="[mode=$mode, sub_mode_A=$sub_mode_A, sub_mode_B=$sub_mode_B, \
+n_low=$n_low, n_high=$n_high, k_low=$k_low, k_high=$k_high, \
+na_input=$na_input, count_start_percentage=$count_start_percentage]"
 
 
 logfile=log/${job_name}${index}-size${na_input}.log
@@ -135,7 +144,7 @@ cmd () {
     ./.product$index.out  mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B \
 	title=$title debug=0 seed=1  note=$note num_cores=$num_cores \
 	n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial \
-	na_input=$na_input 
+	na_input=$na_input count_start_percentage=$count_start_percentage
 }
 declare -f cmd
 

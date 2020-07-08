@@ -1,0 +1,37 @@
+start job on SBATCH:c12 size7 run560 max_process:/max_trial:1000 Tue Jul 7 21:45:10 PDT 2020
+SLURM_JOB_ID:1737597 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[mode=3, sub_mode_A=2, sub_mode_B=4, n_low=7, n_high=7, k_low=1, k_high=1, na_input=7, count_start_percentage=55], sub_mode_A:2, sub_mode_B:4, na_input:7, n_low:7, n_high=7, data_folder:data/random4/trial560, num_core=, log_file:log/product560-size7.log status_file:
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=5
+start calculating for 9284 cases out of 8820459 trials.
+time used: 14.3837 sec
+47410000, 55% finished. total: 86192656, time used: 0.000219103 min, remaining time (*5 error):0 h:0 min
+47420000, 55% finished. total: 86192656, time used: 0.00055122 min, remaining time (*5 error):0 h:0 min
+47430000, 55% finished. total: 86192656, time used: 0.000734234 min, remaining time (*5 error):0 h:0 min
+47440000, 55% finished. total: 86192656, time used: 0.0840227 min, remaining time (*5 error):3 h:34 min
+47450000, 55% finished. total: 86192656, time used: 0.343843 min, remaining time (*5 error):12 h:53 min
+47460000, 55% finished. total: 86192656, time used: 0.61939 min, remaining time (*5 error):18 h:21 min
+47470000, 55% finished. total: 86192656, time used: 0.886803 min, remaining time (*5 error):22 h:54 min
+47480000, 55% finished. total: 86192656, time used: 1.17902 min, remaining time (*5 error):25 h:10 min
+47490000, 55% finished. total: 86192656, time used: 1.4637 min, remaining time (*5 error):27 h:7 min
+47500000, 55% finished. total: 86192656, time used: 1.6927 min, remaining time (*5 error):28 h:32 min
+47510000, 55% finished. total: 86192656, time used: 1.88457 min, remaining time (*5 error):29 h:40 min
+47520000, 55% finished. total: 86192656, time used: 2.14285 min, remaining time (*5 error):30 h:3 min
+47530000, 55% finished. total: 86192656, time used: 2.46614 min, remaining time (*5 error):31 h:43 min
+47540000, 55% finished. total: 86192656, time used: 2.6891 min, remaining time (*5 error):32 h:53 min
+47550000, 55% finished. total: 86192656, time used: 2.94754 min, remaining time (*5 error):32 h:6 min
+47560000, 55% finished. total: 86192656, time used: 3.30217 min, remaining time (*5 error):34 h:47 min
+47570000, 55% finished. total: 86192656, time used: 3.54811 min, remaining time (*5 error):34 h:51 min
+47580000, 55% finished. total: 86192656, time used: 3.91283 min, remaining time (*5 error):36 h:25 min
+47590000, 55% finished. total: 86192656, time used: 4.2946 min, remaining time (*5 error):37 h:58 min
+47600000, 55% finished. total: 86192656, time used: 4.68549 min, remaining time (*5 error):38 h:31 min
+47610000, 55% finished. total: 86192656, time used: 5.09292 min, remaining time (*5 error):40 h:1 min
+47620000, 55% finished. total: 86192656, time used: 5.53414 min, remaining time (*5 error):41 h:37 min

@@ -1,0 +1,25 @@
+start job on SBATCH:c40 size7 run561 max_process:/max_trial:1000 Tue Jul 7 21:46:12 PDT 2020
+SLURM_JOB_ID:1737600 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[mode=3, sub_mode_A=2, sub_mode_B=4, n_low=7, n_high=7, k_low=1, k_high=1, na_input=7, count_start_percentage=90], sub_mode_A:2, sub_mode_B:4, na_input:7, n_low:7, n_high=7, data_folder:data/random4/trial561, num_core=, log_file:log/product561-size7.log status_file:
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=2
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=3
+start: id_Gax=2000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=3000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=4000,	 id_Gax_MAX=4095,	 Gax_row=4
+start: id_Gax=1000,	 id_Gax_MAX=1023,	 Gax_row=5
+start calculating for 9284 cases out of 9950236 trials.
+time used: 13.7978 sec
+77580000, 90% finished. total: 86192656, time used: 0.192406 min, remaining time (*5 error):9 h:58 min
+77590000, 90% finished. total: 86192656, time used: 0.611917 min, remaining time (*5 error):12 h:10 min
+77600000, 90% finished. total: 86192656, time used: 1.04769 min, remaining time (*5 error):13 h:33 min
+77610000, 90% finished. total: 86192656, time used: 1.50796 min, remaining time (*5 error):14 h:51 min
+77620000, 90% finished. total: 86192656, time used: 1.97911 min, remaining time (*5 error):15 h:1 min
+77630000, 90% finished. total: 86192656, time used: 2.41801 min, remaining time (*5 error):15 h:5 min
+77640000, 90% finished. total: 86192656, time used: 2.86476 min, remaining time (*5 error):15 h:5 min
+77650000, 90% finished. total: 86192656, time used: 3.35831 min, remaining time (*5 error):15 h:13 min
+77660000, 90% finished. total: 86192656, time used: 3.90711 min, remaining time (*5 error):16 h:24 min
+77670000, 90% finished. total: 86192656, time used: 4.44827 min, remaining time (*5 error):16 h:31 min

@@ -15,3 +15,71 @@ note:[n_low=7, n_high=7, k_low=1, k_high=1 sub_mode=], sub_mode_A:2, sub_mode_B:
 cmd () {
 	./.product$index.out mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 seed=1 note=$note num_cores=$num_cores n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial na_input=$na_input
 }
+on sbatch
+
+============= The World is Unitary ============
+start job on c24 Tue Jul 7 08:15:01 PDT 2020
+
+check logfile: log/product555-size7.log
+make lib && make product.o && make product.out
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.o' is up to date.
+make[3]: `product.out' is up to date.
+start job on SBATCH:c24 size7 run555 max_process:/max_trial:1000 Tue Jul 7 08:15:01 PDT 2020
+SLURM_JOB_ID:1728679 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=7, n_high=7, k_low=1, k_high=1 sub_mode=], sub_mode_A:2, sub_mode_B:4, na_input:7, n_low:7, n_high=7, data_folder:data/random4/trial555, num_core=, log_file:log/product555-size7.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 seed=1 note=$note num_cores=$num_cores n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial na_input=$na_input
+}
+on sbatch
+
+============= The World is Unitary ============
+start job on c41 Tue Jul 7 09:46:49 PDT 2020
+
+check logfile: log/product557-size7.log
+make lib && make product.o && make product.out
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.o' is up to date.
+make[3]: `product.out' is up to date.
+start job on SBATCH:c41 size7 run557 max_process:/max_trial:1000 Tue Jul 7 09:46:50 PDT 2020
+SLURM_JOB_ID:1733985 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[n_low=7, n_high=7, k_low=1, k_high=1 sub_mode=], sub_mode_A:2, sub_mode_B:4, na_input:7, n_low:7, n_high=7, data_folder:data/random4/trial557, num_core=, log_file:log/product557-size7.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 seed=1 note=$note num_cores=$num_cores n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial na_input=$na_input
+}
+on sbatch
+
+============= The World is Unitary ============
+start job on SBATCH c12 Tue Jul 7 21:45:06 PDT 2020
+
+check logfile: log/product560-size7.log
+make lib && make product.o && make product.out
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+g++ -O3 -Wall -std=c++11 -fopenmp  `pkg-config --cflags itpp` `pkg-config --libs itpp` -c product.cpp
+g++ -O3 -Wall -std=c++11 -fopenmp  `pkg-config --cflags itpp` `pkg-config --libs itpp` -o product.out product.o weilei_lib/mm_read.o weilei_lib/mmio.o weilei_lib/mm_write.o weilei_lib/lib.o weilei_lib/dist.o weilei_lib/product_lib.o weilei_lib/bp.o 
+start job on SBATCH:c12 size7 run560 max_process:/max_trial:1000 Tue Jul 7 21:45:10 PDT 2020
+SLURM_JOB_ID:1737597 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[mode=3, sub_mode_A=2, sub_mode_B=4, n_low=7, n_high=7, k_low=1, k_high=1, na_input=7, count_start_percentage=55], sub_mode_A:2, sub_mode_B:4, na_input:7, n_low:7, n_high=7, data_folder:data/random4/trial560, num_core=, log_file:log/product560-size7.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 seed=1 note=$note num_cores=$num_cores n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial na_input=$na_input count_start_percentage=$count_start_percentage
+}
+on sbatch
+
+============= The World is Unitary ============
+start job on SBATCH c40 Tue Jul 7 21:46:12 PDT 2020
+
+check logfile: log/product561-size7.log
+make lib && make product.o && make product.out
+cd weilei_lib && make all
+make[4]: Nothing to be done for `all'.
+make[3]: `product.o' is up to date.
+make[3]: `product.out' is up to date.
+start job on SBATCH:c40 size7 run561 max_process:/max_trial:1000 Tue Jul 7 21:46:12 PDT 2020
+SLURM_JOB_ID:1737600 SLURM_JOB_NAME:product SLURM_JOB_DIR:/rhome/wzeng002/Documents/GitHub/concatenation
+note:[mode=3, sub_mode_A=2, sub_mode_B=4, n_low=7, n_high=7, k_low=1, k_high=1, na_input=7, count_start_percentage=90], sub_mode_A:2, sub_mode_B:4, na_input:7, n_low:7, n_high=7, data_folder:data/random4/trial561, num_core=, log_file:log/product561-size7.log status_file:
+cmd () {
+	./.product$index.out mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 seed=1 note=$note num_cores=$num_cores n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial na_input=$na_input count_start_percentage=$count_start_percentage
+}

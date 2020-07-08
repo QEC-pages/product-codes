@@ -60,9 +60,11 @@ int main(int args, char ** argv){
 
   Real_Timer timer;  timer.tic();
 
+  //parameters for enumerate all cases
   //the maximum number of cases to be evaluated is 1 million. Duplicated cases and distance 1 cases are not saved here.
   const int id_list_max=100000; 
   int id_list[id_list_max][5];
+  int count_start_percentage=0; parser.get(count_start_percentage, "count_start_percentage");
   //  save five number for the input of CSSCode codeA(na,Gax_row,id_Gax,Gaz_row,id_Gaz);
 
   switch (mode){
@@ -204,7 +206,7 @@ int main(int args, char ** argv){
 	  const int total = calculated_trials*calculated_trials;
 	  const int chunk_size_max = 10000;                         //chunk to display progress
 	  const int chunk_size = ( total/100 < chunk_size_max ) ? total/100:chunk_size_max ;
-	  //	  count = total/10*7; // start from some point, 50%, 70%, ...
+	  count = total/100*count_start_percentage; // start from some point, 50%, 70%, ...
 	  //	  cout<<"start from count = "<<count<<endl;
 	  //guided for better speed
 #pragma omp parallel for schedule(guided) num_threads(num_cores)
@@ -216,8 +218,11 @@ int main(int args, char ** argv){
 	      //display progress information
 	      count++;
 	      if (count % chunk_size == 0){
+		double toc=timer.toc();
+		int remaining_sec = (int) toc/(count-total/100.0*count_start_percentage)*(total-count);
 		cout<<count<<", "<<(int) (count*1.0/total*100)<<"% finished. total: "<<total
-		    <<", remaining time:"<<timer.toc()/count*(total-count)/60<<" min"
+		    <<", time used: "<<toc/60<<" min, remaining time (*5 error):"<<remaining_sec/60/24<<" h:"<<remaining_sec / 60 % 60
+		    <<" min"
 		    <<endl;
 	      }
 	    }
