@@ -83,3 +83,7 @@ note:[mode=3, sub_mode_A=2, sub_mode_B=4, n_low=7, n_high=7, k_low=1, k_high=1, 
 cmd () {
 	./.product$index.out mode=$mode sub_mode_A=$sub_mode_A sub_mode_B=$sub_mode_B title=$title debug=0 seed=1 note=$note num_cores=$num_cores n_low=$n_low n_high=$n_high k_low=$k_low k_high=$k_high max_trial=$max_trial na_input=$na_input count_start_percentage=$count_start_percentage
 }
+Wed Jul  8 09:32:09 PDT 2020
+finish job on c40 561 /1000 Wed Jul 8 09:32:10 PDT 2020
+Thu Jul  9 05:13:06 PDT 2020
+finish job on c12 560 /1000 Thu Jul 9 05:13:06 PDT 2020
