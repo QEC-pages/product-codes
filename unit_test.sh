@@ -3,7 +3,7 @@ echo make sure these tests have been passed
 
 #make random_concatenation.out
 #make counter_concatenation.out
-make product.out
+make product
 
 echo expected results: find case for all of them.
 echo dcx and dcz for size 9, and size 7

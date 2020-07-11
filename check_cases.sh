@@ -2,6 +2,7 @@
 
 ##make random_concatenation.out
 #make counter_concatenation.out
+make product
 
 date
 folder=data/random2
@@ -46,7 +47,7 @@ do
     title=$folder/$trial
     echo check $title
     #copies files
-#    cp $folder/${trial}Gax.mm $folder/${trial}Gaz.mm $folder/${trial}Gbx.mm $folder/${trial}Gbz.mm $report_folder
+    cp $folder/${trial}Gax.mm $folder/${trial}Gaz.mm $folder/${trial}Gbx.mm $folder/${trial}Gbz.mm $report_folder
 
 #    ./random_concatenation.out 2 $title >>data/result/random2check/check-$trial.log &
 #    ./random_concatenation.out 2 $title
@@ -55,7 +56,7 @@ do
 
 #    ./counter_concatenation.out mode=2 title=$title debug=0 seed=999 &
 #    mkdir -p report/trial516
-    ./product.out mode=2 title=$title debug=1 seed=999 
+    ./product.out mode=2 title=$title debug=0 seed=999 
 #>> report/${trial}.log &
 #    break
 done
