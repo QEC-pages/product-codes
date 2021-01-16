@@ -7,4 +7,4 @@ diff:
 head-2-diff:
 	git diff HEAD~2 product*.log
 running:
-	tail -n5 product540-size7.log product543-size7.log product551-size7.log product552-size6.log
+	tail -n2 product540-size7.log product543-size7.log product555-size7.log product557-size7.log product560-size7.log product561-size7.log

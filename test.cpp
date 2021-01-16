@@ -1,5 +1,6 @@
 //#include "weilei_lib/my_lib.h"
 #include "weilei_lib/weilei_lib.h"
+//#include "weilei_lib.h"
 #include <stdio.h>
 #include <itpp/itbase.h>
 #include <fstream>
@@ -353,6 +354,19 @@ void kron_test(){
   return;
 }
 
+void product_code_test(){
+  CSSCode code;
+  code.n=7;
+  code.get_713_code();
+  //  code.info();
+
+  ProductCSSCode codeC;
+  SubsystemProductCSSCode codeS;
+  codeC = codeS;
+  std::cout<<codeC.n<<std::endl;
+  return;
+}
+
 int main(int args, char ** argvs){
   //  cout<<"begin test"<<endl;
   Parser parser;
@@ -397,11 +411,11 @@ int main(int args, char ** argvs){
   //  syntax_test();
 
   //  generate_code_test(na,Gax_row,id_Gax,Gaz_row,id_Gaz,debug);
-  kron_test();
+  //kron_test();
 
 
-  CSSCode code;
-  generate_code(code,1);
+  product_code_test();
+
     //cout<<"finish test"<<endl;
   return 0;
 }
