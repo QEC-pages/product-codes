@@ -1,8 +1,8 @@
 MAKEFLAGS += --no-print-directory
 
 # build options to test dynamic library
-LIB_WEILEI_PATH=/rhome/wzeng002/.local/lib
-LIB_WEILEI=-L$(LIB_WEILEI_PATH) -lweilei -Iweilei_lib
+#LIB_WEILEI_PATH=/rhome/wzeng002/.local/lib
+#LIB_WEILEI=-L$(LIB_WEILEI_PATH) -lweilei -Iweilei_lib
 
 
 INC_DIR=weilei_lib
@@ -10,7 +10,13 @@ INC_DIR=weilei_lib
 CXX=g++ -O3 -Wall -std=c++11 -fopenmp 
 # optimization options -O2 -O5 -Os
 #ITPP=`pkg-config --cflags itpp` `pkg-config --libs itpp`
-ITPP=`itpp-config --cflags` `itpp-config --libs`
+#ITPP=`itpp-config --cflags` `itpp-config --libs`
+#Expliciltlly the above config cmd yields
+#ITPP=-I/home/weileizeng/gitrepo/install-itpp-locally/itpp-4.3.1/include -O2 -DNDEBUG -L/home/weileizeng/gitrepo/install-itpp-locally/itpp-4.3.1/lib -litpp
+#After copying files to /sharedata01/weileizeng/gitrepo/install-itpp-locally, it changes to
+ITPP=-I/sharedata01/weileizeng/gitrepo/install-itpp-locally/itpp-4.3.1/include -O2 -DNDEBUG -L/sharedata01/weileizeng/gitrepo/install-itpp-locally/itpp-4.3.1/lib -litpp
+
+
 #full command example
 #g++ `pkg-config --cflags itpp` -o hello.out hello.cpp `pkg-config --libs itpp` -fopenmp
 
